@@ -15,17 +15,35 @@ const { generateSeoData } = require('./src/helpers/seoHelper');
 const app = express();
 const PORT = process.env.PORT || 7450;
 
-// Gzip Sıkıştırma (Ultra Hızlı Yüklenme & Core Web Vitals)
-app.use(compression());
+// Gzip Sıkıştırma (Ultra Hızlı Yüklenme & Core Web Vitals - Level 9)
+app.use(compression({
+  level: 9,
+  threshold: 0
+}));
 
 // URL Encoded & JSON Body Parser
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Statik Dosyalar (CSS, JS, Görseller)
+// Performans & Güvenlik Başlıkları
+app.use((req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  next();
+});
+
+// Statik Dosyalar (CSS, JS, Görseller - 30 Gün Agresif Önbellekleme)
 app.use(express.static(path.join(__dirname, 'public'), {
-  maxAge: '7d',
-  etag: true
+  maxAge: '30d',
+  immutable: true,
+  etag: true,
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.html')) {
+      res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+    } else {
+      res.setHeader('Cache-Control', 'public, max-age=2592000, immutable');
+    }
+  }
 }));
 
 // EJS & Layout Ayarları

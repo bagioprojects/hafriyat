@@ -9,18 +9,33 @@
 <link rel="canonical" href="<%= seo.canonicalUrl %>">
 <meta name="theme-color" content="<%= seo.themeColor %>">
 <meta name="author" content="Adem Hafriyat">
+<meta name="publisher" content="Adem Hafriyat">
+<meta name="language" content="Turkish">
+<meta http-equiv="content-language" content="tr">
 
-<!-- Favicon & Icons -->
+<!-- Coğrafi (GEO) & Yerel Arama Meta Etiketleri (Yalova / TR-77) -->
+<meta name="geo.region" content="TR-77">
+<meta name="geo.placename" content="Yalova, Çiftlikköy, Taşköprü">
+<meta name="geo.position" content="40.6628;29.3512">
+<meta name="ICBM" content="40.6628, 29.3512">
+<meta name="DC.title" content="<%= seo.title %>">
+<meta name="DC.creator" content="Adem Hafriyat">
+<meta name="DC.subject" content="Yalova Kepçe Kiralama, Forklift Kiralama, Hafriyat">
+<meta name="DC.coverage" content="Yalova, Çiftlikköy, Taşköprü, Altınova, Çınarcık, Armutlu, Termal">
+
+<!-- Favicon & Mobil Uygulama İkonları -->
 <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
 <link rel="alternate icon" href="/images/favicon.svg">
 <link rel="apple-touch-icon" href="/images/favicon.svg">
 
-<!-- Open Graph / Facebook -->
+<!-- Open Graph / Facebook / WhatsApp Kartları -->
 <meta property="og:type" content="<%= seo.ogType || 'website' %>">
 <meta property="og:url" content="<%= seo.canonicalUrl %>">
 <meta property="og:title" content="<%= seo.title %>">
 <meta property="og:description" content="<%= seo.description %>">
 <meta property="og:image" content="<%= seo.ogImage %>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="Adem Hafriyat">
 
@@ -31,12 +46,11 @@
 <meta name="twitter:description" content="<%= seo.description %>">
 <meta name="twitter:image" content="<%= seo.ogImage %>">
 
-<!-- Google Fonts: Barlow (Industrial Display) & Inter (Clean Content) -->
+<!-- Hız Optimizasyonu: DNS Preconnect & Font Display Swap -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- CSS Stylesheets -->
+<!-- Stil Dosyaları -->
 <link rel="stylesheet" href="/css/theme.css">
 <link rel="stylesheet" href="/css/main.css">
-

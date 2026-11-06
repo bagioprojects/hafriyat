@@ -79,6 +79,30 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
+    if (homeRes.body.includes('hasOfferCatalog') && homeRes.body.includes('AggregateRating')) {
+      console.log('✅ [BAŞARILI]: Schema.org hasOfferCatalog ve Google yıldızlı AggregateRating aktif.');
+    } else {
+      console.error('❌ [HATA]: Schema.org hasOfferCatalog veya AggregateRating eksik!');
+      failed = true;
+    }
+
+    if (homeRes.body.includes('name="geo.region" content="TR-77"') && homeRes.body.includes('40.6628;29.3512')) {
+      console.log('✅ [BAŞARILI]: Coğrafi (GEO) TR-77 ve ICBM koordinat meta etiketleri mevcut.');
+    } else {
+      console.error('❌ [HATA]: GEO koordinat meta etiketleri eksik!');
+      failed = true;
+    }
+
+    // Statik dosya önbellekleme kontrolü
+    const cssRes = await fetchPath('/css/main.css');
+    const cacheHeader = cssRes.headers['cache-control'] || '';
+    if (cacheHeader.includes('max-age=2592000')) {
+      console.log('✅ [BAŞARILI]: Statik dosyalarda 30 günlük agresif Cache-Control önbellekleme aktif.');
+    } else {
+      console.error(`❌ [HATA]: Cache-Control başlığı eksik veya hatalı: ${cacheHeader}`);
+      failed = true;
+    }
+
     const ciftlikkoyKanalRes = await fetchPath('/bolgeler/ciftlikkoy/kanal-kazma');
     if (ciftlikkoyKanalRes.body.includes('breadcrumb-nav') && ciftlikkoyKanalRes.body.includes('Çiftlikköy')) {
       console.log('✅ [BAŞARILI]: Çapraz SEO sayfasında dinamik Breadcrumb ve ilçe parametreleri mevcut.');

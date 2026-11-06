@@ -14,17 +14,17 @@
       </p>
     </div>
 
-    <!-- Kepçe Hizmetleri Alt Başlığı -->
-    <div style="margin-bottom: 2rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: flex-end;">
-      <h3 style="font-size: 1.6rem; color: var(--color-dark);">🚜 Kepçe & Hafriyat Hizmetlerimiz</h3>
+    <!-- Kepçe Hizmetleri Alt Başlığı (Fluid Auto-Resize) -->
+    <div style="margin-bottom: 2rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 0.5rem;">
+      <h3 style="font-size: clamp(1.2rem, 3.5vw, 1.6rem); color: var(--color-dark); margin: 0;">🚜 Kepçe & Hafriyat Hizmetlerimiz</h3>
       <span style="font-size: var(--text-xs); color: var(--color-text-muted);">JCB 3CX Bekoloder & Mini Ekskavatör</span>
     </div>
 
     <%- include('../components/services/serviceGrid', { services: services.filter(s => s.category === 'kepce') }) %>
 
-    <!-- Forklift Hizmetleri Alt Başlığı -->
-    <div style="margin: 4rem 0 2rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: flex-end;">
-      <h3 style="font-size: 1.6rem; color: var(--color-dark);">🏗️ Forklift Kiralama Hizmetlerimiz</h3>
+    <!-- Forklift Hizmetleri Alt Başlığı (Fluid Auto-Resize) -->
+    <div style="margin: 3.5rem 0 2rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 0.5rem;">
+      <h3 style="font-size: clamp(1.2rem, 3.5vw, 1.6rem); color: var(--color-dark); margin: 0;">🏗️ Forklift Kiralama Hizmetlerimiz</h3>
       <span style="font-size: var(--text-xs); color: var(--color-text-muted);">Taşköprü Sanayi & Altınova Tersaneleri 15 Dk Teslim</span>
     </div>
 

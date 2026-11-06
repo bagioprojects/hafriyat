@@ -4,29 +4,29 @@
  */
 
 :root {
-  /* Renk Paleti - Birincil (Taksi Sarısı & Ağır Vasıta Sarı) */
-  --color-primary: #ffb800;
-  --color-primary-hover: #e5a700;
-  --color-primary-dark: #b38600;
+  /* Renk Paleti - Birincil (Canlı Taksi Sarısı & Ağır Vasıta Altın) */
+  --color-primary: #ffc000;
+  --color-primary-hover: #e6ac00;
+  --color-primary-dark: #cc9900;
   --color-primary-light: #fff8e1;
-  --color-primary-soft: rgba(255, 184, 0, 0.16);
+  --color-primary-soft: rgba(255, 192, 0, 0.14);
   --color-yellow-taxi: #ffc000;
   --color-yellow-bright: #ffd54f;
 
-  /* Renk Paleti - İkincil (Ağır Sanayi Karbon Siyahı & Koyu Tonlar) */
-  --color-dark: #0b0f19;
-  --color-dark-surface: #111827;
-  --color-dark-card: #1e293b;
-  --color-dark-card-hover: #243248;
-  --color-dark-border: #334155;
+  /* Renk Paleti - İkincil (RAL 7016 Antrazitgrau & Derin Asil Antrasit) */
+  --color-dark: #1f2427;           /* En Derin Asil Antrasit: Başlıklar, Menü, Butonlar */
+  --color-dark-surface: #293133;   /* Resmi RAL 7016 Antrazit: Koyu Bölümler, Hero, Footer */
+  --color-dark-card: #343d40;      /* Kart Antrasiti: Koyu kart zeminleri */
+  --color-dark-card-hover: #3d474b;
+  --color-dark-border: #455054;    /* İnce Antrasit Kenarlık */
 
   /* Nötr & Arka Plan Renkleri */
   --color-bg-page: #f8fafc;
   --color-bg-card: #ffffff;
   --color-border-light: #e2e8f0;
-  --color-text-main: #0f172a;
+  --color-text-main: #1f2427;
   --color-text-muted: #64748b;
-  --color-text-light: #94a3b8;
+  --color-text-light: #cbd5e1;
   --color-white: #ffffff;
 
   /* Durum & Vurgu Renkleri */

@@ -1,25 +1,51 @@
 <div class="district-selector-block" id="bolgeler">
-  <div class="section-header-centered">
-    <span class="badge-amber">7/24 YALOVA GENELİ HİZMET</span>
-    <h2 class="section-title">Yalova'nın Tüm İlçelerinde Sahadayız</h2>
-    <p class="section-subtitle">
-      İlçenizi seçerek bölgenize özel kepçe kiralama, forklift kiralama, mahalle ve köy servis sürelerimizi inceleyebilirsiniz.
-    </p>
-  </div>
-  <div class="district-cards-grid">
-    <% districts.forEach(d => { %>
-      <a href="/bolgeler/<%= d.slug %>" class="district-card <%= (typeof currentDistrictSlug !== 'undefined' && currentDistrictSlug === d.slug) ? 'active' : '' %>">
-        <div class="district-card-top">
-          <span class="district-tag"><%= d.tag %></span>
-          <span class="response-time">⏱ <%= d.responseMinutes %> dk</span>
-        </div>
-        <h3 class="district-name"><%= d.name %></h3>
-        <p class="district-excerpt"><%= d.excerpt %></p>
-        <div class="district-card-link">
-          <span>İlçe & Köy Detayları &rarr;</span>
-        </div>
-      </a>
-    <% }); %>
+  <div class="container">
+    <div class="section-header-centered">
+      <span class="badge-amber">7/24 YALOVA GENELİ HİZMET</span>
+      <h2 class="section-title">Yalova'nın Tüm İlçelerinde Sahadayız</h2>
+      <p class="section-subtitle">
+        Garaj merkezimize yakın ilçenizi seçerek bölgenize özel kepçe kiralama, forklift kiralama, mahalle ve köy servis sürelerimizi inceleyebilirsiniz.
+      </p>
+    </div>
+
+    <!-- 1. Sıra: 3 Ana Hizmet & Garaj Merkezi (Geniş Öne Çıkan Kartlar) -->
+    <div class="district-hub-header">
+      <span class="hub-label">📍 ANA HİZMET MERKEZLERİMİZ (10 - 20 DAKİKA VARIŞ)</span>
+    </div>
+    <div class="district-cards-hub-grid">
+      <% districts.slice(0, 3).forEach(d => { %>
+        <a href="/bolgeler/<%= d.slug %>" class="district-card district-card-featured <%= (typeof currentDistrictSlug !== 'undefined' && currentDistrictSlug === d.slug) ? 'active' : '' %>">
+          <div class="district-card-top">
+            <span class="district-tag"><%= d.tag %></span>
+            <span class="response-time">⏱ <%= d.responseMinutes %> dk</span>
+          </div>
+          <h3 class="district-name"><%= d.name %></h3>
+          <p class="district-excerpt"><%= d.excerpt %></p>
+          <div class="district-card-link">
+            <span>İlçe, Mahalle &amp; Köy Detayları &rarr;</span>
+          </div>
+        </a>
+      <% }); %>
+    </div>
+
+    <!-- 2. Sıra: 4 Bölgesel, Sanayi & Turizm İlçesi (Dengeli 4'lü Izgara) -->
+    <div class="district-sub-header">
+      <span class="hub-label">🚜 SANAYİ, TERSANE, TURİZM VE KIYI İLÇELERİMİZ</span>
+    </div>
+    <div class="district-cards-sub-grid">
+      <% districts.slice(3).forEach(d => { %>
+        <a href="/bolgeler/<%= d.slug %>" class="district-card <%= (typeof currentDistrictSlug !== 'undefined' && currentDistrictSlug === d.slug) ? 'active' : '' %>">
+          <div class="district-card-top">
+            <span class="district-tag"><%= d.tag %></span>
+            <span class="response-time">⏱ <%= d.responseMinutes %> dk</span>
+          </div>
+          <h3 class="district-name"><%= d.name %></h3>
+          <p class="district-excerpt"><%= d.excerpt %></p>
+          <div class="district-card-link">
+            <span>İlçe &amp; Bölge İncele &rarr;</span>
+          </div>
+        </a>
+      <% }); %>
+    </div>
   </div>
 </div>
-

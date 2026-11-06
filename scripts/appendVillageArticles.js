@@ -575,3 +575,4 @@ const contentToWrite = `/**\n * Blog / Makaleler Veri Modeli - Adem Hafriyat\n *
 
 fs.writeFileSync(blogFilePath, contentToWrite, 'utf8');
 console.log(`[BAŞARILI]: ${addedCount} yeni köy makalesi data/blog.js içerisine eklendi. Toplam makale sayısı: ${blogPosts.length}`);
+

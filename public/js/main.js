@@ -4,20 +4,51 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Mobil Menü Açma / Kapama
+  // 1. Mobil Menü Açma / Kapama & Backdrop Etkileşimi
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const closeDrawerBtn = document.getElementById('closeDrawerBtn');
   const mobileDrawer = document.getElementById('mobileDrawer');
+  const mobileDrawerBackdrop = document.getElementById('mobileDrawerBackdrop');
 
-  if (mobileMenuBtn && mobileDrawer) {
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileDrawer.classList.add('open');
+  function openDrawer() {
+    if (mobileDrawer) mobileDrawer.classList.add('open');
+    if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeDrawer() {
+    if (mobileDrawer) mobileDrawer.classList.remove('open');
+    if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.remove('active');
+    document.body.style.overflow = '';
+    if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openDrawer();
     });
   }
 
-  if (closeDrawerBtn && mobileDrawer) {
-    closeDrawerBtn.addEventListener('click', () => {
-      mobileDrawer.classList.remove('open');
+  if (closeDrawerBtn) {
+    closeDrawerBtn.addEventListener('click', closeDrawer);
+  }
+
+  if (mobileDrawerBackdrop) {
+    mobileDrawerBackdrop.addEventListener('click', closeDrawer);
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileDrawer && mobileDrawer.classList.contains('open')) {
+      closeDrawer();
+    }
+  });
+
+  if (mobileDrawer) {
+    const drawerLinks = mobileDrawer.querySelectorAll('a');
+    drawerLinks.forEach(link => {
+      link.addEventListener('click', closeDrawer);
     });
   }
 

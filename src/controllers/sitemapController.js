@@ -47,6 +47,17 @@ exports.sitemapXml = (req, res) => {
         lastmod: currentDate
       });
     });
+
+    // Mahalle ve Köy SEO Linkleri (Örn: Çiftlikköy Sahil Mahallesi, Taşköprü Sanayi, Samanlı Köyü)
+    const allLocalities = [...(district.neighborhoods || []), ...(district.villages || [])];
+    allLocalities.forEach(locItem => {
+      urls.push({
+        loc: `${baseUrl}/bolgeler/${district.slug}/mahalle/${locItem.slug}`,
+        priority: '0.70',
+        changefreq: 'monthly',
+        lastmod: currentDate
+      });
+    });
   });
 
   // Makinelerimiz

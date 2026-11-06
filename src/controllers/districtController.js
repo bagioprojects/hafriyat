@@ -125,3 +125,73 @@ exports.districtService = (req, res, next) => {
   });
 };
 
+
+exports.neighborhoodDetail = (req, res, next) => {
+  const { districtSlug, neighborhoodSlug } = req.params;
+  const district = districts.find(d => d.slug === districtSlug);
+
+  if (!district) {
+    return next();
+  }
+
+  const allLocalities = [...(district.neighborhoods || []), ...(district.villages || [])];
+  const locality = allLocalities.find(n => n.slug === neighborhoodSlug);
+
+  if (!locality) {
+    return next();
+  }
+
+  const isVillage = locality.type === 'koy' || (district.villages && district.villages.some(v => v.slug === neighborhoodSlug));
+  const pageTitle = `${district.name} ${locality.name} Kepçe Kiralama & Hafriyat Hizmetleri`;
+  const metaTitle = `${district.name} ${locality.name} Kiralık Kepçe & Forklift | Adem Hafriyat`;
+  const metaDesc = `${district.name} ${locality.name} mevkiinde profesyonel kepçe kiralama, kanal kazma, temel hafriyatı, su kuyusu ve arazi tesviye. ${district.responseMinutes} dakikada kapınızda!`;
+
+  const localityFaqs = [
+    {
+      question: `${district.name} ${locality.name} adresine kepçe ne kadar sürede gelir?`,
+      answer: `Adem Hafriyat olarak merkez garajımızdan ${district.name} ${locality.name} noktasına ortalama ${district.responseMinutes} dakika içinde iş makinesi ve operatör ulaştırıyoruz.`
+    },
+    {
+      question: `${locality.name} bölgesinde dar sokak veya bahçelere uygun makineniz var mı?`,
+      answer: `Evet, dar sokaklar, villa bahçeleri ve bitişik parseller için kauçuk paletli 3.5 tonluk Mini Ekskavatörümüzle çit ve kaldırımlara sıfır hasarla çalışıyoruz.`
+    },
+    {
+      question: `${locality.name} için keşif ücreti var mı?`,
+      answer: `Hayır. ${district.name} ${locality.name} genelindeki tüm kazı, temel, kanal ve tesviye işlerinizde keşif hizmetimiz tamamen ücretsizdir.`
+    }
+  ];
+
+  const seo = generateSeoData({
+    title: metaTitle,
+    description: metaDesc,
+    canonicalPath: `/bolgeler/${district.slug}/mahalle/${locality.slug}`,
+    breadcrumbs: [
+      { label: 'Bölgeler', url: '/#bolgeler' },
+      { label: district.name, url: `/bolgeler/${district.slug}` },
+      { label: locality.name, url: `/bolgeler/${district.slug}/mahalle/${locality.slug}` }
+    ]
+  });
+
+  const schemas = [
+    getLocalBusinessSchema(),
+    getBreadcrumbSchema(seo.breadcrumbs),
+    getFaqSchema(localityFaqs)
+  ];
+
+  const otherLocalities = allLocalities.filter(n => n.slug !== locality.slug);
+
+  res.render('pages/neighborhoodDetail', {
+    siteConfig,
+    seo,
+    schemas,
+    district,
+    locality,
+    isVillage,
+    pageTitle,
+    districtServices: services,
+    machinery,
+    otherLocalities,
+    localityFaqs,
+    activeNav: 'districts'
+  });
+};

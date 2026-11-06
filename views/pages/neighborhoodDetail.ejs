@@ -1,0 +1,96 @@
+<%- include('../components/common/pageHero', {
+  title: pageTitle,
+  subtitle: `${district.name} ${locality.name} mevkiinde ${isVillage ? 'köy arazileri, tarla tesviyesi, kuyu kazma ve yol açma' : 'altyapı kanal kazısı, bina temeli, su tamiratı ve çevre düzenleme'} için 15 dakikada sahada!`,
+  badge: `📍 ${district.name.toUpperCase()} / ${locality.name.toUpperCase()}`
+}) %>
+
+<div class="container" style="padding: 4rem 1.5rem;">
+  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;">
+    <!-- Sol İçerik -->
+    <div>
+      <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); border-left: 5px solid var(--color-primary); padding: 1.75rem; border-radius: var(--radius-sm); margin-bottom: 2.5rem;">
+        <span class="badge-amber" style="margin-bottom: 0.5rem; display: inline-block;">LOKAL UZMANLIK</span>
+        <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem; color: var(--color-dark);">
+          <%= district.name %> <%= locality.name %> Hafriyat & Kepçe Çözümleri
+        </h3>
+        <p style="font-size: var(--text-sm); line-height: 1.7; color: var(--color-text-main); margin-bottom: 1rem;">
+          Adem Hafriyat olarak, <strong><%= district.name %> <%= locality.name %></strong> sınırlarında gerçekleştirdiğimiz çalışmalarda; 
+          bölgenin zemin yapısını, dar sokak geçişlerini ve yer altı altyapı şebekelerini yakından tanıyan uzman operatörlerimizle görev yapıyoruz.
+          <%= locality.focus ? `Bu bölgede özellikle **${locality.focus}** işlerinde yoğunlukla tercih edilmekteyiz.` : '' %>
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; background-color: #f8fafc; padding: 1rem; border-radius: var(--radius-sm);">
+          <div>
+            <span style="font-size: var(--text-xs); color: var(--color-text-muted); display: block;">Merkez Garajdan Varış:</span>
+            <strong style="color: var(--color-primary-dark); font-size: 1.1rem;"><%= district.responseMinutes %> Dakika</strong>
+          </div>
+          <div>
+            <span style="font-size: var(--text-xs); color: var(--color-text-muted); display: block;">Keşif Durumu:</span>
+            <strong style="color: var(--color-dark); font-size: 1.1rem;">%100 Ücretsiz Keşif</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bu Mahallede / Köyde Sunulan Hizmetler -->
+      <div style="margin-bottom: 3.5rem;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.4rem;">
+          <%= locality.name %> İçin En Çok Tercih Edilen Hizmetlerimiz
+        </h3>
+        <div class="service-grid">
+          <% districtServices.slice(0, 6).forEach(service => { %>
+            <%- include('../components/services/serviceCard', { service, district }) %>
+          <% }); %>
+        </div>
+      </div>
+
+      <!-- Diğer Mahalle ve Köyler (Derin İç Linkleme) -->
+      <% if (otherLocalities && otherLocalities.length > 0) { %>
+        <div style="background-color: #f8fafc; border: 1px solid var(--color-border-light); padding: 1.75rem; border-radius: var(--radius-sm); margin-bottom: 3rem;">
+          <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--color-dark);">
+            📍 <%= district.name %> Diğer Mahalle ve Köyleri:
+          </h4>
+          <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin-bottom: 1rem;">
+            Aşağıdaki bağlantılardan <%= district.name %> bünyesindeki diğer yerleşim noktalarını inceleyebilirsiniz:
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <% otherLocalities.forEach(ol => { %>
+              <a href="/bolgeler/<%= district.slug %>/mahalle/<%= ol.slug %>" class="btn btn-dark-outline btn-sm">
+                <%= ol.name %> Kepçe &rarr;
+              </a>
+            <% }); %>
+          </div>
+        </div>
+      <% } %>
+
+      <!-- SSS / FAQ -->
+      <% if (localityFaqs && localityFaqs.length > 0) { %>
+        <%- include('../components/content/faqAccordion', { faqs: localityFaqs }) %>
+      <% } %>
+    </div>
+
+    <!-- Sağ Sidebar -->
+    <aside style="display: flex; flex-direction: column; gap: 2rem;">
+      <%- include('../components/common/quickQuote') %>
+
+      <!-- Hızlı Çağrı -->
+      <div style="background-color: var(--color-dark); color: #ffffff; padding: 2rem; border-radius: var(--radius-sm); border-top: 4px solid var(--color-primary); text-align: center;">
+        <span style="font-size: var(--text-xs); color: var(--color-primary); font-weight: 800; display: block; margin-bottom: 0.5rem;">
+          <%= locality.name.toUpperCase() %> ACİL SEVK
+        </span>
+        <h3 style="font-size: 1.5rem; color: #ffffff; margin-bottom: 0.5rem;"><%= district.responseMinutes %> Dakikada Adreste</h3>
+        <p style="font-size: var(--text-xs); color: #94a3b8; margin-bottom: 1.5rem;">
+          Adem Hafriyat nöbetçi operatörü ile anında görüşün.
+        </p>
+        <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary btn-block btn-lg pulse-btn">
+          <%= siteConfig.phone %>
+        </a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- CTA Banner -->
+<%- include('../components/common/ctaBanner', {
+  title: `${district.name} ${locality.name} Kepçe & Forklift İçin Hemen Arayın`,
+  description: 'Adem Hafriyat en uygun fiyat ve uzman operatör garantisiyle 7/24 hizmetinizdedir.'
+}) %>

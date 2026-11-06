@@ -45,6 +45,8 @@ const server = app.listen(PORT, async () => {
       { path: '/bolgeler/altinova', title: 'Altınova Bölge', expectText: 'Altınova' },
       { path: '/bolgeler/ciftlikkoy/kanal-kazma', title: 'Çapraz SEO: Çiftlikköy Kanal Kazma', expectText: 'Çiftlikköy' },
       { path: '/bolgeler/taskopru/forklift-kiralama', title: 'Çapraz SEO: Taşköprü Forklift', expectText: 'Taşköprü' },
+      { path: '/bolgeler/ciftlikkoy/mahalle/sahil-mahallesi', title: 'Mahalle SEO: Çiftlikköy Sahil', expectText: 'Sahil Mahallesi' },
+      { path: '/bolgeler/taskopru/mahalle/taskopru-sanayi', title: 'Sanayi SEO: Taşköprü Sanayi Bölgesi', expectText: 'Taşköprü Sanayi' },
       { path: '/makinelerimiz', title: 'Makine Parkuru', expectText: 'JCB' },
       { path: '/makinelerimiz/jcb-3cx-bekoloder', title: 'JCB Makine Detay', expectText: 'JCB 3CX' },
       { path: '/makaleler', title: 'Makaleler Listesi', expectText: 'Rehber' },

@@ -23,6 +23,7 @@ router.get('/hizmetlerimiz/:slug', serviceController.detail);
 
 // Bölgelerimiz (İlçe, Mahalle ve Köy Sayfaları)
 router.get('/bolgeler/:districtSlug', districtController.detail);
+router.get('/bolgeler/:districtSlug/mahalle/:neighborhoodSlug', districtController.neighborhoodDetail);
 router.get('/bolgeler/:districtSlug/:serviceSlug', districtController.districtService);
 
 // Makine Parkuru

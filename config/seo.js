@@ -20,13 +20,15 @@ module.exports = {
     'yağmur suyu kanalizasyon kazma yalova',
     'yalova jcb kiralama',
     'yalova mini ekskavatör kiralama',
-    'adem hafriyat yalova'
+    'adem hafriyat yalova',
+    'çiftlikköy köy hafriyat',
+    'yalova merkez köy kepçe'
   ],
   author: 'Adem Hafriyat',
   robots: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
   language: 'tr-TR',
   ogType: 'website',
   ogImage: '/images/hero-kepce.jpg',
-  themeColor: '#f59e0b'
+  themeColor: '#FFC000'
 };
 

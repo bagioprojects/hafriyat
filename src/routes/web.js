@@ -1,6 +1,6 @@
 /**
  * Web Rotaları
- * SEO Uyumlu, Temiz ve Anlamlı URL Yapısı
+ * SEO Uyumlu, Temiz, Anlamlı URL Yapısı ve LLM/AI Uç Noktaları
  */
 
 const express = require('express');
@@ -37,10 +37,21 @@ router.get('/makaleler/:slug', blogController.detail);
 // Kurumsal Sayfalar
 router.get('/hakkimizda', pageController.about);
 router.get('/iletisim', pageController.contact);
+router.get('/site-haritasi', sitemapController.htmlSitemap);
 
-// SEO Araçları
-router.get('/sitemap.xml', sitemapController.sitemapXml);
+// XML Sitemap İndeksi & Alt Modüller
+router.get('/sitemap.xml', sitemapController.sitemapIndex);
+router.get('/sitemap-main.xml', sitemapController.sitemapMain);
+router.get('/sitemap-services.xml', sitemapController.sitemapServices);
+router.get('/sitemap-districts.xml', sitemapController.sitemapDistricts);
+router.get('/sitemap-localities.xml', sitemapController.sitemapLocalities);
+router.get('/sitemap-machinery.xml', sitemapController.sitemapMachinery);
+router.get('/sitemap-blog.xml', sitemapController.sitemapBlog);
+
+// Yapay Zeka (AI / LLM) ve Arama Motoru Dosyaları
 router.get('/robots.txt', sitemapController.robotsTxt);
+router.get('/llms.txt', sitemapController.llmsTxt);
+router.get('/llms-full.txt', sitemapController.llmsFullTxt);
+router.get('/ai.json', sitemapController.aiJson);
 
 module.exports = router;
-

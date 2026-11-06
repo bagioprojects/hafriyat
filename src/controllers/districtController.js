@@ -7,6 +7,7 @@ const siteConfig = require('../../config/site');
 const districts = require('../../data/districts');
 const services = require('../../data/services');
 const machinery = require('../../data/machinery');
+const blogPosts = require('../../data/blog');
 const { generateSeoData } = require('../helpers/seoHelper');
 const { getLocalBusinessSchema, getServiceSchema, getBreadcrumbSchema, getFaqSchema } = require('../helpers/schemaHelper');
 
@@ -179,6 +180,7 @@ exports.neighborhoodDetail = (req, res, next) => {
   ];
 
   const otherLocalities = allLocalities.filter(n => n.slug !== locality.slug);
+  const relatedArticle = blogPosts.find(p => p.villageSlug === locality.slug);
 
   res.render('pages/neighborhoodDetail', {
     siteConfig,
@@ -192,6 +194,7 @@ exports.neighborhoodDetail = (req, res, next) => {
     machinery,
     otherLocalities,
     localityFaqs,
+    relatedArticle,
     activeNav: 'districts'
   });
 };

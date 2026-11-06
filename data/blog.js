@@ -5,280 +5,428 @@
 
 module.exports = [
   {
-    id: 'yalova-kepce-kiralama-rehberi',
-    slug: 'yalova-kepce-kiralama-rehberi',
-    title: 'Yalova Kepçe Kiralama Rehberi: Bekoloder mi Mini Ekskavatör mü?',
-    metaTitle: 'Yalova Kepçe Kiralama Rehberi: Bekoloder vs Mini Ekskavatör | Adem Hafriyat',
-    metaDesc: 'Yalova şantiyelerinde doğru iş makinesi seçimi: Bekoloder ne zaman, mini kepçe ne zaman kiralanmalı? Kazı derinliği, dar sokaklar ve yakıt maliyeti analizi.',
-    excerpt: 'Yalova genelinde şantiye, bahçe ve altyapı işlerinizde hangi kepçenin kiralanması gerektiğini teknik veriler, dar alan manevraları ve maliyet farklarıyla açıklıyoruz.',
-    category: 'Kepçe Kiralama',
-    author: 'Adem Hafriyat Saha Ekibi',
-    date: '2026-03-15',
-    readTime: '7 dk okuma',
-    image: '/images/blog-kepce-rehberi.jpg',
-    tags: ['Yalova Kepçe Kiralama', 'Bekoloder', 'Mini Ekskavatör', 'Hafriyat', 'Çiftlikköy'],
-    content: `
-## Yalova Şantiyelerinde Doğru İş Makinesi Seçimi Neden Hayatidir?
-
-Yalova ve çevresinde bir inşaata, altyapı tadilatına veya bahçe düzenlemesine başlarken iş sahiplerinin en sık düştüğü hatalardan biri, yapacakları iş için **yanlış boyutta veya yanlış ataşmana sahip kepçe kiralamaktır**. Yanlış makine seçimi sadece işin uzamasına neden olmakla kalmaz; dar bir bahçede kilit parkelerin kırılmasına, asfaltın gereksiz yere tahrip edilmesine veya kaldırma kapasitesi yetersiz kaldığı için saatlerce vakit kaybedilmesine sebep olur.
-
-Adem Hafriyat olarak Yalova, Çiftlikköy, Taşköprü ve diğer tüm ilçelerde sahada bizzat edindiğimiz 14 yılı aşkın tecrübeyle; hangi projede hangi kepçenin tercih edilmesi gerektiğini tarafsız bir gözle derledik.
-
----
-
-## 1. Bekoloder (JCB 3CX Tipi Kazıcı Yükleyici) Ne Zaman Kiralanmalıdır?
-
-Halk arasında genellikle "JCB" olarak adlandırılan Bekoloder iş makineleri, adeta şantiyelerin İsviçre çakısı gibidir. Önünde 1.2 m³ hacminde dozer özellikli yükleyici kova, arkasında ise 5 metreye kadar derinleşebilen teleskopik kazıcı kolu bulunur.
-
-### Bekoloderin En Uygun Olduğu Alanlar:
-- **Kanal Kazma ve Geri Kapatma:** Ön kovasıyla malzemeyi taşıyıp yayabilirken, arka kazıcısıyla su, doğalgaz ve kanalizasyon hendeğini tek başına açabilir. İkinci bir iş makinesine ihtiyaç duymaz.
-- **Dolgu Malzemesi ve Mıcır Serme:** Kamyonların şantiyeye döktüğü 0-38 mekanik veya mıcır yığınlarını 4'ü 1 arada açılır ön bıçağıyla hızlıca tesviye edebilir.
-- **Yol ve Şantiye Arasında Kendi Yürür Hızı:** Bekoloderler lastik tekerlekli oldukları için çekiciye ihtiyaç duymadan Yalova Merkez'den Çiftlikköy veya Sultaniye'ye kendi yürüyüşüyle 15-20 dakikada intikal edebilir. Bu da çekici maliyetinden tasarruf sağlar.
-- **Villa ve Küçük Bina Temel Kazıları:** 100-250 m² taban oturumlu konutların temel hafriyatını hem kazar hem de hafriyat kamyonuna doğrudan yükler.
-
----
-
-## 2. Mini Ekskavatör (3 - 4 Tonluk Kauçuk Paletli) Ne Zaman Kiralanmalıdır?
-
-Yalova Merkez'in Rüstempaşa, Bahçelievler gibi dar sokaklı mahallelerinde veya Çınarcık ve Termal'deki villa bahçelerinde büyük tonajlı bir bekoloderin manevra yapması neredeyse imkansızdır. İşte bu noktada sahneye **Mini Ekskavatörler** çıkar.
-
-### Mini Ekskavatörün Üstünlükleri:
-- **Kauçuk Palet ve Sıfır Zemin Tahribatı:** Kilit parke, granit taş veya çim kaplı bahçelerde lastikli ağır makineler zemin kaplamasını kırabilir. Kauçuk paletli mini kepçeler ise zemin basıncını dağıtarak kaplamaya zarar vermez.
-- **Sıfır Kuyruk Dönüşü (Zero Tail Swing):** Bina duvarına veya komşu parsel sınırına bitişik kazı yaparken makinenin arkası duvara çarpmaz, 360 derece olduğu yerde dönebilir.
-- **30 cm Dar Hendek Kovası:** Elektrik ve su borusu için 1 metre genişliğinde kazı yapmak hem gereksiz hafriyat çıkarır hem de asfalt tamir masrafını artırır. Mini kepçe 30 cm genişliğinde jilet gibi kanal açar.
-- **Bahçe Kapılarından Geçebilme:** 1.5 - 1.8 metre genişliğindeki villa bahçe kapılarından rahatça içeri girerek peyzaj ve havuz kazısını bahçeyi yıkmadan tamamlar.
-
----
-
-## 3. Karşılaştırma Tablosu
-
-| Kriter | JCB Bekoloder | Mini Ekskavatör (3.5 Ton) |
-|---|---|---|
-| **Ağırlık** | ~8.5 Ton | ~3.6 Ton |
-| **Kazma Derinliği** | 4.24 m - 5.46 m | 3.10 m |
-| **Yürüyüş Tipi** | Lastik Tekerlek (Asfaltta Hızlı) | Kauçuk Palet (Hassas Zemin) |
-| **Ön Yükleme Kovası** | Var (1.2 m³ - Dozer Bıçaklı) | Yok (Yalnızca Tesviye Bıçağı) |
-| **Dar Alan Manevrası** | Orta (Dönüş yarıçapı geniş) | Mükemmel (360° Kendi Etrafında) |
-| **Kullanım Alanı** | Temel, dolgu serme, yol, altyapı | Bahçe, dar sokak, bina içi kırım, dar kanal |
-
----
-
-## 4. Yalova ve İlçelerinde Saatlik Kiralama Yaparken Nelere Dikkat Edilmeli?
-
-1. **İşin Net Tanımı:** Operatörü çağırmadan önce kazılacak yerin metre tülü veya dolgunun kaç kamyon olacağını belirtirseniz doğru ataşman (kırıcı, dar kova, tesviye bıçağı) takılı olarak gelinir.
-2. **Yer Altı Hatlarının Durumu:** Kazı sahasında elektrik kablosu, doğalgaz veya su borusu geçiyorsa operatöre önceden bilgi verilmelidir.
-3. **Zemin Yapısı:** Çiftlikköy sahilinde su çıkma ihtimaline karşı çamur kovası gerekebilirken, dağ köylerinde kaya kırıcısı gerekebilir.
-
-Adem Hafriyat olarak ücretsiz saha keşfi yapıyor, işinize en uygun makineyi dakikalar içinde şantiyenize ulaştırıyoruz.
-    `
+    "id": "yalova-kepce-kiralama-rehberi",
+    "slug": "yalova-kepce-kiralama-rehberi",
+    "title": "Yalova Kepçe Kiralama Rehberi: Bekoloder mi Mini Ekskavatör mü?",
+    "metaTitle": "Yalova Kepçe Kiralama Rehberi: Bekoloder vs Mini Ekskavatör | Adem Hafriyat",
+    "metaDesc": "Yalova şantiyelerinde doğru iş makinesi seçimi: Bekoloder ne zaman, mini kepçe ne zaman kiralanmalı? Kazı derinliği, dar sokaklar ve yakıt maliyeti analizi.",
+    "excerpt": "Yalova genelinde şantiye, bahçe ve altyapı işlerinizde hangi kepçenin kiralanması gerektiğini teknik veriler, dar alan manevraları ve maliyet farklarıyla açıklıyoruz.",
+    "category": "Kepçe Kiralama",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-03-15",
+    "readTime": "7 dk okuma",
+    "image": "/images/blog-kepce-rehberi.jpg",
+    "tags": [
+      "Yalova Kepçe Kiralama",
+      "Bekoloder",
+      "Mini Ekskavatör",
+      "Hafriyat",
+      "Çiftlikköy"
+    ],
+    "content": "\n## Yalova Şantiyelerinde Doğru İş Makinesi Seçimi Neden Hayatidir?\n\nYalova ve çevresinde bir inşaata, altyapı tadilatına veya bahçe düzenlemesine başlarken iş sahiplerinin en sık düştüğü hatalardan biri, yapacakları iş için **yanlış boyutta veya yanlış ataşmana sahip kepçe kiralamaktır**. Yanlış makine seçimi sadece işin uzamasına neden olmakla kalmaz; dar bir bahçede kilit parkelerin kırılmasına, asfaltın gereksiz yere tahrip edilmesine veya kaldırma kapasitesi yetersiz kaldığı için saatlerce vakit kaybedilmesine sebep olur.\n\nAdem Hafriyat olarak Yalova, Çiftlikköy, Taşköprü ve diğer tüm ilçelerde sahada bizzat edindiğimiz 14 yılı aşkın tecrübeyle; hangi projede hangi kepçenin tercih edilmesi gerektiğini tarafsız bir gözle derledik.\n\n---\n\n## 1. Bekoloder (JCB 3CX Tipi Kazıcı Yükleyici) Ne Zaman Kiralanmalıdır?\n\nHalk arasında genellikle \"JCB\" olarak adlandırılan Bekoloder iş makineleri, adeta şantiyelerin İsviçre çakısı gibidir. Önünde 1.2 m³ hacminde dozer özellikli yükleyici kova, arkasında ise 5 metreye kadar derinleşebilen teleskopik kazıcı kolu bulunur.\n\n### Bekoloderin En Uygun Olduğu Alanlar:\n- **Kanal Kazma ve Geri Kapatma:** Ön kovasıyla malzemeyi taşıyıp yayabilirken, arka kazıcısıyla su, doğalgaz ve kanalizasyon hendeğini tek başına açabilir. İkinci bir iş makinesine ihtiyaç duymaz.\n- **Dolgu Malzemesi ve Mıcır Serme:** Kamyonların şantiyeye döktüğü 0-38 mekanik veya mıcır yığınlarını 4'ü 1 arada açılır ön bıçağıyla hızlıca tesviye edebilir.\n- **Yol ve Şantiye Arasında Kendi Yürür Hızı:** Bekoloderler lastik tekerlekli oldukları için çekiciye ihtiyaç duymadan Yalova Merkez'den Çiftlikköy veya Sultaniye'ye kendi yürüyüşüyle 15-20 dakikada intikal edebilir. Bu da çekici maliyetinden tasarruf sağlar.\n- **Villa ve Küçük Bina Temel Kazıları:** 100-250 m² taban oturumlu konutların temel hafriyatını hem kazar hem de hafriyat kamyonuna doğrudan yükler.\n\n---\n\n## 2. Mini Ekskavatör (3 - 4 Tonluk Kauçuk Paletli) Ne Zaman Kiralanmalıdır?\n\nYalova Merkez'in Rüstempaşa, Bahçelievler gibi dar sokaklı mahallelerinde veya Çınarcık ve Termal'deki villa bahçelerinde büyük tonajlı bir bekoloderin manevra yapması neredeyse imkansızdır. İşte bu noktada sahneye **Mini Ekskavatörler** çıkar.\n\n### Mini Ekskavatörün Üstünlükleri:\n- **Kauçuk Palet ve Sıfır Zemin Tahribatı:** Kilit parke, granit taş veya çim kaplı bahçelerde lastikli ağır makineler zemin kaplamasını kırabilir. Kauçuk paletli mini kepçeler ise zemin basıncını dağıtarak kaplamaya zarar vermez.\n- **Sıfır Kuyruk Dönüşü (Zero Tail Swing):** Bina duvarına veya komşu parsel sınırına bitişik kazı yaparken makinenin arkası duvara çarpmaz, 360 derece olduğu yerde dönebilir.\n- **30 cm Dar Hendek Kovası:** Elektrik ve su borusu için 1 metre genişliğinde kazı yapmak hem gereksiz hafriyat çıkarır hem de asfalt tamir masrafını artırır. Mini kepçe 30 cm genişliğinde jilet gibi kanal açar.\n- **Bahçe Kapılarından Geçebilme:** 1.5 - 1.8 metre genişliğindeki villa bahçe kapılarından rahatça içeri girerek peyzaj ve havuz kazısını bahçeyi yıkmadan tamamlar.\n\n---\n\n## 3. Karşılaştırma Tablosu\n\n| Kriter | JCB Bekoloder | Mini Ekskavatör (3.5 Ton) |\n|---|---|---|\n| **Ağırlık** | ~8.5 Ton | ~3.6 Ton |\n| **Kazma Derinliği** | 4.24 m - 5.46 m | 3.10 m |\n| **Yürüyüş Tipi** | Lastik Tekerlek (Asfaltta Hızlı) | Kauçuk Palet (Hassas Zemin) |\n| **Ön Yükleme Kovası** | Var (1.2 m³ - Dozer Bıçaklı) | Yok (Yalnızca Tesviye Bıçağı) |\n| **Dar Alan Manevrası** | Orta (Dönüş yarıçapı geniş) | Mükemmel (360° Kendi Etrafında) |\n| **Kullanım Alanı** | Temel, dolgu serme, yol, altyapı | Bahçe, dar sokak, bina içi kırım, dar kanal |\n\n---\n\n## 4. Yalova ve İlçelerinde Saatlik Kiralama Yaparken Nelere Dikkat Edilmeli?\n\n1. **İşin Net Tanımı:** Operatörü çağırmadan önce kazılacak yerin metre tülü veya dolgunun kaç kamyon olacağını belirtirseniz doğru ataşman (kırıcı, dar kova, tesviye bıçağı) takılı olarak gelinir.\n2. **Yer Altı Hatlarının Durumu:** Kazı sahasında elektrik kablosu, doğalgaz veya su borusu geçiyorsa operatöre önceden bilgi verilmelidir.\n3. **Zemin Yapısı:** Çiftlikköy sahilinde su çıkma ihtimaline karşı çamur kovası gerekebilirken, dağ köylerinde kaya kırıcısı gerekebilir.\n\nAdem Hafriyat olarak ücretsiz saha keşfi yapıyor, işinize en uygun makineyi dakikalar içinde şantiyenize ulaştırıyoruz.\n    "
   },
   {
-    id: 'taskopru-sanayi-forklift-kiralama-rehberi',
-    slug: 'taskopru-sanayi-forklift-kiralama-rehberi',
-    title: 'Taşköprü Sanayi ve Fabrikalarda Forklift Kiralama: Operatörlü mü Operatörsüz mü?',
-    metaTitle: 'Taşköprü Forklift Kiralama: Operatörlü vs Operatörsüz Rehber | Adem Hafriyat',
-    metaDesc: 'Taşköprü Sanayi Bölgesi ve Altınova tersaneleri için forklift kiralama analizi. Tır indirme, konteyner tahliyesi, maliyet ve İSG avantajları.',
-    excerpt: 'Taşköprü ve Yalova sanayi tesislerinde üretim ve lojistiğin aksamaması için forklift kiralama modelleri, tonaj seçimi ve yasal İSG sorumlulukları.',
-    category: 'Forklift Kiralama',
-    author: 'Adem Hafriyat Lojistik Birimi',
-    date: '2026-03-20',
-    readTime: '6 dk okuma',
-    image: '/images/blog-forklift-rehberi.jpg',
-    tags: ['Yalova Forklift Kiralama', 'Taşköprü Sanayi', 'Operatörlü Forklift', 'Tır Boşaltma', 'Altınova Tersane'],
-    content: `
-## Taşköprü Sanayi Havzası ve Yalova Fabrikalarında Forklift İhtiyacı
-
-Yalova'nın sanayi üretim üssü olan **Taşköprü**, kimya tesislerinden tekstil fabrikalarına, ambalaj sanayisinden antrepolara kadar yoğun bir yükleme-boşaltma trafiğine ev sahipliği yapar. Bir sanayi tesisinde hammadde tırının saatlerce boşaltılamadan beklemesi; hem nakliye cezalarına (demuraj) hem de fabrika üretim bandının durmasına sebep olur.
-
-İşte bu noktada **Adem Hafriyat Forklift Kiralama Filosu**, Taşköprü Sanayi Caddesi'ndeki stratejik garajıyla fabrikaların imdadına yetişmektedir. Ancak fabrikaların karar vermesi gereken temel konu şudur: **Operatörlü mü kiralamalıyız, yoksa operatörsüz periyodik kiralama mı yapmalıyız?**
-
----
-
-## 1. Ne Zaman Operatörlü Forklift Tercih Edilmelidir?
-
-İşletmenizde kadrolu, SGK'lı ve G sınıfı forklift ehliyetine sahip tam zamanlı bir forklift şoförünüz yoksa **kesinlikle operatörlü kiralama** tercih edilmelidir.
-
-### Operatörlü Kiralamanın Avantajları:
-- **Milyonluk Yüklerde Sıfır Hasar Riski:** Deneyimsiz bir personelin forklift direksiyonuna geçmesi, devrilen paletler, çatallarla delinen kimyasal variller veya eğilen profil saclar demektir. Tecrübeli operatör ağırlık merkezini doğru hesaplar.
-- **Yasal ve İSG Güvencesi:** Fabrika sahalarında meydana gelen iş kazalarında iş müfettişlerinin ilk kontrol ettiği evrak operatörün G sınıfı sürücü belgesi ve İSG periyodik eğitimleridir. Adem Hafriyat operatörleri tüm bu belgelere eksiksiz sahiptir.
-- **Hızlı Tır Boşaltma:** Profesyonel bir operatör, 33 paletlik standart bir kapalı kasa tırı ortalama **25-40 dakika içinde** hasarsız biçimde indirip depoya istifler.
-- **Saatlik Ödeme Rahatlığı:** Gün boyunca forklifte ihtiyacınız yoksa; yalnızca tır geldiğinde 1-2 saatlik operatörlü kiralama yaparak devasa bir personel ve makine sabit maliyetinden kurtulursunuz.
-
----
-
-## 2. Ne Zaman Operatörsüz (Aylık/Dönemsel) Forklift Tercih Edilmelidir?
-
-Vardiyalı çalışan büyük ölçekli fabrikalar, antrepolar veya Altınova tersaneleri gibi sabahtan akşama kadar sürekli iç lojistik yapan tesisler için **operatörsüz uzun dönem kiralama** en ekonomik yoldur.
-
-### Operatörsüz Kiralamanın Avantajları:
-- **Sermayeyi Bağlamama:** Yeni bir 3 ton veya 5 ton dizel forklift satın almak yüz binlerce liralık sermaye çıkışı demektir. Kiralama bedeli ise doğrudan şirket gideri olarak yazılarak vergi avantajı sağlar.
-- **Bakım ve Arıza Derdinin Olmaması:** Yağ değişimi, hidrolik hortum yıpranması, filtre değişimleri ve periyodik muayeneler tamamen Adem Hafriyat'ın teknik mobil servisinin sorumluluğundadır.
-- **Arıza Anında İkame Makine:** Kendi makineniz bozulduğunda tamir günlerce sürebilirken; operatörsüz kiralama sözleşmemizde arıza durumunda hemen muadil makine sevk edilir.
-
----
-
-## 3. Dizel mi Akülü Forklift mi?
-
-| Özellik | 3-5 Ton Dizel Forklift | 2.5 Ton Akülü / Elektrikli |
-|---|---|---|
-| **Çalışma Alanı** | Açık saha, şantiye, bozuk zemin | Tam kapalı fabrika, gıda ve ilaç deposu |
-| **Egzoz Emisyonu** | Dizel egzoz (Açık hava gerektirir) | **Sıfır Emisyon (Temiz ve Kokusuz)** |
-| **Tekerlek Tipi** | Havalı / Dolgu dişli lastik | **İz Bırakmayan Beyaz Dolgu Lastik** |
-| **Zemin Uyumu** | Eğimli, stabilize, çakıllı yollar | Düzgün perdahlı beton / Epoksi zemin |
-| **Kaldırma Gücü** | 3.000 kg - 5.000 kg ağır tonaj | 2.500 kg standart palet |
-
-Taşköprü ve Altınova bölgesindeki işletmeniz için en doğru tonaj ve kiralama modelini belirlemek üzere Adem Hafriyat müşteri temsilcimizle 7/24 iletişime geçebilirsiniz.
-    `
+    "id": "taskopru-sanayi-forklift-kiralama-rehberi",
+    "slug": "taskopru-sanayi-forklift-kiralama-rehberi",
+    "title": "Taşköprü Sanayi ve Fabrikalarda Forklift Kiralama: Operatörlü mü Operatörsüz mü?",
+    "metaTitle": "Taşköprü Forklift Kiralama: Operatörlü vs Operatörsüz Rehber | Adem Hafriyat",
+    "metaDesc": "Taşköprü Sanayi Bölgesi ve Altınova tersaneleri için forklift kiralama analizi. Tır indirme, konteyner tahliyesi, maliyet ve İSG avantajları.",
+    "excerpt": "Taşköprü ve Yalova sanayi tesislerinde üretim ve lojistiğin aksamaması için forklift kiralama modelleri, tonaj seçimi ve yasal İSG sorumlulukları.",
+    "category": "Forklift Kiralama",
+    "author": "Adem Hafriyat Lojistik Birimi",
+    "date": "2026-03-20",
+    "readTime": "6 dk okuma",
+    "image": "/images/blog-forklift-rehberi.jpg",
+    "tags": [
+      "Yalova Forklift Kiralama",
+      "Taşköprü Sanayi",
+      "Operatörlü Forklift",
+      "Tır Boşaltma",
+      "Altınova Tersane"
+    ],
+    "content": "\n## Taşköprü Sanayi Havzası ve Yalova Fabrikalarında Forklift İhtiyacı\n\nYalova'nın sanayi üretim üssü olan **Taşköprü**, kimya tesislerinden tekstil fabrikalarına, ambalaj sanayisinden antrepolara kadar yoğun bir yükleme-boşaltma trafiğine ev sahipliği yapar. Bir sanayi tesisinde hammadde tırının saatlerce boşaltılamadan beklemesi; hem nakliye cezalarına (demuraj) hem de fabrika üretim bandının durmasına sebep olur.\n\nİşte bu noktada **Adem Hafriyat Forklift Kiralama Filosu**, Taşköprü Sanayi Caddesi'ndeki stratejik garajıyla fabrikaların imdadına yetişmektedir. Ancak fabrikaların karar vermesi gereken temel konu şudur: **Operatörlü mü kiralamalıyız, yoksa operatörsüz periyodik kiralama mı yapmalıyız?**\n\n---\n\n## 1. Ne Zaman Operatörlü Forklift Tercih Edilmelidir?\n\nİşletmenizde kadrolu, SGK'lı ve G sınıfı forklift ehliyetine sahip tam zamanlı bir forklift şoförünüz yoksa **kesinlikle operatörlü kiralama** tercih edilmelidir.\n\n### Operatörlü Kiralamanın Avantajları:\n- **Milyonluk Yüklerde Sıfır Hasar Riski:** Deneyimsiz bir personelin forklift direksiyonuna geçmesi, devrilen paletler, çatallarla delinen kimyasal variller veya eğilen profil saclar demektir. Tecrübeli operatör ağırlık merkezini doğru hesaplar.\n- **Yasal ve İSG Güvencesi:** Fabrika sahalarında meydana gelen iş kazalarında iş müfettişlerinin ilk kontrol ettiği evrak operatörün G sınıfı sürücü belgesi ve İSG periyodik eğitimleridir. Adem Hafriyat operatörleri tüm bu belgelere eksiksiz sahiptir.\n- **Hızlı Tır Boşaltma:** Profesyonel bir operatör, 33 paletlik standart bir kapalı kasa tırı ortalama **25-40 dakika içinde** hasarsız biçimde indirip depoya istifler.\n- **Saatlik Ödeme Rahatlığı:** Gün boyunca forklifte ihtiyacınız yoksa; yalnızca tır geldiğinde 1-2 saatlik operatörlü kiralama yaparak devasa bir personel ve makine sabit maliyetinden kurtulursunuz.\n\n---\n\n## 2. Ne Zaman Operatörsüz (Aylık/Dönemsel) Forklift Tercih Edilmelidir?\n\nVardiyalı çalışan büyük ölçekli fabrikalar, antrepolar veya Altınova tersaneleri gibi sabahtan akşama kadar sürekli iç lojistik yapan tesisler için **operatörsüz uzun dönem kiralama** en ekonomik yoldur.\n\n### Operatörsüz Kiralamanın Avantajları:\n- **Sermayeyi Bağlamama:** Yeni bir 3 ton veya 5 ton dizel forklift satın almak yüz binlerce liralık sermaye çıkışı demektir. Kiralama bedeli ise doğrudan şirket gideri olarak yazılarak vergi avantajı sağlar.\n- **Bakım ve Arıza Derdinin Olmaması:** Yağ değişimi, hidrolik hortum yıpranması, filtre değişimleri ve periyodik muayeneler tamamen Adem Hafriyat'ın teknik mobil servisinin sorumluluğundadır.\n- **Arıza Anında İkame Makine:** Kendi makineniz bozulduğunda tamir günlerce sürebilirken; operatörsüz kiralama sözleşmemizde arıza durumunda hemen muadil makine sevk edilir.\n\n---\n\n## 3. Dizel mi Akülü Forklift mi?\n\n| Özellik | 3-5 Ton Dizel Forklift | 2.5 Ton Akülü / Elektrikli |\n|---|---|---|\n| **Çalışma Alanı** | Açık saha, şantiye, bozuk zemin | Tam kapalı fabrika, gıda ve ilaç deposu |\n| **Egzoz Emisyonu** | Dizel egzoz (Açık hava gerektirir) | **Sıfır Emisyon (Temiz ve Kokusuz)** |\n| **Tekerlek Tipi** | Havalı / Dolgu dişli lastik | **İz Bırakmayan Beyaz Dolgu Lastik** |\n| **Zemin Uyumu** | Eğimli, stabilize, çakıllı yollar | Düzgün perdahlı beton / Epoksi zemin |\n| **Kaldırma Gücü** | 3.000 kg - 5.000 kg ağır tonaj | 2.500 kg standart palet |\n\nTaşköprü ve Altınova bölgesindeki işletmeniz için en doğru tonaj ve kiralama modelini belirlemek üzere Adem Hafriyat müşteri temsilcimizle 7/24 iletişime geçebilirsiniz.\n    "
   },
   {
-    id: 'ciftlikkoy-temel-kazisi-ve-drenaj-rehberi',
-    slug: 'ciftlikkoy-temel-kazisi-ve-drenaj-rehberi',
-    title: 'Çiftlikköy Sahil ve Sitelerinde Temel Kazısı, Zemin Drenajı ve Su Yalıtımı Kılavuzu',
-    metaTitle: 'Çiftlikköy Temel Kazısı & Zemin Drenajı Rehberi | Adem Hafriyat',
-    metaDesc: 'Çiftlikköy zemin yapısında temel kazısı yaparken dikkat edilecekler: Sahil alüvyonu, taban suyu tahliyesi, drenaj kanalı ve subasman dolgusu.',
-    excerpt: 'Çiftlikköy sahil şeridi, Sultaniye ve Siteler bölgesinde temel hafriyatı ve bina ömrünü uzatan drenaj borusu döşeme kazı teknikleri.',
-    category: 'Temel & Altyapı',
-    author: 'Adem Hafriyat Zemin Uzmanı',
-    date: '2026-03-25',
-    readTime: '8 dk okuma',
-    image: '/images/blog-ciftlikkoy-temel.jpg',
-    tags: ['Çiftlikköy', 'Temel Kazma', 'Drenaj Kazısı', 'Su Yalıtımı', 'Yalova Kepçe'],
-    content: `
-## Çiftlikköy Zemin Yapısının Özellikleri ve Hafriyat Riskleri
-
-Yalova'nın Marmara Denizi'ne en uzun kıyısı olan ilçelerinden **Çiftlikköy**, inşaat ve zemin dinamikleri açısından iki belirgin karaktere ayrılır:
-1. **Sahil Şeridi ve Siteler Bölgesi:** Yüksek taban suyu, kumlu-milli alüvyon tabaka ve gevşek zemin yapısı.
-2. **Sultaniye, Mehmet Akif Ersoy ve Üst Köyler:** Killi, sert ve eğimli arazi yapısı.
-
-Özellikle sahil bandında yapılacak villa veya bina temel kazılarında, kazı derinliği 1.5 - 2 metreyi geçtiği anda taban suyuyla karşılaşmak kaçınılmazdır. Doğru hafriyat tekniği uygulanmadığında temel çukuru göçebilir veya sonradan binanın bodrum katları sürekli rutubet ve su baskını problemiyle karşı karşıya kalır.
-
----
-
-## 1. Çiftlikköy'de Temel Kazısı Yaparken İzlenen Adımlar
-
-### Adım 1: Zemin Sıyırma ve Bitkisel Toprağın Ayrılması
-İnşaat kazısına doğrudan başlanmaz. Arazinin en üstündeki 20-40 cm'lik organik nebati toprak sıyrılarak bir köşeye istiflenir. Bu toprak ileride bina tamamlandığında peyzaj ve bahçe düzenlemesinde kullanılacak en değerli malzemedir; hafriyatla birlikte çöpe atılmamalıdır.
-
-### Adım 2: Kademeli Şevli Kazı (Göçük Önleme)
-Kumlu sahil zeminlerinde dik ayna kazısı yapmak hayati tehlike yaratır. Adem Hafriyat operatörlerimiz, zemin emniyet açısına göre temel çeperlerini kademeli şev ile kazar. Böylece hem çalışan demirci ve kalıpçı ustalarının can güvenliği sağlanır hem de kalıp çakımı için temiz bir çalışma payı kalır.
-
-### Adım 3: Dalgıç Pompa Çukuru (Rögar) Açımı
-Kazı tabanına ulaşıldığında temelin en düşük kotlu köşesine kepçeyle 1 metre derinliğinde geçici bir su toplama kuyusu açılır. Gelen taban suyu buraya süzülür ve dalgıç pompa yardımıyla temelden uzaklaştırılarak grobeton kuru zemine dökülür.
-
----
-
-## 2. Çevre Drenajı (Fransız Drenajı) Kazısı Nasıl Yapılmalıdır?
-
-Bina perdesi tamamlanıp su yalıtım membranı yapıldıktan sonra yapılan en büyük hata, hafriyat toprağını doğrudan perdenin arkasına doldurmaktır. Toprak suyu tutar ve hidrostatik basınçla yalıtımı deler.
-
-### Kusursuz Drenaj Kanal Kazısı Formülü:
-1. Temel pabucu seviyesinde bina çevresine **%1 eğimle 50 cm genişliğinde drenaj hendeği** açılır.
-2. Hendek tabanına geotekstil keçe serilir ve üzerine 10 cm 2 No kırmataş mıcır yastıklanır.
-3. Üzerine delikli **PVC drenaj borusu (Ø100 - Ø150)** yerleştirilir.
-4. Borunun üzeri tamamen drenaj mıcırıyla kaplanır ve keçe bohçalanarak kapatılır.
-5. En üste sıkıştırılmış stabilize malzeme serilerek bina tretuvarına hazır hale getirilir.
-
-Adem Hafriyat olarak Çiftlikköy'ün onlarca sitesinde gerçekleştirdiğimiz temel ve drenaj kazıları sayesinde, teslim ettiğimiz binalar onlarca yıl boyunca nemsiz ve kuru bodrum katlarına sahip olmaktadır.
-    `
+    "id": "ciftlikkoy-temel-kazisi-ve-drenaj-rehberi",
+    "slug": "ciftlikkoy-temel-kazisi-ve-drenaj-rehberi",
+    "title": "Çiftlikköy Sahil ve Sitelerinde Temel Kazısı, Zemin Drenajı ve Su Yalıtımı Kılavuzu",
+    "metaTitle": "Çiftlikköy Temel Kazısı & Zemin Drenajı Rehberi | Adem Hafriyat",
+    "metaDesc": "Çiftlikköy zemin yapısında temel kazısı yaparken dikkat edilecekler: Sahil alüvyonu, taban suyu tahliyesi, drenaj kanalı ve subasman dolgusu.",
+    "excerpt": "Çiftlikköy sahil şeridi, Sultaniye ve Siteler bölgesinde temel hafriyatı ve bina ömrünü uzatan drenaj borusu döşeme kazı teknikleri.",
+    "category": "Temel & Altyapı",
+    "author": "Adem Hafriyat Zemin Uzmanı",
+    "date": "2026-03-25",
+    "readTime": "8 dk okuma",
+    "image": "/images/blog-ciftlikkoy-temel.jpg",
+    "tags": [
+      "Çiftlikköy",
+      "Temel Kazma",
+      "Drenaj Kazısı",
+      "Su Yalıtımı",
+      "Yalova Kepçe"
+    ],
+    "content": "\n## Çiftlikköy Zemin Yapısının Özellikleri ve Hafriyat Riskleri\n\nYalova'nın Marmara Denizi'ne en uzun kıyısı olan ilçelerinden **Çiftlikköy**, inşaat ve zemin dinamikleri açısından iki belirgin karaktere ayrılır:\n1. **Sahil Şeridi ve Siteler Bölgesi:** Yüksek taban suyu, kumlu-milli alüvyon tabaka ve gevşek zemin yapısı.\n2. **Sultaniye, Mehmet Akif Ersoy ve Üst Köyler:** Killi, sert ve eğimli arazi yapısı.\n\nÖzellikle sahil bandında yapılacak villa veya bina temel kazılarında, kazı derinliği 1.5 - 2 metreyi geçtiği anda taban suyuyla karşılaşmak kaçınılmazdır. Doğru hafriyat tekniği uygulanmadığında temel çukuru göçebilir veya sonradan binanın bodrum katları sürekli rutubet ve su baskını problemiyle karşı karşıya kalır.\n\n---\n\n## 1. Çiftlikköy'de Temel Kazısı Yaparken İzlenen Adımlar\n\n### Adım 1: Zemin Sıyırma ve Bitkisel Toprağın Ayrılması\nİnşaat kazısına doğrudan başlanmaz. Arazinin en üstündeki 20-40 cm'lik organik nebati toprak sıyrılarak bir köşeye istiflenir. Bu toprak ileride bina tamamlandığında peyzaj ve bahçe düzenlemesinde kullanılacak en değerli malzemedir; hafriyatla birlikte çöpe atılmamalıdır.\n\n### Adım 2: Kademeli Şevli Kazı (Göçük Önleme)\nKumlu sahil zeminlerinde dik ayna kazısı yapmak hayati tehlike yaratır. Adem Hafriyat operatörlerimiz, zemin emniyet açısına göre temel çeperlerini kademeli şev ile kazar. Böylece hem çalışan demirci ve kalıpçı ustalarının can güvenliği sağlanır hem de kalıp çakımı için temiz bir çalışma payı kalır.\n\n### Adım 3: Dalgıç Pompa Çukuru (Rögar) Açımı\nKazı tabanına ulaşıldığında temelin en düşük kotlu köşesine kepçeyle 1 metre derinliğinde geçici bir su toplama kuyusu açılır. Gelen taban suyu buraya süzülür ve dalgıç pompa yardımıyla temelden uzaklaştırılarak grobeton kuru zemine dökülür.\n\n---\n\n## 2. Çevre Drenajı (Fransız Drenajı) Kazısı Nasıl Yapılmalıdır?\n\nBina perdesi tamamlanıp su yalıtım membranı yapıldıktan sonra yapılan en büyük hata, hafriyat toprağını doğrudan perdenin arkasına doldurmaktır. Toprak suyu tutar ve hidrostatik basınçla yalıtımı deler.\n\n### Kusursuz Drenaj Kanal Kazısı Formülü:\n1. Temel pabucu seviyesinde bina çevresine **%1 eğimle 50 cm genişliğinde drenaj hendeği** açılır.\n2. Hendek tabanına geotekstil keçe serilir ve üzerine 10 cm 2 No kırmataş mıcır yastıklanır.\n3. Üzerine delikli **PVC drenaj borusu (Ø100 - Ø150)** yerleştirilir.\n4. Borunun üzeri tamamen drenaj mıcırıyla kaplanır ve keçe bohçalanarak kapatılır.\n5. En üste sıkıştırılmış stabilize malzeme serilerek bina tretuvarına hazır hale getirilir.\n\nAdem Hafriyat olarak Çiftlikköy'ün onlarca sitesinde gerçekleştirdiğimiz temel ve drenaj kazıları sayesinde, teslim ettiğimiz binalar onlarca yıl boyunca nemsiz ve kuru bodrum katlarına sahip olmaktadır.\n    "
   },
   {
-    id: 'yagmur-ve-kanalizasyon-kazisi-standartlari',
-    slug: 'yagmur-ve-kanalizasyon-kazisi-standartlari',
-    title: 'Yalova Yağmur Suyu ve Kanalizasyon Hattı Açma: İzinler, Eğim Hesapları ve Koruge Boru Kazısı',
-    metaTitle: 'Yalova Yağmur Suyu & Kanalizasyon Kazısı Standartları | Adem Hafriyat',
-    metaDesc: 'Yalova genelinde kanalizasyon borusu döşeme derinlikleri, büz kazısı, eğim hesapları ve belediye altyapı bağlantı kuralları rehberi.',
-    excerpt: 'Bina ve fabrikaların atık su ve yağmur hattı kazılarında eğim açısı (%1.5 kuralı), koruge boru taban yastıklaması ve rögar bacası kazı detayları.',
-    category: 'Altyapı & Kanal',
-    author: 'Adem Hafriyat Altyapı Şefi',
-    date: '2026-04-01',
-    readTime: '6 dk okuma',
-    image: '/images/blog-kanalizasyon.jpg',
-    tags: ['Kanalizasyon Kazma', 'Yağmur Suyu', 'Koruge Boru', 'Rögar Kazısı', 'Yalova'],
-    content: `
-## Kanalizasyon Hatlarında Eğim Hatası Neden Geri Dönüşsüzdür?
-
-Kanalizasyon ve yağmur suyu hatları elektrik veya doğalgaz hatlarına benzemez; basınçla değil tamamen **yerçekimi (cazibe)** prensibiyle akar. Hendek kazılırken operatörün vereceği milimetrik eğim, borunun ömür boyu tıkanmadan çalışıp çalışmayacağını belirler.
-
-Eğer kazı tabanına **yetersiz eğim (< %1)** verilirse katı atıklar boru tabanına çöker ve hat tıkanır. Eğer **aşırı eğim (> %3)** verilirse bu kez su hızla akıp gider ancak katı atıklar boru cidarına yapışarak yine tıkanma yaratır. Standart kural: **Her 10 metrede 10-15 cm (%1 - %1.5) düzenli düşüştür.**
-
----
-
-## 1. Altyapı Kazısında Operatörümüzün Uyguladığı Teknikler
-
-1. **Lazer Nivo ile Kot Kontrolü:** Operatörümüz sadece göz kararıyla değil, hendek boyunca nivo ve mira ölçümleriyle kazı tabanını santim santim kontrol eder.
-2. **Kaya ve Sivri Taş Ayıklaması:** Kazı tabanındaki sivri taşlar kepçenin tırnağıyla kırılır veya ayıklanır. Plastik koruge borular sivri taş üzerine oturtulursa geri dolgu sırasında çatlayabilir.
-3. **Taban Kumu Serimi:** Hendek tabanına 10-15 cm kalınlığında dişli dere kumu serilerek borunun oturacağı yatak hazır hale getirilir.
-
----
-
-## 2. Rögar (Muayene Bacası) Kazısı
-
-Her 30 metrede bir ve hat dönüş noktalarında beton muayene bacası (rögar) yerleştirilmelidir. Adem Hafriyat JCB kepçesi, rögar tabanını genişçe açarak beton taban elemanını zincirle teraziye indirir. Bağlantı boruları takıldıktan sonra bacanın etrafı kademeli olarak doldurulup sıkıştırılır.
-
-Yalova Merkez, Çiftlikköy ve Taşköprü'de belediye ana hattına bağlantı kazılarında profesyonel ve yasal standartlarda hizmet veriyoruz.
-    `
+    "id": "yagmur-ve-kanalizasyon-kazisi-standartlari",
+    "slug": "yagmur-ve-kanalizasyon-kazisi-standartlari",
+    "title": "Yalova Yağmur Suyu ve Kanalizasyon Hattı Açma: İzinler, Eğim Hesapları ve Koruge Boru Kazısı",
+    "metaTitle": "Yalova Yağmur Suyu & Kanalizasyon Kazısı Standartları | Adem Hafriyat",
+    "metaDesc": "Yalova genelinde kanalizasyon borusu döşeme derinlikleri, büz kazısı, eğim hesapları ve belediye altyapı bağlantı kuralları rehberi.",
+    "excerpt": "Bina ve fabrikaların atık su ve yağmur hattı kazılarında eğim açısı (%1.5 kuralı), koruge boru taban yastıklaması ve rögar bacası kazı detayları.",
+    "category": "Altyapı & Kanal",
+    "author": "Adem Hafriyat Altyapı Şefi",
+    "date": "2026-04-01",
+    "readTime": "6 dk okuma",
+    "image": "/images/blog-kanalizasyon.jpg",
+    "tags": [
+      "Kanalizasyon Kazma",
+      "Yağmur Suyu",
+      "Koruge Boru",
+      "Rögar Kazısı",
+      "Yalova"
+    ],
+    "content": "\n## Kanalizasyon Hatlarında Eğim Hatası Neden Geri Dönüşsüzdür?\n\nKanalizasyon ve yağmur suyu hatları elektrik veya doğalgaz hatlarına benzemez; basınçla değil tamamen **yerçekimi (cazibe)** prensibiyle akar. Hendek kazılırken operatörün vereceği milimetrik eğim, borunun ömür boyu tıkanmadan çalışıp çalışmayacağını belirler.\n\nEğer kazı tabanına **yetersiz eğim (< %1)** verilirse katı atıklar boru tabanına çöker ve hat tıkanır. Eğer **aşırı eğim (> %3)** verilirse bu kez su hızla akıp gider ancak katı atıklar boru cidarına yapışarak yine tıkanma yaratır. Standart kural: **Her 10 metrede 10-15 cm (%1 - %1.5) düzenli düşüştür.**\n\n---\n\n## 1. Altyapı Kazısında Operatörümüzün Uyguladığı Teknikler\n\n1. **Lazer Nivo ile Kot Kontrolü:** Operatörümüz sadece göz kararıyla değil, hendek boyunca nivo ve mira ölçümleriyle kazı tabanını santim santim kontrol eder.\n2. **Kaya ve Sivri Taş Ayıklaması:** Kazı tabanındaki sivri taşlar kepçenin tırnağıyla kırılır veya ayıklanır. Plastik koruge borular sivri taş üzerine oturtulursa geri dolgu sırasında çatlayabilir.\n3. **Taban Kumu Serimi:** Hendek tabanına 10-15 cm kalınlığında dişli dere kumu serilerek borunun oturacağı yatak hazır hale getirilir.\n\n---\n\n## 2. Rögar (Muayene Bacası) Kazısı\n\nHer 30 metrede bir ve hat dönüş noktalarında beton muayene bacası (rögar) yerleştirilmelidir. Adem Hafriyat JCB kepçesi, rögar tabanını genişçe açarak beton taban elemanını zincirle teraziye indirir. Bağlantı boruları takıldıktan sonra bacanın etrafı kademeli olarak doldurulup sıkıştırılır.\n\nYalova Merkez, Çiftlikköy ve Taşköprü'de belediye ana hattına bağlantı kazılarında profesyonel ve yasal standartlarda hizmet veriyoruz.\n    "
   },
   {
-    id: 'arazi-duzleme-ve-micir-dolgu-rehberi',
-    slug: 'arazi-duzleme-ve-micir-dolgu-rehberi',
-    title: 'Parsel Tesviyesi ve Dolgu Mıcır Yayma: İnşaat ve Otopark Öncesi Zemin Kılavuzu',
-    metaTitle: 'Arazi Düzleme ve Mıcır Yayma Rehberi | Adem Hafriyat Yalova',
-    metaDesc: 'Yalova tarla, bahçe ve fabrika arsalarında arazi düzleme maliyetleri, kazı-dolgu dengesi, stabilize malzeme serme ve silindir öncesi sıkıştırma.',
-    excerpt: 'Eğimli parsellerde teraslama, yabani bitki temizliği, 0-38 mekanik ve mıcır serimi ile göllenme yapmayan sağlam zeminler oluşturma rehberi.',
-    category: 'Zemin & Tesviye',
-    author: 'Adem Hafriyat Saha Ekibi',
-    date: '2026-04-05',
-    readTime: '5 dk okuma',
-    image: '/images/blog-arazi-duzleme.jpg',
-    tags: ['Arazi Düzleme', 'Tesviye', 'Mıcır Yayma', 'Dolgu', 'Çiftlikköy'],
-    content: `
-## Kazı-Dolgu Dengesi: Hafriyat Maliyetini Düşürmenin Altın Kuralı
-
-Bir arsayı veya tarlayı düzlerken en büyük maliyet kalemi, çıkan toprağın kamyonlarla taşınması ve yerine dışarıdan yeni dolgu malzemesi satın alınmasıdır. Profesyonel bir kepçe operatörünün ustalığı **kazı-dolgu dengesini (kübaj dengesi)** kurabilmesinde yatar.
-
-Arazinin yüksek kotundaki toprak kazınarak çukur bölgelere serildiğinde, dışarıya hafriyat göndermeye gerek kalmaz. Toprak kendi içinde dengelenir; bu da arsa sahibine binlerce liralık nakliye ve malzeme tasarrufu sağlar.
-
----
-
-## Doğru Mıcır Dolgu Katmanları
-Açık otopark veya ağır vasıta giriş yolu yapılacak zeminlerde ideal katman sıralaması:
-1. **Zemin Sıkıştırma:** Doğal toprak tabanının kepçe tekeri veya silindirle ezilmesi.
-2. **Alt Temel (Tüvenan / Kaba Taş):** 15-20 cm kaba dolgu taşı.
-3. **Mekanik Malzeme (0-38):** Toz ve taş karışımıyla boşlukları dolduran kilit katman.
-4. **Üst Katman (1-2 No Kırmataş Mıcır):** Yağmur suyunu anında alt katmanlara süzerek yüzeyde çamur oluşmasını engelleyen temiz katman.
-
-Adem Hafriyat olarak Yalova ve köylerinde parsel tesviyesinde sıfır hata ile hizmetinizdeyiz.
-    `
+    "id": "arazi-duzleme-ve-micir-dolgu-rehberi",
+    "slug": "arazi-duzleme-ve-micir-dolgu-rehberi",
+    "title": "Parsel Tesviyesi ve Dolgu Mıcır Yayma: İnşaat ve Otopark Öncesi Zemin Kılavuzu",
+    "metaTitle": "Arazi Düzleme ve Mıcır Yayma Rehberi | Adem Hafriyat Yalova",
+    "metaDesc": "Yalova tarla, bahçe ve fabrika arsalarında arazi düzleme maliyetleri, kazı-dolgu dengesi, stabilize malzeme serme ve silindir öncesi sıkıştırma.",
+    "excerpt": "Eğimli parsellerde teraslama, yabani bitki temizliği, 0-38 mekanik ve mıcır serimi ile göllenme yapmayan sağlam zeminler oluşturma rehberi.",
+    "category": "Zemin & Tesviye",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-05",
+    "readTime": "5 dk okuma",
+    "image": "/images/blog-arazi-duzleme.jpg",
+    "tags": [
+      "Arazi Düzleme",
+      "Tesviye",
+      "Mıcır Yayma",
+      "Dolgu",
+      "Çiftlikköy"
+    ],
+    "content": "\n## Kazı-Dolgu Dengesi: Hafriyat Maliyetini Düşürmenin Altın Kuralı\n\nBir arsayı veya tarlayı düzlerken en büyük maliyet kalemi, çıkan toprağın kamyonlarla taşınması ve yerine dışarıdan yeni dolgu malzemesi satın alınmasıdır. Profesyonel bir kepçe operatörünün ustalığı **kazı-dolgu dengesini (kübaj dengesi)** kurabilmesinde yatar.\n\nArazinin yüksek kotundaki toprak kazınarak çukur bölgelere serildiğinde, dışarıya hafriyat göndermeye gerek kalmaz. Toprak kendi içinde dengelenir; bu da arsa sahibine binlerce liralık nakliye ve malzeme tasarrufu sağlar.\n\n---\n\n## Doğru Mıcır Dolgu Katmanları\nAçık otopark veya ağır vasıta giriş yolu yapılacak zeminlerde ideal katman sıralaması:\n1. **Zemin Sıkıştırma:** Doğal toprak tabanının kepçe tekeri veya silindirle ezilmesi.\n2. **Alt Temel (Tüvenan / Kaba Taş):** 15-20 cm kaba dolgu taşı.\n3. **Mekanik Malzeme (0-38):** Toz ve taş karışımıyla boşlukları dolduran kilit katman.\n4. **Üst Katman (1-2 No Kırmataş Mıcır):** Yağmur suyunu anında alt katmanlara süzerek yüzeyde çamur oluşmasını engelleyen temiz katman.\n\nAdem Hafriyat olarak Yalova ve köylerinde parsel tesviyesinde sıfır hata ile hizmetinizdeyiz.\n    "
   },
   {
-    id: 'yalova-su-kuyusu-acma-keson-kuyu',
-    slug: 'yalova-su-kuyusu-acma-keson-kuyu',
-    title: 'Tarımsal Arazilerde ve Köylerde Su Kuyusu Açma ve Keson Kuyu Kazı Yöntemleri',
-    metaTitle: 'Yalova Su Kuyusu Açma & Keson Kuyu Kazısı | Adem Hafriyat',
-    metaDesc: 'Yalova köylerinde sulama suyu için keson kuyu kazma, beton kuyu halkası indirme, taban filtre mıcırı ve güvenlik önlemleri rehberi.',
-    excerpt: 'Samanlı, Kadıköy, Kabaklı ve Çukurköy gibi tarım merkezlerinde bahçe sulaması için kepçe ile güvenli ve verimli keson su kuyusu açımı.',
-    category: 'Kuyu & Drenaj',
-    author: 'Adem Hafriyat Kuyu Servisi',
-    date: '2026-04-10',
-    readTime: '6 dk okuma',
-    image: '/images/blog-su-kuyusu.jpg',
-    tags: ['Su Kuyusu', 'Keson Kuyu', 'Yalova Köyleri', 'Sondaj', 'Kepçe Kiralama'],
-    content: `
-## Yalova Tarımında Keson Kuyunun Avantajları
-
-Yalova'nın kivi, zeytin, ceviz bahçeleri ve seracılık faaliyetlerinde yaz aylarında kesintisiz sulama suyu hayati önemdedir. Derin sondaj kuyularına kıyasla **Keson Su Kuyuları (Geniş Ağızlı Beton Kuyu)** şu avantajlara sahiptir:
-- Geniş çapı sayesinde suyu haznesinde depolar; elektrik kesilse dahi tonlarca su rezervi sunar.
-- Dalgıç pompaların montajı, temizliği ve bakımı sondaja göre çok daha kolay ve masrafsızdır.
-- Teleskopik bomlu JCB kepçelerimizle 5-6 metre derinliğe kadar 1-2 gün içinde ekonomik şekilde tamamlanır.
-
----
-
-## Güvenli Keson Kuyu Kazı Aşamaları
-1. **Su Damarı Keşfi:** Arazinin en verimli su toplayan dip noktası tespit edilir.
-2. **Kademeli Çap Kazısı:** Göçmeyi engellemek için önce 3 metre genişliğinde başlanıp tabana doğru 1.5 - 2 metreye inilir.
-3. **Beton Büzlerin İndirilmesi:** Önceden temin edilen betonarme kuyu büzleri kepçe bomuna zincirle bağlanarak santim santim kuyuya oturtulur.
-4. **Taban ve Çevre Filtresi:** Tabanına 50 cm yıkanmış 2 No mıcır dökülür; bu sayede kuyu suyu çamurlanmaz, kristal berraklığında temiz su çekilir.
-    `
+    "id": "yalova-su-kuyusu-acma-keson-kuyu",
+    "slug": "yalova-su-kuyusu-acma-keson-kuyu",
+    "title": "Tarımsal Arazilerde ve Köylerde Su Kuyusu Açma ve Keson Kuyu Kazı Yöntemleri",
+    "metaTitle": "Yalova Su Kuyusu Açma & Keson Kuyu Kazısı | Adem Hafriyat",
+    "metaDesc": "Yalova köylerinde sulama suyu için keson kuyu kazma, beton kuyu halkası indirme, taban filtre mıcırı ve güvenlik önlemleri rehberi.",
+    "excerpt": "Samanlı, Kadıköy, Kabaklı ve Çukurköy gibi tarım merkezlerinde bahçe sulaması için kepçe ile güvenli ve verimli keson su kuyusu açımı.",
+    "category": "Kuyu & Drenaj",
+    "author": "Adem Hafriyat Kuyu Servisi",
+    "date": "2026-04-10",
+    "readTime": "6 dk okuma",
+    "image": "/images/blog-su-kuyusu.jpg",
+    "tags": [
+      "Su Kuyusu",
+      "Keson Kuyu",
+      "Yalova Köyleri",
+      "Sondaj",
+      "Kepçe Kiralama"
+    ],
+    "content": "\n## Yalova Tarımında Keson Kuyunun Avantajları\n\nYalova'nın kivi, zeytin, ceviz bahçeleri ve seracılık faaliyetlerinde yaz aylarında kesintisiz sulama suyu hayati önemdedir. Derin sondaj kuyularına kıyasla **Keson Su Kuyuları (Geniş Ağızlı Beton Kuyu)** şu avantajlara sahiptir:\n- Geniş çapı sayesinde suyu haznesinde depolar; elektrik kesilse dahi tonlarca su rezervi sunar.\n- Dalgıç pompaların montajı, temizliği ve bakımı sondaja göre çok daha kolay ve masrafsızdır.\n- Teleskopik bomlu JCB kepçelerimizle 5-6 metre derinliğe kadar 1-2 gün içinde ekonomik şekilde tamamlanır.\n\n---\n\n## Güvenli Keson Kuyu Kazı Aşamaları\n1. **Su Damarı Keşfi:** Arazinin en verimli su toplayan dip noktası tespit edilir.\n2. **Kademeli Çap Kazısı:** Göçmeyi engellemek için önce 3 metre genişliğinde başlanıp tabana doğru 1.5 - 2 metreye inilir.\n3. **Beton Büzlerin İndirilmesi:** Önceden temin edilen betonarme kuyu büzleri kepçe bomuna zincirle bağlanarak santim santim kuyuya oturtulur.\n4. **Taban ve Çevre Filtresi:** Tabanına 50 cm yıkanmış 2 No mıcır dökülür; bu sayede kuyu suyu çamurlanmaz, kristal berraklığında temiz su çekilir.\n    "
+  },
+  {
+    "id": "kabakli-koyu-kepce-kiralama-arazi-duzleme",
+    "slug": "kabakli-koyu-kepce-kiralama-arazi-duzleme",
+    "title": "Kabaklı Köyü Kepçe Kiralama & Arazi Düzleme: Tarla Yolu Açma ve Taş Kırma Kılavuzu",
+    "metaTitle": "Kabaklı Köyü Kepçe Kiralama & Arazi Düzleme | Adem Hafriyat",
+    "metaDesc": "Çiftlikköy Kabaklı Köyü tarla tesviyesi, taşlık arazide kırıcı kepçe, bağ yolu açma ve mıcır dolgu. 15 dakikada adreste! Hemen arayın: 0532 720 20 10.",
+    "excerpt": "Kabaklı Köyü'nün eğimli ve taşlık arazilerinde tarla yolu açma, hidrolik kırıcı ataşmanlı JCB ile kaya kırma, parsel tesviyesi ve dolgu mıcır serimi.",
+    "category": "Köy & Arazi Hafriyatı",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "8 dk okuma",
+    "image": "/images/blog-arazi-duzleme.jpg",
+    "tags": [
+      "Kabaklı Köyü Kepçe",
+      "Çiftlikköy Hafriyat",
+      "Arazi Düzleme",
+      "Kırıcı Kepçe",
+      "Tarla Yolu"
+    ],
+    "districtSlug": "ciftlikkoy",
+    "villageSlug": "kabakli-koyu",
+    "content": "\n## Kabaklı Köyü Zemin Yapısı ve Hafriyat İhtiyaçları\n\nÇiftlikköy'ün iç kesimlerinde, Samanlı Dağları eteklerine doğru yükselen **Kabaklı Köyü**, zeytinlikleri, ceviz bahçeleri ve son yıllarda hızla artan hobi bahçesi projeleriyle öne çıkar. Ancak Kabaklı arazilerinde çalışacak bir iş makinesi operatörünün bölgenin coğrafyasını ve zemin karakteristiğini çok iyi bilmesi şarttır.\n\nKabaklı'nın toprak yapısı yüzeyde 30-50 cm derinliğinde nebati toprak, hemen altında ise **kalkerli, sert kireçtaşlı ve kayalık bir tabakadan** oluşur. Eğimli parsel yapısı nedeniyle standart traktörlerin veya hafif makinelerin düzleme yapması mümkün değildir. Burada hem güçlü bir kazıcıya hem de sert kayaları parçalayabilecek **hidrolik kırıcı ataşmanına** ihtiyaç duyulur.\n\nAdem Hafriyat olarak Taşköprü ve Çiftlikköy merkez garajımızdan Kabaklı Köyü'ne **15 dakikada** kendi yürür lastik tekerlekli JCB 3CX ve çekici üstünde paletli mini ekskavatörlerimizle ulaşıyoruz.\n\n---\n\n## Kabaklı Köyü'nde En Sık Gerçekleştirdiğimiz Çalışmalar\n\n### 1. Eğimli Arazide Kademeli Tesviye (Teraslama)\nKabaklı'daki tarlaların ve meyve bahçelerinin büyük kısmı eğimli yamaçlardadır. Tek parça düzleme yapmak erozyon riskini artırır ve yağmurda toprağın akmasına sebep olur. JCB bekoloderimizin arka kazıcısıyla önce kademeler (sekiler) oluşturuyor, ön dozer bıçağıyla toprağı sıkıştırarak meyve fidanı dikimine veya prefabrik ev montajına hazır düz zeminler açıyoruz.\n\n### 2. Taşlık Zeminde Hidrolik Kırıcı ile Kaya Kırma\nKazı esnasında yüzeye çıkan büyük monoblok kalker kayalar tarla sürümünü imkansız hale getirir. Arka kazıcı kovasını 2 dakikada hidrolik kırıcı tabancasıyla değiştirerek tonlarca ağırlıktaki kayaları şantiye yerinde 10-20 cm ebatlarında kırıyor, çıkan taşları parsel sınırında taş istinat duvarı dolgusu olarak değerlendiriyoruz.\n\n### 3. Tarla ve Bağ Yolu Açma, Mıcır Serme\nKış aylarında Kabaklı köy içi arazi yolları çamur deryasına dönebilir. Bekoloder kepçemizle yol güzergahındaki çamurlu nebati tabakayı sıyırıp kenara alıyor, altına tüvenan kaba taş dolgu, üstüne ise 0-38 mekanik kırmataş mıcır sererek silindir veya kepçe tekerleğiyle kilitliyoruz. Böylece binek araçların dahi rahatça girebileceği 4 mevsim sağlam yollar üretiyoruz.\n\n### 4. Parsel Çevresi Tel Örgü Hatıl Betonu Hendeği\nHobi bahçelerinin sınırlarını belirlemek ve yabani hayvan girişini engellemek için parsel çevresine 40 cm dar hendek kovamızla jilet gibi düzgün çit temeli kanalı açıyoruz.\n\n---\n\n## Kabaklı İçin Makine Seçim Kılavuzu\n\n| İş Türü | Önerilen İş Makinesi | Neden Bu Makine? |\n|---|---|---|\n| **Tarla Düzleme & Yol Açma** | JCB 3CX Bekoloder | 1.2 m³ dozer bıçağıyla hızlı tesviye ve kaba malzeme taşıma. |\n| **Kaya ve Taş Kırma** | Kırıcılı JCB Bekoloder | Yüksek darbe enerjisiyle sert kalker kayaları hızla parçalar. |\n| **Ağaç Arası Dar Kazı** | Cat 303.5 Mini Ekskavatör | Kauçuk paletiyle zeytin ağacı köklerine zarar vermez, dar aralardan geçer. |\n\nKabaklı Köyü'ndeki araziniz için aynı gün içinde **ücretsiz yerinde keşif** talep edebilir, net süre ve fiyat teklifi alabilirsiniz.\n    "
+  },
+  {
+    "id": "cukurkoy-su-kuyusu-kazma-ve-bahce-drenaji",
+    "slug": "cukurkoy-su-kuyusu-kazma-ve-bahce-drenaji",
+    "title": "Çukurköy Su Kuyusu Açma ve Bahçe Drenajı: Keson Kuyu & Taban Suyu Tahliyesi",
+    "metaTitle": "Çukurköy Su Kuyusu Açma & Bahçe Drenajı | Adem Hafriyat",
+    "metaDesc": "Çiftlikköy Çukurköy keson su kuyusu açma, bahçe taban suyu drenajı, kuyu büzü indirme ve kanal kazma hizmetleri. 15 dk intikal: 0532 720 20 10.",
+    "excerpt": "Çukurköy'ün vadi tabanındaki yüksek su tablası, tarımsal keson su kuyusu derin kazısı, meyve bahçelerinde kök çürümesini önleyen drenaj kanalları.",
+    "category": "Kuyu & Drenaj",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "8 dk okuma",
+    "image": "/images/blog-su-kuyusu.jpg",
+    "tags": [
+      "Çukurköy Kepçe",
+      "Su Kuyusu",
+      "Keson Kuyu",
+      "Bahçe Drenajı",
+      "Çiftlikköy"
+    ],
+    "districtSlug": "ciftlikkoy",
+    "villageSlug": "cukurkoy",
+    "content": "\n## Çukurköy Vadi Tabanı Zemin Analizi ve Su Yönetimi\n\nÇiftlikköy ilçesine bağlı **Çukurköy**, adından da anlaşılacağı üzere vadi çanağında yer alan, etrafı tepelerle çevrili zengin taban suyu rezervlerine sahip bir tarım merkezidir. Bölgedeki araziler son derece verimli alüvyon ve killi toprak katmanlarına sahiptir; ancak bu jeolojik yapı iki kritik konuyu zorunlu kılar: **Yaz kuraklığı için verimli su kuyusu açımı** ve **kış aylarında meyve köklerinin çürümesini engelleyecek taban suyu drenajı**.\n\nÇukurköy'de taban suyu seviyesi kışın yer yüzeyine 1 metre kadar yaklaşırken, yazın 4-5 metre derinliğe çekilir. Bu sebeple derinliği doğru ayarlanmamış amatör kuyular temmuz-ağustos aylarında kurur.\n\n---\n\n## Çukurköy'de Sunduğumuz Uzman Kepçe Çözümleri\n\n### 1. Keson Su Kuyusu Kazımı ve Beton Büz Montajı\nSondaj kuyularına kıyasla Çukurköy'de geniş çaplı beton keson kuyu çok daha verimlidir. Teleskopik arka kolu 5.40 metreye uzanan JCB 3CX iş makinemizle:\n- Arazinin su toplayan damar hattında 2.5 - 3 metre çapında dairesel kazı yapıyoruz.\n- Su damarına ulaşıldığında kuyu tabanına 50 cm yıkanmış 2 numara kuyu filtre mıcırı seriyoruz.\n- 100 cm veya 120 cm çapındaki prefabrik betonarme kuyu büzlerini kepçemizin bomuna özel zincir askı sistemiyle bağlayarak milimetrik olarak kuyuya indiriyoruz.\n- Büzlerin etrafını gözenekli dere kırmataşıyla besleyerek süzülerek gelen berrak ve tortusuz su rezervi elde ediyoruz.\n\n### 2. Bahçe Kök Koruma ve Drenaj Kanalları\nKivi, elma ve ceviz bahçelerinde uzun süre göllenen taban suyu saçak köklerin oksijensiz kalarak mantar kapmasına ve kurumasına sebep olur. Dar hendek kovamızla bahçe sınırlarına ve ağaç sıraları arasına balıksırtı eğimli drenaj kanalları açıyoruz. Açılan kanallara geotekstil keçe kaplı delikli koruge borular döşenip üstü mıcırla kapatıldığında bahçe 12 ay boyunca kuru ve sağlıklı kalır.\n\n### 3. Fosseptik ve Altyapı Çukurları\nKöy içi kanalizasyon hattının ulaşmadığı yeni yapılaşmalarda sızdırmaz betonarme fosseptik tankı için gerekli derin temel çukurlarını zemin kaymasına karşı kademeli güvenlik şevi vererek kazarız.\n\n---\n\n## Çukurköy Zemininde Neden Adem Hafriyat?\n- **Batmaz Çözümler:** Çukurköy'ün sulak arazilerinde tekerlekli makinelerin batmasını engelleyen geniş taban basma ayakları ve deneyimli operatör refleksi.\n- **Garajdan Çukurköy'e 15 Dakika:** Taşköprü garajımız Çukurköy yol ayrımına çok yakın olduğu için mazot nakliye bedeli yansıtmadan ekonomik saatlik çalışma sunuyoruz.\n    "
+  },
+  {
+    "id": "derekoy-dere-islahi-ve-kanal-kazma-rehberi",
+    "slug": "derekoy-dere-islahi-ve-kanal-kazma-rehberi",
+    "title": "Dereköy Dere Yatağı Islahı ve Kanal Kazma: Taşkın Önleme & Mıcır Dolgu",
+    "metaTitle": "Dereköy Dere Islahı & Kanal Kazma | Adem Hafriyat",
+    "metaDesc": "Dereköy dere yatağı ıslahı, taşkın seti oluşturma, menfez büz kazısı ve tarla yolu mıcır dolgu. Çiftlikköy acil kepçe: 0532 720 20 10.",
+    "excerpt": "Dereköy mevkiinde dere kolları rüsubat temizliği, su baskınlarına karşı taş tahkimat hendekleri, koruge boru geçiş menfezleri ve parsel dolguları.",
+    "category": "Altyapı & Drenaj",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "8 dk okuma",
+    "image": "/images/blog-yagmur-suyu.jpg",
+    "tags": [
+      "Dereköy Kepçe",
+      "Dere Islahı",
+      "Kanal Kazma",
+      "Taşkın Önleme",
+      "Çiftlikköy"
+    ],
+    "districtSlug": "ciftlikkoy",
+    "villageSlug": "derekoy",
+    "content": "\n## Dereköy Havzası ve Taşkın Riskine Karşı Hafriyat Çözümleri\n\nÇiftlikköy Dereköy sınırları, kış aylarında Samanlı eteklerinden gelen yoğun yağmur sularının denize doğru aktığı doğal dere yataklarının kesişim noktasındadır. Bu coğrafi konum nedeniyle Dereköy'deki araziler, tarlalar ve müstakil yerleşimler **mevsimsel dere taşkınları ve balçık birikintileriyle** sık sık karşı karşıya kalır.\n\nDere yataklarının ağaç dalları, moloz ve dip çamuruyla tıkanması; ilk sağanakta suyun komşu bahçelere ve ev subasmanlarına taşmasına neden olur. Adem Hafriyat olarak Dereköy'de dere yatağı ıslahı, su akış kanalları ve koruge menfez geçişlerinde bölgenin en tecrübeli operatör filosuyla hizmet veriyoruz.\n\n---\n\n## Dereköy Saha Uygulamalarımız\n\n### 1. Dere Yatağı Temizliği ve Rüsubat Tahliyesi\n4x4 JCB Kazıcı Yükleyicimizin geniş çamur kovasıyla dere tabanında biriken alüvyon balçığı temizliyor, dere kesitini genişleterek suyun debisini rahatlatıyoruz. Çıkarılan geçirimsiz killi balçık araziden tahliye edilir veya güvenlik seddesi yapımında kullanılır.\n\n### 2. Taş Tahkimat ve İstinat Arkası Dolgu\nSu akıntısının dere kıyısını oymasını (şev kayması) engellemek için kıyı boyunca kademeli şev kazısı yapıyor, ardından ağır taş blokların dizilebilmesi için sağlam temel hendekleri hazırlıyoruz.\n\n### 3. Tarla ve Parsel Girişlerine Koruge Boru Menfezi\nYol ile parsel arasından geçen açık arklar ve dere kolları araç geçişini engeller. Bekoloderimizle hendek tabanını temizleyip eğimini verdikten sonra 400'lük veya 600'lük çift cidarlı SN4 koruge boruları yerleştiriyor, üzerini kaba dolgu taşı ve 0-38 mekanik mıcırla kaplayarak tonajlı kamyonların dahi ezemeyeceği sağlam menfez geçişleri yapıyoruz.\n\n### 4. Çamurlu Arazi Yollarına Mıcır Yayma\nDereköy'ün ağır killi toprağı yağış aldığında araçların batmasına neden olur. Ön dozer bıçağımızla çamur tabakasını kazıyıp 15-20 cm kalınlığında kırmataş mıcır sererek zemin taşıma gücünü kalıcı olarak yükseltiyoruz.\n\n---\n\n## Acil Su Baskını ve Sel Müdahalesi\nDereköy ve civarında ani yağışlarda su baskını riski doğduğunda, 7/24 nöbetçi kepçe ekibimizle **15 dakika içinde** adrese ulaşıp acil tahliye kanalları açarak mal kayıplarının önüne geçiyoruz.\n    "
+  },
+  {
+    "id": "gacik-koyu-zeytinlik-temizleme-ve-villa-temel-kazisi",
+    "slug": "gacik-koyu-zeytinlik-temizleme-ve-villa-temel-kazisi",
+    "title": "Gacık Köyü Zeytinlik Temizleme, Kök Sökümü ve Villa Temel Kazısı",
+    "metaTitle": "Gacık Köyü Zeytinlik Temizleme & Villa Temeli | Adem Hafriyat",
+    "metaDesc": "Çiftlikköy Gacık Köyü zeytinlik temizleme, ağaç kök sökümü, dik yamaçta seki tesviyesi ve villa temel kazısı. 15 dk intikal: 0532 720 20 10.",
+    "excerpt": "Gacık Köyü yamaçlarında kurumuş zeytin ağacı kök sökümü, kademeli taş istinat seki yapımı, lüks villa temel hafriyatı ve fosseptik kuyusu açımı.",
+    "category": "Villa & Temel Kazısı",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "8 dk okuma",
+    "image": "/images/blog-temel-kazisi.jpg",
+    "tags": [
+      "Gacık Köyü Kepçe",
+      "Zeytinlik Temizleme",
+      "Kök Sökümü",
+      "Villa Temeli",
+      "Çiftlikköy"
+    ],
+    "districtSlug": "ciftlikkoy",
+    "villageSlug": "gacik-koyu",
+    "content": "\n## Gacık Köyü'nün Tarihi Zeytinlikleri ve Yeni Nesil Villa Yapılaşması\n\nÇiftlikköy'ün deniz manzarasına hakim güney yamaçlarında kurulu **Gacık Köyü**, asırlık zeytin ağaçları, zengin bitki örtüsü ve son yıllarda bölgenin en gözde müstakil villa ve taş ev projelerine ev sahipliği yapan yerleşimidir. Gacık arazilerinde hafriyat yapmak, hem doğaya saygılı olmayı hem de sert taşlık yamaçlarla baş edebilecek güçlü makineleri zorunlu kılar.\n\nGacık toprakları dik meyillidir; zemin yüzeyin altında kalkerli taş katmanları barındırır. Burada yapılacak her hafriyat hamlesi, komşu parsellerin dengesini bozmayacak statik hesaplar ve kademeli şev uygulamaları gerektirir.\n\n---\n\n## Gacık Köyü Şantiyelerinde Sunduğumuz Hizmetler\n\n### 1. Zeytinlik Islahı, Gençleştirme ve Tırnaklı Kök Sökümü\nEkonomik ömrünü tamamlamış, kurumuş veya arazinin inşaat oturum alanında kalan devasa zeytin ve çalı kökleri traktörle sökülemez. Cat mini ekskavatörümüzün veya JCB kepçemizin arka kazıcısına taktığımız özel **kök sökme tırnağı (riper)** ile ana kökleri 1.5 metre derinlikten keserek ağacı zedelemeden köküyle birlikte söküyoruz. Çıkan kökleri arazinin bir köşesinde topluyor, çukuru hemen nebati toprakla doldurup sıkıştırıyoruz.\n\n### 2. Kademeli Teraslama (Taş Duvar Altı Seki Kazısı)\nEğimli yamaçlarda tek düzlem arazi açmak toprak kaymasına yol açar. Gacık arazilerinde \"seki\" adını verdiğimiz 2 veya 3 kademeli teraslar oluşturuyoruz:\n- Üst kademe: Villa oturumu ve otopark alanı.\n- Orta kademe: Yüzme havuzu veya veranda bahçe alanı.\n- Alt kademe: Meyve bahçesi ve zeytinlik.\nHer kademenin altına taş istinat duvarı için 60-80 cm derinliğinde sağlam temel hendeği kazıyoruz.\n\n### 3. Villa Temel Hafriyatı ve Subasman Dolgusu\nMüstakil konut ve villa projelerinde zemin etüdü kotlarına tam uyarak radye temel veya mütemadi temel kazısını tamamlıyoruz. Temel perdeleri dikildikten sonra perde arkasına su birikmesini engelleyen kaba mıcır drenaj dolgusunu sıfır hata ile seriyoruz.\n\n### 4. Kayalıkta Fosseptik ve Su Deposu Çukurları\nKanalizasyon şebekesinin olmadığı yüksek tepe kesimlerinde 3x3x3 metre ebatlarında sızdırmaz betonarme fosseptik çukurlarını hidrolik kırıcı ataşmanımızla kalker kayaları kırarak santimetre hassasiyetinde açıyoruz.\n\n---\n\n## Gacık Köyü İçin Neden Adem Hafriyat?\n- **15 Dakikada Sahada:** Çiftlikköy garajımızdan Gacık Köyü meydanına sadece 15 dakikada intikal ediyoruz.\n- **Hassas Operatörlük:** Canlı zeytin ağaçlarına, komşu tel örgü sınırlarına ve su borularına zarar vermeyen 14 yıllık tecrübe.\n    "
+  },
+  {
+    "id": "laledere-koyu-bag-bahce-drenaji-ve-fosseptik-cukuru",
+    "slug": "laledere-koyu-bag-bahce-drenaji-ve-fosseptik-cukuru",
+    "title": "Laledere Köyü Bağ-Bahçe Drenajı ve Fosseptik Çukuru Kazısı",
+    "metaTitle": "Laledere Köyü Drenaj & Fosseptik Kazısı | Adem Hafriyat",
+    "metaDesc": "Çiftlikköy Laledere Köyü süs bitkisi sera drenajı, fosseptik çukuru açma, bahçe tesviyesi ve temel kazısı. 15 dk intikal: 0532 720 20 10.",
+    "excerpt": "Laledere Köyü süs bitkisi seralarında killi zemin drenajı, koku yapmayan fosseptik çukurları, sulama havuzu hafriyatı ve nebati toprak serme.",
+    "category": "Altyapı & Drenaj",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "7 dk okuma",
+    "image": "/images/blog-arazi-duzleme.jpg",
+    "tags": [
+      "Laledere Köyü Kepçe",
+      "Drenaj Kazısı",
+      "Fosseptik Çukuru",
+      "Sera Hafriyatı",
+      "Çiftlikköy"
+    ],
+    "districtSlug": "ciftlikkoy",
+    "villageSlug": "laledere-koyu",
+    "content": "\n## Laledere Köyü Tarımsal Seracılık ve Zemin Özellikleri\n\nYalova'nın Türkiye çapında ünlü dış mekan süs bitkisi ve fide seracılığı havzası olan **Laledere Köyü**, düz ve hafif dalgalı verimli arazileriyle tanınır. Ancak Laledere topraklarının en belirgin özelliği, yüksek oranda **geçirimsiz sarı ve kırmızı kil** barındırmasıdır.\n\nKil tabakası yağmur sularının yer altına süzülmesini geciktirir; bu durum sera içinde saksıların su altında kalmasına, bitki köklerinin çürümesine ve mantari hastalıkların yayılmasına sebep olur. Laledere seralarında ve konut bahçelerinde doğru projelendirilmiş drenaj hattı olmadan başarılı bir tarımsal veya yapısal üretim mümkün değildir.\n\n---\n\n## Laledere Köyü'nde Gerçekleştirdiğimiz Uygulamalar\n\n### 1. Sera Zemin Tesviyesi ve Lazerli Drenaj Kanalları\nSera kurulumu öncesinde zemin kodunun milimetrik düzeltilmesi şarttır. JCB bekoloderimizin ön bıçağıyla kaba tesviyeyi tamamladıktan sonra sera aksları boyunca eğimli drenaj kanalları kazıyoruz. Kanallara keçe sarılı drenaj borusu ve yıkanmış kırmataş döşeyerek sera tabanını 4 mevsim kuru tutuyoruz.\n\n### 2. Betonarme Fosseptik Çukuru Açımı\nLaledere'deki müstakil evlerde, çiftliklerde ve sera işletmelerinde kanalizasyon atıklarının çevreye ve yer altı sulama sularına sızmaması için çevre sağlığı standartlarına uygun fosseptik kuyuları açıyoruz. 3 ila 4 metre derinliğe inen teleskopik kazıcı kolumuzla göçme riskine karşı güvenlik şevli kazı yapıp tabana grobeton altı mıcır seriyoruz.\n\n### 3. Tarımsal Sulama Havuzu ve Gölet Kazısı\nSeracılıkta damlama sulama için tonlarca depolanmış suya ihtiyaç vardır. Arazinin en uygun kotunda 100 ila 500 ton kapasiteli geomembran kaplamalı sulama havuzlarını şev eğimlerini tam vererek kazıyor, çıkan kaliteli toprağı sera zeminine homojen şekilde yayıyoruz.\n\n### 4. Gübreli Nebati Toprak Karıştırma ve Serme\nBahçe peyzajı ve fidan dikimi öncesinde yanmış çiftlik gübresi ile humuslu nebati toprağı kepçe kovasıyla homojen olarak harmanlayıp parsel zeminine 15-20 cm kalınlığında seriyoruz.\n    "
+  },
+  {
+    "id": "ilyaskoy-arazi-tesviyesi-ve-tel-orgu-hafriyati",
+    "slug": "ilyaskoy-arazi-tesviyesi-ve-tel-orgu-hafriyati",
+    "title": "İlyasköy Arazi Tesviyesi, Mıcır Serimi ve Tel Örgü Taban Kazısı",
+    "metaTitle": "İlyasköy Arazi Tesviyesi & Mıcır Serimi | Adem Hafriyat",
+    "metaDesc": "Çiftlikköy İlyasköy parsel tesviyesi, tel örgü hatıl betonu hendeği, mıcır dolgu ve stabilize yol yapımı. 15 dk intikal: 0532 720 20 10.",
+    "excerpt": "İlyasköy hobi bahçeleri ve tarım arazilerinde lazerli zemin düzleme, parsel sınır tel örgü beton hendeği, traktör yollarına mekanik mıcır serme.",
+    "category": "Köy & Arazi Hafriyatı",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "7 dk okuma",
+    "image": "/images/blog-arazi-duzleme.jpg",
+    "tags": [
+      "İlyasköy Kepçe",
+      "Arazi Tesviyesi",
+      "Mıcır Serimi",
+      "Tel Örgü Hendeği",
+      "Çiftlikköy"
+    ],
+    "districtSlug": "ciftlikkoy",
+    "villageSlug": "ilyaskoy",
+    "content": "\n## İlyasköy Parselasyon ve Zemin Yapısı\n\nÇiftlikköy ile Taşköprü sanayi hattının hemen arkasında yer alan **İlyasköy**, son dönemde hisseli ve müstakil tapulu hobi bahçesi yatırımlarının merkez üssü haline gelmiştir. Bölgenin kuru, kireçli ve yer yer taşlı toprak yapısı; arazisini böldürmek, tel örgüyle çevirmek ve içine konteyner veya bağ evi koymak isteyen mülk sahipleri için yoğun hafriyat ihtiyacı doğurmaktadır.\n\nHobi bahçesi yapımında yapılan en büyük hata, zemin tesviyesi yapılmadan çit çekilmesidir. Eğimli zemine çekilen çitler ilk kış yağmurunda alttan açılır veya eğilir.\n\n---\n\n## İlyasköy'de Anahtar Teslim Zemin Hazırlığı\n\n### 1. Parsel Sınır Tel Örgü ve Hatıl Betonu Hendekleri\nHarita mühendisinin çaktığı sınır kazıklarını referans alarak, 30 cm genişliğinde dar kanal kovamızla jilet gibi düzgün çit temeli kanalı açıyoruz. Bu hendek içerisine atılacak demirli hatıl betonu, hem tel çitin fırtınada yıkılmasını önler hem de yaban hayvanlarının alttan kazarak girmesini kesin olarak engeller.\n\n### 2. Kaba ve İnce Arazi Tesviyesi\nJCB 3CX bekoloderimizin 4'ü 1 arada açılır ön dozer bıçağıyla arazi içindeki çukurları dolduruyor, tümsekleri tıraşlayarak suyun tek bir noktada göllenmesini engelleyecek %1-2 doğal akış eğimli pürüzsüz yüzeyler oluşturuyoruz.\n\n### 3. Konteyner ve Tiny House Zemin Platformu\nKonteyner konulacak alanı 20 cm derinliğinde kazıp sıkıştırıyor, altına su geçirmeyen kaba taş tüvenan dolgu, üstüne ise 0-38 mekanik kırmataş mıcır sererek teraziye alıyoruz. Bu sayede konteyner ayakları zamanla toprağa batmaz, kapı ve pencerelerde kasma yaşanmaz.\n\n### 4. Çamursuz Giriş Yolu Yapımı\nİlyasköy arazi yollarında kışın araçların kaymasını önlemek için parsel kapısına kadar olan güzergaha kırmataş mıcır serip kepçe tekerlekleriyle kompakt hale getiriyoruz.\n    "
+  },
+  {
+    "id": "denizcali-koyu-sanayi-depo-hafriyat-ve-forklift-kiralama",
+    "slug": "denizcali-koyu-sanayi-depo-hafriyat-ve-forklift-kiralama",
+    "title": "Denizçalı Köyü Depo & Şantiye Hafriyatı: Sanayi Altyapısı ve Forklift Kiralama",
+    "metaTitle": "Denizçalı Köyü Depo Hafriyatı & Forklift | Adem Hafriyat",
+    "metaDesc": "Çiftlikköy Denizçalı Köyü fabrika zemin hafriyatı, depo subasman dolgusu, saatlik/günlük kiralık forklift ve kepçe. Hemen arayın: 0532 720 20 10.",
+    "excerpt": "Denizçalı sanayi ve depolama aksında lojistik hangar hafriyatları, saha betonu altı mekanik mıcır serme ve ağır yük indirme forklift kiralama.",
+    "category": "Forklift Kiralama",
+    "author": "Adem Hafriyat Lojistik Birimi",
+    "date": "2026-04-12",
+    "readTime": "8 dk okuma",
+    "image": "/images/blog-forklift-rehberi.jpg",
+    "tags": [
+      "Denizçalı Köyü Forklift",
+      "Denizçalı Kepçe",
+      "Sanayi Hafriyatı",
+      "Depo Temeli",
+      "Çiftlikköy"
+    ],
+    "districtSlug": "ciftlikkoy",
+    "villageSlug": "denizcali-koyu",
+    "content": "\n## Denizçalı Köyü: Tarım ve Sanayi Depolamasının Kesişme Noktası\n\nTaşköprü Sanayi Bölgesi ve Yalova Avrasya Giyim OSB aksına komşu olan **Denizçalı Köyü**, geleneksel tarım arazilerinin yanı sıra son yıllarda lojistik depoların, soğuk hava tesislerinin ve imalat atölyelerinin hızla yükseldiği stratejik bir kavşaktır. Bu karma yapı, Denizçalı'da hem ağır inşaat hafriyatını hem de günlük fabrika forklift operasyonlarını zorunlu kılmaktadır.\n\nAdem Hafriyat'ın Taşköprü Sanayi Caddesi'ndeki ana makine parkuru Denizçalı Köyü sınırına yalnızca **10 dakika** mesafededir. Bu avantaj, fabrikaların ve inşaat şantiyelerinin acil makine ihtiyaçlarına dakikalar içinde yanıt vermemizi sağlar.\n\n---\n\n## Denizçalı'da Sunduğumuz İki Temel Hizmet\n\n### 1. Sanayi Depo & Hangar Hafriyatı\n- **Subasman ve Grobeton Altı Dolgu:** Ağır tonajlı tırların ve forkliftlerin gezeceği fabrika zemin betonunun çatlamaması için taban toprağını derin kazıyor, 0-38 mekanik stabilize malzeme sererek silindirle sıkıştırıyoruz.\n- **Sanayi Yağmur ve Atık Su Koruge Hatları:** Fabrika çatılarından inen tonlarca yağmur suyunu tahliye etmek için 400 ila 800 mm çaplı koruge borulara uygun derin hat hendekleri açıyoruz.\n- **İstinat ve Çevre Güvenlik Duvarları:** Tesis çevresine çekilecek betonarme perde duvar temellerini hızlı ve dik kesitlerle kazıyoruz.\n\n### 2. Saatlik ve Günlük Forklift Kiralama\nDenizçalı'daki işletmelere gelen hammadde tırlarının indirilmesi veya ihracat konteynerlerinin yüklenmesinde tam zamanlı makine satın alma maliyetine girmeden profesyonel çözüm sunuyoruz:\n- **3.5 Ton ve 5 Ton Dizel Forklift:** Bozuk şantiye zemininde ve açık depolarda paletli ağır makineleri, mermer blokları, çelik profilleri ve hammadde paletlerini hasarsız boşaltır.\n- **G Sınıfı Ehliyetli Operatör Güvencesi:** Tüm operatörlerimiz resmi İSG sertifikalarına sahiptir; fabrika sahasında sıfır kaza prensibiyle çalışır.\n- **10 Dakikada Sahada:** Tır fabrikanıza yanaştığında arayın, 10 dakika içinde forkliftimiz kapınızda olsun.\n    "
+  },
+  {
+    "id": "kadikoy-beldesi-villa-temeli-ve-havuz-kazisi",
+    "slug": "kadikoy-beldesi-villa-temeli-ve-havuz-kazisi",
+    "title": "Kadıköy Beldesi Villa Temeli, Havuz Kazısı ve Peyzaj Hafriyatı",
+    "metaTitle": "Kadıköy Beldesi Villa Temeli & Havuz Kazısı | Adem Hafriyat",
+    "metaDesc": "Yalova Kadıköy Beldesi lüks villa temel kazısı, açık havuz hafriyatı, sıfır kuyruk mini kepçe ve bahçe peyzajı. 15 dk intikal: 0532 720 20 10.",
+    "excerpt": "Kadıköy Beldesi'nin prestijli villa projelerinde sıfır kuyruk dönüşlü mini ekskavatörle havuz kazısı, perde duvar hafriyatı ve rulo çim tesviyesi.",
+    "category": "Villa & Temel Kazısı",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "9 dk okuma",
+    "image": "/images/blog-temel-kazisi.jpg",
+    "tags": [
+      "Kadıköy Beldesi Kepçe",
+      "Villa Temeli",
+      "Havuz Kazısı",
+      "Mini Ekskavatör",
+      "Yalova Merkez"
+    ],
+    "districtSlug": "yalova-merkez",
+    "villageSlug": "kadikoy-beldesi",
+    "content": "\n## Kadıköy Beldesi: Yalova'nın Prestijli Villa ve Yaşam Bölgesi\n\nYalova Merkez'e bağlı **Kadıköy Beldesi**, geniş yeşil alanları, düzenli parselasyonları ve yüksek standartlı villa projeleriyle kentin en seçkin yerleşim bölgesidir. Kadıköy'de hafriyat ve kazı işi yapmak, standart bir şantiyeden çok farklı bir hassasiyet gerektirir. Burada çalışan makineler komşu lüks binaların bahçe duvarlarına, kilit parke yollara ve peyzaj alanlarına asla zarar vermemelidir.\n\nAdem Hafriyat olarak Kadıköy Beldesi'nde gerçekleştirdiğimiz tüm projelerde, dar alan manevra kabiliyetine sahip **kauçuk paletli Cat 303.5 Mini Ekskavatörlerimizi** ve çevreye duyarlı operatörlerimizi görevlendiriyoruz.\n\n---\n\n## Kadıköy Beldesi Uzmanlık Alanlarımız\n\n### 1. Lüks Villa Temel ve Bodrum Kat Hafriyatı\nMimari statik projelere harfiyen uyarak bina oturum alanını kazıyor, temel altı drenaj boruları için kot farklarını lazer terazi ile ayarlıyoruz. Kazıdan çıkan moloz ve toprağı bekletmeden hafriyat kamyonlarımıza yükleyerek sokak içinde görsel ve çevresel kirlilik yaratmıyoruz.\n\n### 2. Açık Yüzme Havuzu Kazısı\nKadıköy villalarının vazgeçilmezi olan 4x8 m, 5x10 m ebatlarındaki taşmalı veya skimmerlı yüzme havuzlarını milimetrik hassasiyetle kazıyoruz:\n- Havuz tabanını teraziye alıyor, betonarme perde kalıbının rahat çakılabilmesi için yanlarda 50 cm çalışma payı bırakıyoruz.\n- Denge tankı ve makine dairesi çukurlarını tek seferde kazarak ek makine maliyetini önlüyoruz.\n\n### 3. Komşu Parsel Sınırlarında Perde Duvar & İstinat Kazısı\nSıfır kuyruk dönüşlü (Zero Tail Swing) mini kepçemiz sayesinde, komşu villa duvarına 10 cm mesafede dönerken makinenin arka ağırlığı duvara çarpmaz. 360 derece olduğu yerde dönerek jilet gibi istinat hendeği açar.\n\n### 4. Rulo Çim Öncesi Peyzaj ve Nebati Toprak Serimi\nİnşaat atıklarını (harç kalıntıları, taşlar) eledikten sonra bahçeye drenaj kanalları döşüyor, ardından elenmiş humuslu nebati çim toprağını tesviye bıçağımızla pürüzsüz biçimde seriyoruz.\n    "
+  },
+  {
+    "id": "samanli-koyu-kivi-bahcesi-tesviyesi-ve-derin-kuyu-kazimi",
+    "slug": "samanli-koyu-kivi-bahcesi-tesviyesi-ve-derin-kuyu-kazimi",
+    "title": "Samanlı Köyü Kivi Bahçesi Tesviyesi, Drenaj ve Derin Su Kuyusu Kazımı",
+    "metaTitle": "Samanlı Köyü Kivi Bahçesi Drenajı & Su Kuyusu | Adem Hafriyat",
+    "metaDesc": "Yalova Samanlı Köyü kivi bahçesi drenaj kanalları, kök korumalı mini kepçe, derin keson su kuyusu açma. 15 dk intikal: 0532 720 20 10.",
+    "excerpt": "Türkiye'nin kivi başkenti Samanlı ovasında saçak kökleri zedelemeden taban suyu tahliye kanalları açma ve derin keson kuyu kazı yöntemleri.",
+    "category": "Kuyu & Drenaj",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "9 dk okuma",
+    "image": "/images/blog-su-kuyusu.jpg",
+    "tags": [
+      "Samanlı Köyü Kepçe",
+      "Kivi Bahçesi",
+      "Drenaj Kazısı",
+      "Keson Kuyu",
+      "Yalova Merkez"
+    ],
+    "districtSlug": "yalova-merkez",
+    "villageSlug": "samanli-koyu",
+    "content": "\n## Samanlı Ovası: Türkiye Kivi Üretiminin Kalbi ve Zemin Dinamikleri\n\nYalova Merkez'e bağlı **Samanlı Köyü**, mikroklima iklimi ve zengin alüvyon toprak yapısıyla Türkiye'nin tescilli kivi üretim merkezidir. Bir dönüm kivi bahçesi yüz binlerce liralık bir yatırımdır; kivi ağacı ise saçak köklü, suya çok düşkün fakat köklerinde durağan su birikmesine (kök boğulması) karşı aşırı derecede hassas bir bitkidir.\n\nSamanlı arazilerinde kepçe çalıştırmak büyük bir uzmanlık ve hassasiyet ister. Kaba bir kepçe darbesi onlarca yıllık verimli kivi kollarını kırabilir veya ana kökleri kopararak ağacın kurumasına sebep olabilir. Adem Hafriyat, Samanlı'da yıllardır kivi üreticileriyle omuz omuza çalışan yerel şantiye ekibidir.\n\n---\n\n## Samanlı Kivi Bahçelerinde Yürüttüğümüz Operasyonlar\n\n### 1. Kökleri Korumalı Kış Suyu Drenaj Hendekleri\nKış aylarında Samanlı ovasında taban suyu yükselir. Ağaç sıralarının tam ortasından, kök saçaklarına zarar vermeyecek mesafede dar paletli mini kepçemizle 80-120 cm derinliğinde tahliye kanalları kazıyoruz. Açılan kanallara döşenen delikli koruge drenaj boruları kışın suyu hızla araziden uzaklaştırır.\n\n### 2. Geniş Çaplı Keson Su Kuyusu Açımı\nKivi yazın haziran, temmuz ve ağustos aylarında günde ağaç başına 80-120 litre su tüketir. Sondaj kuyularının elektrik kesintisinde işlevsiz kalması riskine karşı Samanlı çiftçileri **geniş ağızlı beton keson kuyuları** tercih eder:\n- 5 ila 7 metre derinliğe kadar inen JCB teleskopik kazıcımızla geniş rezerv çukuru açıyoruz.\n- Tabanına 2 numara yıkanmış dere mıcırı serip 120'lik betonarme büzleri indiriyoruz.\n- Bu kuyular yaz boyunca tonlarca suyu haznesinde tutarak damlama sulama sistemlerini kesintisiz besler.\n\n### 3. Kivi T Direkleri ve Çelik Tel Ankraj Çukurları\nKivinin ağır sürgünlerini ve meyve yükünü taşıyan beton veya demir T direklerin rüzgarda yatmaması için dar kova ataşmanımızla derin ankraj pabuç çukurları açıyoruz.\n\n### 4. Zemin Batmaz Kauçuk Palet Güvencesi\nSamanlı'nın sulak zemininde ağır lastik tekerlekli makineler batar ve zemin toprağını aşırı sıkıştırarak havasız bırakır. Geniş kauçuk paletli mini ekskavatörümüz zemin basıncını dağıtarak batmadan tüy gibi hareket eder.\n    "
+  },
+  {
+    "id": "safran-koyu-engebeli-arazi-duzleme-ve-kaya-kirma",
+    "slug": "safran-koyu-engebeli-arazi-duzleme-ve-kaya-kirma",
+    "title": "Safran Köyü Engebeli Arazi Düzleme, Taş Kırma ve Bağ Evi Temeli",
+    "metaTitle": "Safran Köyü Arazi Düzleme & Taş Kırma | Adem Hafriyat",
+    "metaDesc": "Yalova Safran Köyü sert kayalık arazide hidrolik kırıcı kepçe, şev tıraşlama, tarla düzleme ve bağ evi temeli. 15 dk intikal: 0532 720 20 10.",
+    "excerpt": "Safran Köyü yamaçlarında sert kaya formasyonlarının hidrolik kırıcı ataşmanla parçalanması, dik şevlerin kademelendirilmesi ve bağ evi hafriyatı.",
+    "category": "Köy & Arazi Hafriyatı",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "8 dk okuma",
+    "image": "/images/blog-arazi-duzleme.jpg",
+    "tags": [
+      "Safran Köyü Kepçe",
+      "Kaya Kırma",
+      "Arazi Düzleme",
+      "Kırıcı Bekoloder",
+      "Yalova Merkez"
+    ],
+    "districtSlug": "yalova-merkez",
+    "villageSlug": "safran-koyu",
+    "content": "\n## Safran Köyü Kayalık Zemin Yapısı ve Teraslama Dinamikleri\n\nYalova Merkez'in kuzey yamaçlarında kurulu olan **Safran Köyü**, dik eğimli tepe yamaçları, geniş deniz manzarası ve zemininde barındırdığı sert kalker ve bazalt kaya tabakalarıyla bilinir. Safran arazilerinde standart kazı kovalarıyla ilerlemek neredeyse imkansızdır; kovanın tırnakları sert kayaya çarparak körelir.\n\nBu coğrafyada başarılı bir hafriyatın anahtarı, yüksek darbe gücüne sahip **hidrolik kırıcı ataşmanlı iş makineleri** ve dik yamaçta devrilme riskini sıfıra indiren tecrübeli operatörlüktür.\n\n---\n\n## Safran Köyü'nde Sunduğumuz Saha Çözümleri\n\n### 1. Hidrolik Kırıcı ile Zemin Gevşetme ve Kaya Kırma\nSafran arazisinde bağ evi, villa veya otopark açarken yüzeye çıkan yekpare kayaları JCB bekoloderimize bağlı ağır hizmet tipi hidrolik kırıcımızla parçalıyoruz. Çıkan taş blokları kırarak stabilize dolgu veya istinat duvarı örme taşı olarak değerlendiriyoruz.\n\n### 2. Dik Yamaç Şev Kesme ve Kademeli Teraslama\nDik dağ yamaçlarında toprağın kaymasını önlemek için basamaklı (seki) teraslar açıyoruz. Her kademenin arkasına yağmur suyunu tahliye edecek şev arkası hendekler kazarak erozyon tehlikesini kalıcı olarak ortadan kaldırıyoruz.\n\n### 3. Taş İstinat Duvarı Temeli Kazımı\nSafran'ın engebeli parsellerinde üst kotu tutabilmek için yapılacak taş istinat duvarlarının tabanını ana kayaya oturacak derinlikte açıyoruz. Ana kayaya oturan istinat duvarları hiçbir zaman bel vermez ve yıkılmaz.\n\n### 4. Bağ Evi ve Bungalov Taban Hafriyatı\nMüstakil yaşam alanı oluşturmak isteyenler için kayalık zeminde radye temel veya subasman çukurlarını açıp teraziye alıyoruz.\n    "
+  },
+  {
+    "id": "hacimehmet-koyu-dere-islahi-ve-yagmur-suyu-kanali",
+    "slug": "hacimehmet-koyu-dere-islahi-ve-yagmur-suyu-kanali",
+    "title": "Hacımehmet Köyü Dere Islahı, Yağmur Suyu Hattı ve Dolgu Malzemesi Serme",
+    "metaTitle": "Hacımehmet Köyü Dere Islahı & Yağmur Hattı | Adem Hafriyat",
+    "metaDesc": "Yalova Hacımehmet Köyü dere yatağı ıslahı, yağmur suyu koruge boru hattı, moloz temizleme ve mıcır dolgu. 15 dk intikal: 0532 720 20 10.",
+    "excerpt": "Hacımehmet Köyü vadisindeki dere kollarında tıkanıklık giderme, taşkın seti oluşturma, yağmur suyu tahliye kanalları ve stabilize mıcır serme.",
+    "category": "Altyapı & Drenaj",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "7 dk okuma",
+    "image": "/images/blog-yagmur-suyu.jpg",
+    "tags": [
+      "Hacımehmet Köyü Kepçe",
+      "Dere Islahı",
+      "Yağmur Suyu Hattı",
+      "Mıcır Dolgu",
+      "Yalova Merkez"
+    ],
+    "districtSlug": "yalova-merkez",
+    "villageSlug": "hacimehmet-koyu",
+    "content": "\n## Hacımehmet Köyü Su Havzası ve Zemin Özellikleri\n\nYalova Merkez'e bağlı **Hacımehmet Köyü**, Samanlı Dağları'ndan inen derelerin ve vadilerin Yalova düzlüğüne kavuştuğu stratejik bir su toplama havzasında yer alır. Köy sınırları içerisindeki tarlalar, seralar ve konutlar, şiddetli sonbahar ve ilkbahar yağışlarında dağdan gelen yüksek debili yüzey sularıyla mücadele etmek zorundadır.\n\nZamanında temizlenmeyen dere yatakları, daralan menfezler ve yetersiz yağmur suyu giderleri; Hacımehmet'te bahçelerin çamur altında kalmasına ve yol geçişlerinin kapanmasına neden olur.\n\n---\n\n## Hacımehmet'te Yaptığımız Temel Çalışmalar\n\n### 1. Dere Yatağı Islahı ve Moloz Temizliği\n4x4 JCB Kazıcı Yükleyicimizin geniş hacimli çamur kovasıyla dere tabanında biriken taş, çakıl, ağaç kütükleri ve alüvyon balçığı temizleyerek suyun doğal akış kesitini genişletiyoruz.\n\n### 2. Yağmur Suyu Koruge Boru Hattı Döşeme Hendekleri\nYol kenarlarından geçen açık hendeklerin koku ve güvenlik riski oluşturmaması için 300'lük veya 400'lük SN4 çift cidarlı koruge borular döşüyor, kepçemizle üzerini kırmataş dolgu ile kapatarak yol genişliğini artırıyoruz.\n\n### 3. Çamurlu Bahçe Yollarına Kırmataş Mıcır Serme\nHacımehmet'in killi zemininde araçların batmasını önlemek amacıyla; önce üstteki çürük balçık katmanı kazıyıp kenara alıyor, ardından 0-38 mekanik stabilize kırmataş serip silindirle eziyoruz.\n\n### 4. Parsel İçi Drenaj ve Tahliye Setleri\nDağdan gelen yüzey suyunun doğrudan müstakil evlerin bahçesine girmesini önlemek için parsel üst sınırına ters eğimli toprak seddeler ve su kaçırma hendekleri oluşturuyoruz.\n    "
+  },
+  {
+    "id": "guneykoy-taslik-arazi-kirici-kepce-ve-derin-su-kuyusu",
+    "slug": "guneykoy-taslik-arazi-kirici-kepce-ve-derin-su-kuyusu",
+    "title": "Güneyköy Taşlık Arazi Kırıcı Kepçe, Zemin Açma ve Su Kuyusu",
+    "metaTitle": "Güneyköy Taşlık Arazi Kırıcı Kepçe & Kuyu | Adem Hafriyat",
+    "metaDesc": "Yalova Güneyköy sert kayalık zemin kırma, dağ yolu açma, hidrolik kırıcı kepçe ve derin keson su kuyusu. 20 dk intikal: 0532 720 20 10.",
+    "excerpt": "Yüksek rakımlı Güneyköy orman sınırında sert kireçtaşı ve bazalt kaya kırma, dağ evi temel kazısı, yangın emniyet şeritleri ve derin kuyu açımı.",
+    "category": "Köy & Arazi Hafriyatı",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "8 dk okuma",
+    "image": "/images/blog-arazi-duzleme.jpg",
+    "tags": [
+      "Güneyköy Kepçe",
+      "Kaya Kırma",
+      "Dağ Evi Temeli",
+      "Su Kuyusu",
+      "Yalova Merkez"
+    ],
+    "districtSlug": "yalova-merkez",
+    "villageSlug": "guneykoy",
+    "content": "\n## Güneyköy Yüksek Rakım, Dağlık Arazi ve Sert Kayalık Şartları\n\nYalova ile Bursa sınırında, Samanlı Dağları'nın zirvelerine yakın konumlanan **Güneyköy**, yüksek rakımı, temiz dağ havası, çam ormanları ve son derece sert kireçtaşı ile bazalt bloklardan oluşan jeolojik yapısıyla bilinir. Güneyköy'de standart kepçeler çaresiz kalır; kayaları çatlatıp ufalamak için **yüksek joule darbe enerjili ağır hidrolik kırıcılar** şarttır.\n\nBuradaki arazilerde bağ evi, dağ evi veya arıcılık tesisi kurmak isteyen mülk sahipleri için ana engel zemindeki devasa kaya bloklarıdır.\n\n---\n\n## Güneyköy Şantiye Operasyonlarımız\n\n### 1. Ağır Hizmet Tipi Hidrolik Kırıcı ile Kaya Bloklarını Parçalama\nGüneyköy parsellerinde temel kazısı yaparken karşımıza çıkan monoblok ana kayaları hidrolik kırıcı ataşmanımızla santim santim parçalıyoruz. Kırılan taşları dozer bıçağımızla iterek parsel sınırında muazzam bir doğal taş istinat setine dönüştürüyoruz.\n\n### 2. Dağ Yolu Açma, Genişletme ve Greyderleme\nOrman içi ve köy sınırındaki engebeli patikaları bekoloderimizin ön bıçağıyla tıraşlayarak genişletiyor, yol kenarına su tahliye olukları kazarak şiddetli kış yağmurlarında yolun bozulmasını engelliyoruz.\n\n### 3. Derin Keson Su Kuyusu Açımı\nGüneyköy'de derinlerdeki tatlı dağ suyu kaynaklarına ulaşmak için kayalık zemin kırıcıyla açılarak 5-6 metre derinliğe inilir, kuyu içerisine beton halkalar yerleştirilerek kış-yaz kesintisiz temiz içme ve sulama suyu elde edilir.\n\n### 4. Dağ Evi ve Ahşap Konut Subasman Kazısı\nDoğal ahşap ve karkas yapılar için sağlam kaya zemin üzerine oturan subasman pabuç çukurlarını açıyor ve dolgu mıcır serimini tamamlıyoruz.\n    "
+  },
+  {
+    "id": "sogucak-koyu-yamac-hafriyati-kademeli-bahce-tesviyesi",
+    "slug": "sogucak-koyu-yamac-hafriyati-kademeli-bahce-tesviyesi",
+    "title": "Soğucak Köyü Yamaç Hafriyatı, Kademeli Bahçe Tesviyesi ve Drenaj",
+    "metaTitle": "Soğucak Köyü Yamaç Hafriyatı & Bahçe Tesviyesi | Adem Hafriyat",
+    "metaDesc": "Yalova Soğucak Köyü manzaralı eğimli yamaç teraslama, perde beton kazısı, bahçe drenajı ve villa temeli. 20 dk intikal: 0532 720 20 10.",
+    "excerpt": "Soğucak Köyü yamaçlarında kademeli bahçe tesviyesi, erozyona karşı su kaçırma hendekleri, perde beton arkası mıcır dolgusu ve villa zemin kazısı.",
+    "category": "Villa & Temel Kazısı",
+    "author": "Adem Hafriyat Saha Ekibi",
+    "date": "2026-04-12",
+    "readTime": "8 dk okuma",
+    "image": "/images/blog-temel-kazisi.jpg",
+    "tags": [
+      "Soğucak Köyü Kepçe",
+      "Yamaç Hafriyatı",
+      "Kademeli Tesviye",
+      "Bahçe Drenajı",
+      "Yalova Merkez"
+    ],
+    "districtSlug": "yalova-merkez",
+    "villageSlug": "sogucak-koyu",
+    "content": "\n## Soğucak Köyü Panoramik Yamaçları ve Zemin Dengesi\n\nYalova şehir merkezine hakim yüksek tepelerde yer alan **Soğucak Köyü**, muazzam körfez manzarası ve ferah havasıyla son yıllarda seçkin villa projelerinin ve bungalov işletmelerinin gözdesi haline gelmiştir. Ancak Soğucak parsellerinin neredeyse tamamı %20 ila %45 arasında değişen dik yamaç eğimlerine sahiptir.\n\nBu tür dik yamaçlarda bilgisizce yapılan derin kazılar, üstteki toprağın dengesini bozarak ciddi heyelan ve şev kayması riskleri yaratır. Adem Hafriyat olarak Soğucak Köyü'nde yürüttüğümüz her kazıda **denge ayaklı JCB bekoloderlerimiz** ile zemin stabilitesini ön planda tutarak kademeli çalışma yapıyoruz.\n\n---\n\n## Soğucak Köyü'nde Uyguladığımız Teknikler\n\n### 1. Kademeli Bahçe Tesviyesi (Teraslama & Sekilendirme)\nDik yamacı tek seferde düzlemek yerine, parsel kotuna göre 2 veya 3 kademe açıyoruz. Üst kademede villa ve otopark girişi, alt kademelerde ise teras bahçeler oluşturuyoruz. Her kademenin eğimini dışa değil içteki drenaj hendeğine doğru vererek yağmur suyunun şevi oymasını kesin olarak engelliyoruz.\n\n### 2. Perde Beton ve İstinat Duvarı Kazısı\nYamaç kot farkını tutacak betonarme istinat perdeleri için ana sert tabakaya kadar inen temel hendekleri açıyoruz. Perde beton döküldükten sonra duvar arkasına geotekstil keçe ve yıkanmış kırmataş mıcır doldurarak su basıncının duvarı çatlatmasını önlüyoruz.\n\n### 3. Erozyon Önleyici Yüzey Suyu Tahliye Hendekleri\nSoğucak'ta şiddetli yağışlarda yamaçtan aşağı hızla akan sular bahçe toprağını süpürür. Parsel üst sınırına açtığımız V kesitli trapez kanallarla gelen suyu toplayarak güvenli doğal dere yatağına deşarj ediyoruz.\n\n### 4. Manzaralı Villa ve Havuz Taban Kazıları\nSonsuzluk havuzu (infinity pool) ve villa bodrum kazılarını komşu parsel sınırlarına ve ağaçlarına en ufak bir zarar vermeden sıfır hata ile teslim ediyoruz.\n    "
   }
 ];
-

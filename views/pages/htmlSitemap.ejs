@@ -1,0 +1,159 @@
+<%- include('../components/common/pageHero', {
+  title: 'Site Haritası & İçerik Dizini',
+  subtitle: 'Adem Hafriyat web platformunun tüm sayfaları, hizmetleri, Yalova ilçe ve köy rehberleri.',
+  badge: '🗺️ HİYERARŞİK SİTE HARİTASI'
+}) %>
+
+<div class="container" style="padding: 4rem 1.5rem;">
+  <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); border-left: 5px solid var(--color-primary); padding: 1.75rem; border-radius: var(--radius-sm); margin-bottom: 3rem;">
+    <h2 style="font-size: 1.4rem; color: var(--color-dark); margin-bottom: 0.5rem;">Adem Hafriyat Dijital İçerik Haritası</h2>
+    <p style="font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.7;">
+      Arama motorları, yapay zeka asistanları ve ziyaretçilerimiz için hazırlanmış kapsamlı site haritasıdır. 
+      Yalova genelinde kepçe kiralama, forklift kiralama, kanal kazma ve tüm mahalle/köy sayfalarımıza bu dizinden tek tıkla ulaşabilirsiniz.
+    </p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+      <a href="/sitemap.xml" class="badge-tag" target="_blank" rel="noopener">📄 XML Sitemap İndeksi</a>
+      <a href="/llms.txt" class="badge-tag" target="_blank" rel="noopener">🤖 LLM Bilgi Dosyası (llms.txt)</a>
+      <a href="/ai.json" class="badge-tag" target="_blank" rel="noopener">⚙️ AI JSON Graph</a>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: start;">
+    
+    <!-- 1. Blok: Kepçe & Hafriyat Hizmetlerimiz -->
+    <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 2rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+      <h3 style="font-size: 1.25rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; margin-bottom: 1.25rem;">
+        🚜 Kepçe &amp; Kazı Hizmetleri
+      </h3>
+      <ul style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <li><a href="/hizmetlerimiz" style="font-weight: 700; color: var(--color-dark);">&rarr; Tüm Hizmetlerimiz Ana Sayfası</a></li>
+        <% services.filter(s => s.category !== 'forklift').forEach(s => { %>
+          <li>
+            <a href="/hizmetlerimiz/<%= s.slug %>" style="color: var(--color-text-main); font-size: var(--text-sm); display: flex; justify-content: space-between;">
+              <span><%= s.title %></span>
+              <span style="color: var(--color-primary-dark);">&rarr;</span>
+            </a>
+          </li>
+        <% }); %>
+      </ul>
+    </div>
+
+    <!-- 2. Blok: Forklift & Sanayi Çözümleri -->
+    <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 2rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+      <h3 style="font-size: 1.25rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; margin-bottom: 1.25rem;">
+        🏗️ Forklift &amp; Sanayi Çözümleri
+      </h3>
+      <ul style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <% services.filter(s => s.category === 'forklift').forEach(s => { %>
+          <li>
+            <a href="/hizmetlerimiz/<%= s.slug %>" style="color: var(--color-text-main); font-size: var(--text-sm); display: flex; justify-content: space-between;">
+              <span><strong><%= s.title %></strong></span>
+              <span style="color: var(--color-primary-dark);">&rarr;</span>
+            </a>
+          </li>
+        <% }); %>
+        <li><a href="/bolgeler/taskopru/mahalle/taskopru-sanayi" style="color: var(--color-text-main); font-size: var(--text-sm);">&rarr; Taşköprü Sanayi Forklift</a></li>
+        <li><a href="/bolgeler/altinova/mahalle/altinova-tersaneler" style="color: var(--color-text-main); font-size: var(--text-sm);">&rarr; Altınova Tersaneler Forklift</a></li>
+      </ul>
+
+      <h4 style="font-size: 1.15rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; margin-top: 2rem; margin-bottom: 1rem;">
+        🚜 Makine Parkurumuz
+      </h4>
+      <ul style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <li><a href="/makinelerimiz" style="font-weight: 700; color: var(--color-dark);">&rarr; Makine Filosu Genel Bakış</a></li>
+        <% machinery.forEach(m => { %>
+          <li>
+            <a href="/makinelerimiz/<%= m.slug %>" style="color: var(--color-text-main); font-size: var(--text-sm); display: flex; justify-content: space-between;">
+              <span><%= m.name %> (<%= m.type %>)</span>
+              <span style="color: var(--color-primary-dark);">&rarr;</span>
+            </a>
+          </li>
+        <% }); %>
+      </ul>
+    </div>
+
+    <!-- 3. Blok: Kurumsal & İletişim -->
+    <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 2rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+      <h3 style="font-size: 1.25rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; margin-bottom: 1.25rem;">
+        🏢 Kurumsal &amp; İletişim
+      </h3>
+      <ul style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <li><a href="/" style="font-weight: 700; color: var(--color-dark);">&rarr; Ana Sayfa</a></li>
+        <li><a href="/hakkimizda" style="color: var(--color-text-main); font-size: var(--text-sm);">&rarr; Hakkımızda &amp; Firma Profili</a></li>
+        <li><a href="/iletisim" style="color: var(--color-text-main); font-size: var(--text-sm);">&rarr; İletişim &amp; 7/24 Keşif Hattı</a></li>
+        <li><a href="tel:<%= siteConfig.phoneRaw %>" style="color: var(--color-primary-dark); font-weight: 700; font-size: var(--text-sm);">&rarr; Doğrudan Ara: <%= siteConfig.phone %></a></li>
+        <li><a href="https://wa.me/<%= siteConfig.whatsapp %>" target="_blank" rel="noopener" style="color: #25D366; font-weight: 700; font-size: var(--text-sm);">&rarr; WhatsApp Canlı Keşif Hattı</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- 4. Bölüm: İlçeler, Mahalleler ve 13 Köy Haritası -->
+  <div style="margin-top: 3.5rem; background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 2.5rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+    <h3 style="font-size: 1.5rem; color: var(--color-dark); border-bottom: 3px solid var(--color-primary); padding-bottom: 0.6rem; margin-bottom: 1.5rem;">
+      📍 Yalova İlçe, Mahalle ve Köy Hizmet Ağımız
+    </h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+      <% districts.forEach(district => { %>
+        <div>
+          <h4 style="font-size: 1.15rem; color: var(--color-dark); margin-bottom: 0.75rem;">
+            <a href="/bolgeler/<%= district.slug %>" style="color: var(--color-dark); font-weight: 800;">
+              <%= district.name %> Bölgesi &rarr;
+            </a>
+          </h4>
+          <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin-bottom: 0.5rem;">
+            Ortalama İntikal: <strong><%= district.responseMinutes %> Dakika</strong>
+          </p>
+
+          <!-- Mahalleler -->
+          <% if (district.neighborhoods && district.neighborhoods.length > 0) { %>
+            <strong style="font-size: var(--text-xs); color: var(--color-text-muted); display: block; margin-top: 0.5rem;">Mahalleler:</strong>
+            <ul style="display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.75rem;">
+              <% district.neighborhoods.forEach(n => { %>
+                <li>
+                  <a href="/bolgeler/<%= district.slug %>/mahalle/<%= n.slug %>" style="font-size: var(--text-xs); color: var(--color-text-main);">
+                    • <%= n.name %>
+                  </a>
+                </li>
+              <% }); %>
+            </ul>
+          <% } %>
+
+          <!-- Köyler -->
+          <% if (district.villages && district.villages.length > 0) { %>
+            <strong style="font-size: var(--text-xs); color: var(--color-primary-dark); display: block; margin-top: 0.5rem;">Bağlı Köyler:</strong>
+            <ul style="display: flex; flex-direction: column; gap: 0.35rem;">
+              <% district.villages.forEach(v => { %>
+                <li>
+                  <a href="/bolgeler/<%= district.slug %>/mahalle/<%= v.slug %>" style="font-size: var(--text-xs); color: var(--color-dark); font-weight: 600;">
+                    🌾 <%= v.name %>
+                  </a>
+                </li>
+              <% }); %>
+            </ul>
+          <% } %>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+
+  <!-- 5. Bölüm: Şantiye Rehberleri & Köy Makaleleri (19 Makale) -->
+  <div style="margin-top: 3.5rem; background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 2.5rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+    <h3 style="font-size: 1.5rem; color: var(--color-dark); border-bottom: 3px solid var(--color-primary); padding-bottom: 0.6rem; margin-bottom: 1.5rem;">
+      📚 Şantiye Bilgi Merkezi &amp; 13 Köy Özel Rehberleri (<%= blogPosts.length %> Makale)
+    </h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
+      <% blogPosts.forEach(post => { %>
+        <div style="border-left: 3px solid <%= post.villageSlug ? 'var(--color-primary)' : '#94a3b8' %>; padding-left: 1rem;">
+          <span style="font-size: 0.75rem; color: var(--color-text-muted); display: block;"><%= post.category %> • <%= post.date %></span>
+          <a href="/makaleler/<%= post.slug %>" style="font-size: var(--text-sm); font-weight: 700; color: var(--color-dark); line-height: 1.4; display: block; margin-top: 0.25rem;">
+            <%= post.title %>
+          </a>
+          <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin-top: 0.35rem; line-height: 1.5;">
+            <%= post.excerpt.substring(0, 110) %>...
+          </p>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</div>

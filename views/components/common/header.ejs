@@ -1,19 +1,22 @@
 <header class="site-header">
-  <!-- Top Bar (Desktop Only) -->
+  <!-- Top Bar (Desktop Only - Min 1025px) -->
   <div class="header-topbar">
     <div class="header-container topbar-flex">
       <div class="topbar-left">
-        <span class="badge-accent">7/24 ACİL SERVİS</span>
-        <span class="topbar-text">Yalova, Çiftlikköy ve Taşköprü'de 15 Dakikada Adreste</span>
+        <span class="topbar-badge-pill">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>7/24 ACİL SERVİS</span>
+        </span>
+        <span class="topbar-text">Yalova, Çiftlikköy ve Taşköprü'de <strong>15 Dakikada Adreste</strong></span>
       </div>
       <div class="topbar-right">
-        <a href="tel:<%= siteConfig.phoneRaw %>" class="topbar-link">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          <strong><%= siteConfig.phone %></strong>
+        <a href="tel:<%= siteConfig.phoneRaw %>" class="topbar-pill-link" aria-label="Telefon: <%= siteConfig.phone %>">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span><%= siteConfig.phone %></span>
         </a>
-        <a href="https://wa.me/<%= siteConfig.whatsapp %>?text=<%= encodeURIComponent(siteConfig.whatsappMessage) %>" class="topbar-link whatsapp-top" target="_blank" rel="noopener">
+        <a href="https://wa.me/<%= siteConfig.whatsapp %>?text=<%= encodeURIComponent(siteConfig.whatsappMessage) %>" class="topbar-pill-link whatsapp-top" target="_blank" rel="noopener" aria-label="WhatsApp Destek">
           <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
-          WhatsApp Destek
+          <span>WhatsApp Destek</span>
         </a>
       </div>
     </div>
@@ -166,11 +169,23 @@
     </div>
 
     <div class="mobile-drawer-footer">
-      <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary btn-block" style="padding: 0.85rem; margin-bottom: 0.65rem;">
-        📞 <%= siteConfig.phone %> Hemen Ara
+      <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-hero-action btn-hero-call pulse-btn" style="width: 100%; margin-bottom: 0.65rem;">
+        <div class="btn-hero-icon-box">
+          <svg class="btn-hero-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </div>
+        <div class="btn-hero-content">
+          <span class="btn-hero-badge">7/24 KESİNTİSİZ</span>
+          <span class="btn-hero-title"><%= siteConfig.phone %> Hemen Ara</span>
+        </div>
       </a>
-      <a href="https://wa.me/<%= siteConfig.whatsapp %>?text=<%= encodeURIComponent(siteConfig.whatsappMessage) %>" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener" style="padding: 0.85rem;">
-        💬 WhatsApp ile Konum Gönder
+      <a href="https://wa.me/<%= siteConfig.whatsapp %>?text=<%= encodeURIComponent(siteConfig.whatsappMessage) %>" class="btn btn-hero-action btn-hero-wa" target="_blank" rel="noopener" style="width: 100%;">
+        <div class="btn-hero-icon-box">
+          <svg class="btn-hero-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+        </div>
+        <div class="btn-hero-content">
+          <span class="btn-hero-badge">KONUM &amp; FİYAT</span>
+          <span class="btn-hero-title">WhatsApp Mesaj Gönder</span>
+        </div>
       </a>
     </div>
   </div>

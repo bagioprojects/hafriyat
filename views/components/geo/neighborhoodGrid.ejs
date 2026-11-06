@@ -1,0 +1,44 @@
+<div class="neighborhood-seo-section">
+  <div class="neighborhood-box">
+    <h3 class="neighborhood-title">
+      📍 <%= district.name %> Mahallelerinde Hizmet Verdiğimiz Noktalar
+    </h3>
+    <p class="neighborhood-desc">
+      Aşağıdaki mahallelerin tamamına kepçe, bekoloder, dar sokak mini ekskavatör ve forklift sevk edebiliyoruz:
+    </p>
+    <div class="neighborhood-pills">
+      <% if (district.neighborhoods && district.neighborhoods.length > 0) { %>
+        <% district.neighborhoods.forEach(n => { %>
+          <div class="neighborhood-pill">
+            <span class="pill-name"><%= n.name %></span>
+            <% if (n.focus) { %>
+              <span class="pill-focus"><%= n.focus %></span>
+            <% } %>
+          </div>
+        <% }); %>
+      <% } %>
+    </div>
+  </div>
+
+  <% if (district.villages && district.villages.length > 0) { %>
+    <div class="neighborhood-box villages-box">
+      <h3 class="neighborhood-title">
+        🚜 <%= district.name %> Bağlı Köylerinde Hafriyat & Kuyu Açma Hizmetleri
+      </h3>
+      <p class="neighborhood-desc">
+        Köy arazilerinde tarla düzleme, sulama kanalı açma, taş kırma ve keson su kuyusu kazma işlerinizde yanınızdayız:
+      </p>
+      <div class="neighborhood-pills">
+        <% district.villages.forEach(v => { %>
+          <div class="neighborhood-pill village-pill">
+            <span class="pill-name"><%= v.name %></span>
+            <% if (v.focus) { %>
+              <span class="pill-focus"><%= v.focus %></span>
+            <% } %>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  <% } %>
+</div>
+

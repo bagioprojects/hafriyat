@@ -1,0 +1,60 @@
+<%- include('../components/common/pageHero', {
+  title: 'Hakkımızda — Adem Hafriyat',
+  subtitle: 'Yalova genelinde 14 yıldır güven, hız ve mühendislik disipliniyle hafriyat ve iş makinesi çözümleri sunuyoruz.',
+  badge: 'KURUMSAL PROFİL'
+}) %>
+
+<div class="container" style="padding: 4rem 1.5rem;">
+  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;">
+    <!-- Sol İçerik -->
+    <div class="prose-content">
+      <h2>Adem Hafriyat: Yalova'nın Güvenilir Şantiye Ortağı</h2>
+      <p>
+        2012 yılında Yalova'da temelleri atılan <strong>Adem Hafriyat</strong>; dürüst ticaret, iş güvenliğine tam uyum ve modern makine parkuru ilkeleriyle sektörde öncü konuma ulaşmıştır. 
+        Kurulduğumuz ilk günden bu yana; **Çiftlikköy, Taşköprü Sanayi Bölgesi, Altınova Tersaneleri ve Yalova Merkez** başta olmak üzere il genelindeki yüzlerce konut, villa, fabrika altyapısı ve yol projesini başarıyla tamamladık.
+      </p>
+
+      <h3>Neden Adem Hafriyat?</h3>
+      <p>
+        Hafriyat ve iş makinesi kiralama işi sadece makineyi sahaya sürmekten ibaret değildir. Zemin karakterini tanımak, yer altındaki hassas tesisatları korumak, doğru eğimle kanal açmak ve iş güvenliğinden ödün vermemek hayati önem taşır.
+      </p>
+
+      <ul>
+        <li><strong>G Sınıfı Belgeli Tecrübeli Operatörler:</strong> Tüm makine operatörlerimiz en az 8-10 yıl saha tecrübesine ve yasal mesleki yeterlilik belgelerine sahiptir.</li>
+        <li><strong>Stratejik Garaj Konumu:</strong> Çiftlikköy ve Taşköprü sanayi hattındaki ana garajımız sayesinde, Yalova'nın her noktasına 15-20 dakikada intikal ediyoruz.</li>
+        <li><strong>Sıfır İş Kazası Prensibi:</strong> Makinelerimizin periyodik kontrolleri, kaskoları ve saha İSG önlemleri eksiksizdir.</li>
+        <li><strong>Şeffaf Fiyatlandırma:</strong> İş başlamadan önce keşif yapılır, metraj ve süre netleştirilir; iş sonunda asla sürpriz ek maliyet çıkarılmaz.</li>
+      </ul>
+
+      <h3>Makine Filomuz ve Kapasitemiz</h3>
+      <p>
+        Parkurumuzda yer alan JCB 3CX Eco Bekoloderler, dar alanlar için kauçuk paletli Caterpillar Mini Ekskavatörler, büyük temel kazıları için 22 tonluk paletli ekskavatörler ve sanayi tesisleri için 3 - 5 tonluk dizel/akülü forkliftler ile her ölçekteki projeye anında yanıt veriyoruz.
+      </p>
+    </div>
+
+    <!-- Sağ Sidebar -->
+    <aside style="display: flex; flex-direction: column; gap: 2rem;">
+      <%- include('../components/common/quickQuote') %>
+
+      <!-- Hızlı İletişim Kutusu -->
+      <div style="background-color: var(--color-dark); color: #ffffff; padding: 2rem; border-radius: var(--radius-sm); border-top: 4px solid var(--color-primary); text-align: center;">
+        <span style="font-size: var(--text-xs); color: var(--color-primary); font-weight: 800; display: block; margin-bottom: 0.5rem;">7/24 BİZE ULAŞIN</span>
+        <h3 style="font-size: 1.5rem; color: #ffffff; margin-bottom: 0.5rem;"><%= siteConfig.phone %></h3>
+        <p style="font-size: var(--text-xs); color: #94a3b8; margin-bottom: 1.5rem;">
+          Yalova ve tüm ilçelerinde ücretsiz keşif için arayabilirsiniz.
+        </p>
+        <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary btn-block">Hemen Arayın</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- District Selector -->
+<%- include('../components/geo/districtSelector', { districts }) %>
+
+<!-- CTA Banner -->
+<%- include('../components/common/ctaBanner', {
+  title: 'Adem Hafriyat ile Güvenli ve Hızlı Çözüm',
+  description: 'Bizimle iletişime geçin, 15 dakika içinde iş makinenizi şantiyenize yönlendirelim.'
+}) %>
+

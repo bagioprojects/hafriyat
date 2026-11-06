@@ -1,0 +1,15 @@
+<article class="blog-card">
+  <div class="blog-meta-top">
+    <span class="blog-category"><%= post.category %></span>
+    <span class="blog-read-time"><%= post.readTime %></span>
+  </div>
+  <h3 class="blog-card-title">
+    <a href="/makaleler/<%= post.slug %>"><%= post.title %></a>
+  </h3>
+  <p class="blog-card-excerpt"><%= post.excerpt %></p>
+  <div class="blog-card-footer">
+    <span class="blog-author"><%= post.author %></span>
+    <a href="/makaleler/<%= post.slug %>" class="blog-read-more">Devamını Oku &rarr;</a>
+  </div>
+</article>
+

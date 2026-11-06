@@ -1,0 +1,102 @@
+<%- include('../components/common/pageHero', {
+  title: district.h1 || district.title,
+  subtitle: district.description.split('\n\n')[0],
+  badge: `⏱ ${district.responseMinutes} DAKİKADA SERVİS — ${district.tag}`
+}) %>
+
+<div class="container" style="padding: 4rem 1.5rem;">
+  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;">
+    <!-- Sol İçerik: Coğrafi ve Mahalle/Köy Analizi -->
+    <div>
+      <!-- Yerel Zemin ve Coğrafi Detaylar -->
+      <div class="prose-content" style="margin-bottom: 2.5rem;">
+        <%- district.description.replace(/\n\n/g, '<br><br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') %>
+      </div>
+
+      <!-- Mahalle ve Köy SEO Grid Bileşeni -->
+      <%- include('../components/geo/neighborhoodGrid', { district }) %>
+
+      <!-- Bu Bölgede En Çok Yapılan İşler -->
+      <% if (district.commonProjects && district.commonProjects.length > 0) { %>
+        <div style="margin: 3rem 0; background-color: #ffffff; border: 1px solid var(--color-border-light); border-left: 5px solid var(--color-primary); padding: 1.75rem; border-radius: var(--radius-sm);">
+          <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--color-dark);">
+            <%= district.name %> Bölgesinde Sıkça Tamamladığımız Projeler
+          </h3>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <% district.commonProjects.forEach(proj => { %>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: var(--text-sm);">
+                <span style="color: var(--color-primary-dark); font-weight: 900;">✓</span>
+                <span><%= proj %></span>
+              </li>
+            <% }); %>
+          </ul>
+        </div>
+      <% } %>
+
+      <!-- Bölgeye Özel Hizmet Kartları Grid -->
+      <div style="margin-top: 3.5rem;">
+        <div class="section-header-centered" style="text-align: left; margin-bottom: 2rem;">
+          <span class="badge-amber"><%= district.name.toUpperCase() %> İÇİN ÖZEL HİZMETLER</span>
+          <h2 class="section-title"><%= district.name %> Kepçe ve Forklift Hizmetleri</h2>
+          <p class="section-subtitle">
+            Aşağıdaki hizmetlerin tümü <%= district.name %> ilçe merkezi, mahalleleri ve köylerinde aynı gün sevk edilmektedir:
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <% districtServices.forEach(service => { %>
+            <%- include('../components/services/serviceCard', { service, district }) %>
+          <% }); %>
+        </div>
+      </div>
+
+      <!-- SSS / FAQ -->
+      <% if (localFaqs && localFaqs.length > 0) { %>
+        <div style="margin-top: 3.5rem;">
+          <%- include('../components/content/faqAccordion', { faqs: localFaqs }) %>
+        </div>
+      <% } %>
+    </div>
+
+    <!-- Sağ Sidebar: Keşif & Diğer İlçeler -->
+    <aside style="display: flex; flex-direction: column; gap: 2rem;">
+      <%- include('../components/common/quickQuote') %>
+
+      <!-- Acil Servis Kutusu -->
+      <div style="background-color: var(--color-dark); color: #ffffff; padding: 2rem; border-radius: var(--radius-sm); border-top: 4px solid var(--color-primary); text-align: center;">
+        <span style="font-size: var(--text-xs); color: var(--color-primary); font-weight: 800; display: block; margin-bottom: 0.5rem;">
+          <%= district.name.toUpperCase() %> ACİL SERVİS
+        </span>
+        <h3 style="font-size: 1.5rem; color: #ffffff; margin-bottom: 0.5rem;"><%= district.responseMinutes %> Dakikada Adreste</h3>
+        <p style="font-size: var(--text-xs); color: #94a3b8; margin-bottom: 1.5rem;">
+          Garajımızdan en hızlı rotayla makine ve operatör intikali.
+        </p>
+        <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary btn-block btn-lg pulse-btn">
+          <%= siteConfig.phone %>
+        </a>
+      </div>
+
+      <!-- Diğer İlçeler Navigasyonu -->
+      <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 1.5rem; border-radius: var(--radius-sm);">
+        <h4 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.4rem;">Diğer Hizmet Bölgelerimiz</h4>
+        <ul style="display: flex; flex-direction: column; gap: 0.65rem;">
+          <% otherDistricts.forEach(od => { %>
+            <li>
+              <a href="/bolgeler/<%= od.slug %>" style="font-size: var(--text-sm); font-weight: 600; color: var(--color-dark); display: flex; justify-content: space-between;">
+                <span><%= od.name %> Kepçe & Forklift</span>
+                <span style="color: var(--color-primary-dark);"><%= od.responseMinutes %> dk &rarr;</span>
+              </a>
+            </li>
+          <% }); %>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- CTA Banner -->
+<%- include('../components/common/ctaBanner', {
+  title: `${district.name} Bölgesinde Kepçe & Forklift İçin Hemen Arayın`,
+  description: `Adem Hafriyat ${district.name} ve tüm mahallelerinde en kaliteli işçilik ve uygun fiyatı sunar.`
+}) %>
+

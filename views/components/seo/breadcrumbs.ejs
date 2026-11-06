@@ -1,0 +1,20 @@
+<% if (typeof items !== 'undefined' && items && items.length > 1) { %>
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <% items.forEach((item, index) => { %>
+        <% const isLast = index === items.length - 1; %>
+        <li class="breadcrumb-item <%= isLast ? 'active' : '' %>" <%= isLast ? 'aria-current="page"' : '' %>>
+          <% if (!isLast) { %>
+            <a href="<%= item.url %>"><%= item.label %></a>
+            <span class="breadcrumb-separator">/</span>
+          <% } else { %>
+            <span><%= item.label %></span>
+          <% } %>
+        </li>
+      <% }); %>
+    </ol>
+  </div>
+</nav>
+<% } %>
+

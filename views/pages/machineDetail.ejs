@@ -1,0 +1,95 @@
+<%- include('../components/common/pageHero', {
+  title: machine.title || machine.name,
+  subtitle: `${machine.type} — ${machine.tonnage} çalışma ağırlığı ve yüksek performanslı hidrolik güç.`,
+  badge: machine.tag
+}) %>
+
+<div class="container" style="padding: 4rem 1.5rem;">
+  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;">
+    <!-- Sol İçerik: Teknik Veriler & Açıklama -->
+    <div>
+      <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 2rem; border-radius: var(--radius-sm); margin-bottom: 2.5rem;">
+        <h3 style="font-size: 1.4rem; margin-bottom: 1rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem;">
+          <%= machine.name %> Teknik Özellikleri
+        </h3>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+          <div style="background-color: #f8fafc; padding: 1rem; border-radius: var(--radius-sm);">
+            <span style="font-size: var(--text-xs); color: var(--color-text-muted); display: block;">Tonaj / Ağırlık:</span>
+            <strong style="font-size: 1.15rem; color: var(--color-dark);"><%= machine.tonnage %></strong>
+          </div>
+          <div style="background-color: #f8fafc; padding: 1rem; border-radius: var(--radius-sm);">
+            <span style="font-size: var(--text-xs); color: var(--color-text-muted); display: block;">Motor Gücü:</span>
+            <strong style="font-size: 1.15rem; color: var(--color-dark);"><%= machine.enginePower %></strong>
+          </div>
+          <% if (machine.diggingDepth && machine.diggingDepth !== 'N/A') { %>
+            <div style="background-color: #f8fafc; padding: 1rem; border-radius: var(--radius-sm);">
+              <span style="font-size: var(--text-xs); color: var(--color-text-muted); display: block;">Maksimum Kazma Derinliği:</span>
+              <strong style="font-size: 1.15rem; color: var(--color-dark);"><%= machine.diggingDepth %></strong>
+            </div>
+          <% } %>
+          <% if (machine.liftingHeight) { %>
+            <div style="background-color: #f8fafc; padding: 1rem; border-radius: var(--radius-sm);">
+              <span style="font-size: var(--text-xs); color: var(--color-text-muted); display: block;">Kaldırma Yüksekliği:</span>
+              <strong style="font-size: 1.15rem; color: var(--color-dark);"><%= machine.liftingHeight %></strong>
+            </div>
+          <% } %>
+          <% if (machine.bucketCapacity) { %>
+            <div style="background-color: #f8fafc; padding: 1rem; border-radius: var(--radius-sm);">
+              <span style="font-size: var(--text-xs); color: var(--color-text-muted); display: block;">Kova Hacmi:</span>
+              <strong style="font-size: 1.15rem; color: var(--color-dark);"><%= machine.bucketCapacity %></strong>
+            </div>
+          <% } %>
+          <div style="background-color: #f8fafc; padding: 1rem; border-radius: var(--radius-sm);">
+            <span style="font-size: var(--text-xs); color: var(--color-text-muted); display: block;">Kiralama Modeli:</span>
+            <strong style="font-size: 1.15rem; color: var(--color-dark);"><%= machine.rentalTerms %></strong>
+          </div>
+        </div>
+
+        <h4 style="font-size: 1.15rem; margin: 1.5rem 0 0.75rem; color: var(--color-dark);">Öne Çıkan Donanım & Ataşmanlar:</h4>
+        <ul style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem;">
+          <% machine.features.forEach(f => { %>
+            <li style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: var(--text-sm);">
+              <span style="color: var(--color-primary-dark); font-weight: 900;">✓</span>
+              <span><%= f %></span>
+            </li>
+          <% }); %>
+        </ul>
+
+        <h4 style="font-size: 1.15rem; margin: 1.5rem 0 0.75rem; color: var(--color-dark);">En Çok Kullanıldığı Alanlar:</h4>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+          <% machine.bestFor.forEach(b => { %>
+            <span class="badge-tag" style="font-size: var(--text-xs);"><%= b %></span>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sağ Sidebar -->
+    <aside style="display: flex; flex-direction: column; gap: 2rem;">
+      <%- include('../components/common/quickQuote') %>
+
+      <!-- Diğer Makineler -->
+      <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 1.5rem; border-radius: var(--radius-sm);">
+        <h4 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.4rem;">Diğer Makinelerimiz</h4>
+        <ul style="display: flex; flex-direction: column; gap: 0.65rem;">
+          <% otherMachines.forEach(om => { %>
+            <li>
+              <a href="/makinelerimiz/<%= om.slug %>" style="font-size: var(--text-sm); font-weight: 600; color: var(--color-dark); display: flex; justify-content: space-between;">
+                <span><%= om.name %></span>
+                <span style="color: var(--color-primary-dark);">&rarr;</span>
+              </a>
+            </li>
+          <% }); %>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- CTA Banner -->
+<%- include('../components/common/ctaBanner', {
+  title: `${machine.name} Kiralamak İçin Hemen Arayın`,
+  description: 'Adem Hafriyat güvencesiyle saatlik, günlük ve aylık uygun kiralama fiyatları.'
+}) %>
+

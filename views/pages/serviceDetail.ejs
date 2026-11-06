@@ -1,0 +1,110 @@
+<%- include('../components/common/pageHero', {
+  title: service.h1 || service.title,
+  subtitle: service.excerpt,
+  badge: service.category === 'forklift' ? 'FORKLİFT KİRALAMA' : 'KEPÇE & HAFRİYAT HİZMETİ'
+}) %>
+
+<div class="container" style="padding: 4rem 1.5rem;">
+  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;">
+    <!-- Sol: Detaylı SEO & Saha İçeriği -->
+    <div>
+      <!-- Öne Çıkan Özellikler Kutusu -->
+      <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); border-left: 5px solid var(--color-primary); padding: 1.75rem; border-radius: var(--radius-sm); margin-bottom: 2.5rem;">
+        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--color-dark);">Adem Hafriyat ile Bu Hizmetin Avantajları</h3>
+        <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <% service.features.forEach(feat => { %>
+            <li style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: var(--text-sm);">
+              <span style="color: var(--color-primary-dark); font-weight: 900;">✓</span>
+              <span><%= feat %></span>
+            </li>
+          <% }); %>
+        </ul>
+      </div>
+
+      <!-- Teknik Tablo -->
+      <% if (service.technicalDetails) { %>
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.4rem; margin-bottom: 1rem; color: var(--color-dark);">Teknik Parametreler & Kapasite</h3>
+          <table style="width: 100%; border-collapse: collapse; font-size: var(--text-sm);">
+            <tbody>
+              <% Object.entries(service.technicalDetails).forEach(([key, val]) => { %>
+                <tr style="border-bottom: 1px solid var(--color-border-light);">
+                  <td style="padding: 0.75rem 1rem; font-weight: 700; background-color: #f8fafc; width: 40%; text-transform: capitalize;"><%= key.replace(/([A-Z])/g, ' $1') %></td>
+                  <td style="padding: 0.75rem 1rem;"><%= val %></td>
+                </tr>
+              <% }); %>
+            </tbody>
+          </table>
+        </div>
+      <% } %>
+
+      <!-- Zengin İnsan Editör Metni -->
+      <div class="prose-content">
+        <%- service.content.replace(/\n\n/g, '<br><br>').replace(/### (.*?)\n/g, '<h3>$1</h3>').replace(/#### (.*?)\n/g, '<h4>$1</h4>') %>
+      </div>
+
+      <!-- İlçelerde Bu Hizmet (Deep Local Cross-Links) -->
+      <div style="margin-top: 3.5rem; background-color: #f8fafc; border: 1px solid var(--color-border-light); padding: 2rem; border-radius: var(--radius-sm);">
+        <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--color-dark);">
+          📍 Bu Hizmetimizi İlçelere Göre İnceleyin:
+        </h3>
+        <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: 1.25rem;">
+          Yalova'nın her bölgesine özel zemin ve ulaşım şartlarına göre hizmet detaylarımıza ulaşabilirsiniz:
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+          <% districts.forEach(d => { %>
+            <a href="/bolgeler/<%= d.slug %>/<%= service.slug %>" class="btn btn-dark-outline btn-sm">
+              <%= d.name %> <%= service.shortTitle || service.title %> &rarr;
+            </a>
+          <% }); %>
+        </div>
+      </div>
+
+      <!-- Sıkça Sorulan Sorular -->
+      <% if (service.faqs && service.faqs.length > 0) { %>
+        <div style="margin-top: 3.5rem;">
+          <%- include('../components/content/faqAccordion', { faqs: service.faqs }) %>
+        </div>
+      <% } %>
+    </div>
+
+    <!-- Sağ Sidebar: Hızlı Teklif & İlgili Makineler -->
+    <aside style="display: flex; flex-direction: column; gap: 2rem;">
+      <%- include('../components/common/quickQuote') %>
+
+      <!-- Acil Arama Kutusu -->
+      <div style="background-color: var(--color-dark); color: #ffffff; padding: 2rem; border-radius: var(--radius-sm); border-top: 4px solid var(--color-primary); text-align: center;">
+        <span style="font-size: var(--text-xs); color: var(--color-primary); font-weight: 800; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">ACİL OPERATÖRLÜ KEPÇE & FORKLİFT</span>
+        <h3 style="font-size: 1.5rem; color: #ffffff; margin-bottom: 0.5rem;">15 Dakikada Adreste</h3>
+        <p style="font-size: var(--text-xs); color: #94a3b8; margin-bottom: 1.5rem;">
+          Çiftlikköy, Taşköprü ve Yalova Merkez için nöbetçi operatör hattımız 7/24 devrededir.
+        </p>
+        <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary btn-block btn-lg pulse-btn">
+          <%= siteConfig.phone %>
+        </a>
+      </div>
+
+      <!-- Diğer Hizmetler -->
+      <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 1.5rem; border-radius: var(--radius-sm);">
+        <h4 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.4rem;">İlgili Diğer Hizmetlerimiz</h4>
+        <ul style="display: flex; flex-direction: column; gap: 0.65rem;">
+          <% otherServices.forEach(other => { %>
+            <li>
+              <a href="/hizmetlerimiz/<%= other.slug %>" style="font-size: var(--text-sm); font-weight: 600; color: var(--color-dark); display: flex; justify-content: space-between;">
+                <span><%= other.title %></span>
+                <span style="color: var(--color-primary-dark);">&rarr;</span>
+              </a>
+            </li>
+          <% }); %>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- CTA Banner -->
+<%- include('../components/common/ctaBanner', {
+  title: `${service.title} İçin Şimdi Arayın`,
+  description: 'Adem Hafriyat olarak Yalova ve tüm ilçelerinde ücretsiz keşif ve en uygun fiyat avantajı sunuyoruz.'
+}) %>
+

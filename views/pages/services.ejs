@@ -1,0 +1,43 @@
+<%- include('../components/common/pageHero', {
+  title: 'Yalova Kepçe, Forklift ve Hafriyat Hizmetlerimiz',
+  subtitle: 'Çiftlikköy, Taşköprü, Yalova Merkez ve tüm ilçelerde operatörlü iş makinesi kiralama ve altyapı hafriyat çözümleri.',
+  badge: '10+ UZMANLIK ALANI'
+}) %>
+
+<section class="service-section">
+  <div class="container">
+    <div class="section-header-centered">
+      <span class="badge-amber">TAM HİZMET LİSTESİ</span>
+      <h2 class="section-title">İhtiyacınıza Özel Kepçe & Forklift Çözümleri</h2>
+      <p class="section-subtitle">
+        Her türlü kazı derinliği, dar sokak ve sanayi yükleme projesine uygun profesyonel ekipman ve operatör desteği.
+      </p>
+    </div>
+
+    <!-- Kepçe Hizmetleri Alt Başlığı -->
+    <div style="margin-bottom: 2rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: flex-end;">
+      <h3 style="font-size: 1.6rem; color: var(--color-dark);">🚜 Kepçe & Hafriyat Hizmetlerimiz</h3>
+      <span style="font-size: var(--text-xs); color: var(--color-text-muted);">JCB 3CX Bekoloder & Mini Ekskavatör</span>
+    </div>
+
+    <%- include('../components/services/serviceGrid', { services: services.filter(s => s.category === 'kepce') }) %>
+
+    <!-- Forklift Hizmetleri Alt Başlığı -->
+    <div style="margin: 4rem 0 2rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: flex-end;">
+      <h3 style="font-size: 1.6rem; color: var(--color-dark);">🏗️ Forklift Kiralama Hizmetlerimiz</h3>
+      <span style="font-size: var(--text-xs); color: var(--color-text-muted);">Taşköprü Sanayi & Altınova Tersaneleri 15 Dk Teslim</span>
+    </div>
+
+    <%- include('../components/services/serviceGrid', { services: services.filter(s => s.category === 'forklift') }) %>
+  </div>
+</section>
+
+<!-- District Selector -->
+<%- include('../components/geo/districtSelector', { districts }) %>
+
+<!-- CTA Banner -->
+<%- include('../components/common/ctaBanner', {
+  title: 'İhtiyacınız Olan Hizmet İçin Hemen Fiyat Alın',
+  description: 'Adem Hafriyat tecrübeli operatörleri ile Yalova genelinde en uygun fiyat garantisi sunmaktadır.'
+}) %>
+

@@ -1,0 +1,135 @@
+<header class="site-header">
+  <!-- Top Bar -->
+  <div class="header-topbar">
+    <div class="container topbar-flex">
+      <div class="topbar-left">
+        <span class="badge-accent">7/24 ACİL SERVİS</span>
+        <span class="topbar-text">Yalova, Çiftlikköy ve Taşköprü'de 15 Dakikada Adreste</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:<%= siteConfig.phoneRaw %>" class="topbar-link">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <strong><%= siteConfig.phone %></strong>
+        </a>
+        <a href="https://wa.me/<%= siteConfig.whatsapp %>?text=<%= encodeURIComponent(siteConfig.whatsappMessage) %>" class="topbar-link whatsapp-top" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+          WhatsApp Teklif Al
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <div class="header-main">
+    <div class="container navbar-flex">
+      <!-- Logo -->
+      <a href="/" class="brand-logo" aria-label="Adem Hafriyat Ana Sayfa">
+        <div class="logo-icon-wrap">
+          <span class="logo-symbol">▲</span>
+        </div>
+        <div class="logo-text-wrap">
+          <span class="brand-title">ADEM HAFRİYAT</span>
+          <span class="brand-subtitle">YALOVA KEPÇE & FORKLİFT KİRALAMA</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Ana Menü">
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-link <%= activeNav === 'home' ? 'active' : '' %>">Ana Sayfa</a></li>
+          <li class="has-dropdown">
+            <a href="/hizmetlerimiz" class="nav-link <%= activeNav === 'services' ? 'active' : '' %>">
+              Hizmetlerimiz <span class="arrow-down">▾</span>
+            </a>
+            <div class="mega-dropdown">
+              <div class="mega-column">
+                <span class="mega-title">KEPÇE HİZMETLERİ</span>
+                <a href="/hizmetlerimiz/kepce-kiralama" class="mega-item"><strong>Yalova Kepçe Kiralama</strong></a>
+                <a href="/hizmetlerimiz/kanal-kazma" class="mega-item">Kanal Kazma İşleri</a>
+                <a href="/hizmetlerimiz/su-kuyusu-kazma" class="mega-item">Su Kuyusu Açma</a>
+                <a href="/hizmetlerimiz/yagmur-kanalizasyon-giderleri" class="mega-item">Yağmur & Kanalizasyon</a>
+                <a href="/hizmetlerimiz/tamir-altyapi-onarim" class="mega-item">Tamir & Altyapı Onarım</a>
+                <a href="/hizmetlerimiz/arazi-duzleme-tesviye" class="mega-item">Arazi Düzleme / Tesviye</a>
+              </div>
+              <div class="mega-column">
+                <span class="mega-title">HAFRİYAT & ALTYAPI</span>
+                <a href="/hizmetlerimiz/temel-kazma" class="mega-item">Temel Kazma (Bina/Villa)</a>
+                <a href="/hizmetlerimiz/dolgu-micir-yayma" class="mega-item">Dolgu & Mıcır Yayma</a>
+                <a href="/hizmetlerimiz/elektrik-kanal-kazma" class="mega-item">Elektrik Kablo Kanalı</a>
+                <a href="/hizmetlerimiz/bina-cevre-duzenleme" class="mega-item">Bina Çevre Düzenleme</a>
+                <a href="/hizmetlerimiz/hafriyat-peyzaj-isleri" class="mega-item">Peyzaj & Bahçe Hafriyatı</a>
+              </div>
+              <div class="mega-column">
+                <span class="mega-title">FORKLİFT KİRALAMA</span>
+                <a href="/hizmetlerimiz/forklift-kiralama" class="mega-item highlight"><strong>Yalova Forklift Kiralama</strong></a>
+                <a href="/hizmetlerimiz/operatorlu-forklift-kiralama" class="mega-item">Operatörlü Forklift</a>
+                <a href="/hizmetlerimiz/operatorsuz-forklift-kiralama" class="mega-item">Operatörsüz Kiralama</a>
+                <div class="dropdown-cta-box">
+                  <p>Taşköprü Sanayi ve Tersaneler için 15 dakikada servis!</p>
+                  <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-sm btn-primary">Hemen Ara</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="has-dropdown">
+            <a href="/#bolgeler" class="nav-link <%= activeNav === 'districts' ? 'active' : '' %>">
+              Bölgelerimiz <span class="arrow-down">▾</span>
+            </a>
+            <div class="simple-dropdown">
+              <a href="/bolgeler/ciftlikkoy" class="dropdown-link"><strong>Çiftlikköy</strong> (Merkez & Köyler)</a>
+              <a href="/bolgeler/taskopru" class="dropdown-link"><strong>Taşköprü</strong> (Sanayi & Fabrikalar)</a>
+              <a href="/bolgeler/yalova-merkez" class="dropdown-link"><strong>Yalova Merkez</strong> (Tüm Mahalleler)</a>
+              <a href="/bolgeler/altinova" class="dropdown-link"><strong>Altınova</strong> (Tersaneler Bölgesi)</a>
+              <a href="/bolgeler/cinarcik" class="dropdown-link"><strong>Çınarcık</strong> (Sahil & Yayla)</a>
+              <a href="/bolgeler/termal" class="dropdown-link"><strong>Termal</strong> (Doğa & Tesisler)</a>
+              <a href="/bolgeler/armutlu" class="dropdown-link"><strong>Armutlu</strong></a>
+            </div>
+          </li>
+          <li><a href="/makinelerimiz" class="nav-link <%= activeNav === 'machinery' ? 'active' : '' %>">Makinelerimiz</a></li>
+          <li><a href="/makaleler" class="nav-link <%= activeNav === 'blog' ? 'active' : '' %>">Makaleler</a></li>
+          <li><a href="/hakkimizda" class="nav-link <%= activeNav === 'about' ? 'active' : '' %>">Hakkımızda</a></li>
+          <li><a href="/iletisim" class="nav-link <%= activeNav === 'contact' ? 'active' : '' %>">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="header-action">
+        <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary pulse-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>HEMEN TEKLİF AL</span>
+        </a>
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Menüyü Aç">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-title">ADEM HAFRİYAT</span>
+      <button type="button" class="close-drawer" id="closeDrawerBtn">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="/">Ana Sayfa</a></li>
+      <li><a href="/hizmetlerimiz/kepce-kiralama"><strong>Yalova Kepçe Kiralama</strong></a></li>
+      <li><a href="/hizmetlerimiz/forklift-kiralama"><strong>Yalova Forklift Kiralama</strong></a></li>
+      <li><a href="/hizmetlerimiz">Tüm Hizmetlerimiz (10+ Alan)</a></li>
+      <li><a href="/bolgeler/ciftlikkoy">Çiftlikköy Kepçe Kiralama</a></li>
+      <li><a href="/bolgeler/taskopru">Taşköprü Forklift & Kepçe</a></li>
+      <li><a href="/bolgeler/yalova-merkez">Yalova Merkez Kepçe</a></li>
+      <li><a href="/bolgeler/altinova">Altınova Tersane Forklift</a></li>
+      <li><a href="/makinelerimiz">Makine Parkurumuz</a></li>
+      <li><a href="/makaleler">Sektörel Makaleler & Rehber</a></li>
+      <li><a href="/hakkimizda">Hakkımızda</a></li>
+      <li><a href="/iletisim">İletişim & Harita</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary btn-block">
+        <%= siteConfig.phone %> Hemen Ara
+      </a>
+    </div>
+  </div>
+</header>
+

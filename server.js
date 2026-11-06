@@ -1,0 +1,83 @@
+/**
+ * Adem Hafriyat — Yalovakepcehafriyat.com.tr
+ * MVC Sunucu Başlatıcı (Server Core)
+ */
+
+const express = require('express');
+const path = require('path');
+const compression = require('compression');
+const expressLayouts = require('express-ejs-layouts');
+
+const siteConfig = require('./config/site');
+const webRoutes = require('./src/routes/web');
+const { generateSeoData } = require('./src/helpers/seoHelper');
+
+const app = express();
+const PORT = process.env.PORT || 7450;
+
+// Gzip Sıkıştırma (Ultra Hızlı Yüklenme & Core Web Vitals)
+app.use(compression());
+
+// URL Encoded & JSON Body Parser
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// Statik Dosyalar (CSS, JS, Görseller)
+app.use(express.static(path.join(__dirname, 'public'), {
+  maxAge: '7d',
+  etag: true
+}));
+
+// EJS & Layout Ayarları
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.use(expressLayouts);
+app.set('layout', 'layouts/main');
+app.set('layout extractScripts', true);
+app.set('layout extractStyles', true);
+
+// Global Değişkenler (Tüm view'larda erişilebilir)
+app.use((req, res, next) => {
+  res.locals.siteConfig = siteConfig;
+  res.locals.currentPath = req.path;
+  next();
+});
+
+// Web Rotaları
+app.use('/', webRoutes);
+
+// 404 Sayfa Bulunamadı Yönetimi
+app.use((req, res) => {
+  res.status(404);
+  const seo = generateSeoData({
+    title: '404 Sayfa Bulunamadı',
+    description: 'Aradığınız sayfa bulunamadı. Adem Hafriyat Yalova kepçe ve forklift kiralama hizmetlerimize ana sayfadan ulaşabilirsiniz.',
+    canonicalPath: req.path
+  });
+  res.render('pages/404', {
+    siteConfig,
+    seo,
+    schemas: [],
+    activeNav: ''
+  });
+});
+
+// 500 Genel Hata Yönetimi
+app.use((err, req, res, next) => {
+  console.error('[Sunucu Hatası]:', err);
+  res.status(500).send('Sunucuda bir hata meydana geldi. Lütfen daha sonra tekrar deneyiniz.');
+});
+
+// Sunucuyu Başlat
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => {
+    console.log(`====================================================`);
+    console.log(`🚜 Adem Hafriyat Web Platformu Yayında!`);
+    console.log(`🌐 Site Adresi: http://localhost:${PORT}`);
+    console.log(`📁 Ortam: ${process.env.NODE_ENV || 'development'}`);
+    console.log(`⏱  7/24 Kesintisiz Kepçe & Forklift Servisi`);
+    console.log(`====================================================`);
+  });
+}
+
+module.exports = app;

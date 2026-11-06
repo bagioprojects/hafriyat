@@ -1,0 +1,89 @@
+<%- include('../components/common/pageHero', {
+  title: post.title,
+  subtitle: `${post.author} tarafından hazırlandı • ${post.readTime} • Güncelleme: 2026`,
+  badge: post.category
+}) %>
+
+<div class="container" style="padding: 4rem 1.5rem;">
+  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;">
+    <!-- Sol: Makale İçeriği (Prose) -->
+    <article class="blog-article-full">
+      <div class="prose-content">
+        <%- post.content
+          .replace(/## (.*?)\n/g, '<h2>$1</h2>')
+          .replace(/### (.*?)\n/g, '<h3>$1</h3>')
+          .replace(/#### (.*?)\n/g, '<h4>$1</h4>')
+          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+          .replace(/---/g, '<hr style="border: 0; border-top: 2px solid var(--color-border-light); margin: 2rem 0;">')
+          .replace(/\n\n/g, '<br><br>')
+        %>
+      </div>
+
+      <!-- Etiketler -->
+      <% if (post.tags && post.tags.length > 0) { %>
+        <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border-light);">
+          <strong style="font-size: var(--text-sm); color: var(--color-dark); margin-right: 0.5rem;">İlgili Etiketler:</strong>
+          <% post.tags.forEach(tag => { %>
+            <span class="badge-tag" style="margin-right: 0.35rem; margin-bottom: 0.35rem; display: inline-block;"><%= tag %></span>
+          <% }); %>
+        </div>
+      <% } %>
+
+      <!-- Yazar Kutusu -->
+      <div style="margin-top: 2.5rem; background-color: #f8fafc; border: 1px solid var(--color-border-light); border-left: 4px solid var(--color-primary); padding: 1.5rem; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 1rem;">
+        <div style="width: 50px; height: 50px; background-color: var(--color-dark); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 900; border-radius: var(--radius-full); flex-shrink: 0;">
+          ▲
+        </div>
+        <div>
+          <strong style="font-size: 1.1rem; color: var(--color-dark); display: block;"><%= post.author %></strong>
+          <p style="font-size: var(--text-xs); color: var(--color-text-muted);">
+            Adem Hafriyat bünyesinde Yalova, Çiftlikköy ve Taşköprü şantiye operasyonlarını yöneten kıdemli hafriyat ve iş makinesi uzmanları.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Sağ Sidebar -->
+    <aside style="display: flex; flex-direction: column; gap: 2rem;">
+      <%- include('../components/common/quickQuote') %>
+
+      <!-- İlgili Hizmetler -->
+      <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 1.5rem; border-radius: var(--radius-sm);">
+        <h4 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.4rem;">Öne Çıkan Hizmetlerimiz</h4>
+        <ul style="display: flex; flex-direction: column; gap: 0.65rem;">
+          <% featuredServices.forEach(s => { %>
+            <li>
+              <a href="/hizmetlerimiz/<%= s.slug %>" style="font-size: var(--text-sm); font-weight: 600; color: var(--color-dark); display: flex; justify-content: space-between;">
+                <span><%= s.title %></span>
+                <span style="color: var(--color-primary-dark);">&rarr;</span>
+              </a>
+            </li>
+          <% }); %>
+        </ul>
+      </div>
+
+      <!-- Diğer Makaleler -->
+      <% if (otherPosts && otherPosts.length > 0) { %>
+        <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); padding: 1.5rem; border-radius: var(--radius-sm);">
+          <h4 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--color-dark); border-bottom: 2px solid var(--color-primary); padding-bottom: 0.4rem;">Diğer Yazılarımız</h4>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <% otherPosts.forEach(op => { %>
+              <li>
+                <a href="/makaleler/<%= op.slug %>" style="font-size: var(--text-xs); font-weight: 700; color: var(--color-dark); line-height: 1.4; display: block;">
+                  <%= op.title %>
+                </a>
+              </li>
+            <% }); %>
+          </ul>
+        </div>
+      <% } %>
+    </aside>
+  </div>
+</div>
+
+<!-- CTA Banner -->
+<%- include('../components/common/ctaBanner', {
+  title: 'Yalova’da Güvenilir Kepçe ve Forklift Çözümleri',
+  description: 'Adem Hafriyat ile işinizi şansa bırakmayın; profesyonel makinelerimiz ve uzman operatörlerimizle 7/24 hizmetinizdeyiz.'
+}) %>
+

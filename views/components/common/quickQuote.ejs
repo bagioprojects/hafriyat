@@ -1,0 +1,55 @@
+<div class="quick-quote-card">
+  <div class="quote-header">
+    <span class="quote-tag">ÜCRETSİZ KEŞİF & ANINDA FİYAT</span>
+    <h3 class="quote-title">İş Makinesi & Hafriyat Teklifi Alın</h3>
+    <p class="quote-subtitle">Yalova ve ilçelerine 15 dakikada en uygun fiyat garantisi</p>
+  </div>
+  <form class="quote-form" id="quickQuoteForm" onsubmit="handleQuoteSubmit(event)">
+    <div class="form-group">
+      <label for="quoteDistrict">Hizmet Bölgesi / İlçe:</label>
+      <select id="quoteDistrict" class="form-control" required>
+        <option value="">İlçe Seçiniz...</option>
+        <option value="Çiftlikköy">Çiftlikköy (Merkez & Köyler)</option>
+        <option value="Taşköprü">Taşköprü (Sanayi & OSB)</option>
+        <option value="Yalova Merkez">Yalova Merkez (Tüm Mahalleler)</option>
+        <option value="Altınova">Altınova (Tersaneler Bölgesi)</option>
+        <option value="Çınarcık">Çınarcık & Koru / Esenköy</option>
+        <option value="Termal">Termal & Gökçedere</option>
+        <option value="Armutlu">Armutlu</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="quoteService">İhtiyacınız Olan Hizmet:</label>
+      <select id="quoteService" class="form-control" required>
+        <option value="">Hizmet Seçiniz...</option>
+        <option value="Kepçe Kiralama (JCB Bekoloder)">Kepçe Kiralama (JCB Bekoloder)</option>
+        <option value="Mini Ekskavatör (Dar Sokak/Bahçe)">Mini Ekskavatör (Dar Sokak/Bahçe)</option>
+        <option value="Forklift Kiralama (Operatörlü)">Forklift Kiralama (Operatörlü)</option>
+        <option value="Forklift Kiralama (Operatörsüz/Aylık)">Forklift Kiralama (Operatörsüz/Aylık)</option>
+        <option value="Kanal Kazma (Su/Gaz/Drenaj)">Kanal Kazma (Su/Gaz/Drenaj)</option>
+        <option value="Temel Kazma (Bina/Villa/Havuz)">Temel Kazma (Bina/Villa/Havuz)</option>
+        <option value="Su Kuyusu Açma & Islahı">Su Kuyusu Açma & Islahı</option>
+        <option value="Yağmur & Kanalizasyon Kazısı">Yağmur & Kanalizasyon Kazısı</option>
+        <option value="Arazi Düzleme & Tesviye">Arazi Düzleme & Tesviye</option>
+        <option value="Dolgu & Mıcır Yayma">Dolgu & Mıcır Yayma</option>
+        <option value="Altyapı Tamiratı & Arıza">Altyapı Tamiratı & Arıza</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="quotePhone">Telefon Numaranız:</label>
+      <input type="tel" id="quotePhone" class="form-control" placeholder="05XX XXX XX XX" required>
+    </div>
+
+    <div class="form-group">
+      <label for="quoteNote">Kısa Not / Metraj (Opsiyonel):</label>
+      <input type="text" id="quoteNote" class="form-control" placeholder="Örn: 50 metre kanal kazılacak veya 2 tır indirilecek">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block btn-lg">
+      Hemen Fiyat & Bilgi Al
+    </button>
+  </form>
+</div>
+

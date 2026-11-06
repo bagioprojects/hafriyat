@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <%- include('../components/seo/head', { seo }) %>
+  <%- include('../components/seo/schema', { schemas: typeof schemas !== 'undefined' ? schemas : [] }) %>
+</head>
+<body class="site-body">
+  <!-- Header -->
+  <%- include('../components/common/header', { activeNav: typeof activeNav !== 'undefined' ? activeNav : '' }) %>
+
+  <!-- Breadcrumbs -->
+  <% if (typeof seo !== 'undefined' && seo.breadcrumbs && seo.breadcrumbs.length > 1) { %>
+    <%- include('../components/seo/breadcrumbs', { items: seo.breadcrumbs }) %>
+  <% } %>
+
+  <!-- Main Content Body -->
+  <main class="site-main" id="mainContent">
+    <%- body %>
+  </main>
+
+  <!-- Sticky Quick Contact (WhatsApp & Phone) -->
+  <%- include('../components/common/whatsappFloat') %>
+
+  <!-- Footer -->
+  <%- include('../components/common/footer') %>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
+

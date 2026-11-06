@@ -1,0 +1,59 @@
+<%- include('../components/common/pageHero', {
+  title: 'İletişim & Ücretsiz Keşif Hattı',
+  subtitle: 'Yalova Kepçe ve Forklift Kiralama ihtiyaçlarınız için 7 gün 24 saat kesintisiz hizmetinizdeyiz.',
+  badge: '7/24 DİREKT HAT'
+}) %>
+
+<div class="container" style="padding: 4rem 1.5rem;">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+    <!-- Sol: İletişim Bilgileri & Garaj Adresi -->
+    <div>
+      <span class="badge-amber">MERKEZ GARAJ & OFİS</span>
+      <h2 style="font-size: 2rem; margin: 0.5rem 0 1.5rem; color: var(--color-dark);">Adem Hafriyat İletişim Bilgileri</h2>
+
+      <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
+        <div style="display: flex; gap: 1rem; align-items: flex-start; background-color: #ffffff; padding: 1.5rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border-light);">
+          <div style="width: 44px; height: 44px; background-color: var(--color-dark); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 1.25rem; flex-shrink: 0;">
+            📞
+          </div>
+          <div>
+            <strong style="display: block; font-size: 0.85rem; color: var(--color-text-muted);">7/24 Acil Çağrı & Keşif:</strong>
+            <a href="tel:<%= siteConfig.phoneRaw %>" style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); font-family: var(--font-heading);"><%= siteConfig.phone %></a>
+            <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin-top: 0.25rem;">Gece ve gündüz tüm acil arıza ve hafriyat çağrılarına yanıt verilir.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; align-items: flex-start; background-color: #ffffff; padding: 1.5rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border-light);">
+          <div style="width: 44px; height: 44px; background-color: var(--color-accent-whatsapp); color: #ffffff; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 1.25rem; flex-shrink: 0;">
+            💬
+          </div>
+          <div>
+            <strong style="display: block; font-size: 0.85rem; color: var(--color-text-muted);">WhatsApp Hızlı Destek:</strong>
+            <a href="https://wa.me/<%= siteConfig.whatsapp %>" target="_blank" rel="noopener" style="font-size: 1.2rem; font-weight: 700; color: var(--color-dark); font-family: var(--font-heading);">WhatsApp İle Konum Gönder</a>
+            <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin-top: 0.25rem;">Şantiye fotoğrafınızı veya konumunuzu atarak 2 dakikada fiyat alın.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; align-items: flex-start; background-color: #ffffff; padding: 1.5rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border-light);">
+          <div style="width: 44px; height: 44px; background-color: var(--color-dark); color: var(--color-primary); display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 1.25rem; flex-shrink: 0;">
+            📍
+          </div>
+          <div>
+            <strong style="display: block; font-size: 0.85rem; color: var(--color-text-muted);">Merkez Makine Garajı:</strong>
+            <span style="font-size: 1.05rem; font-weight: 600; color: var(--color-dark);"><%= siteConfig.address.streetAddress %></span>
+            <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin-top: 0.25rem;"><%= siteConfig.address.addressLocality %> / <%= siteConfig.address.addressRegion %> (Taşköprü Sanayi Girişi)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sağ: Hızlı Keşif Formu -->
+    <div>
+      <%- include('../components/common/quickQuote') %>
+    </div>
+  </div>
+</div>
+
+<!-- District Selector -->
+<%- include('../components/geo/districtSelector', { districts }) %>
+

@@ -1,0 +1,21 @@
+{
+  "name": "yalovakepceharfiyat.com.tr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "compression": "^1.8.2",
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}

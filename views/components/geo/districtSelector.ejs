@@ -1,0 +1,25 @@
+<div class="district-selector-block" id="bolgeler">
+  <div class="section-header-centered">
+    <span class="badge-amber">7/24 YALOVA GENELİ HİZMET</span>
+    <h2 class="section-title">Yalova'nın Tüm İlçelerinde Sahadayız</h2>
+    <p class="section-subtitle">
+      İlçenizi seçerek bölgenize özel kepçe kiralama, forklift kiralama, mahalle ve köy servis sürelerimizi inceleyebilirsiniz.
+    </p>
+  </div>
+  <div class="district-cards-grid">
+    <% districts.forEach(d => { %>
+      <a href="/bolgeler/<%= d.slug %>" class="district-card <%= (typeof currentDistrictSlug !== 'undefined' && currentDistrictSlug === d.slug) ? 'active' : '' %>">
+        <div class="district-card-top">
+          <span class="district-tag"><%= d.tag %></span>
+          <span class="response-time">⏱ <%= d.responseMinutes %> dk</span>
+        </div>
+        <h3 class="district-name"><%= d.name %></h3>
+        <p class="district-excerpt"><%= d.excerpt %></p>
+        <div class="district-card-link">
+          <span>İlçe & Köy Detayları &rarr;</span>
+        </div>
+      </a>
+    <% }); %>
+  </div>
+</div>
+

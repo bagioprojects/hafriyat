@@ -1,0 +1,41 @@
+<%
+  const targetUrl = (typeof district !== 'undefined' && district)
+    ? `/bolgeler/${district.slug}/${service.slug}`
+    : `/hizmetlerimiz/${service.slug}`;
+%>
+<article class="service-card <%= service.isHero ? 'featured-service' : '' %>">
+  <div class="card-badge-row">
+    <span class="badge-tag"><%= service.category === 'forklift' ? 'FORKLİFT' : 'KEPÇE & HAFRİYAT' %></span>
+    <% if (service.isHero) { %>
+      <span class="badge-highlight">ÖNE ÇIKAN</span>
+    <% } %>
+  </div>
+  <h3 class="card-title">
+    <a href="<%= targetUrl %>">
+      <%= (typeof district !== 'undefined' && district) ? `${district.name} ${service.shortTitle || service.title}` : service.title %>
+    </a>
+  </h3>
+  <p class="card-excerpt"><%= service.excerpt %></p>
+
+  <% if (service.features && service.features.length > 0) { %>
+    <ul class="card-feature-list">
+      <% service.features.slice(0, 3).forEach(f => { %>
+        <li>
+          <span class="check-icon">✓</span>
+          <span><%= f %></span>
+        </li>
+      <% }); %>
+    </ul>
+  <% } %>
+
+  <div class="card-footer">
+    <a href="<%= targetUrl %>" class="btn btn-dark-outline btn-sm">
+      Detaylı İncele &rarr;
+    </a>
+    <a href="tel:<%= siteConfig.phoneRaw %>" class="quick-call-link" title="Hemen Ara">
+      <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      Teklif Al
+    </a>
+  </div>
+</article>
+

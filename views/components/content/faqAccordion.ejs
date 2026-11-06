@@ -1,0 +1,25 @@
+<% if (typeof faqs !== 'undefined' && faqs && faqs.length > 0) { %>
+<div class="faq-section-block">
+  <div class="section-header-centered">
+    <span class="badge-amber">MERAK EDİLENLER</span>
+    <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+    <p class="section-subtitle">
+      Yalova kepçe kiralama, forklift kiralama ve hafriyat süreçlerimiz hakkında en çok yöneltilen sorular.
+    </p>
+  </div>
+  <div class="faq-accordion" id="faqAccordion">
+    <% faqs.forEach((faq, index) => { %>
+      <div class="faq-item <%= index === 0 ? 'active' : '' %>">
+        <button type="button" class="faq-question" aria-expanded="<%= index === 0 ? 'true' : 'false' %>">
+          <span class="faq-q-text"><%= faq.question %></span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" style="<%= index === 0 ? 'display: block;' : 'display: none;' %>">
+          <p><%= faq.answer %></p>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</div>
+<% } %>
+

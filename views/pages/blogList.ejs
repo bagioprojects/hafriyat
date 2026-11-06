@@ -1,0 +1,33 @@
+<%- include('../components/common/pageHero', {
+  title: 'Hafriyat, Kepçe ve Forklift Bilgi Merkezi',
+  subtitle: 'Yalova genelinde şantiye, zemin, temel kazısı ve iş makinesi kiralama konularında gerçek şantiye tecrübesine dayalı uzman makaleler.',
+  badge: 'UZMAN REHBERLER & SEKTÖREL BİLGİ'
+}) %>
+
+<section class="blog-section">
+  <div class="container">
+    <div class="section-header-centered">
+      <span class="badge-amber">GÜNCEL YAZILAR</span>
+      <h2 class="section-title">Şantiye ve İş Makinesi Rehberi</h2>
+      <p class="section-subtitle">
+        Projenize başlamadan önce zemin koşullarını, makine seçim kriterlerini ve yasal standartları öğrenin.
+      </p>
+    </div>
+
+    <div class="blog-grid">
+      <% posts.forEach(post => { %>
+        <%- include('../components/content/blogCard', { post }) %>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<!-- District Selector -->
+<%- include('../components/geo/districtSelector', { districts }) %>
+
+<!-- CTA Banner -->
+<%- include('../components/common/ctaBanner', {
+  title: 'Projeniz İçin Teknik Danışmanlık Alın',
+  description: 'Adem Hafriyat uzman ekibi her türlü kazı, temel ve forklift ihtiyacınızda ücretsiz danışmanlık sunmaktadır.'
+}) %>
+

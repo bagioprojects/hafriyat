@@ -1,0 +1,33 @@
+<%- include('../components/common/pageHero', {
+  title: 'Adem Hafriyat Makine Parkuru',
+  subtitle: 'Yalova, Çiftlikköy ve Taşköprü projeleriniz için bakımlı, tam kaskolu ve son model iş makineleri.',
+  badge: 'MODERN İŞ MAKİNESİ FİLOSU'
+}) %>
+
+<section class="machinery-section">
+  <div class="container">
+    <div class="section-header-centered">
+      <span class="badge-amber">İŞİNİZE EN UYGUN MAKİNE</span>
+      <h2 class="section-title">Kiralık Kepçe ve Forklift Filomuz</h2>
+      <p class="section-subtitle">
+        Dar bahçelerden ağır sanayi temellerine, tır boşaltmadan fabrika içi yüklemeye kadar her tonajda çözüm.
+      </p>
+    </div>
+
+    <div class="machine-grid">
+      <% machinery.forEach(machine => { %>
+        <%- include('../components/machinery/machineCard', { machine }) %>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<!-- District Selector -->
+<%- include('../components/geo/districtSelector', { districts }) %>
+
+<!-- CTA Banner -->
+<%- include('../components/common/ctaBanner', {
+  title: 'Hangi Makineyi Seçeceğinizden Emin Değil misiniz?',
+  description: 'Bizi arayın; projenizin özelliklerine göre en verimli ve ekonomik makineyi birlikte belirleyelim.'
+}) %>
+

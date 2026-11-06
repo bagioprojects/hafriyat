@@ -1,0 +1,48 @@
+<article class="machine-card">
+  <div class="machine-badge-row">
+    <span class="badge-tag"><%= machine.type %></span>
+    <span class="badge-tonnage"><%= machine.tonnage %></span>
+  </div>
+  <h3 class="machine-title">
+    <a href="/makinelerimiz/<%= machine.slug %>"><%= machine.name %></a>
+  </h3>
+  <div class="machine-specs-grid">
+    <% if (machine.diggingDepth && machine.diggingDepth !== 'N/A') { %>
+      <div class="spec-item">
+        <span class="spec-label">Kazma Derinliği:</span>
+        <span class="spec-value"><%= machine.diggingDepth %></span>
+      </div>
+    <% } %>
+    <% if (machine.liftingHeight) { %>
+      <div class="spec-item">
+        <span class="spec-label">Kaldırma Yüksekliği:</span>
+        <span class="spec-value"><%= machine.liftingHeight %></span>
+      </div>
+    <% } %>
+    <% if (machine.enginePower) { %>
+      <div class="spec-item">
+        <span class="spec-label">Motor Gücü:</span>
+        <span class="spec-value"><%= machine.enginePower %></span>
+      </div>
+    <% } %>
+    <div class="spec-item">
+      <span class="spec-label">Kiralama:</span>
+      <span class="spec-value"><%= machine.rentalTerms %></span>
+    </div>
+  </div>
+
+  <div class="machine-best-for">
+    <strong>En Uygun İşler:</strong>
+    <ul>
+      <% machine.bestFor.slice(0, 3).forEach(b => { %>
+        <li>• <%= b %></li>
+      <% }); %>
+    </ul>
+  </div>
+
+  <div class="machine-footer">
+    <a href="/makinelerimiz/<%= machine.slug %>" class="btn btn-dark-outline btn-sm">Teknik İncele</a>
+    <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary btn-sm">Makinayı Kirala</a>
+  </div>
+</article>
+

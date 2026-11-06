@@ -3,14 +3,14 @@
     <!-- Endüstriyel CAT Sarı Gradyan -->
     <linearGradient id="catYellowDark" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFD54F" />
-      <stop offset="50%" stop-color="#F59E0B" />
-      <stop offset="100%" stop-color="#D97706" />
+      <stop offset="50%" stop-color="#FFB800" />
+      <stop offset="100%" stop-color="#E5A700" />
     </linearGradient>
     
     <!-- Parlak Sarı Vurgu -->
     <linearGradient id="yellowHighlightDark" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#FEF08A" />
-      <stop offset="100%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#FFC000" />
     </linearGradient>
 
     <!-- Koyu Karbon Gradyan -->

@@ -4,12 +4,14 @@
  */
 
 :root {
-  /* Renk Paleti - Birincil (İş Makinesi Altın Sarısı) */
-  --color-primary: #f59e0b;
-  --color-primary-hover: #d97706;
-  --color-primary-dark: #b45309;
-  --color-primary-light: #fef3c7;
-  --color-primary-soft: rgba(245, 158, 11, 0.12);
+  /* Renk Paleti - Birincil (Taksi Sarısı & Ağır Vasıta Sarı) */
+  --color-primary: #ffb800;
+  --color-primary-hover: #e5a700;
+  --color-primary-dark: #b38600;
+  --color-primary-light: #fff8e1;
+  --color-primary-soft: rgba(255, 184, 0, 0.16);
+  --color-yellow-taxi: #ffc000;
+  --color-yellow-bright: #ffd54f;
 
   /* Renk Paleti - İkincil (Ağır Sanayi Karbon Siyahı & Koyu Tonlar) */
   --color-dark: #0b0f19;

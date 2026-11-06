@@ -15,9 +15,15 @@ EventEmitter.defaultMaxListeners = 30;
 const siteConfig = require('./config/site');
 const webRoutes = require('./src/routes/web');
 const { generateSeoData } = require('./src/helpers/seoHelper');
+const { cacheMiddleware } = require('./src/middleware/cacheMiddleware');
 
 const app = express();
 const PORT = process.env.PORT || 7450;
+
+// Express Performans & Güvenlik Çekirdeği
+app.disable('x-powered-by');
+app.enable('view cache');
+app.set('trust proxy', 1);
 
 // Gzip Sıkıştırma (Ultra Hızlı Yüklenme & Core Web Vitals - Level 9)
 app.use(compression({
@@ -33,6 +39,8 @@ app.use(express.json());
 app.use((req, res, next) => {
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(self)');
   res.setHeader(
     'Content-Security-Policy',
     "default-src 'self' https: data:; " +
@@ -46,16 +54,16 @@ app.use((req, res, next) => {
   next();
 });
 
-// Statik Dosyalar (CSS, JS, Görseller - 30 Gün Agresif Önbellekleme)
+// Statik Dosyalar (CSS, JS, Görseller - 1 Yıl Agresif Immutable Önbellekleme)
 app.use(express.static(path.join(__dirname, 'public'), {
-  maxAge: '30d',
+  maxAge: '365d',
   immutable: true,
   etag: true,
   setHeaders: (res, filePath) => {
     if (filePath.endsWith('.html')) {
       res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
     } else {
-      res.setHeader('Cache-Control', 'public, max-age=2592000, immutable');
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
     }
   }
 }));
@@ -74,6 +82,9 @@ app.use((req, res, next) => {
   res.locals.currentPath = req.path;
   next();
 });
+
+// In-Memory Microcache Katmanı (Sub-Millisecond TTFB Hızlandırması)
+app.use(cacheMiddleware());
 
 // Web Rotaları
 app.use('/', webRoutes);

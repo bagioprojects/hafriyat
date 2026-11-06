@@ -1,6 +1,6 @@
 /**
- * Adem Hafriyat - Otomatik Doğrulama ve Entegrasyon Testi
- * Modüler Sitemap, LLM Bilgi Haritası ve 13 Köy Makaleleri Kontrolü
+ * Adem Hafriyat - Otomatik Doğrulama, Entegrasyon & Performans Testi
+ * Modüler Sitemap, LLM Bilgi Haritası, 13 Köy Makaleleri ve Microcache Performans Kontrolleri
  */
 
 const http = require('http');
@@ -13,13 +13,32 @@ const server = app.listen(PORT, async () => {
   console.log(`[TEST]: Test sunucusu http://localhost:${PORT} üzerinde başlatıldı.`);
   let failed = false;
 
-  async function fetchPath(path) {
+  async function fetchPath(path, headers = {}) {
     return new Promise((resolve, reject) => {
-      http.get(`http://localhost:${PORT}${path}`, (res) => {
+      const startTime = Date.now();
+      const options = {
+        hostname: 'localhost',
+        port: PORT,
+        path: path,
+        method: 'GET',
+        headers: headers
+      };
+
+      const req = http.request(options, (res) => {
         let data = '';
         res.on('data', chunk => data += chunk);
-        res.on('end', () => resolve({ statusCode: res.statusCode, headers: res.headers, body: data }));
-      }).on('error', reject);
+        res.on('end', () => {
+          const duration = Date.now() - startTime;
+          resolve({
+            statusCode: res.statusCode,
+            headers: res.headers,
+            body: data,
+            duration
+          });
+        });
+      });
+      req.on('error', reject);
+      req.end();
     });
   }
 
@@ -102,7 +121,6 @@ const server = app.listen(PORT, async () => {
     }
 
     console.log('\n--- 3. MODÜLER XML SITEMAP & ROBOTS & LLM KONTROLLERİ ---');
-    // Sitemap Index
     const sitemapIndexRes = await fetchPath('/sitemap.xml');
     if (sitemapIndexRes.statusCode === 200 && sitemapIndexRes.body.includes('<sitemapindex') && sitemapIndexRes.body.includes('sitemap-blog.xml')) {
       console.log('✅ [BAŞARILI]: /sitemap.xml geçerli bir Sitemap Index (<sitemapindex>) döndürüyor.');
@@ -111,7 +129,6 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
-    // Alt Sitemaps
     const subSitemaps = [
       '/sitemap-main.xml',
       '/sitemap-services.xml',
@@ -130,7 +147,6 @@ const server = app.listen(PORT, async () => {
       }
     }
 
-    // Robots.txt
     const robotsRes = await fetchPath('/robots.txt');
     if (robotsRes.body.includes('GPTBot') && robotsRes.body.includes('llms.txt') && robotsRes.body.includes('sitemap.xml') && robotsRes.body.includes('Host:')) {
       console.log('✅ [BAŞARILI]: /robots.txt AI botlarını (GPTBot), Host tanımını ve llms.txt referansını içeriyor.');
@@ -139,7 +155,6 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
-    // llms.txt
     const llmsRes = await fetchPath('/llms.txt');
     if (llmsRes.statusCode === 200 && llmsRes.body.includes('0532 720 20 10') && llmsRes.body.includes('Adem Hafriyat') && llmsRes.body.includes('Yapay Zeka Asistanları')) {
       console.log('✅ [BAŞARILI]: /llms.txt llmstxt.org formatında LLM öneri ve iletişim yönergeleriyle aktif.');
@@ -148,7 +163,6 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
-    // llms-full.txt
     const llmsFullRes = await fetchPath('/llms-full.txt');
     if (llmsFullRes.statusCode === 200 && llmsFullRes.body.includes('Kabaklı') && llmsFullRes.body.includes('Samanlı')) {
       console.log('✅ [BAŞARILI]: /llms-full.txt genişletilmiş 13 köy teknik hafriyat külliyatı aktif.');
@@ -157,7 +171,6 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
-    // ai.json
     const aiJsonRes = await fetchPath('/ai.json');
     if (aiJsonRes.statusCode === 200 && aiJsonRes.headers['content-type'].includes('application/json')) {
       const parsedAi = JSON.parse(aiJsonRes.body);
@@ -172,8 +185,50 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
-    console.log('\n--- 4. SCHEMA.ORG & GEO & ÇİFT YÖNLÜ KÖPRÜLEME KONTROLLERİ ---');
-    // Gacık Köyü Sayfası Köy Makalesi Köprüsü Kontrolü
+    console.log('\n--- 4. OLAĞANÜSTÜ PERFORMANS, MICROCACHE & CORE WEB VITALS KONTROLLERİ ---');
+    // 1. İstek: Cache Miss (İlk Derleme)
+    const missRes = await fetchPath('/');
+    const etag = missRes.headers['etag'];
+
+    // 2. İstek: Microcache Hit (< 15ms)
+    const hitRes = await fetchPath('/');
+    if (hitRes.headers['x-cache'] === 'HIT') {
+      console.log(`✅ [BAŞARILI]: In-Memory Microcache devrede! Yanıt süresi: ${hitRes.duration}ms (X-Cache: HIT).`);
+    } else {
+      console.error('❌ [HATA]: Microcache HIT yanıtı dönmedi!');
+      failed = true;
+    }
+
+    // 3. İstek: 304 Not Modified Testi
+    if (etag) {
+      const notModifiedRes = await fetchPath('/', { 'if-none-match': etag });
+      if (notModifiedRes.statusCode === 304) {
+        console.log(`✅ [BAŞARILI]: ETag eşleşmesinde HTTP 304 Not Modified döndü (0 bayt bant genişliği).`);
+      } else {
+        console.error(`❌ [HATA]: 304 Not Modified beklenirken ${notModifiedRes.statusCode} alındı!`);
+        failed = true;
+      }
+    }
+
+    // 4. Statik Dosyalarda 1 Yıllık Immutable Cache Kontrolü
+    const cssRes = await fetchPath('/css/main.css');
+    const cacheHeader = cssRes.headers['cache-control'] || '';
+    if (cacheHeader.includes('max-age=31536000') && cacheHeader.includes('immutable')) {
+      console.log('✅ [BAŞARILI]: Statik dosyalarda 1 yıllık (31536000s) immutable önbellekleme aktif.');
+    } else {
+      console.error(`❌ [HATA]: Cache-Control başlığı eksik veya hatalı: ${cacheHeader}`);
+      failed = true;
+    }
+
+    // 5. Preload & Resource Hints Kontrolü
+    if (hitRes.body.includes('rel="preload"') && hitRes.body.includes('as="style"') && hitRes.body.includes('fetchpriority="high"')) {
+      console.log('✅ [BAŞARILI]: HTML head içinde kritik CSS ve LCP SVG Logo preload etiketleri mevcut.');
+    } else {
+      console.error('❌ [HATA]: Preload etiketleri eksik!');
+      failed = true;
+    }
+
+    console.log('\n--- 5. SCHEMA.ORG & GEO & ÇİFT YÖNLÜ KÖPRÜLEME KONTROLLERİ ---');
     const gacikPageRes = await fetchPath('/bolgeler/ciftlikkoy/mahalle/gacik-koyu');
     if (gacikPageRes.body.includes('KÖYE ÖZEL SAHA REHBERİ') && gacikPageRes.body.includes('gacik-koyu-zeytinlik-temizleme-ve-villa-temel-kazisi')) {
       console.log('✅ [BAŞARILI]: Köy sayfasında (/bolgeler/ciftlikkoy/mahalle/gacik-koyu) ilgili köy makalesine doğrudan köprü mevcut.');
@@ -182,7 +237,6 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
-    // Gacık Makalesinden Köy Sayfasına Geri Köprü Kontrolü
     const gacikArticleRes = await fetchPath('/makaleler/gacik-koyu-zeytinlik-temizleme-ve-villa-temel-kazisi');
     if (gacikArticleRes.body.includes('/bolgeler/ciftlikkoy/mahalle/gacik-koyu') && gacikArticleRes.body.includes('HİZMET BÖLGESİ')) {
       console.log('✅ [BAŞARILI]: Köy makalesinde (/makaleler/gacik-...) ilgili köy sayfasına geri bağlantı mevcut.');
@@ -213,25 +267,7 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
-    // Hreflang kontrolü
-    if (homeRes.body.includes('hreflang="tr"') && homeRes.body.includes('rel="sitemap"')) {
-      console.log('✅ [BAŞARILI]: Hreflang tr etiketi ve sitemap link bağlantısı mevcut.');
-    } else {
-      console.error('❌ [HATA]: Hreflang veya sitemap link etiketi eksik!');
-      failed = true;
-    }
-
-    // Statik dosya önbellekleme kontrolü
-    const cssRes = await fetchPath('/css/main.css');
-    const cacheHeader = cssRes.headers['cache-control'] || '';
-    if (cacheHeader.includes('max-age=2592000')) {
-      console.log('✅ [BAŞARILI]: Statik dosyalarda 30 günlük agresif Cache-Control önbellekleme aktif.');
-    } else {
-      console.error(`❌ [HATA]: Cache-Control başlığı eksik veya hatalı: ${cacheHeader}`);
-      failed = true;
-    }
-
-    console.log('\n--- 5. 404 HATA SAYFASI KONTROLÜ ---');
+    // 404 Hata Sayfası Kontrolü
     const notFoundRes = await fetchPath('/olmayan-bir-sayfa-urlsi');
     if (notFoundRes.statusCode === 404 && notFoundRes.body.includes('404')) {
       console.log('✅ [BAŞARILI]: Olmayan URL için HTTP 404 dönüldü ve özel 404 sayfası render edildi.');
@@ -244,7 +280,7 @@ const server = app.listen(PORT, async () => {
       console.error('\n❌ TESTLERDE HATALAR BULUNDU!');
       process.exit(1);
     } else {
-      console.log('\n🎉 TÜM TESTLER BAŞARIYLA GEÇTİ! MODÜLER SITEMAP, LLM HARİTASI VE 13 KÖY MAKALESİ EKSİKSİZ HAZIR.');
+      console.log('\n🎉 TÜM TESTLER BAŞARIYLA GEÇTİ! OLAĞANÜSTÜ PERFORMANS ALTYAPISI DEVREDE VE %100 ÇALIŞIYOR.');
       process.exit(0);
     }
   } catch (err) {

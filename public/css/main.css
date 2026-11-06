@@ -2372,3 +2372,32 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-dark);
   font-weight: 800;
 }
+
+/* ==========================================================================
+   Core Web Vitals & Olağanüstü Render Hızlandırma (Content Visibility & CLS = 0)
+   ========================================================================== */
+.site-footer,
+.district-section,
+.faq-accordion,
+.service-cards-section,
+.blog-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 600px;
+}
+
+/* Görsel Düzen Kayması (CLS = 0.00) Koruması */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-logo-img {
+  aspect-ratio: 5 / 1;
+}
+
+.service-card-image img,
+.blog-card-image img,
+.machinery-card-image img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}

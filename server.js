@@ -29,10 +29,20 @@ app.use(compression({
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Performans & Güvenlik Başlıkları
+// Performans & Güvenlik Başlıkları (CSP: Eval & Inline İzinli - DevTools & Eklenti Uyumlu)
 app.use((req, res, next) => {
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader(
+    'Content-Security-Policy',
+    "default-src 'self' https: data:; " +
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; " +
+    "style-src 'self' 'unsafe-inline' https:; " +
+    "img-src 'self' data: https:; " +
+    "font-src 'self' https: data:; " +
+    "connect-src 'self' https:; " +
+    "frame-src 'self' https:;"
+  );
   next();
 });
 

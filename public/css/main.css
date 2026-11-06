@@ -110,13 +110,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-whatsapp {
-  background-color: var(--color-accent-whatsapp);
-  color: var(--color-white);
-  border-color: var(--color-accent-whatsapp);
+  background-color: #25d366;
+  color: #ffffff !important;
+  border-color: #25d366;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
 }
 
 .btn-whatsapp:hover {
-  filter: brightness(1.1);
+  background-color: #20ba5a;
+  border-color: #20ba5a;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
   transform: translateY(-2px);
 }
 

@@ -1,55 +1,255 @@
 <div class="quick-quote-card">
   <div class="quote-header">
-    <span class="quote-tag">ÜCRETSİZ KEŞİF & ANINDA FİYAT</span>
-    <h3 class="quote-title">İş Makinesi & Hafriyat Teklifi Alın</h3>
-    <p class="quote-subtitle">Yalova ve ilçelerine 15 dakikada en uygun fiyat garantisi</p>
+    <span class="quote-tag">ÜCRETSİZ KEŞİF &amp; ANINDA TEKLİF</span>
+    <h3 class="quote-title">Kepçe &amp; Forklift Teklifi Alın</h3>
+    <p class="quote-subtitle">Yalova genelinde 15 dakikada en uygun fiyat ve uzman operatör</p>
   </div>
   <form class="quote-form" id="quickQuoteForm" onsubmit="handleQuoteSubmit(event)">
+    
+    <!-- 1. Custom Select: Hizmet Bölgesi / İlçe -->
     <div class="form-group">
-      <label for="quoteDistrict">Hizmet Bölgesi / İlçe:</label>
-      <select id="quoteDistrict" class="form-control" required>
-        <option value="">İlçe Seçiniz...</option>
-        <option value="Çiftlikköy">Çiftlikköy (Merkez & Köyler)</option>
-        <option value="Taşköprü">Taşköprü (Sanayi & OSB)</option>
-        <option value="Yalova Merkez">Yalova Merkez (Tüm Mahalleler)</option>
-        <option value="Altınova">Altınova (Tersaneler Bölgesi)</option>
-        <option value="Çınarcık">Çınarcık & Koru / Esenköy</option>
-        <option value="Termal">Termal & Gökçedere</option>
-        <option value="Armutlu">Armutlu</option>
-      </select>
+      <label class="form-label">Hizmet Bölgesi / İlçe Seçin:</label>
+      <div class="custom-select-wrapper" id="districtSelectWrapper">
+        <input type="hidden" id="quoteDistrict" name="quoteDistrict" value="" required>
+        <button type="button" class="custom-select-trigger" onclick="toggleCustomSelect('districtSelectWrapper')">
+          <span class="trigger-left">
+            <span class="trigger-icon">📍</span>
+            <span class="trigger-text" id="districtTriggerText">İlçe / Bölge Seçiniz...</span>
+          </span>
+          <span class="custom-chevron">▾</span>
+        </button>
+        <div class="custom-dropdown-panel" id="districtDropdownPanel">
+          <div class="panel-header">Yalova İlçeleri &amp; Sanayi Bölgeleri</div>
+          <div class="options-scroll">
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Çiftlikköy', 'Çiftlikköy', '📍', '15 dk Servis')">
+              <div class="opt-left">
+                <span class="opt-icon">📍</span>
+                <div>
+                  <strong class="opt-name">Çiftlikköy</strong>
+                  <span class="opt-sub">Merkez, Sahil, Siteler, Köyler</span>
+                </div>
+              </div>
+              <span class="opt-badge amber">15 dk</span>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Taşköprü', 'Taşköprü Sanayi', '🏭', '10 dk Servis')">
+              <div class="opt-left">
+                <span class="opt-icon">🏭</span>
+                <div>
+                  <strong class="opt-name">Taşköprü (Sanayi &amp; OSB)</strong>
+                  <span class="opt-sub">Fabrikalar, Antrepo, Köyler</span>
+                </div>
+              </div>
+              <span class="opt-badge amber">10 dk</span>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Yalova Merkez', 'Yalova Merkez', '🏙️', '20 dk Servis')">
+              <div class="opt-left">
+                <span class="opt-icon">🏙️</span>
+                <div>
+                  <strong class="opt-name">Yalova Merkez</strong>
+                  <span class="opt-sub">Tüm Mahalleler &amp; Samanlı / Kadıköy</span>
+                </div>
+              </div>
+              <span class="opt-badge">20 dk</span>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Altınova', 'Altınova / Tersaneler', '⚓', '25 dk Servis')">
+              <div class="opt-left">
+                <span class="opt-icon">⚓</span>
+                <div>
+                  <strong class="opt-name">Altınova (Tersaneler Bölgesi)</strong>
+                  <span class="opt-sub">Tavşanlı, Subaşı, Kaytazdere</span>
+                </div>
+              </div>
+              <span class="opt-badge">25 dk</span>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Çınarcık', 'Çınarcık & Koru', '🏖️', '30 dk Servis')">
+              <div class="opt-left">
+                <span class="opt-icon">🏖️</span>
+                <div>
+                  <strong class="opt-name">Çınarcık &amp; Koru / Esenköy</strong>
+                  <span class="opt-sub">Sahil Siteleri, Teşvikiye, Yayla</span>
+                </div>
+              </div>
+              <span class="opt-badge">30 dk</span>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Termal', 'Termal & Gökçedere', '🌲', '25 dk Servis')">
+              <div class="opt-left">
+                <span class="opt-icon">🌲</span>
+                <div>
+                  <strong class="opt-name">Termal &amp; Gökçedere</strong>
+                  <span class="opt-sub">Üvezpınar, Akköy</span>
+                </div>
+              </div>
+              <span class="opt-badge">25 dk</span>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Armutlu', 'Armutlu & Fıstıklı', '🌊', '45 dk Servis')">
+              <div class="opt-left">
+                <span class="opt-icon">🌊</span>
+                <div>
+                  <strong class="opt-name">Armutlu &amp; Fıstıklı</strong>
+                  <span class="opt-sub">Zeytinlik, Sahil ve Köyler</span>
+                </div>
+              </div>
+              <span class="opt-badge">45 dk</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- 2. Custom Select: İhtiyacınız Olan Hizmet -->
     <div class="form-group">
-      <label for="quoteService">İhtiyacınız Olan Hizmet:</label>
-      <select id="quoteService" class="form-control" required>
-        <option value="">Hizmet Seçiniz...</option>
-        <option value="Kepçe Kiralama (JCB Bekoloder)">Kepçe Kiralama (JCB Bekoloder)</option>
-        <option value="Mini Ekskavatör (Dar Sokak/Bahçe)">Mini Ekskavatör (Dar Sokak/Bahçe)</option>
-        <option value="Forklift Kiralama (Operatörlü)">Forklift Kiralama (Operatörlü)</option>
-        <option value="Forklift Kiralama (Operatörsüz/Aylık)">Forklift Kiralama (Operatörsüz/Aylık)</option>
-        <option value="Kanal Kazma (Su/Gaz/Drenaj)">Kanal Kazma (Su/Gaz/Drenaj)</option>
-        <option value="Temel Kazma (Bina/Villa/Havuz)">Temel Kazma (Bina/Villa/Havuz)</option>
-        <option value="Su Kuyusu Açma & Islahı">Su Kuyusu Açma & Islahı</option>
-        <option value="Yağmur & Kanalizasyon Kazısı">Yağmur & Kanalizasyon Kazısı</option>
-        <option value="Arazi Düzleme & Tesviye">Arazi Düzleme & Tesviye</option>
-        <option value="Dolgu & Mıcır Yayma">Dolgu & Mıcır Yayma</option>
-        <option value="Altyapı Tamiratı & Arıza">Altyapı Tamiratı & Arıza</option>
-      </select>
+      <label class="form-label">İhtiyacınız Olan Hizmet:</label>
+      <div class="custom-select-wrapper" id="serviceSelectWrapper">
+        <input type="hidden" id="quoteService" name="quoteService" value="" required>
+        <button type="button" class="custom-select-trigger" onclick="toggleCustomSelect('serviceSelectWrapper')">
+          <span class="trigger-left">
+            <span class="trigger-icon">🚜</span>
+            <span class="trigger-text" id="serviceTriggerText">Hizmet Seçiniz...</span>
+          </span>
+          <span class="custom-chevron">▾</span>
+        </button>
+        <div class="custom-dropdown-panel" id="serviceDropdownPanel">
+          <div class="panel-header">Kepçe &amp; Forklift Hizmetleri</div>
+          <div class="options-scroll">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Kepçe Kiralama (JCB Bekoloder)', 'Kepçe Kiralama (JCB Bekoloder)', '🚜', 'Popüler')">
+              <div class="opt-left">
+                <span class="opt-icon">🚜</span>
+                <div>
+                  <strong class="opt-name">Yalova Kepçe Kiralama (JCB 3CX)</strong>
+                  <span class="opt-sub">Saatlik / Günlük Operatörlü Bekoloder</span>
+                </div>
+              </div>
+              <span class="opt-badge amber">Öne Çıkan</span>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Yalova Forklift Kiralama (Operatörlü/Operatörsüz)', 'Forklift Kiralama', '🏗️', 'Sanayi')">
+              <div class="opt-left">
+                <span class="opt-icon">🏗️</span>
+                <div>
+                  <strong class="opt-name">Yalova Forklift Kiralama</strong>
+                  <span class="opt-sub">3 - 5 Ton Dizel / Akülü, Tır İndirme</span>
+                </div>
+              </div>
+              <span class="opt-badge amber">Sanayi</span>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Mini Ekskavatör (Dar Sokak/Bahçe)', 'Mini Ekskavatör', '🚜', 'Hassas')">
+              <div class="opt-left">
+                <span class="opt-icon">🚜</span>
+                <div>
+                  <strong class="opt-name">Mini Ekskavatör Kiralama (3.5 Ton)</strong>
+                  <span class="opt-sub">Dar Sokaklar, Kauçuk Palet, Bahçeler</span>
+                </div>
+              </div>
+              <span class="opt-badge">Dar Alan</span>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Kanal Kazma (Su/Gaz/Drenaj)', 'Kanal Kazma', '⛏️', '')">
+              <div class="opt-left">
+                <span class="opt-icon">⛏️</span>
+                <div>
+                  <strong class="opt-name">Kanal Kazma İşleri</strong>
+                  <span class="opt-sub">30-40-60 cm Kova ile Lazerli Eğim</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Temel Kazma (Bina/Villa/Havuz)', 'Temel Kazma', '🏗️', '')">
+              <div class="opt-left">
+                <span class="opt-icon">🏗️</span>
+                <div>
+                  <strong class="opt-name">Temel Kazma (Bina / Villa / Havuz)</strong>
+                  <span class="opt-sub">Radye Temel ve Kentsel Dönüşüm Kazısı</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Su Kuyusu Açma & Islahı', 'Su Kuyusu Açma', '💧', '')">
+              <div class="opt-left">
+                <span class="opt-icon">💧</span>
+                <div>
+                  <strong class="opt-name">Su Kuyusu Açma &amp; Keson Kuyu</strong>
+                  <span class="opt-sub">Beton Büz Yerleştirme &amp; Filtre Mıcırı</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Yağmur & Kanalizasyon Kazısı', 'Yağmur & Kanalizasyon', '🌧️', '')">
+              <div class="opt-left">
+                <span class="opt-icon">🌧️</span>
+                <div>
+                  <strong class="opt-name">Yağmur &amp; Kanalizasyon Giderleri</strong>
+                  <span class="opt-sub">Koruge Boru Kazısı &amp; Rögar Bacası</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Arazi Düzleme & Tesviye', 'Arazi Düzleme', '📐', '')">
+              <div class="opt-left">
+                <span class="opt-icon">📐</span>
+                <div>
+                  <strong class="opt-name">Arazi Düzleme &amp; Parsel Tesviyesi</strong>
+                  <span class="opt-sub">Tarla Temizleme, Eğim Verme, Kübaj</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Dolgu & Mıcır Yayma', 'Dolgu & Mıcır Yayma', '⛰️', '')">
+              <div class="opt-left">
+                <span class="opt-icon">⛰️</span>
+                <div>
+                  <strong class="opt-name">Dolgu ve Mıcır Yayma / Serme</strong>
+                  <span class="opt-sub">Otopark ve Yol Altı Zemin Sıkıştırma</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Elektrik Kablo Kanalı Kazma', 'Elektrik Kanalı', '⚡', '')">
+              <div class="opt-left">
+                <span class="opt-icon">⚡</span>
+                <div>
+                  <strong class="opt-name">Elektrik Kanal Kazma</strong>
+                  <span class="opt-sub">Yüksek Gerilim &amp; Trafo Bağlantısı</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Tamirat & Altyapı Arıza', 'Altyapı Tamir', '🔧', '7/24')">
+              <div class="opt-left">
+                <span class="opt-icon">🔧</span>
+                <div>
+                  <strong class="opt-name">Tamir ve Altyapı Onarım İşleri</strong>
+                  <span class="opt-sub">7/24 Acil Patlak Boru ve Arıza Kazısı</span>
+                </div>
+              </div>
+              <span class="opt-badge amber">Acil 7/24</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- 3. Telefon Numarası -->
     <div class="form-group">
-      <label for="quotePhone">Telefon Numaranız:</label>
-      <input type="tel" id="quotePhone" class="form-control" placeholder="05XX XXX XX XX" required>
+      <label for="quotePhone" class="form-label">Telefon Numaranız:</label>
+      <input type="tel" id="quotePhone" class="form-control" placeholder="Örn: 0532 XXX XX XX" required>
     </div>
 
+    <!-- 4. Not / Açıklama -->
     <div class="form-group">
-      <label for="quoteNote">Kısa Not / Metraj (Opsiyonel):</label>
-      <input type="text" id="quoteNote" class="form-control" placeholder="Örn: 50 metre kanal kazılacak veya 2 tır indirilecek">
+      <label for="quoteNote" class="form-label">Kısa Not / Şantiye Detayı (Opsiyonel):</label>
+      <input type="text" id="quoteNote" class="form-control" placeholder="Örn: Çiftlikköy sahilinde 30 metre kanal kazılacak">
     </div>
 
-    <button type="submit" class="btn btn-primary btn-block btn-lg">
-      Hemen Fiyat & Bilgi Al
+    <button type="submit" class="btn btn-primary btn-block btn-lg pulse-btn" style="margin-top: 1.25rem;">
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+      Hemen Fiyat &amp; Bilgi Al (WhatsApp)
     </button>
   </form>
 </div>
-

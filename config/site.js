@@ -7,9 +7,9 @@ module.exports = {
   companyName: 'Adem Hafriyat',
   tradeName: 'Yalova Kepçe ve Forklift Kiralama Hizmetleri',
   siteUrl: 'https://yalovakepcehafriyat.com.tr',
-  phone: '0532 555 77 16',
-  phoneRaw: '+905325557716',
-  whatsapp: '905325557716',
+  phone: '0532 720 20 10',
+  phoneRaw: '+905327202010',
+  whatsapp: '905327202010',
   whatsappMessage: 'Merhaba Adem Hafriyat, Yalova kepçe / forklift kiralama hizmetiniz hakkında bilgi ve fiyat teklifi almak istiyorum.',
   email: 'info@yalovakepcehafriyat.com.tr',
   address: {

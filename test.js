@@ -52,7 +52,7 @@ const server = app.listen(PORT, async () => {
       { path: '/makaleler', title: 'Makaleler Listesi', expectText: 'Rehber' },
       { path: '/makaleler/yalova-kepce-kiralama-rehberi', title: 'Makale Detay', expectText: 'Bekoloder mi Mini Ekskavatör mü' },
       { path: '/hakkimizda', title: 'Hakkımızda', expectText: 'Adem Hafriyat' },
-      { path: '/iletisim', title: 'İletişim', expectText: '0532 555 77 16' },
+      { path: '/iletisim', title: 'İletişim', expectText: '0532 720 20 10' },
       { path: '/sitemap.xml', title: 'XML Sitemap', expectText: '<urlset' },
       { path: '/robots.txt', title: 'Robots.txt', expectText: 'Sitemap:' }
     ];

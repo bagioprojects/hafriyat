@@ -13,7 +13,7 @@
         </a>
         <a href="https://wa.me/<%= siteConfig.whatsapp %>?text=<%= encodeURIComponent(siteConfig.whatsappMessage) %>" class="topbar-link whatsapp-top" target="_blank" rel="noopener">
           <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
-          WhatsApp Teklif Al
+          WhatsApp Destek
         </a>
       </div>
     </div>
@@ -22,18 +22,12 @@
   <!-- Main Navigation Bar -->
   <div class="header-main">
     <div class="container navbar-flex">
-      <!-- Logo -->
-      <a href="/" class="brand-logo" aria-label="Adem Hafriyat Ana Sayfa">
-        <div class="logo-icon-wrap">
-          <span class="logo-symbol">▲</span>
-        </div>
-        <div class="logo-text-wrap">
-          <span class="brand-title">ADEM HAFRİYAT</span>
-          <span class="brand-subtitle">YALOVA KEPÇE & FORKLİFT KİRALAMA</span>
-        </div>
+      <!-- 1. Custom Vector Logo -->
+      <a href="/" class="brand-logo" aria-label="Adem Hafriyat — Yalova Kepçe & Forklift Kiralama">
+        <img src="/images/logo.svg" alt="Adem Hafriyat Logo" class="brand-logo-img" width="280" height="56">
       </a>
 
-      <!-- Desktop Navigation -->
+      <!-- 2. Desktop Navigation with Generous Spacing -->
       <nav class="desktop-nav" aria-label="Ana Menü">
         <ul class="nav-menu">
           <li><a href="/" class="nav-link <%= activeNav === 'home' ? 'active' : '' %>">Ana Sayfa</a></li>
@@ -65,7 +59,7 @@
                 <a href="/hizmetlerimiz/operatorlu-forklift-kiralama" class="mega-item">Operatörlü Forklift</a>
                 <a href="/hizmetlerimiz/operatorsuz-forklift-kiralama" class="mega-item">Operatörsüz Kiralama</a>
                 <div class="dropdown-cta-box">
-                  <p>Taşköprü Sanayi ve Tersaneler için 15 dakikada servis!</p>
+                  <p>Taşköprü Sanayi ve Tersaneler için 10-15 dakikada teslim!</p>
                   <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-sm btn-primary">Hemen Ara</a>
                 </div>
               </div>
@@ -76,8 +70,8 @@
               Bölgelerimiz <span class="arrow-down">▾</span>
             </a>
             <div class="simple-dropdown">
-              <a href="/bolgeler/ciftlikkoy" class="dropdown-link"><strong>Çiftlikköy</strong> (Merkez & Köyler)</a>
-              <a href="/bolgeler/taskopru" class="dropdown-link"><strong>Taşköprü</strong> (Sanayi & Fabrikalar)</a>
+              <a href="/bolgeler/ciftlikkoy" class="dropdown-link"><strong>Çiftlikköy</strong> (Merkez, Sahil, Köyler)</a>
+              <a href="/bolgeler/taskopru" class="dropdown-link"><strong>Taşköprü</strong> (Sanayi Bölgesi & OSB)</a>
               <a href="/bolgeler/yalova-merkez" class="dropdown-link"><strong>Yalova Merkez</strong> (Tüm Mahalleler)</a>
               <a href="/bolgeler/altinova" class="dropdown-link"><strong>Altınova</strong> (Tersaneler Bölgesi)</a>
               <a href="/bolgeler/cinarcik" class="dropdown-link"><strong>Çınarcık</strong> (Sahil & Yayla)</a>
@@ -92,9 +86,9 @@
         </ul>
       </nav>
 
-      <!-- Action Button -->
+      <!-- 3. Action Call Button -->
       <div class="header-action">
-        <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary pulse-btn">
+        <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary pulse-btn header-cta-btn">
           <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <span>HEMEN TEKLİF AL</span>
         </a>
@@ -108,7 +102,7 @@
   <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer" id="mobileDrawer">
     <div class="mobile-drawer-header">
-      <span class="brand-title">ADEM HAFRİYAT</span>
+      <img src="/images/logo.svg" alt="Adem Hafriyat" style="height: 42px;">
       <button type="button" class="close-drawer" id="closeDrawerBtn">&times;</button>
     </div>
     <ul class="mobile-nav-list">
@@ -132,4 +126,3 @@
     </div>
   </div>
 </header>
-

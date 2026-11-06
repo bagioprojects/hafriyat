@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="favAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Heavy Shield / Excavator Bucket Shape -->
+  <rect width="64" height="64" rx="14" fill="#0B0F19" />
+  <rect x="2" y="2" width="60" height="60" rx="12" stroke="url(#favAmber)" stroke-width="3" />
+
+  <!-- Monogram A / Excavator Boom -->
+  <!-- Left arm -->
+  <path d="M19 46 L30 15 L35 15 L25 46 Z" fill="url(#favAmber)" />
+  <!-- Right arm -->
+  <path d="M29 15 L45 46 L40 46 L33 28 Z" fill="url(#favAmber)" />
+  <!-- Crossbar -->
+  <rect x="23" y="32" width="18" height="5" rx="1.5" fill="#FFFFFF" />
+
+  <!-- Excavator Bucket Teeth (4 teeth) -->
+  <polygon points="16,45 20,45 18,52" fill="url(#favAmber)" />
+  <polygon points="24,45 28,45 26,53" fill="url(#favAmber)" />
+  <polygon points="32,45 36,45 34,53" fill="url(#favAmber)" />
+  <polygon points="40,45 44,45 42,52" fill="url(#favAmber)" />
+</svg>

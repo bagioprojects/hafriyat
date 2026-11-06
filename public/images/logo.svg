@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 76" width="380" height="76" fill="none">
+  <!-- Defs & Filters -->
+  <defs>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="60%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0B0F19" />
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem / Icon Graphic (X: 4 to 68) -->
+  <g id="logo-emblem" transform="translate(4, 4)">
+    <!-- Hexagonal Heavy Shield Base -->
+    <path d="M34 2 L62 18 L62 50 L34 66 L6 50 L6 18 Z" fill="url(#darkGrad)" stroke="url(#amberGrad)" stroke-width="3" stroke-linejoin="round" />
+    
+    <!-- Stylized Industrial Excavator Boom & "A" Shape -->
+    <!-- Left Leg of A / Hydraulic Ram -->
+    <path d="M22 48 L34 16 L38 16 L27 48 Z" fill="url(#amberGrad)" />
+    <!-- Right Leg of A / Excavator Articulated Boom -->
+    <path d="M32 16 L46 48 L41 48 L34 28 Z" fill="url(#amberGrad)" />
+    <!-- Horizontal Crossbar / Hydraulic Pin -->
+    <rect x="25" y="34" width="18" height="4.5" rx="1" fill="#FFFFFF" />
+    
+    <!-- Excavator Bucket Teeth (Kepçe Dişleri) at Bottom -->
+    <path d="M19 46 L23 46 L21 53 Z" fill="url(#amberGrad)" />
+    <path d="M26 46 L30 46 L28 54 Z" fill="url(#amberGrad)" />
+    <path d="M33 46 L37 46 L35 54 Z" fill="url(#amberGrad)" />
+    <path d="M40 46 L44 46 L42 53 Z" fill="url(#amberGrad)" />
+
+    <!-- Tiny Technical Dot -->
+    <circle cx="34" cy="22" r="2.5" fill="#0B0F19" stroke="url(#amberGrad)" stroke-width="1.5" />
+  </g>
+
+  <!-- Brand Typography -->
+  <!-- Main Brand Title: ADEM HAFRİYAT -->
+  <g id="logo-text" transform="translate(82, 38)">
+    <text font-family="'Barlow', 'Montserrat', -apple-system, sans-serif" font-size="32" font-weight="900" letter-spacing="-0.02em">
+      <tspan x="0" y="0" fill="#0B0F19">ADEM </tspan>
+      <tspan fill="url(#amberGrad)">HAFRİYAT</tspan>
+    </text>
+    
+    <!-- Subtitle / Tagline Pill -->
+    <g transform="translate(1, 10)">
+      <!-- Background Pill for Tagline -->
+      <rect x="0" y="0" width="285" height="18" rx="3" fill="#0B0F19" />
+      <text x="142" y="12.5" text-anchor="middle" font-family="'Barlow', 'Inter', sans-serif" font-size="10" font-weight="800" fill="#FBBF24" letter-spacing="0.12em">
+        YALOVA KEPÇE &amp; FORKLİFT KİRALAMA
+      </text>
+    </g>
+  </g>
+</svg>

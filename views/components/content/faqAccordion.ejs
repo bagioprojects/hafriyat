@@ -2,9 +2,9 @@
 <div class="faq-section-block">
   <div class="section-header-centered">
     <span class="badge-amber">MERAK EDİLENLER</span>
-    <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+    <h2 class="section-title"><%= typeof title !== 'undefined' && title ? title : 'Sıkça Sorulan Sorular' %></h2>
     <p class="section-subtitle">
-      Yalova kepçe kiralama, forklift kiralama ve hafriyat süreçlerimiz hakkında en çok yöneltilen sorular.
+      <%= typeof subtitle !== 'undefined' && subtitle ? subtitle : 'Yalova kepçe kiralama, forklift kiralama ve hafriyat süreçlerimiz hakkında en çok yöneltilen sorular.' %>
     </p>
   </div>
   <div class="faq-accordion" id="faqAccordion">

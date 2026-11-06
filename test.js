@@ -276,6 +276,46 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
+    console.log('\n--- 6. 30 ADET %100 SEO & GEO UYUMLU MAKALE VE ÖZEL FAQ COMPONENT KONTROLLERİ ---');
+    const blogPosts = require('./data/blog');
+    console.log(`[BİLGİ]: Toplam ${blogPosts.length} makale taranıyor...`);
+    if (blogPosts.length !== 30) {
+      console.error(`❌ [HATA]: Beklenen 30 makale, ancak ${blogPosts.length} bulundu!`);
+      failed = true;
+    } else {
+      console.log('✅ [BAŞARILI]: Toplam 30 adet makale kütüphanesi eksiksiz mevcut.');
+    }
+
+    let allFaqsOk = true;
+    for (const post of blogPosts) {
+      const postRes = await fetchPath(`/makaleler/${post.slug}`);
+      if (postRes.statusCode !== 200) {
+        console.error(`❌ [HATA]: Makale ${post.slug} HTTP 200 dönmedi! Kod: ${postRes.statusCode}`);
+        failed = true;
+        allFaqsOk = false;
+        break;
+      }
+      if (!postRes.body.includes('faq-section-block') || !postRes.body.includes('FAQPage')) {
+        console.error(`❌ [HATA]: Makale ${post.slug} içinde özel FAQ bileşeni veya FAQPage Schema.org eksik!`);
+        failed = true;
+        allFaqsOk = false;
+        break;
+      }
+    }
+    if (allFaqsOk) {
+      console.log('✅ [BAŞARILI]: Tüm 30 makalede özel FAQ accordion componenti ve Schema.org FAQPage JSON-LD %100 doğrulandı.');
+    }
+
+    // Sitemap blog kontrolü
+    const sitemapBlogRes = await fetchPath('/sitemap-blog.xml');
+    const blogUrlMatches = (sitemapBlogRes.body.match(/<loc>/g) || []).length;
+    if (blogUrlMatches === 30) {
+      console.log('✅ [BAŞARILI]: /sitemap-blog.xml içinde 30 makalenin tamamı dinamik olarak listeleniyor.');
+    } else {
+      console.error(`❌ [HATA]: /sitemap-blog.xml içinde ${blogUrlMatches} URL bulundu (Beklenen: 30)!`);
+      failed = true;
+    }
+
     if (failed) {
       console.error('\n❌ TESTLERDE HATALAR BULUNDU!');
       process.exit(1);

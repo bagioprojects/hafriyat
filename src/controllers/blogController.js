@@ -8,7 +8,7 @@ const blogPosts = require('../../data/blog');
 const services = require('../../data/services');
 const districts = require('../../data/districts');
 const { generateSeoData } = require('../helpers/seoHelper');
-const { getArticleSchema, getBreadcrumbSchema } = require('../helpers/schemaHelper');
+const { getArticleSchema, getBreadcrumbSchema, getFaqSchema } = require('../helpers/schemaHelper');
 
 exports.list = (req, res) => {
   const seo = generateSeoData({
@@ -49,6 +49,7 @@ exports.detail = (req, res, next) => {
   const seo = generateSeoData({
     title: post.metaTitle,
     description: post.metaDesc,
+    keywords: post.tags || [],
     ogType: 'article',
     canonicalPath: `/makaleler/${post.slug}`,
     breadcrumbs: [
@@ -61,6 +62,11 @@ exports.detail = (req, res, next) => {
     getArticleSchema(post),
     getBreadcrumbSchema(seo.breadcrumbs)
   ];
+
+  if (post.faqs && post.faqs.length > 0) {
+    const faqSchema = getFaqSchema(post.faqs);
+    if (faqSchema) schemas.push(faqSchema);
+  }
 
   res.render('pages/blogDetail', {
     siteConfig,

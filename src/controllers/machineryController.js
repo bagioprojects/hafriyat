@@ -48,6 +48,13 @@ exports.detail = (req, res, next) => {
   const seo = generateSeoData({
     title: machine.title,
     description: `${machine.name} saatlik, günlük ve aylık kiralama. ${machine.bestFor.join(', ')} için Yalova ve Çiftlikköy genelinde hizmetinizde.`,
+    keywords: [
+      `${machine.name.toLowerCase()} kiralama`,
+      `yalova ${machine.type.toLowerCase()} kiralama`,
+      'yalova iş makineleri',
+      'adem hafriyat',
+      'kiralık kepçe forklift'
+    ],
     canonicalPath: `/makinelerimiz/${machine.slug}`,
     breadcrumbs: [
       { label: 'Makine Parkurumuz', url: '/makinelerimiz' },

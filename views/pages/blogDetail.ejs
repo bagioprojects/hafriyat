@@ -33,6 +33,17 @@
         %>
       </div>
 
+      <!-- Özel Makale Sıkça Sorulan Sorular (100% GEO & Teknik FAQ) -->
+      <% if (post.faqs && post.faqs.length > 0) { %>
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--color-border-light);">
+          <%- include('../components/content/faqAccordion', {
+            faqs: post.faqs,
+            title: post.faqTitle || `${post.title.split(':')[0]} Sıkça Sorulan Sorular`,
+            subtitle: post.faqSubtitle || 'Adem Hafriyat uzman operatörleri ve saha mühendisleri tarafından yanıtlanan en kritik teknik sorular.'
+          }) %>
+        </div>
+      <% } %>
+
       <!-- Etiketler -->
       <% if (post.tags && post.tags.length > 0) { %>
         <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border-light);">

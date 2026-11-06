@@ -843,9 +843,21 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   .content-sidebar-layout,
-  .contact-layout {
-    grid-template-columns: 1fr;
+  .contact-layout,
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
     gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .content-sidebar-layout > *,
+  .contact-layout > *,
+  .hero-grid > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -1213,7 +1225,12 @@ h1, h2, h3, h4, h5, h6 {
 .quick-quote-card {
   background-color: var(--color-white);
   color: var(--color-dark);
-  padding: clamp(1.25rem, 3.5vw, 2rem);
+  padding: clamp(1rem, 3.5vw, 1.85rem);
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-xl);
   border-top: 5px solid var(--color-primary);
@@ -1369,7 +1386,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-white);
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-md);
-  padding: 1.75rem;
+  padding: clamp(1rem, 3.5vw, 1.75rem);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
   display: flex;
   flex-direction: column;
   transition: all var(--transition-normal);
@@ -1508,7 +1529,11 @@ h1, h2, h3, h4, h5, h6 {
 .district-card {
   background-color: var(--color-white);
   border-radius: 12px;
-  padding: 1.65rem;
+  padding: clamp(1rem, 3.5vw, 1.65rem);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
   border: 1px solid var(--color-border-light);
   display: flex;
   flex-direction: column;
@@ -1641,7 +1666,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-white);
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-md);
-  padding: 1.75rem;
+  padding: clamp(1rem, 3.5vw, 1.75rem);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
   display: flex;
   flex-direction: column;
   transition: all var(--transition-normal);
@@ -1738,7 +1767,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-white);
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-md);
-  padding: 1.75rem;
+  padding: clamp(1rem, 3.5vw, 1.75rem);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
   display: flex;
   flex-direction: column;
   transition: all var(--transition-normal);
@@ -2358,15 +2391,15 @@ h1, h2, h3, h4, h5, h6 {
   .brand-logo {
     margin-right: 0;
     min-width: 0;
-    flex: 1 1 auto;
-    overflow: hidden;
+    flex: 0 1 auto;
+    max-width: calc(100% - 92px);
     display: flex;
     align-items: center;
   }
 
-  /* Mobil Logo: Otomatik Akışkan Ölçeklenme (Fluid Auto-Resize) - Kesintisiz & Taşmasız */
+  /* Mobil Logo: Otomatik Akışkan Ölçeklenme (Fluid Auto-Resize) - Kesintisiz & Asla Kesilmez */
   .brand-logo-img {
-    height: clamp(38px, 9.8vw, 48px);
+    height: clamp(32px, 8.5vw, 42px);
     max-width: 100%;
     width: auto;
     display: block;
@@ -2552,6 +2585,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  /* Butonlar: Asla Yatay Taşmayan Akışkan Esneme */
+  .btn {
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center;
+  }
+
+  .quote-submit-btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: clamp(0.75rem, 2.5vw, 0.95rem) 0.85rem !important;
+    font-size: clamp(0.85rem, 2.6vw, 1rem) !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
   /* Hero & Sayfa Butonları: Taşmasız Dikey Yığın */
   .hero-cta-group, .page-hero-actions {
     flex-direction: column !important;
@@ -2646,16 +2704,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 360px) {
   .brand-logo-img {
-    height: clamp(34px, 9.5vw, 38px);
-    max-width: min(100%, 195px);
+    height: clamp(28px, 8vw, 34px);
+    max-width: 100%;
   }
 
   .mobile-call-quick-btn,
   .mobile-menu-toggle {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-    min-height: 38px;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
     border-radius: 8px;
   }
 
@@ -2868,7 +2926,8 @@ img {
 }
 
 .brand-logo-img {
-  aspect-ratio: 5 / 1;
+  aspect-ratio: auto;
+  max-width: 100%;
 }
 
 .service-card-image img,

@@ -275,16 +275,25 @@ exports.llmsFullTxt = (req, res) => {
 - Garaj: Taşköprü Sanayi Caddesi No: 18 / Çiftlikköy / Yalova
 - Filo: JCB 3CX Eco 4x4 Kazıcı Yükleyici (Teleskopik bom, 4'ü 1 arada açılır dozer bıçağı, hidrolik kırıcı ataşmanı), Caterpillar 303.5 Paletli Sıfır Kuyruk Mini Ekskavatör (Kauçuk palet, 30 cm dar kova, kök sökme riperi), 3.5 Ton & 5 Ton Dizel ve Elektrikli Sanayi Forkliftleri.
 
-## 2. Çiftlikköy ve Yalova Merkez Köyleri Zemin Analizi ve Hizmet Matrisi
+## 2. Yalova ve İlçeleri Teknik Hafriyat, Kepçe ve Forklift Dokümantasyonu (30 Makale & FAQ)
 `;
 
-  blogPosts.filter(p => p.villageSlug).forEach(p => {
+  blogPosts.forEach(p => {
     txt += `\n### ${p.title}\n`;
-    txt += `- İlgili Bölge: ${p.districtSlug.toUpperCase()} / ${p.villageSlug}\n`;
+    txt += `- Kategori: ${p.category}\n`;
     txt += `- Makale URL: ${siteConfig.siteUrl}/makaleler/${p.slug}\n`;
-    txt += `- Bölge Sayfası: ${siteConfig.siteUrl}/bolgeler/${p.districtSlug}/mahalle/${p.villageSlug}\n`;
+    if (p.villageSlug && p.districtSlug) {
+      txt += `- İlgili Bölge: ${p.districtSlug.toUpperCase()} / ${p.villageSlug}\n`;
+      txt += `- Bölge Sayfası: ${siteConfig.siteUrl}/bolgeler/${p.districtSlug}/mahalle/${p.villageSlug}\n`;
+    }
     txt += `- Özet: ${p.excerpt}\n`;
-    txt += `${p.content}\n---\n`;
+    if (p.faqs && p.faqs.length > 0) {
+      txt += `\n#### Sıkça Sorulan Sorular:\n`;
+      p.faqs.forEach(f => {
+        txt += `- **Soru:** ${f.question}\n  **Cevap:** ${f.answer}\n`;
+      });
+    }
+    txt += `\n${p.content}\n---\n`;
   });
 
   res.header('Content-Type', 'text/plain; charset=UTF-8');

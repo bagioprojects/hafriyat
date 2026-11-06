@@ -55,6 +55,14 @@ exports.detail = (req, res, next) => {
   const seo = generateSeoData({
     title: service.metaTitle,
     description: service.metaDesc,
+    keywords: [
+      service.title.toLowerCase(),
+      `yalova ${service.shortTitle.toLowerCase()}`,
+      `çiftlikköy ${service.shortTitle.toLowerCase()}`,
+      `taşköprü ${service.shortTitle.toLowerCase()}`,
+      'adem hafriyat',
+      'operatörlü iş makinesi'
+    ],
     canonicalPath: `/hizmetlerimiz/${service.slug}`,
     breadcrumbs: [
       { label: 'Hizmetlerimiz', url: '/hizmetlerimiz' },

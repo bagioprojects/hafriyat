@@ -41,6 +41,14 @@ exports.detail = (req, res, next) => {
   const seo = generateSeoData({
     title: district.metaTitle,
     description: district.metaDesc,
+    keywords: [
+      `${district.name.toLowerCase()} kepçe kiralama`,
+      `${district.name.toLowerCase()} forklift kiralama`,
+      `${district.name.toLowerCase()} hafriyat`,
+      `${district.name.toLowerCase()} temel kazma`,
+      'yalova iş makineleri',
+      'adem hafriyat'
+    ],
     canonicalPath: `/bolgeler/${district.slug}`,
     breadcrumbs: [
       { label: 'Hizmet Bölgelerimiz', url: '/#bolgeler' },
@@ -97,6 +105,13 @@ exports.districtService = (req, res, next) => {
   const seo = generateSeoData({
     title: metaTitle,
     description: metaDesc,
+    keywords: [
+      `${district.name.toLowerCase()} ${service.shortTitle.toLowerCase()}`,
+      `${district.name.toLowerCase()} kepçe kiralama`,
+      `${district.name.toLowerCase()} hafriyat`,
+      'adem hafriyat',
+      'operatörlü kepçe'
+    ],
     canonicalPath: `/bolgeler/${district.slug}/${service.slug}`,
     breadcrumbs: [
       { label: 'Bölgeler', url: '/#bolgeler' },
@@ -165,6 +180,13 @@ exports.neighborhoodDetail = (req, res, next) => {
   const seo = generateSeoData({
     title: metaTitle,
     description: metaDesc,
+    keywords: [
+      `${locality.name.toLowerCase()} kepçe kiralama`,
+      `${locality.name.toLowerCase()} hafriyat`,
+      `${district.name.toLowerCase()} ${locality.name.toLowerCase()}`,
+      'yalova kepçe kiralama',
+      'adem hafriyat'
+    ],
     canonicalPath: `/bolgeler/${district.slug}/mahalle/${locality.slug}`,
     breadcrumbs: [
       { label: 'Bölgeler', url: '/#bolgeler' },

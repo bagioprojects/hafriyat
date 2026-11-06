@@ -46,15 +46,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 3. Scroll Header Shadow
+  // 3. Scroll Header Shadow (Pasif Dinleyici ile Yüksek Performans)
   const header = document.querySelector('.site-header');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      header.classList.add('header-scrolled');
-    } else {
-      header.classList.remove('header-scrolled');
-    }
-  });
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.classList.add('header-scrolled');
+      } else {
+        header.classList.remove('header-scrolled');
+      }
+    }, { passive: true });
+  }
 
   // 4. Custom Select Dropdown Dışına Tıklama Kontrolü
   document.addEventListener('click', (e) => {
@@ -112,7 +114,7 @@ function selectCustomOption(wrapperId, inputId, value, displayText, icon = '', b
     const allOptions = wrapper.querySelectorAll('.custom-option-item');
     allOptions.forEach(opt => opt.classList.remove('selected'));
 
-    const currentOpt = event.currentTarget;
+    const currentOpt = (typeof event !== 'undefined' && event && event.currentTarget) ? event.currentTarget : null;
     if (currentOpt) {
       currentOpt.classList.add('selected');
     }

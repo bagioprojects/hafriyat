@@ -7,6 +7,10 @@ const express = require('express');
 const path = require('path');
 const compression = require('compression');
 const expressLayouts = require('express-ejs-layouts');
+const { EventEmitter } = require('events');
+
+// Max Listeners Sınırını Yükselt (Memory Leak Uyarılarını Önle)
+EventEmitter.defaultMaxListeners = 30;
 
 const siteConfig = require('./config/site');
 const webRoutes = require('./src/routes/web');

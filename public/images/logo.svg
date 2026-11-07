@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415 84" width="415" height="84" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 84" width="450" height="84" fill="none">
   <defs>
     <!-- Endüstriyel CAT Sarı Gradyan -->
     <linearGradient id="catYellow" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -33,15 +33,15 @@
     <style>
       .brand-title {
         font-family: 'Barlow', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        font-size: 32px;
+        font-size: 35px;
         font-weight: 900;
-        letter-spacing: -0.01em;
+        letter-spacing: 0.01em;
       }
       .tagline-text {
         font-family: 'Barlow', 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 900;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.11em;
       }
     </style>
   </defs>
@@ -94,24 +94,24 @@
   </g>
 
   <!-- ======================================================================
-       2. TİPOGRAFİ VE KURUMSAL MARKA METNİ (Garantili Genişlik & Taşmasız)
+       2. TİPOGRAFİ VE KURUMSAL MARKA METNİ (Genişletilmiş, Heybetli & Sağ Doğru Büyütülmüş)
        ====================================================================== -->
-  <g id="brand-text" transform="translate(92, 37)">
+  <g id="brand-text" transform="translate(94, 38)">
     <!-- Ana Marka Başlığı: İri, Heybetli ve Otoriter Tipografi -->
     <text class="brand-title">
       <tspan x="0" y="0" fill="#181C1F">ADEM </tspan>
       <tspan fill="#181C1F">HAFRİYAT</tspan>
     </text>
 
-    <!-- Endüstriyel Alt Şerit (Tagline Rozeti) -->
-    <g transform="translate(0, 10)">
+    <!-- Endüstriyel Alt Şerit (Tagline Rozeti - Sağa Doğru Genişletilmiş) -->
+    <g transform="translate(0, 11)">
       <!-- Antrasit Zemin Rozeti -->
-      <rect x="0" y="0" width="304" height="25" rx="5" fill="#181C1F" />
+      <rect x="0" y="0" width="346" height="26" rx="6" fill="#181C1F" />
       <!-- Sol Taksi Sarısı Vurgu Çizgisi -->
-      <rect x="0" y="0" width="6.5" height="25" rx="3" fill="url(#catYellow)" />
+      <rect x="0" y="0" width="7" height="26" rx="3" fill="url(#catYellow)" />
       
-      <!-- Rozet İçi Metin: Tam Ortalı, Net ve Kristal Netliğinde -->
-      <text x="155" y="17" text-anchor="middle" class="tagline-text" fill="#FFC000">
+      <!-- Rozet İçi Metin: Tam Ortalı, Kristal Netliğinde & Okunaklı -->
+      <text x="175" y="17.5" text-anchor="middle" class="tagline-text" fill="#FFC000">
         YALOVA KEPÇE &amp; FORKLİFT KİRALAMA
       </text>
     </g>

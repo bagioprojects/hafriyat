@@ -68,12 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
         faqItems.forEach(other => {
           other.classList.remove('active');
           const otherAns = other.querySelector('.faq-answer');
+          const otherBtn = other.querySelector('.faq-question');
           if (otherAns) otherAns.style.display = 'none';
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
         });
 
         if (!isActive) {
           item.classList.add('active');
           answerDiv.style.display = 'block';
+          questionBtn.setAttribute('aria-expanded', 'true');
+        } else {
+          questionBtn.setAttribute('aria-expanded', 'false');
         }
       });
     }
@@ -107,6 +112,7 @@ function toggleCustomSelect(wrapperId) {
   if (!targetWrapper) return;
 
   const isOpen = targetWrapper.classList.contains('open');
+  const triggerBtn = targetWrapper.querySelector('.custom-select-trigger');
 
   // Önce açık olan tüm selectleri kapat
   closeAllCustomSelects();
@@ -114,15 +120,20 @@ function toggleCustomSelect(wrapperId) {
   // Tıklananı aç (eğer açık değilse)
   if (!isOpen) {
     targetWrapper.classList.add('open');
+    if (triggerBtn) triggerBtn.setAttribute('aria-expanded', 'true');
   }
 }
 
 function closeAllCustomSelects() {
   const allWrappers = document.querySelectorAll('.custom-select-wrapper');
-  allWrappers.forEach(w => w.classList.remove('open'));
+  allWrappers.forEach(w => {
+    w.classList.remove('open');
+    const btn = w.querySelector('.custom-select-trigger');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+  });
 }
 
-function selectCustomOption(wrapperId, inputId, value, displayText, icon = '', badge = '') {
+function selectCustomOption(wrapperId, inputId, value, displayText, icon = '', badge = '', elementRef = null) {
   // 1. Gizli input değerini güncelle
   const hiddenInput = document.getElementById(inputId);
   if (hiddenInput) {
@@ -134,6 +145,7 @@ function selectCustomOption(wrapperId, inputId, value, displayText, icon = '', b
   if (wrapper) {
     const triggerText = wrapper.querySelector('.trigger-text');
     const triggerIcon = wrapper.querySelector('.trigger-icon');
+    const triggerBtn = wrapper.querySelector('.custom-select-trigger');
     if (triggerText) {
       triggerText.innerText = displayText;
       triggerText.style.color = '#0B0F19';
@@ -142,14 +154,27 @@ function selectCustomOption(wrapperId, inputId, value, displayText, icon = '', b
     if (triggerIcon && icon) {
       triggerIcon.innerText = icon;
     }
+    if (triggerBtn) {
+      triggerBtn.setAttribute('aria-expanded', 'false');
+    }
 
     // 3. Seçili öğeye active class'ı ekle
     const allOptions = wrapper.querySelectorAll('.custom-option-item');
     allOptions.forEach(opt => opt.classList.remove('selected'));
 
-    const currentOpt = (typeof event !== 'undefined' && event && event.currentTarget) ? event.currentTarget : null;
-    if (currentOpt) {
-      currentOpt.classList.add('selected');
+    let targetOpt = elementRef;
+    if (!targetOpt && typeof event !== 'undefined' && event && event.currentTarget) {
+      targetOpt = event.currentTarget;
+    }
+    if (!targetOpt) {
+      allOptions.forEach(opt => {
+        if (opt.textContent.includes(value) || opt.textContent.includes(displayText)) {
+          targetOpt = opt;
+        }
+      });
+    }
+    if (targetOpt) {
+      targetOpt.classList.add('selected');
     }
 
     // 4. Dropdown menüsünü kapat

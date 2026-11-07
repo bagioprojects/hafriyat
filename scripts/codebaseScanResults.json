@@ -1,0 +1,27 @@
+{
+  "placeholderHrefs": [],
+  "hardcodedPixelWidths": [
+    {
+      "file": "views\\pages\\blogDetail.ejs",
+      "line": 73,
+      "width": "650",
+      "code": "<p style=\"color: #cbd5e1; font-size: var(--text-sm); max-width: 650px; margin: 0 auto 1.5rem;\">"
+    }
+  ],
+  "missingButtonTypes": [],
+  "jsFunctionIssues": [],
+  "potentialOverflows": [
+    {
+      "file": "public\\css\\main.css",
+      "line": 276,
+      "value": "1025",
+      "code": "/* Modern Header Topbar (Min-Width: 1025px Desktop Only) */"
+    },
+    {
+      "file": "public\\css\\main.css",
+      "line": 2631,
+      "value": "1025",
+      "code": "@media (max-width: 1260px) and (min-width: 1025px) {"
+    }
+  ]
+}

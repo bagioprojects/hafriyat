@@ -16,7 +16,7 @@
         <p style="font-size: var(--text-sm); line-height: 1.7; color: var(--color-text-main); margin-bottom: 1rem;">
           Adem Hafriyat olarak, <strong><%= district.name %> <%= locality.name %></strong> sınırlarında gerçekleştirdiğimiz çalışmalarda; 
           bölgenin zemin yapısını, dar sokak geçişlerini ve yer altı altyapı şebekelerini yakından tanıyan uzman operatörlerimizle görev yapıyoruz.
-          <%= locality.focus ? `Bu bölgede özellikle **${locality.focus}** işlerinde yoğunlukla tercih edilmekteyiz.` : '' %>
+          <% if (locality.focus) { %>Bu bölgede özellikle <strong><%= locality.focus %></strong> işlerinde yoğunlukla tercih edilmekteyiz.<% } %>
         </p>
 
         <div class="info-badge-grid" style="margin-top: 1rem; background-color: #f8fafc; padding: 1rem; border-radius: var(--radius-sm);">

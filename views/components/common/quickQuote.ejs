@@ -11,7 +11,7 @@
       <label class="form-label">Hizmet Bölgesi / İlçe Seçin:</label>
       <div class="custom-select-wrapper" id="districtSelectWrapper">
         <input type="hidden" id="quoteDistrict" name="quoteDistrict" value="" required>
-        <button type="button" class="custom-select-trigger" onclick="toggleCustomSelect('districtSelectWrapper')">
+        <button type="button" class="custom-select-trigger" onclick="toggleCustomSelect('districtSelectWrapper')" aria-haspopup="listbox" aria-expanded="false" aria-label="Hizmet Bölgesi veya İlçe Seçiniz">
           <span class="trigger-left">
             <span class="trigger-icon">📍</span>
             <span class="trigger-text" id="districtTriggerText">İlçe / Bölge Seçiniz...</span>
@@ -107,7 +107,7 @@
       <label class="form-label">İhtiyacınız Olan Hizmet:</label>
       <div class="custom-select-wrapper" id="serviceSelectWrapper">
         <input type="hidden" id="quoteService" name="quoteService" value="" required>
-        <button type="button" class="custom-select-trigger" onclick="toggleCustomSelect('serviceSelectWrapper')">
+        <button type="button" class="custom-select-trigger" onclick="toggleCustomSelect('serviceSelectWrapper')" aria-haspopup="listbox" aria-expanded="false" aria-label="İhtiyacınız Olan Hizmeti Seçiniz">
           <span class="trigger-left">
             <span class="trigger-icon">🚜</span>
             <span class="trigger-text" id="serviceTriggerText">Hizmet Seçiniz...</span>

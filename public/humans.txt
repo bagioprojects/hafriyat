@@ -1,0 +1,13 @@
+/* TEAM */
+Firma: Adem Hafriyat
+Kurucu & Usta: Adem Hafriyat Saha Yönetimi
+Konum: Taşköprü Sanayi, Çiftlikköy / Yalova
+Hizmet Alanı: Yalova, Çiftlikköy, Taşköprü, Altınova, Çınarcık, Armutlu, Termal
+İletişim: 0532 720 20 10
+
+/* SITE */
+Standartlar: HTML5, CSS3, ES6, Microcache Engine
+Sunucu: Express MVC, Node.js
+SEO & GEO: Schema.org JSON-LD, Geo TR-77, LLMs.txt
+Son Güncelleme: 2026/11/07
+Dil: Türkçe (tr-TR)

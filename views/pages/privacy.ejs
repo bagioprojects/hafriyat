@@ -1,0 +1,62 @@
+<%- include('../components/common/pageHero', {
+  title: 'Gizlilik ve Çerez Politikası',
+  subtitle: 'Adem Hafriyat web platformunda veri gizliliği, güvenlik standartları ve çerez (cookie) kullanım ilkelerimiz.',
+  badge: '🔒 GİZLİLİK & ÇEREZ POLİTİKASI'
+}) %>
+
+<div class="container page-content-wrap">
+  <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); border-radius: var(--radius-sm); padding: clamp(1.5rem, 4vw, 3rem); box-shadow: var(--shadow-sm); line-height: 1.8;">
+    
+    <div style="border-bottom: 2px solid var(--color-primary); padding-bottom: 1rem; margin-bottom: 2rem;">
+      <h2 style="font-size: 1.6rem; color: var(--color-dark); margin-bottom: 0.5rem;">Gizlilik İlkeleri ve Çerez Kullanım Kılavuzu</h2>
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted);">Son Güncelleme: <%= new Date().toLocaleDateString('tr-TR') %> | Adem Hafriyat Yalova</p>
+    </div>
+
+    <div class="prose-content">
+      <h3>1. Genel Gizlilik Taahhüdümüz</h3>
+      <p>
+        <strong>Adem Hafriyat</strong> olarak ziyaretçilerimizin gizlilik haklarına azami saygı gösteriyoruz. Web sitemizi ziyaret ettiğinizde kişisel verileriniz gizli tutulmakta ve yalnızca size en kaliteli hizmeti sunmak amacıyla kullanılmaktadır.
+      </p>
+
+      <h3>2. Çerez (Cookie) Nedir?</h3>
+      <p>
+        Çerezler, ziyaret ettiğiniz internet siteleri tarafından tarayıcınız aracılığıyla cihazınıza veya ağ sunucusuna depolanan küçük metin dosyalarıdır. Çerezler web sitesinin verimli çalışmasını, sayfa geçişlerinin hızlanmasını ve kullanıcı deneyiminin iyileştirilmesini sağlar.
+      </p>
+
+      <h3>3. Sitemizde Kullanılan Çerez Türleri</h3>
+      <ul>
+        <li><strong>Zorunlu Çerezler:</strong> Web sitesinin doğru biçimde çalışması, güvenliğin sağlanması ve sayfalar arası geçişin aksamaması için zorunludur.</li>
+        <li><strong>Performans ve Analitik Çerezleri:</strong> Sayfaların yüklenme hızını ölçmek, hataları tespit etmek ve kullanıcı deneyimini optimize etmek amacıyla anonim olarak tutulur. Kişisel kimlik tespiti yapmaz.</li>
+        <li><strong>İşlevsel Çerezler:</strong> Seçtiğiniz ilçe veya dil tercihlerinizin hatırlanmasına yardımcı olur.</li>
+      </ul>
+
+      <h3>4. Çerez Tercihlerinizi Nasıl Yönetebilirsiniz?</h3>
+      <p>
+        Tarayıcınızın ayarlarını değiştirerek çerezlere ilişkin tercihlerinizi dilediğiniz zaman kişiselleştirebilirsiniz:
+      </p>
+      <ul>
+        <li><strong>Google Chrome:</strong> Ayarlar &gt; Gizlilik ve Güvenlik &gt; Çerezler ve Diğer Site Verileri</li>
+        <li><strong>Mozilla Firefox:</strong> Seçenekler &gt; Gizlilik ve Güvenlik &gt; Çerezler ve Site Verileri</li>
+        <li><strong>Safari:</strong> Tercihler &gt; Gizlilik &gt; Çerezleri Engelle</li>
+        <li><strong>Microsoft Edge:</strong> Ayarlar &gt; Site İzinleri &gt; Çerezler ve Site Verileri</li>
+      </ul>
+
+      <h3>5. Bilgi ve İletişim Güvenliği</h3>
+      <p>
+        Web sitemiz 256-bit SSL (Secure Sockets Layer) sertifikası ile korunmaktadır. Form veya iletişim bağlantıları üzerinden gönderdiğiniz veriler internet ortamında güvenli şifreleme ile iletilir.
+      </p>
+
+      <h3>6. Politika Güncellemeleri</h3>
+      <p>
+        Adem Hafriyat, yasal mevzuata veya hizmet süreçlerine bağlı olarak bu politikayı güncelleme hakkını saklı tutar. Değişiklikler bu sayfada yayımlandığı tarihten itibaren geçerlilik kazanır.
+      </p>
+    </div>
+
+    <div style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border-light); display: flex; gap: 1rem; flex-wrap: wrap;">
+      <a href="/" class="btn btn-primary">Ana Sayfa</a>
+      <a href="/kvkk" class="btn btn-dark-outline">KVKK Aydınlatma Metni</a>
+      <a href="/iletisim" class="btn btn-dark-outline">İletişim &amp; Keşif</a>
+    </div>
+
+  </div>
+</div>

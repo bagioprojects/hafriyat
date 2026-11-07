@@ -71,7 +71,9 @@ exports.sitemapMain = (req, res) => {
     { loc: `${baseUrl}/makaleler`, priority: '0.85', changefreq: 'daily', lastmod: currentDate },
     { loc: `${baseUrl}/site-haritasi`, priority: '0.8', changefreq: 'weekly', lastmod: currentDate },
     { loc: `${baseUrl}/hakkimizda`, priority: '0.7', changefreq: 'monthly', lastmod: currentDate },
-    { loc: `${baseUrl}/iletisim`, priority: '0.8', changefreq: 'monthly', lastmod: currentDate }
+    { loc: `${baseUrl}/iletisim`, priority: '0.8', changefreq: 'monthly', lastmod: currentDate },
+    { loc: `${baseUrl}/kvkk`, priority: '0.5', changefreq: 'yearly', lastmod: currentDate },
+    { loc: `${baseUrl}/gizlilik-politikasi`, priority: '0.5', changefreq: 'yearly', lastmod: currentDate }
   ];
 
   res.header('Content-Type', 'application/xml; charset=UTF-8');

@@ -34,10 +34,12 @@ router.get('/makinelerimiz/:slug', machineryController.detail);
 router.get('/makaleler', blogController.list);
 router.get('/makaleler/:slug', blogController.detail);
 
-// Kurumsal Sayfalar
+// Kurumsal Sayfalar & Yasal Politikalar
 router.get('/hakkimizda', pageController.about);
 router.get('/iletisim', pageController.contact);
 router.get('/site-haritasi', sitemapController.htmlSitemap);
+router.get('/kvkk', pageController.kvkk);
+router.get('/gizlilik-politikasi', pageController.privacy);
 
 // XML Sitemap İndeksi & Alt Modüller
 router.get('/sitemap.xml', sitemapController.sitemapIndex);

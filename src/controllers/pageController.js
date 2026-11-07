@@ -59,3 +59,36 @@ exports.contact = (req, res) => {
   });
 };
 
+exports.kvkk = (req, res) => {
+  const seo = generateSeoData({
+    title: 'Kişisel Verilerin Korunması (KVKK) | Adem Hafriyat',
+    description: 'Adem Hafriyat 6698 Sayılı KVKK Aydınlatma Metni. Kişisel verilerinizin işlenme ilkeleri ve yasal haklarınız hakkında bilgilendirme.',
+    canonicalPath: '/kvkk',
+    breadcrumbs: [{ label: 'KVKK Aydınlatma Metni', url: '/kvkk' }]
+  });
+
+  res.render('pages/kvkk', {
+    siteConfig,
+    seo,
+    schemas: [getLocalBusinessSchema(), getBreadcrumbSchema(seo.breadcrumbs)],
+    activeNav: ''
+  });
+};
+
+exports.privacy = (req, res) => {
+  const seo = generateSeoData({
+    title: 'Gizlilik ve Çerez Politikası | Adem Hafriyat',
+    description: 'Adem Hafriyat Gizlilik ve Çerez Politikası. Web sitemizde kullanılan çerezler, güvenlik standartları ve veri gizliliği ilkeleri.',
+    canonicalPath: '/gizlilik-politikasi',
+    breadcrumbs: [{ label: 'Gizlilik Politikası', url: '/gizlilik-politikasi' }]
+  });
+
+  res.render('pages/privacy', {
+    siteConfig,
+    seo,
+    schemas: [getLocalBusinessSchema(), getBreadcrumbSchema(seo.breadcrumbs)],
+    activeNav: ''
+  });
+};
+
+

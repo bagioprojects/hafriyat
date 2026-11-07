@@ -1,0 +1,30 @@
+<%- include('../components/common/pageHero', {
+  title: '500 — Geçici Sunucu Hatası',
+  subtitle: 'Sistemlerimizde geçici bir teknik aksaklık meydana geldi. Ekiplerimiz durumdan haberdardır.',
+  badge: 'SİSTEM UYARISI 500'
+}) %>
+
+<div class="container page-content-wrap" style="text-align: center; max-width: 800px; margin: 0 auto;">
+  <div style="background-color: #ffffff; border: 1px solid var(--color-border-light); border-top: 5px solid var(--color-primary); padding: clamp(2rem, 5vw, 3.5rem); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+    
+    <div style="font-size: 3.5rem; margin-bottom: 1rem;">⚠️</div>
+    
+    <h2 style="font-size: 1.6rem; color: var(--color-dark); margin-bottom: 1rem;">İşleminiz Sırasında Bir Hata Oluştu</h2>
+    
+    <p style="font-size: 1.05rem; color: var(--color-text-muted); line-height: 1.8; margin-bottom: 2rem;">
+      Sunucumuzda kısa süreli bir bakım veya beklenmeyen bir aksaklık yaşanıyor. 
+      Acil kepçe, forklift veya altyapı arızası durumlarında <strong>7/24 kesintisiz nöbetçi çağrı hattımızı</strong> doğrudan arayabilirsiniz.
+    </p>
+
+    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+        <span>📞</span> Hemen Ara: <%= siteConfig.phone %>
+      </a>
+      <a href="/" class="btn btn-dark-outline btn-lg">Ana Sayfa'ya Dön</a>
+      <a href="https://wa.me/<%= siteConfig.whatsapp %>" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+        WhatsApp ile Bildir
+      </a>
+    </div>
+
+  </div>
+</div>

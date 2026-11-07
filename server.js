@@ -55,8 +55,9 @@ app.use((req, res, next) => {
   next();
 });
 
-// Statik Dosyalar (CSS, JS, Görseller - 1 Yıl Agresif Immutable Önbellekleme)
+// Statik Dosyalar (CSS, JS, Görseller - 1 Yıl Agresif Immutable Önbellekleme & .well-known Desteği)
 app.use(express.static(path.join(__dirname, 'public'), {
+  dotfiles: 'allow',
   maxAge: '365d',
   immutable: true,
   etag: true,
@@ -107,10 +108,21 @@ app.use((req, res) => {
   });
 });
 
-// 500 Genel Hata Yönetimi
+// 500 Genel Hata Yönetimi (Özel Şablon ile Kurumsal Karşılama)
 app.use((err, req, res, next) => {
   console.error('[Sunucu Hatası]:', err);
-  res.status(500).send('Sunucuda bir hata meydana geldi. Lütfen daha sonra tekrar deneyiniz.');
+  res.status(500);
+  const seo = generateSeoData({
+    title: '500 Sunucu Hatası | Adem Hafriyat',
+    description: 'Geçici bir sunucu hatası oluştu. 7/24 acil kepçe ve forklift talepleriniz için lütfen bizi doğrudan arayın: 0532 720 20 10.',
+    canonicalPath: req.path
+  });
+  res.render('pages/500', {
+    siteConfig,
+    seo,
+    schemas: [],
+    activeNav: ''
+  });
 });
 
 // Sunucuyu Başlat

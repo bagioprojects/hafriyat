@@ -1,0 +1,7 @@
+Contact: tel:+905327202010
+Contact: https://yalovakepcehafriyat.com.tr/iletisim
+Preferred-Languages: tr, en
+Canonical: https://yalovakepcehafriyat.com.tr/.well-known/security.txt
+Policy: https://yalovakepcehafriyat.com.tr/gizlilik-politikasi
+Acknowledgments: https://yalovakepcehafriyat.com.tr/hakkimizda
+Expires: 2027-12-31T23:59:59.000Z

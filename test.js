@@ -74,7 +74,9 @@ const server = app.listen(PORT, async () => {
       { path: '/makaleler/yalova-kepce-kiralama-rehberi', title: 'Makale Detay', expectText: 'Bekoloder mi Mini Ekskavatör mü' },
       { path: '/hakkimizda', title: 'Hakkımızda', expectText: 'Adem Hafriyat' },
       { path: '/iletisim', title: 'İletişim', expectText: '0532 720 20 10' },
-      { path: '/site-haritasi', title: 'HTML Site Haritası', expectText: 'Adem Hafriyat Dijital İçerik Haritası' }
+      { path: '/site-haritasi', title: 'HTML Site Haritası', expectText: 'Adem Hafriyat Dijital İçerik Haritası' },
+      { path: '/kvkk', title: 'KVKK Aydınlatma Metni', expectText: '6698 Sayılı' },
+      { path: '/gizlilik-politikasi', title: 'Gizlilik ve Çerez Politikası', expectText: 'Çerez (Cookie)' }
     ];
 
     for (const route of testRoutes) {
@@ -355,7 +357,9 @@ const server = app.listen(PORT, async () => {
       '/llms.txt',
       '/makaleler',
       '/hakkimizda',
-      '/iletisim'
+      '/iletisim',
+      '/kvkk',
+      '/gizlilik-politikasi'
     ];
 
     let brokenCount = 0;
@@ -375,6 +379,8 @@ const server = app.listen(PORT, async () => {
     const assetCheckRoutes = [
       '/favicon.ico',
       '/manifest.json',
+      '/humans.txt',
+      '/.well-known/security.txt',
       '/images/favicon.svg',
       '/images/logo.svg',
       '/images/hero-kepce.jpg',

@@ -7,7 +7,7 @@
     <% } %>
     <h1 class="page-hero-title"><%= title %></h1>
     <% if (typeof subtitle !== 'undefined' && subtitle) { %>
-      <p class="page-hero-subtitle"><%= subtitle %></p>
+      <p class="page-hero-subtitle"><%- (subtitle || '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') %></p>
     <% } %>
     <div class="page-hero-actions hero-cta-group">
       <a href="tel:<%= siteConfig.phoneRaw %>" class="btn btn-hero-action btn-hero-call pulse-btn" aria-label="Hemen Arayın: <%= siteConfig.phone %>">

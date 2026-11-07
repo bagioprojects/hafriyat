@@ -23,14 +23,7 @@
       <% } %>
 
       <div class="prose-content">
-        <%- post.content
-          .replace(/## (.*?)\n/g, '<h2>$1</h2>')
-          .replace(/### (.*?)\n/g, '<h3>$1</h3>')
-          .replace(/#### (.*?)\n/g, '<h4>$1</h4>')
-          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-          .replace(/---/g, '<hr style="border: 0; border-top: 2px solid var(--color-border-light); margin: 2rem 0;">')
-          .replace(/\n\n/g, '<br><br>')
-        %>
+        <%- renderMarkdown(post.content) %>
       </div>
 
       <!-- Özel Makale Sıkça Sorulan Sorular (100% GEO & Teknik FAQ) -->

@@ -88,3 +88,4 @@ issues.potentialOverflows.forEach(i => console.log(`  - [${i.file}:${i.line}] ${
 
 fs.writeFileSync('scripts/codebaseScanResults.json', JSON.stringify(issues, null, 2));
 console.log('\nResults saved to scripts/codebaseScanResults.json');
+

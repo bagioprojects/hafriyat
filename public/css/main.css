@@ -20,6 +20,7 @@ html, body {
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  scroll-padding-bottom: calc(85px + env(safe-area-inset-bottom, 0px));
   -webkit-text-size-adjust: 100%;
 }
 
@@ -2215,6 +2216,69 @@ h1, h2, h3, h4, h5, h6 {
   border-collapse: collapse;
 }
 
+.prose-table {
+  width: 100%;
+  font-size: var(--text-sm);
+  border-collapse: collapse;
+}
+
+.prose-table thead {
+  background: linear-gradient(135deg, #181c1f 0%, #293133 100%);
+  color: #ffffff;
+}
+
+.prose-table th {
+  padding: 0.85rem 1.15rem;
+  font-weight: 800;
+  text-align: left;
+  border: 1px solid #343d40;
+  letter-spacing: 0.02em;
+}
+
+.prose-table td {
+  padding: 0.85rem 1.15rem;
+  border: 1px solid var(--color-border-light);
+  color: var(--color-text-main);
+  line-height: 1.6;
+}
+
+.prose-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.prose-table tbody tr:hover {
+  background-color: #fefce8;
+}
+
+.prose-list, .prose-ordered-list {
+  margin: 1.25rem 0 1.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.prose-list li, .prose-ordered-list li {
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--color-text-main);
+}
+
+.prose-quote {
+  border-left: 4px solid var(--color-primary);
+  background: #fffdf5;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-style: italic;
+  color: #334155;
+}
+
+.prose-divider {
+  border: 0;
+  border-top: 2px solid var(--color-border-light);
+  margin: 2.5rem 0;
+}
+
 /* ==========================================================================
    SSS / FAQ Akordeon
    ========================================================================== */
@@ -2568,7 +2632,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .bottom-links {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+  justify-content: center;
 }
 
 .bottom-links a {

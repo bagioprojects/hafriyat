@@ -276,14 +276,14 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
-    console.log('\n--- 6. 32 ADET %100 SEO & GEO UYUMLU MAKALE VE ÖZEL FAQ COMPONENT KONTROLLERİ ---');
+    console.log('\n--- 6. 60 ADET %100 SEO & GEO UYUMLU MAKALE VE ÖZEL FAQ COMPONENT KONTROLLERİ ---');
     const blogPosts = require('./data/blog');
     console.log(`[BİLGİ]: Toplam ${blogPosts.length} makale taranıyor...`);
-    if (blogPosts.length !== 32) {
-      console.error(`❌ [HATA]: Beklenen 32 makale, ancak ${blogPosts.length} bulundu!`);
+    if (blogPosts.length !== 60) {
+      console.error(`❌ [HATA]: Beklenen 60 makale, ancak ${blogPosts.length} bulundu!`);
       failed = true;
     } else {
-      console.log('✅ [BAŞARILI]: Toplam 32 adet makale kütüphanesi eksiksiz mevcut.');
+      console.log('✅ [BAŞARILI]: Toplam 60 adet makale kütüphanesi eksiksiz mevcut.');
     }
 
     let allFaqsOk = true;
@@ -303,16 +303,16 @@ const server = app.listen(PORT, async () => {
       }
     }
     if (allFaqsOk) {
-      console.log('✅ [BAŞARILI]: Tüm 32 makalede özel FAQ accordion componenti ve Schema.org FAQPage JSON-LD %100 doğrulandı.');
+      console.log('✅ [BAŞARILI]: Tüm 60 makalede özel FAQ accordion componenti ve Schema.org FAQPage JSON-LD %100 doğrulandı.');
     }
 
     // Sitemap blog kontrolü
     const sitemapBlogRes = await fetchPath('/sitemap-blog.xml');
     const blogUrlMatches = (sitemapBlogRes.body.match(/<loc>/g) || []).length;
-    if (blogUrlMatches === 32) {
-      console.log('✅ [BAŞARILI]: /sitemap-blog.xml içinde 32 makalenin tamamı dinamik olarak listeleniyor.');
+    if (blogUrlMatches === 60) {
+      console.log('✅ [BAŞARILI]: /sitemap-blog.xml içinde 60 makalenin tamamı dinamik olarak listeleniyor.');
     } else {
-      console.error(`❌ [HATA]: /sitemap-blog.xml içinde ${blogUrlMatches} URL bulundu (Beklenen: 32)!`);
+      console.error(`❌ [HATA]: /sitemap-blog.xml içinde ${blogUrlMatches} URL bulundu (Beklenen: 60)!`);
       failed = true;
     }
 

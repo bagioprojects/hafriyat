@@ -21,7 +21,7 @@
         <div class="custom-dropdown-panel" id="districtDropdownPanel">
           <div class="panel-header">Yalova İlçeleri &amp; Sanayi Bölgeleri</div>
           <div class="options-scroll">
-            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Çiftlikköy', 'Çiftlikköy', '📍', '15 dk Servis')">
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Çiftlikköy', 'Çiftlikköy', '📍', '15 dk Servis', this)">
               <div class="opt-left">
                 <span class="opt-icon">📍</span>
                 <div>
@@ -32,7 +32,7 @@
               <span class="opt-badge amber">15 dk</span>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Taşköprü', 'Taşköprü Sanayi', '🏭', '10 dk Servis')">
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Taşköprü', 'Taşköprü Sanayi', '🏭', '10 dk Servis', this)">
               <div class="opt-left">
                 <span class="opt-icon">🏭</span>
                 <div>
@@ -43,7 +43,7 @@
               <span class="opt-badge amber">10 dk</span>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Yalova Merkez', 'Yalova Merkez', '🏙️', '20 dk Servis')">
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Yalova Merkez', 'Yalova Merkez', '🏙️', '20 dk Servis', this)">
               <div class="opt-left">
                 <span class="opt-icon">🏙️</span>
                 <div>
@@ -54,7 +54,7 @@
               <span class="opt-badge">20 dk</span>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Altınova', 'Altınova / Tersaneler', '⚓', '25 dk Servis')">
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Altınova', 'Altınova / Tersaneler', '⚓', '25 dk Servis', this)">
               <div class="opt-left">
                 <span class="opt-icon">⚓</span>
                 <div>
@@ -65,7 +65,7 @@
               <span class="opt-badge">25 dk</span>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Çınarcık', 'Çınarcık & Koru', '🏖️', '30 dk Servis')">
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Çınarcık', 'Çınarcık & Koru', '🏖️', '30 dk Servis', this)">
               <div class="opt-left">
                 <span class="opt-icon">🏖️</span>
                 <div>
@@ -76,7 +76,7 @@
               <span class="opt-badge">30 dk</span>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Termal', 'Termal & Gökçedere', '🌲', '25 dk Servis')">
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Termal', 'Termal & Gökçedere', '🌲', '25 dk Servis', this)">
               <div class="opt-left">
                 <span class="opt-icon">🌲</span>
                 <div>
@@ -87,7 +87,7 @@
               <span class="opt-badge">25 dk</span>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Armutlu', 'Armutlu & Fıstıklı', '🌊', '45 dk Servis')">
+            <div class="custom-option-item" onclick="selectCustomOption('districtSelectWrapper', 'quoteDistrict', 'Armutlu', 'Armutlu & Fıstıklı', '🌊', '45 dk Servis', this)">
               <div class="opt-left">
                 <span class="opt-icon">🌊</span>
                 <div>
@@ -117,7 +117,7 @@
         <div class="custom-dropdown-panel" id="serviceDropdownPanel">
           <div class="panel-header">Kepçe &amp; Forklift Hizmetleri</div>
           <div class="options-scroll">
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Kepçe Kiralama (JCB Bekoloder)', 'Kepçe Kiralama (JCB Bekoloder)', '🚜', 'Popüler')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Kepçe Kiralama (JCB Bekoloder, this)', 'Kepçe Kiralama (JCB Bekoloder)', '🚜', 'Popüler')">
               <div class="opt-left">
                 <span class="opt-icon">🚜</span>
                 <div>
@@ -128,7 +128,7 @@
               <span class="opt-badge amber">Öne Çıkan</span>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Yalova Forklift Kiralama (Operatörlü/Operatörsüz)', 'Forklift Kiralama', '🏗️', 'Sanayi')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Yalova Forklift Kiralama (Operatörlü/Operatörsüz, this)', 'Forklift Kiralama', '🏗️', 'Sanayi')">
               <div class="opt-left">
                 <span class="opt-icon">🏗️</span>
                 <div>
@@ -139,7 +139,7 @@
               <span class="opt-badge amber">Sanayi</span>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Mini Ekskavatör (Dar Sokak/Bahçe)', 'Mini Ekskavatör', '🚜', 'Hassas')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Mini Ekskavatör (Dar Sokak/Bahçe, this)', 'Mini Ekskavatör', '🚜', 'Hassas')">
               <div class="opt-left">
                 <span class="opt-icon">🚜</span>
                 <div>
@@ -150,7 +150,7 @@
               <span class="opt-badge">Dar Alan</span>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Kanal Kazma (Su/Gaz/Drenaj)', 'Kanal Kazma', '⛏️', '')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Kanal Kazma (Su/Gaz/Drenaj, this)', 'Kanal Kazma', '⛏️', '')">
               <div class="opt-left">
                 <span class="opt-icon">⛏️</span>
                 <div>
@@ -160,7 +160,7 @@
               </div>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Temel Kazma (Bina/Villa/Havuz)', 'Temel Kazma', '🏗️', '')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Temel Kazma (Bina/Villa/Havuz, this)', 'Temel Kazma', '🏗️', '')">
               <div class="opt-left">
                 <span class="opt-icon">🏗️</span>
                 <div>
@@ -170,7 +170,7 @@
               </div>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Su Kuyusu Açma & Islahı', 'Su Kuyusu Açma', '💧', '')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Su Kuyusu Açma & Islahı', 'Su Kuyusu Açma', '💧', '', this)">
               <div class="opt-left">
                 <span class="opt-icon">💧</span>
                 <div>
@@ -180,7 +180,7 @@
               </div>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Yağmur & Kanalizasyon Kazısı', 'Yağmur & Kanalizasyon', '🌧️', '')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Yağmur & Kanalizasyon Kazısı', 'Yağmur & Kanalizasyon', '🌧️', '', this)">
               <div class="opt-left">
                 <span class="opt-icon">🌧️</span>
                 <div>
@@ -190,7 +190,7 @@
               </div>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Arazi Düzleme & Tesviye', 'Arazi Düzleme', '📐', '')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Arazi Düzleme & Tesviye', 'Arazi Düzleme', '📐', '', this)">
               <div class="opt-left">
                 <span class="opt-icon">📐</span>
                 <div>
@@ -200,7 +200,7 @@
               </div>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Dolgu & Mıcır Yayma', 'Dolgu & Mıcır Yayma', '⛰️', '')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Dolgu & Mıcır Yayma', 'Dolgu & Mıcır Yayma', '⛰️', '', this)">
               <div class="opt-left">
                 <span class="opt-icon">⛰️</span>
                 <div>
@@ -210,7 +210,7 @@
               </div>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Elektrik Kablo Kanalı Kazma', 'Elektrik Kanalı', '⚡', '')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Elektrik Kablo Kanalı Kazma', 'Elektrik Kanalı', '⚡', '', this)">
               <div class="opt-left">
                 <span class="opt-icon">⚡</span>
                 <div>
@@ -220,7 +220,7 @@
               </div>
             </div>
 
-            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Tamirat & Altyapı Arıza', 'Altyapı Tamir', '🔧', '7/24')">
+            <div class="custom-option-item" onclick="selectCustomOption('serviceSelectWrapper', 'quoteService', 'Tamirat & Altyapı Arıza', 'Altyapı Tamir', '🔧', '7/24', this)">
               <div class="opt-left">
                 <span class="opt-icon">🔧</span>
                 <div>

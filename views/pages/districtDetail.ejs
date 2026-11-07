@@ -1,6 +1,6 @@
 <%- include('../components/common/pageHero', {
   title: district.h1 || district.title,
-  subtitle: district.description.split('\n\n')[0],
+  subtitle: district.description.split('\n\n')[0].replace(/\*\*/g, ''),
   badge: `⏱ ${district.responseMinutes} DAKİKADA SERVİS — ${district.tag}`
 }) %>
 
@@ -10,7 +10,7 @@
     <div>
       <!-- Yerel Zemin ve Coğrafi Detaylar -->
       <div class="prose-content" style="margin-bottom: 2.5rem;">
-        <%- district.description.replace(/\n\n/g, '<br><br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') %>
+        <%- renderMarkdown(district.description) %>
       </div>
 
       <!-- Mahalle ve Köy SEO Grid Bileşeni -->

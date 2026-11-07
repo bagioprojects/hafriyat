@@ -15,6 +15,7 @@ EventEmitter.defaultMaxListeners = 30;
 const siteConfig = require('./config/site');
 const webRoutes = require('./src/routes/web');
 const { generateSeoData } = require('./src/helpers/seoHelper');
+const { renderMarkdown } = require('./src/helpers/markdownParser');
 const { cacheMiddleware } = require('./src/middleware/cacheMiddleware');
 
 const app = express();
@@ -80,6 +81,7 @@ app.set('layout extractStyles', true);
 app.use((req, res, next) => {
   res.locals.siteConfig = siteConfig;
   res.locals.currentPath = req.path;
+  res.locals.renderMarkdown = renderMarkdown;
   next();
 });
 

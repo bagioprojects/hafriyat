@@ -3,7 +3,7 @@
   "modules": {
     "sitemap": {
       "sub_sitemaps_count": 6,
-      "total_urls_discovered": 243
+      "total_urls_discovered": 245
     },
     "geo_local": {
       "garage_coords": [
@@ -33,71 +33,71 @@
       "coverage_polygon_valid": true
     },
     "network_graph": {
-      "total_nodes": 247,
-      "total_edges": 15835,
+      "total_nodes": 249,
+      "total_edges": 16439,
       "orphan_count": 0,
       "top_pagerank": [
         {
           "path": "/",
-          "score": 0.01331,
-          "in_degree": 243
+          "score": 0.01298,
+          "in_degree": 245
         },
         {
           "path": "/hizmetlerimiz",
-          "score": 0.01331,
-          "in_degree": 243
+          "score": 0.01298,
+          "in_degree": 245
         },
         {
           "path": "/hizmetlerimiz/kepce-kiralama",
-          "score": 0.01331,
-          "in_degree": 243
+          "score": 0.01298,
+          "in_degree": 245
         },
         {
           "path": "/hizmetlerimiz/kanal-kazma",
-          "score": 0.01331,
-          "in_degree": 243
+          "score": 0.01298,
+          "in_degree": 245
         },
         {
           "path": "/hizmetlerimiz/su-kuyusu-kazma",
-          "score": 0.01331,
-          "in_degree": 243
+          "score": 0.01298,
+          "in_degree": 245
         },
         {
           "path": "/hizmetlerimiz/yagmur-kanalizasyon-giderleri",
-          "score": 0.01331,
-          "in_degree": 243
+          "score": 0.01298,
+          "in_degree": 245
         },
         {
           "path": "/hizmetlerimiz/tamir-altyapi-onarim",
-          "score": 0.01331,
-          "in_degree": 243
+          "score": 0.01298,
+          "in_degree": 245
         }
       ]
     },
     "geo_rag_search": {
       "yalova kepçe": {
         "best_match_page": "/makaleler/yalova-operatorlu-kepce-kiralama-avantajlari-ve-is-guvenligi",
-        "cosine_similarity": 0.2671,
+        "cosine_similarity": 0.2654,
         "rag_confidence": "Yüksek"
       },
       "yalova kiralık kepçe": {
         "best_match_page": "/makaleler/termal-ve-koylerinde-kiralik-kepce-doga-ve-turizm-projeleri",
-        "cosine_similarity": 0.25,
-        "rag_confidence": "Yüksek"
+        "cosine_similarity": 0.2499,
+        "rag_confidence": "Orta"
       },
       "yalova operatörlü kepçe": {
         "best_match_page": "/makaleler/yalova-operatorlu-kepce-kiralama-avantajlari-ve-is-guvenligi",
-        "cosine_similarity": 0.3358,
+        "cosine_similarity": 0.3344,
         "rag_confidence": "Yüksek"
       },
       "taşköprü forklift kiralama": {
         "best_match_page": "/bolgeler/taskopru/forklift-kiralama",
-        "cosine_similarity": 0.2157,
+        "cosine_similarity": 0.2159,
         "rag_confidence": "Orta"
       },
       "çiftlikköy temel kazısı": {
         "best_match_page": "/bolgeler/ciftlikkoy/temel-kazma",
-        "cosine_similarity": 0.1717,
+        "cosine_similarity": 0.1721,
         "rag_confidence": "Orta"
       },
       "altınova tersane ağır tonaj forklift": {
@@ -107,22 +107,22 @@
       },
       "çınarcık eğimli arazi kepçe kazısı": {
         "best_match_page": "/makaleler/cinarcik-operatorlu-kepce-kiralama-ve-yazlik-temel-kazisi",
-        "cosine_similarity": 0.1958,
+        "cosine_similarity": 0.1973,
         "rag_confidence": "Orta"
       },
       "termal doğa koruyucu hassas kazı": {
         "best_match_page": "/makaleler/termal-ve-koylerinde-kiralik-kepce-doga-ve-turizm-projeleri",
-        "cosine_similarity": 0.2191,
+        "cosine_similarity": 0.2193,
         "rag_confidence": "Orta"
       },
       "keson su kuyusu açma beton büz": {
         "best_match_page": "/makaleler/yalova-keson-su-kuyusu-kazimi-ve-beton-buz-yerlesimi",
-        "cosine_similarity": 0.2212,
+        "cosine_similarity": 0.221,
         "rag_confidence": "Orta"
       },
       "bina temel kazısı iksa şev açısı": {
         "best_match_page": "/makaleler/yalova-bina-ve-villa-temel-kazisi-kazi-guvenligi-ve-iksay",
-        "cosine_similarity": 0.2194,
+        "cosine_similarity": 0.2226,
         "rag_confidence": "Orta"
       },
       "tarla tesviyesi lazer nivo eğim": {

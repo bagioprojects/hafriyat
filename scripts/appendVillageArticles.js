@@ -60,7 +60,7 @@ Hobi bahçelerinin sınırlarını belirlemek ve yabani hayvan girişini engelle
 | **Kaya ve Taş Kırma** | Kırıcılı JCB Bekoloder | Yüksek darbe enerjisiyle sert kalker kayaları hızla parçalar. |
 | **Ağaç Arası Dar Kazı** | Cat 303.5 Mini Ekskavatör | Kauçuk paletiyle zeytin ağacı köklerine zarar vermez, dar aralardan geçer. |
 
-Kabaklı Köyü'ndeki araziniz için aynı gün içinde **ücretsiz yerinde keşif** talep edebilir, net süre ve fiyat teklifi alabilirsiniz.
+Kabaklı Köyü'ndeki araziniz için aynı gün içinde **yerinde keşif ve net fiyat teklifi** talep edebilir, net süre ve fiyat teklifi alabilirsiniz.
     `
   },
   {

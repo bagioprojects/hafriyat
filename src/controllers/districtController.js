@@ -29,8 +29,8 @@ exports.detail = (req, res, next) => {
       answer: `Adem Hafriyat olarak merkez garajımızın konumu sayesinde ${district.name} sınırları içindeki adresinize ortalama ${district.responseMinutes} dakika içinde iş makinesi ve operatör sevk ediyoruz.`
     },
     {
-      question: `${district.name} mahalle ve köylerinde keşif ücreti alıyor musunuz?`,
-      answer: `Hayır. ${district.name} ilçe merkezi, tüm mahalleleri ve köylerinde yapılacak kanal kazma, temel, arazi düzleme veya forklift kiralama işlerinizde keşif hizmetimiz %100 ücretsizdir.`
+      question: `${district.name} mahalle ve köylerinde keşif ve nakliye nasıl hesaplanır?`,
+      answer: `${district.name} ilçe merkezi, mahalleleri ve köylerinde yapılacak kanal kazma, temel, arazi düzleme veya forklift işlerinizde şantiye mesafesi ve makine çalışma süresine göre en makul yakıt/nakliye maliyeti planlanır ve iş öncesinde net teklif sunulur.`
     },
     {
       question: `${district.name} bölgesinde hangi zemin türlerine uygun kepçeleriniz var?`,
@@ -183,8 +183,8 @@ exports.neighborhoodDetail = (req, res, next) => {
       answer: `Evet, dar sokaklar, villa bahçeleri ve bitişik parseller için kauçuk paletli 3.5 tonluk Mini Ekskavatörümüzle çit ve kaldırımlara sıfır hasarla çalışıyoruz.`
     },
     {
-      question: `${locality.name} için keşif ücreti var mı?`,
-      answer: `Hayır. ${district.name} ${locality.name} genelindeki tüm kazı, temel, kanal ve tesviye işlerinizde keşif hizmetimiz tamamen ücretsizdir.`
+      question: `${locality.name} için keşif ve fiyatlandırma nasıl yapılır?`,
+      answer: `${district.name} ${locality.name} genelindeki tüm kazı, temel, kanal ve tesviye işlerinizde konum ve zemin incelenerek en ekonomik nakliye ve şeffaf çalışma maliyeti çıkarılır; sürpriz masraf olmadan net fiyat verilir.`
     }
   ];
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T05:55:25.226Z",
+  "generatedAt": "2026-11-07T06:16:57.164Z",
   "overallScore": 100,
   "categoryScores": {
     "technical": 100,
@@ -9,11 +9,11 @@
     "mobileUx": 100
   },
   "metrics": {
-    "totalPages": 243,
-    "avgTtfbMs": 6,
-    "avgWordCount": 1448,
-    "avgPayloadKb": 74.8,
-    "totalWordsSiteWide": 351927,
+    "totalPages": 245,
+    "avgTtfbMs": 8,
+    "avgWordCount": 1445,
+    "avgPayloadKb": 74.6,
+    "totalWordsSiteWide": 353921,
     "duplicateTitles": 0,
     "orphanPagesCount": 0
   },
@@ -33,8 +33,8 @@
     {
       "url": "/",
       "status": 200,
-      "sizeKb": 115.4,
-      "ttfbMs": 47,
+      "sizeKb": 115.5,
+      "ttfbMs": 72,
       "issues": [],
       "warnings": [
         "Description önerilen 170 karakter sınırını aşıyor (183 karakter)"
@@ -49,7 +49,7 @@
       "h2Count": 7,
       "h3Count": 37,
       "h1Text": "Yalova Kepçe Kiralama & Operatörlü Forklift Hizmetleri",
-      "wordCount": 2779,
+      "wordCount": 2788,
       "schemaTypes": [
         [
           "HomeAndConstructionBusiness",
@@ -68,7 +68,7 @@
       "url": "/hizmetlerimiz",
       "status": 200,
       "sizeKb": 73,
-      "ttfbMs": 11,
+      "ttfbMs": 27,
       "issues": [],
       "warnings": [
         "Description önerilen 170 karakter sınırını aşıyor (217 karakter)"
@@ -96,7 +96,7 @@
       "url": "/makinelerimiz",
       "status": 200,
       "sizeKb": 56.8,
-      "ttfbMs": 13,
+      "ttfbMs": 12,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (75 karakter)"
@@ -124,7 +124,7 @@
       "url": "/makaleler",
       "status": 200,
       "sizeKb": 96.7,
-      "ttfbMs": 55,
+      "ttfbMs": 18,
       "issues": [],
       "warnings": [],
       "title": "Hafriyat, Kepçe ve Forklift Rehberi | Makaleler | Adem Hafriyat",
@@ -137,7 +137,7 @@
       "h2Count": 3,
       "h3Count": 71,
       "h1Text": "Hafriyat, Kepçe ve Forklift Bilgi Merkezi",
-      "wordCount": 3415,
+      "wordCount": 3418,
       "schemaTypes": [
         "BreadcrumbList"
       ],
@@ -150,7 +150,7 @@
       "url": "/site-haritasi",
       "status": 200,
       "sizeKb": 121.8,
-      "ttfbMs": 25,
+      "ttfbMs": 12,
       "issues": [],
       "warnings": [],
       "title": "Site Haritası &amp; İçerik Dizini | Adem Hafriyat",
@@ -176,7 +176,7 @@
       "url": "/hakkimizda",
       "status": 200,
       "sizeKb": 75.4,
-      "ttfbMs": 11,
+      "ttfbMs": 8,
       "issues": [],
       "warnings": [],
       "title": "Hakkımızda | Adem Hafriyat Yalova",
@@ -189,7 +189,7 @@
       "h2Count": 3,
       "h3Count": 15,
       "h1Text": "Hakkımızda — Adem Hafriyat",
-      "wordCount": 1420,
+      "wordCount": 1424,
       "schemaTypes": [
         [
           "HomeAndConstructionBusiness",
@@ -207,7 +207,7 @@
       "url": "/iletisim",
       "status": 200,
       "sizeKb": 74.8,
-      "ttfbMs": 12,
+      "ttfbMs": 6,
       "issues": [],
       "warnings": [],
       "title": "İletişim &amp; Ücretsiz Keşif | Adem Hafriyat",
@@ -219,8 +219,70 @@
       "h1Count": 1,
       "h2Count": 2,
       "h3Count": 12,
-      "h1Text": "İletişim Ücretsiz Keşif Hattı",
-      "wordCount": 1233,
+      "h1Text": "İletişim Hızlı Fiyat Hattı",
+      "wordCount": 1235,
+      "schemaTypes": [
+        [
+          "HomeAndConstructionBusiness",
+          "LocalBusiness",
+          "GeneralContractor"
+        ],
+        "BreadcrumbList"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/kvkk",
+      "status": 200,
+      "sizeKb": 56.1,
+      "ttfbMs": 38,
+      "issues": [],
+      "warnings": [],
+      "title": "Kişisel Verilerin Korunması (KVKK) | Adem Hafriyat",
+      "titleLength": 50,
+      "description": "Adem Hafriyat 6698 Sayılı KVKK Aydınlatma Metni. Kişisel verilerinizin işlenme ilkeleri ve yasal haklarınız hakkında bilgilendirme.",
+      "descLength": 131,
+      "canonical": "https://yalovakepcehafriyat.com.tr/kvkk",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 1,
+      "h3Count": 11,
+      "h1Text": "Kişisel Verilerin Korunması ve Aydınlatma Metni",
+      "wordCount": 1045,
+      "schemaTypes": [
+        [
+          "HomeAndConstructionBusiness",
+          "LocalBusiness",
+          "GeneralContractor"
+        ],
+        "BreadcrumbList"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/gizlilik-politikasi",
+      "status": 200,
+      "sizeKb": 55.2,
+      "ttfbMs": 18,
+      "issues": [],
+      "warnings": [],
+      "title": "Gizlilik ve Çerez Politikası | Adem Hafriyat",
+      "titleLength": 44,
+      "description": "Adem Hafriyat Gizlilik ve Çerez Politikası. Web sitemizde kullanılan çerezler, güvenlik standartları ve veri gizliliği ilkeleri.",
+      "descLength": 128,
+      "canonical": "https://yalovakepcehafriyat.com.tr/gizlilik-politikasi",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 1,
+      "h3Count": 10,
+      "h1Text": "Gizlilik ve Çerez Politikası",
+      "wordCount": 945,
       "schemaTypes": [
         [
           "HomeAndConstructionBusiness",
@@ -238,7 +300,7 @@
       "url": "/hizmetlerimiz/kepce-kiralama",
       "status": 200,
       "sizeKb": 71.9,
-      "ttfbMs": 27,
+      "ttfbMs": 9,
       "issues": [],
       "warnings": [],
       "title": "Yalova Kepçe Kiralama | Çiftlikköy &amp; Taşköprü Adem Hafriyat 7/24",
@@ -251,7 +313,7 @@
       "h2Count": 2,
       "h3Count": 10,
       "h1Text": "Yalova Kepçe Kiralama Operatörlü İş Makinesi Hizmetleri",
-      "wordCount": 1450,
+      "wordCount": 1449,
       "schemaTypes": [
         "Service",
         "BreadcrumbList",
@@ -266,7 +328,7 @@
       "url": "/hizmetlerimiz/forklift-kiralama",
       "status": 200,
       "sizeKb": 71.6,
-      "ttfbMs": 19,
+      "ttfbMs": 9,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (82 karakter)"
@@ -281,7 +343,7 @@
       "h2Count": 2,
       "h3Count": 10,
       "h1Text": "Yalova Forklift Kiralama Sanayi Yükleme-Boşaltma Hizmetleri",
-      "wordCount": 1406,
+      "wordCount": 1405,
       "schemaTypes": [
         "Service",
         "BreadcrumbList",
@@ -296,7 +358,7 @@
       "url": "/hizmetlerimiz/operatorlu-forklift-kiralama",
       "status": 200,
       "sizeKb": 68,
-      "ttfbMs": 7,
+      "ttfbMs": 5,
       "issues": [],
       "warnings": [],
       "title": "Yalova Operatörlü Forklift Kiralama | Adem Hafriyat 7/24",
@@ -309,7 +371,7 @@
       "h2Count": 2,
       "h3Count": 10,
       "h1Text": "Yalova Operatörlü Forklift Kiralama | Uzman Belgeli Kadro",
-      "wordCount": 1234,
+      "wordCount": 1233,
       "schemaTypes": [
         "Service",
         "BreadcrumbList",
@@ -324,7 +386,7 @@
       "url": "/hizmetlerimiz/operatorsuz-forklift-kiralama",
       "status": 200,
       "sizeKb": 68.1,
-      "ttfbMs": 16,
+      "ttfbMs": 7,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (78 karakter)"
@@ -339,7 +401,7 @@
       "h2Count": 2,
       "h3Count": 10,
       "h1Text": "Yalova Operatörsüz Forklift Kiralama | Aylık Proje Bazlı",
-      "wordCount": 1228,
+      "wordCount": 1227,
       "schemaTypes": [
         "Service",
         "BreadcrumbList",
@@ -369,7 +431,7 @@
       "h2Count": 2,
       "h3Count": 10,
       "h1Text": "Yalova Kanal Kazma Altyapı Hendek Kazı Hizmetleri",
-      "wordCount": 1275,
+      "wordCount": 1274,
       "schemaTypes": [
         "Service",
         "BreadcrumbList",
@@ -384,7 +446,7 @@
       "url": "/hizmetlerimiz/su-kuyusu-kazma",
       "status": 200,
       "sizeKb": 67.8,
-      "ttfbMs": 4,
+      "ttfbMs": 7,
       "issues": [],
       "warnings": [],
       "title": "Yalova Su Kuyusu Kazma &amp; Keson Kuyu Açma | Adem Hafriyat",
@@ -397,65 +459,7 @@
       "h2Count": 2,
       "h3Count": 10,
       "h1Text": "Yalova Su Kuyusu Açma, Kazma Keson Kuyu Islahı",
-      "wordCount": 1260,
-      "schemaTypes": [
-        "Service",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "hasGeo": true,
-      "hasOgMeta": true,
-      "totalImages": 3,
-      "imagesWithoutAlt": 0
-    },
-    {
-      "url": "/hizmetlerimiz/yagmur-kanalizasyon-giderleri",
-      "status": 200,
-      "sizeKb": 68.3,
-      "ttfbMs": 4,
-      "issues": [],
-      "warnings": [
-        "Title önerilen 70 karakter sınırını aşıyor (87 karakter)"
-      ],
-      "title": "Yalova Yağmur &amp; Kanalizasyon Kazma | Çiftlikköy Rögar ve Boru Hattı | Adem Hafriyat",
-      "titleLength": 87,
-      "description": "Yalova genelinde yağmur suyu tahliye kanalı, kanalizasyon boru hattı ve foseptik kazısı. Koruge boru ve rögar bacası döşeme altyapısı.",
-      "descLength": 134,
-      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz/yagmur-kanalizasyon-giderleri",
-      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-      "h1Count": 1,
-      "h2Count": 2,
-      "h3Count": 10,
-      "h1Text": "Yalova Yağmur Suyu ve Kanalizasyon Hattı Kazma Hizmetleri",
-      "wordCount": 1264,
-      "schemaTypes": [
-        "Service",
-        "BreadcrumbList",
-        "FAQPage"
-      ],
-      "hasGeo": true,
-      "hasOgMeta": true,
-      "totalImages": 3,
-      "imagesWithoutAlt": 0
-    },
-    {
-      "url": "/hizmetlerimiz/tamir-altyapi-onarim",
-      "status": 200,
-      "sizeKb": 67.6,
-      "ttfbMs": 6,
-      "issues": [],
-      "warnings": [],
-      "title": "Yalova Altyapı Arıza &amp; Tamir Kazısı | Acil Kepçe Adem Hafriyat",
-      "titleLength": 66,
-      "description": "Yalova genelinde patlayan temiz su boruları, çöken kanalizasyon hatları ve acil hafriyat onarımlarında 7/24 hızlı müdahale. Anında sahada!",
-      "descLength": 138,
-      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz/tamir-altyapi-onarim",
-      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-      "h1Count": 1,
-      "h2Count": 2,
-      "h3Count": 10,
-      "h1Text": "Yalova Altyapı Tamir, Patlak Su Borusu Arıza Kazı Hizmetleri",
-      "wordCount": 1255,
+      "wordCount": 1259,
       "schemaTypes": [
         "Service",
         "BreadcrumbList",

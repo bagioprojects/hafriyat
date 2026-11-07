@@ -171,7 +171,7 @@ Adem Hafriyat operatörleri, dar geçişli depo koridorlarında, ıslak veya eğ
       'Gününde periyodik yağ, filtre ve hidrolik bakımları firmamıza ait',
       'Arıza durumunda aynı gün içinde yerinde teknik servis veya muadil makine temini',
       'Uzun dönemli kiralamalarda çok avantajlı kurumsal fiyat tarifeleri',
-      'Taşköprü ve Altınova bölgesine ücretsiz çekici ile teslimat imkanı'
+      'Taşköprü ve Altınova bölgesine hızlı çekici & uygun nakliye ile adrese teslimat'
     ],
     technicalDetails: {
       kiralamaPeriyodu: 'Haftalık, Aylık, 6 Aylık, Yıllık',

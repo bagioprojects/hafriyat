@@ -105,7 +105,7 @@ function getLocalBusinessSchema() {
       },
       result: {
         '@type': 'Reservation',
-        name: 'Ücretsiz Keşif ve Fiyat Teklifi'
+        name: 'Hızlı Keşif ve Şeffaf Fiyat Teklifi'
       }
     },
     sameAs: [

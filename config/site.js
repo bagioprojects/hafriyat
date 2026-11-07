@@ -34,7 +34,7 @@ module.exports = {
     '7/24 Acil Kepçe & Forklift Servisi',
     'G Sınıfı Ehliyetli Uzman Operatörler',
     'Son Model JCB & Mini Ekskavatör Filosu',
-    'Yalova & Tüm İlçelerde Ücretsiz Keşif'
+    'Yalova & Tüm İlçelerde Hızlı Keşif & Şeffaf Fiyat'
   ]
 };
 

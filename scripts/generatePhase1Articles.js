@@ -67,7 +67,7 @@ Yalova ve ilçelerinde gerçekleştirilen inşaat, temel kazısı, drenaj ve yol
 
 ## Yalova'da Operatörlü Kepçe İhtiyaçlarınızda Hemen Arayın
 
-Çiftlikköy, Taşköprü, Yalova Merkez, Altınova ve tüm köylerde saatlik, günlük veya taahhütlü operatörlü kepçe kiralamak için bizi 7/24 arayabilir, ücretsiz keşif talep edebilirsiniz.
+Çiftlikköy, Taşköprü, Yalova Merkez, Altınova ve tüm köylerde saatlik, günlük veya taahhütlü operatörlü kepçe kiralamak için bizi 7/24 arayabilir, hızlı keşif & şeffaf fiyat talep edebilirsiniz.
 `
   },
   {

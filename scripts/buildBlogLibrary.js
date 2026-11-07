@@ -13,7 +13,7 @@ const existingFaqs = {
   'yalova-kepce-kiralama-rehberi': [
     {
       question: 'Yalova içinde bekoloder kepçe kiralamak için minimum kiralama süresi nedir?',
-      answer: 'Adem Hafriyat olarak Yalova Merkez, Çiftlikköy ve Taşköprü bölgelerinde minimum 2 saatlik acil veya yarım günlük / günlük kiralama seçenekleri sunuyoruz. İşinizin büyüklüğüne göre ücretsiz keşif sonrası en ekonomik süreyi belirliyoruz.'
+      answer: 'Adem Hafriyat olarak Yalova Merkez, Çiftlikköy ve Taşköprü bölgelerinde minimum 2 saatlik acil veya yarım günlük / günlük kiralama seçenekleri sunuyoruz. İşinizin büyüklüğüne göre hızlı keşif & şeffaf fiyat sonrası en ekonomik süreyi belirliyoruz.'
     },
     {
       question: 'Lastik tekerlekli bekoloder ile paletli mini ekskavatör arasında ne fark vardır?',
@@ -61,7 +61,7 @@ const existingFaqs = {
     },
     {
       question: 'Çiftlikköy\'de temel kazısı öncesi zemin keşfi ücretli midir?',
-      answer: 'Hayır, Adem Hafriyat olarak Çiftlikköy genelinde şantiye keşif hizmetimiz tamamen ücretsizdir.'
+      answer: 'Hayır, Adem Hafriyat olarak Çiftlikköy genelinde şantiye keşif hizmetimiz şeffaf şekilde önceden hesaplanır.'
     }
   ],
   'yagmur-ve-kanalizasyon-kazisi-standartlari': [
@@ -187,7 +187,7 @@ const existingFaqs = {
     },
     {
       question: 'Gacık Köyü\'ne keşif için randevu nasıl alınır?',
-      answer: '0532 720 20 10 numaramızdan veya WhatsApp üzerinden ada/parsel veya konum göndererek aynı gün ücretsiz keşif talep edebilirsiniz.'
+      answer: '0532 720 20 10 numaramızdan veya WhatsApp üzerinden ada/parsel veya konum göndererek aynı gün hızlı keşif & şeffaf fiyat talep edebilirsiniz.'
     }
   ],
   'laledere-koyu-bag-bahce-drenaji-ve-fosseptik-cukuru': [
@@ -630,7 +630,7 @@ Havuz kazısından ortalama 60 - 100 m³ toprak çıkar. Adem Hafriyat olarak:
 - Üstteki temiz bahçe toprağını peyzaj alanına yayıyoruz.
 - Derinden çıkan taşlı ve killi toprağı ise hafriyat kamyonlarımızla Yalova ruhsatlı döküm sahasına naklediyoruz.
 
-Havuz projenizin kazı ve tesviye işleri için bizi arayarak yerinde ücretsiz keşif talep edebilirsiniz.
+Havuz projenizin kazı ve tesviye işleri için bizi arayarak yerinde hızlı keşif & şeffaf fiyat talep edebilirsiniz.
     `
   },
   {
@@ -1048,7 +1048,7 @@ Yalova'da 7/24 acil kepçe ve kazı hattımız: **0532 720 20 10**.
     title: '2026 Yalova Kepçe ve Forklift Kiralama Fiyat Analizi: Saatlik, Günlük ve Proje Bazlı Maliyet Rehberi',
     metaTitle: '2026 Yalova Kepçe & Forklift Kiralama Fiyatları | Adem Hafriyat',
     metaDesc: '2026 güncel Yalova kepçe kiralama, forklift kiralama, temel kazısı ve hafriyat fiyat analizi. Saatlik, günlük ve anahtar teslim maliyet kriterleri.',
-    excerpt: 'Yalova genelinde iş makinesi kiralarken bütçenizi koruyacak fiyat dinamikleri, operatör ve yakıt dahil maliyetler ve ücretsiz keşif rehberi.',
+    excerpt: 'Yalova genelinde iş makinesi kiralarken bütçenizi koruyacak fiyat dinamikleri, operatör ve yakıt dahil maliyetler ve hızlı keşif & şeffaf fiyat rehberi.',
     category: 'Fiyat & Maliyet',
     author: 'Adem Hafriyat Mali İşler Birimi',
     date: '2026-04-25',
@@ -1072,7 +1072,7 @@ Yalova'da 7/24 acil kepçe ve kazı hattımız: **0532 720 20 10**.
       },
       {
         question: 'Fiyat teklifi almadan önce şantiyeye gelip keşif yapıyor musunuz?',
-        answer: 'Evet, Yalova, Çiftlikköy ve Taşköprü genelinde şantiyenize gelerek yapılacak kazı veya dolgu işini yerinde inceliyor, %100 ücretsiz keşif raporu veriyoruz.'
+        answer: 'Evet, Yalova, Çiftlikköy ve Taşköprü genelinde şantiyenize gelerek yapılacak kazı veya dolgu işini yerinde inceliyor, %100 hızlı keşif & şeffaf fiyat raporu veriyoruz.'
       },
       {
         question: 'Büyük hafriyat veya uzun süreli projelerde iskonto uygulanır mı?',
@@ -1110,7 +1110,7 @@ Sektörde en çok şikayet edilen konu; işe başlarken düşük fiyat verip iş
 Adem Hafriyat olarak:
 - **Net Fiyat Garantisi:** Sözleşmede veya telefonda ne konuşulduysa o geçerlidir.
 - **Gizli Masraf Yok:** Operatör, mazot ve makine amortismanı teklife dahildir.
-- **Ücretsiz Yerinde Keşif:** İşinize gelip bakıyor, en uygun makineyi ve en net süreyi belirliyoruz.
+- **Yerinde Keşif & Net Fiyatlandırma:** İşinize gelip bakıyor, nakliye ve yakıt dahil en uygun makineyi ve en net süreyi şeffafça belirliyoruz.
 
 2026 yılı güncel şantiye fiyatlarımız için bizi hemen arayın: **0532 720 20 10**.
     `

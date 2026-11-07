@@ -36,8 +36,8 @@ exports.about = (req, res) => {
 
 exports.contact = (req, res) => {
   const seo = generateSeoData({
-    title: 'İletişim & Ücretsiz Keşif | Adem Hafriyat',
-    description: 'Adem Hafriyat iletişim bilgileri: Telefon 0532 720 20 10, 7/24 WhatsApp hattı, Çiftlikköy Taşköprü garajı. Yalova genelinde ücretsiz keşif talep edin.',
+    title: 'İletişim & Hızlı Fiyat Teklifi | Adem Hafriyat',
+    description: 'Adem Hafriyat iletişim bilgileri: Telefon 0532 720 20 10, 7/24 WhatsApp hattı, Çiftlikköy Taşköprü garajı. Yalova genelinde hızlı keşif ve şeffaf fiyat teklifi talep edin.',
     keywords: [
       'adem hafriyat iletişim',
       'yalova kepçe telefon',

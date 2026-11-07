@@ -43,7 +43,7 @@ const newArticles = [
       },
       {
         question: 'Çiftlikköy\'de temel kazısı öncesi yerinde zemin keşfi yapıyor musunuz?',
-        answer: 'Evet, Adem Hafriyat olarak Çiftlikköy genelinde ada/parsel bazında şantiyenize gelerek %100 ücretsiz zemin keşfi ve kazı planlaması yapıyoruz.'
+        answer: 'Evet, Adem Hafriyat olarak Çiftlikköy genelinde ada/parsel bazında şantiyenize gelerek %100 yerinde zemin keşfi ve kazı planlaması yapıyoruz.'
       }
     ],
     content: `
@@ -80,7 +80,7 @@ Yüksek rakımlı köy arazilerinde eğimli yamaçlar ve yüzeye yakın taşlık
 3. **Fransız Drenaj Kuşağı:** Temel pabucu boyunca delikli PVC drenaj borusu döşenerek geotekstil keçe ile bohçalanmalıdır.
 4. **Hafriyat Kamyonu Koordinasyonu:** Şehir içi trafiğini aksatmadan çıkan toprağın belediye ruhsatlı sahasına kesintisiz taşınması.
 
-Çiftlikköy'deki inşaat ve temel kazısı projeleriniz için 7/24 bizi arayabilir, yerinde ücretsiz keşif talep edebilirsiniz.
+Çiftlikköy'deki inşaat ve temel kazısı projeleriniz için 7/24 bizi arayabilir, yerinde hızlı keşif & şeffaf fiyat talep edebilirsiniz.
     `
   },
   {

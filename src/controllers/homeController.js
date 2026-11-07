@@ -26,8 +26,8 @@ exports.index = (req, res) => {
       answer: 'Talebinize göre hem yakıt dahil anahtar teslim hem de sadece operatörlü makine kiralama seçenekleri sunuyoruz. İş başlamadan önce net ve şeffaf fiyat verilir, iş bitiminde sürpriz ek masraflarla karşılaşmazsınız.'
     },
     {
-      question: 'Çiftlikköy, Taşköprü ve köylerde keşif ücretli mi?',
-      answer: 'Hayır. Adem Hafriyat olarak Yalova Merkez, Çiftlikköy, Taşköprü, Altınova ve tüm köylerde yapılacak temel, kanal, su kuyusu ve arazi düzleme işlerinizde keşif hizmetimiz tamamen ücretsizdir.'
+      question: 'Çiftlikköy, Taşköprü ve köylerde keşif ve intikal nasıl planlanır?',
+      answer: 'İş makinelerimizde intikal ve keşif planlaması şantiyenizin mesafesine, zemin şartlarına ve yapılacak işin büyüklüğüne göre en makul yakıt ve nakliye maliyeti gözetilerek hesaplanır. İş öncesinde tüm detaylar konuşulur, sürpriz veya gizli masraf olmadan net ve şeffaf fiyat teklifi sunulur.'
     },
     {
       question: 'Dar sokaklarda ve müstakil bahçelerde büyük kepçe zarar verir mi?',

@@ -371,6 +371,33 @@ const server = app.listen(PORT, async () => {
       console.log(`✅ [BAŞARILI]: Footer'daki ${footerLinks.length} adet linkin tamamı HTTP 200 OK! Sıfır (0) kırık link.`);
     }
 
+    console.log('\n--- 8. STATİK VARLIKLAR, GÖRSELLER, FAVICON VE MANIFEST KONTROLLERİ ---');
+    const assetCheckRoutes = [
+      '/favicon.ico',
+      '/manifest.json',
+      '/images/favicon.svg',
+      '/images/logo.svg',
+      '/images/hero-kepce.jpg',
+      '/images/kepce-kiralama.jpg',
+      '/images/forklift-kiralama.jpg',
+      '/images/jcb-3cx.jpg',
+      '/images/cat-303.jpg',
+      '/images/blog-kepce-rehberi.jpg'
+    ];
+
+    let missingAssetCount = 0;
+    for (const assetPath of assetCheckRoutes) {
+      const res = await fetchPath(assetPath);
+      if (res.statusCode !== 200) {
+        console.error(`❌ [HATA]: Statik varlık bulunamadı: ${assetPath} (HTTP ${res.statusCode})`);
+        missingAssetCount++;
+        failed = true;
+      }
+    }
+    if (missingAssetCount === 0) {
+      console.log(`✅ [BAŞARILI]: Kritik statik varlıklar (favicon, manifest, SVG logolar, 1200x675 JPG görseller) HTTP 200 OK!`);
+    }
+
     if (failed) {
       console.error('\n❌ TESTLERDE HATALAR BULUNDU!');
       process.exit(1);

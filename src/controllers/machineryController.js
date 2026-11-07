@@ -47,7 +47,7 @@ exports.detail = (req, res, next) => {
 
   const seo = generateSeoData({
     title: machine.title,
-    description: `${machine.name} saatlik, günlük ve aylık kiralama. ${machine.bestFor.join(', ')} için Yalova ve Çiftlikköy genelinde hizmetinizde.`,
+    description: `${machine.name} saatlik, günlük ve aylık kiralama. ${machine.bestFor.slice(0, 2).join(' ve ')} için Yalova genelinde 15 dk teslimat.`,
     keywords: [
       `${machine.name.toLowerCase()} kiralama`,
       `yalova ${machine.type.toLowerCase()} kiralama`,

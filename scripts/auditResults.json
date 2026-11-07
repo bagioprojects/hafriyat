@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "totalPages": 215,
+    "checkedPages": 215,
+    "status200": 215,
+    "statusOther": 0,
+    "missingTitle": 0,
+    "missingDesc": 0,
+    "missingCanonical": 0,
+    "missingH1": 0,
+    "multipleH1": 0,
+    "missingGeo": 0,
+    "missingJsonLd": 0,
+    "invalidJsonLd": 0,
+    "imagesWithoutAlt": 0
+  },
+  "issues": [],
+  "warnings": [
+    {
+      "path": "/hizmetlerimiz/forklift-kiralama",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (82 chars) outside optimal 25-70 range: \"Yalova Forklift Kiralama | Taşköprü &amp; Altınova Operatörlü 7/24 | Adem Hafriyat\""
+    },
+    {
+      "path": "/hizmetlerimiz/operatorsuz-forklift-kiralama",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (78 chars) outside optimal 25-70 range: \"Yalova Operatörsüz Forklift Kiralama | Fabrika &amp; Depo İçin | Adem Hafriyat\""
+    },
+    {
+      "path": "/hizmetlerimiz/kanal-kazma",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (83 chars) outside optimal 25-70 range: \"Yalova Kanal Kazma | Çiftlikköy, Taşköprü &amp; Merkez Kepçe Kazısı | Adem Hafriyat\""
+    },
+    {
+      "path": "/hizmetlerimiz/yagmur-kanalizasyon-giderleri",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (87 chars) outside optimal 25-70 range: \"Yalova Yağmur &amp; Kanalizasyon Kazma | Çiftlikköy Rögar ve Boru Hattı | Adem Hafriyat\""
+    },
+    {
+      "path": "/hizmetlerimiz/bina-cevre-duzenleme",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (79 chars) outside optimal 25-70 range: \"Yalova Bina Çevre Düzenleme | Tretuvar &amp; Subasman Hafriyatı | Adem Hafriyat\""
+    },
+    {
+      "path": "/hizmetlerimiz/temel-kazma",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (83 chars) outside optimal 25-70 range: \"Yalova Temel Kazma | Çiftlikköy &amp; Taşköprü Bina ve Villa Temeli | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/ciftlikkoy/mahalle/mehmet-akif-ersoy",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (83 chars) outside optimal 25-70 range: \"Çiftlikköy Mehmet Akif Ersoy Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/taskopru/mahalle/taskopru-merkez",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (79 chars) outside optimal 25-70 range: \"Taşköprü Taşköprü Merkez Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/taskopru/mahalle/taskopru-sanayi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (77 chars) outside optimal 25-70 range: \"Taşköprü Taşköprü Sanayi Bölgesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/taskopru/mahalle/denizcali-sanayi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (76 chars) outside optimal 25-70 range: \"Taşköprü Denizçalı Sanayi Hattı Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/bahcelievler-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (81 chars) outside optimal 25-70 range: \"Yalova Merkez Bahçelievler Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/gaziosmanpasa-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (82 chars) outside optimal 25-70 range: \"Yalova Merkez Gaziosmanpaşa Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/ismetpasa-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (78 chars) outside optimal 25-70 range: \"Yalova Merkez İsmetpaşa Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/rustempasa-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (79 chars) outside optimal 25-70 range: \"Yalova Merkez Rüstempaşa Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/suleymanbey-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (80 chars) outside optimal 25-70 range: \"Yalova Merkez Süleymanbey Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/adnan-menderes-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (83 chars) outside optimal 25-70 range: \"Yalova Merkez Adnan Menderes Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/baglarbasi-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (79 chars) outside optimal 25-70 range: \"Yalova Merkez Bağlarbaşı Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/kazim-karabekir-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (84 chars) outside optimal 25-70 range: \"Yalova Merkez Kazım Karabekir Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/pasakent-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (77 chars) outside optimal 25-70 range: \"Yalova Merkez Paşakent Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/seyrantepe-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (79 chars) outside optimal 25-70 range: \"Yalova Merkez Seyrantepe Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/yalova-merkez/mahalle/fevzicakmak-mahallesi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (80 chars) outside optimal 25-70 range: \"Yalova Merkez Fevziçakmak Mahallesi Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/bolgeler/cinarcik/mahalle/cinarcik-merkez",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (92 chars) outside optimal 25-70 range: \"Çınarcık Çınarcık Merkez (Taşliman / Hasanbaba) Kiralık Kepçe &amp; Forklift | Adem Hafriyat\""
+    },
+    {
+      "path": "/makinelerimiz/forklift-25-ton-akulu",
+      "type": "SEO_DESC_LENGTH",
+      "message": "Description length (250 chars) outside optimal 70-170 range"
+    },
+    {
+      "path": "/makaleler/taskopru-sanayi-forklift-kiralama-rehberi",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (76 chars) outside optimal 25-70 range: \"Taşköprü Forklift Kiralama: Operatörlü vs Operatörsüz Rehber | Adem Hafriyat\""
+    },
+    {
+      "path": "/makaleler/cinarcik-koru-yazlik-site-altyapi-ve-kanalizasyon",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (78 chars) outside optimal 25-70 range: \"Çınarcık &amp; Koru Yazlık Site Altyapı ve Kanalizasyon Kazısı | Adem Hafriyat\""
+    },
+    {
+      "path": "/makaleler/otopark-ve-santiye-zemin-dolgusu-micir-sikistirma",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (81 chars) outside optimal 25-70 range: \"Otopark &amp; Şantiye Zemin Dolgusu: Mıcır Serme &amp; Sıkıştırma | Adem Hafriyat\""
+    },
+    {
+      "path": "/makaleler/tarimsal-arazi-islahi-kivi-ve-zeytinlik-tesviye",
+      "type": "SEO_TITLE_LENGTH",
+      "message": "Title length (76 chars) outside optimal 25-70 range: \"Yalova Tarımsal Arazi Islahı: Kivi &amp; Zeytinlik Tesviyesi | Adem Hafriyat\""
+    }
+  ]
+}

@@ -15,9 +15,14 @@ function generateSeoData({
   ogImage = '/images/hero-kepce.jpg',
   breadcrumbs = []
 }) {
-  const finalTitle = title
-    ? `${title} | ${siteConfig.companyName}`
-    : defaultSeo.defaultTitle;
+  let finalTitle;
+  if (!title) {
+    finalTitle = defaultSeo.defaultTitle;
+  } else if (title.includes(siteConfig.companyName)) {
+    finalTitle = title;
+  } else {
+    finalTitle = `${title} | ${siteConfig.companyName}`;
+  }
 
   const finalDescription = description || defaultSeo.defaultDescription;
   const finalKeywords = keywords

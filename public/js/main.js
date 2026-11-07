@@ -234,3 +234,163 @@ function handleQuoteSubmit(event) {
   const whatsappUrl = `https://wa.me/905327202010?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, '_blank');
 }
+
+
+// ==========================================================================
+// Gerçek Çerez (Cookie) ve Gizlilik Tercihleri Motoru (KVKK & GDPR)
+// ==========================================================================
+const COOKIE_CONSENT_KEY = 'adem_cookie_consent';
+const COOKIE_NAME = 'cookie_consent';
+
+function getCookie(name) {
+  const match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+  return match ? decodeURIComponent(match[3]) : null;
+}
+
+function setCookie(name, value, days) {
+  const maxAge = days * 24 * 60 * 60;
+  document.cookie = name + '=' + encodeURIComponent(value) + '; max-age=' + maxAge + '; path=/; SameSite=Lax';
+}
+
+function getConsentData() {
+  try {
+    const local = localStorage.getItem(COOKIE_CONSENT_KEY);
+    if (local) {
+      return JSON.parse(local);
+    }
+  } catch (e) {}
+
+  const c = getCookie(COOKIE_NAME);
+  if (c) {
+    return {
+      status: c,
+      necessary: true,
+      analytics: c === 'accepted',
+      functional: c === 'accepted',
+      timestamp: new Date().toISOString()
+    };
+  }
+  return null;
+}
+
+function saveConsent(status, categories) {
+  const consentData = {
+    status: status, // 'accepted' | 'rejected' | 'custom'
+    necessary: true,
+    analytics: !!categories.analytics,
+    functional: !!categories.functional,
+    timestamp: new Date().toISOString()
+  };
+
+  try {
+    localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify(consentData));
+  } catch (e) {}
+
+  setCookie(COOKIE_NAME, status, 365);
+
+  // Sayfada dinleyen diğer analitik/izleme scriptlerine sinyal gönder
+  try {
+    window.dispatchEvent(new CustomEvent('cookieConsentChanged', { detail: consentData }));
+  } catch (e) {}
+
+  closeCookieModal();
+}
+
+function acceptAllCookies() {
+  saveConsent('accepted', { analytics: true, functional: true });
+}
+
+function rejectAllCookies() {
+  saveConsent('rejected', { analytics: false, functional: false });
+}
+
+function saveCustomCookies() {
+  const analyticsInput = document.getElementById('cookieAnalytics');
+  const functionalInput = document.getElementById('cookieFunctional');
+
+  saveConsent('custom', {
+    analytics: analyticsInput ? analyticsInput.checked : false,
+    functional: functionalInput ? functionalInput.checked : false
+  });
+}
+
+function toggleCookieDetails() {
+  const panel = document.getElementById('cookieDetailsPanel');
+  const btn = document.getElementById('btnToggleCookieDetails');
+  const btnText = document.getElementById('cookieDetailsBtnText');
+  const saveBtn = document.getElementById('btnSaveCookieSettings');
+
+  if (!panel) return;
+
+  const isOpen = panel.style.display !== 'none';
+  if (isOpen) {
+    panel.style.display = 'none';
+    if (btn) btn.classList.remove('open');
+    if (btnText) btnText.textContent = 'Tercihleri Özelleştir';
+    if (saveBtn) saveBtn.style.display = 'none';
+  } else {
+    panel.style.display = 'flex';
+    if (btn) btn.classList.add('open');
+    if (btnText) btnText.textContent = 'Tercihleri Gizle';
+    if (saveBtn) saveBtn.style.display = 'inline-flex';
+  }
+}
+
+function openCookieModal() {
+  const banner = document.getElementById('cookieConsentBanner');
+  if (!banner) return;
+
+  const consent = getConsentData();
+  const analyticsInput = document.getElementById('cookieAnalytics');
+  const functionalInput = document.getElementById('cookieFunctional');
+
+  if (consent) {
+    if (analyticsInput) analyticsInput.checked = !!consent.analytics;
+    if (functionalInput) functionalInput.checked = !!consent.functional;
+  }
+
+  banner.style.display = 'flex';
+  // Reflow tetikle
+  void banner.offsetWidth;
+  banner.classList.add('active');
+}
+
+function closeCookieModal() {
+  const banner = document.getElementById('cookieConsentBanner');
+  if (!banner) return;
+
+  banner.classList.remove('active');
+  setTimeout(() => {
+    banner.style.display = 'none';
+  }, 320);
+}
+
+function initCookieConsent() {
+  const consent = getConsentData();
+  // Eğer daha önce onay veya ret verilmişse kesinlikle tekrar sorma
+  if (consent && consent.status) {
+    return;
+  }
+
+  // İlk ziyarette sayfa yüklendikten 800ms sonra yumuşakça aç
+  setTimeout(() => {
+    openCookieModal();
+  }, 800);
+}
+
+// ESC tuşuna basıldığında banner açıksa kapat
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const banner = document.getElementById('cookieConsentBanner');
+    if (banner && banner.classList.contains('active')) {
+      closeCookieModal();
+    }
+  }
+});
+
+// Sayfa yüklendiğinde çerez durumunu başlat
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCookieConsent);
+} else {
+  initCookieConsent();
+}

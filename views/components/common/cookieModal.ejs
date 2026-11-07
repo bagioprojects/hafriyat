@@ -1,0 +1,105 @@
+<!-- ==========================================================================
+     Adem Hafriyat — Gerçek Çerez (Cookie) ve Gizlilik Yönetim Modalı
+     KVKK & GDPR Uyumlu, Kalıcı Cookie ve LocalStorage Tabanlı
+     ========================================================================== -->
+<div id="cookieConsentBanner" class="cookie-banner" role="dialog" aria-modal="true" aria-label="Çerez ve Gizlilik Tercihleri" style="display: none;">
+  <div class="cookie-banner-backdrop" id="cookieBannerBackdrop" onclick="closeCookieModal()"></div>
+  <div class="cookie-card">
+    <div class="cookie-card-header">
+      <div class="cookie-title-wrap">
+        <span class="cookie-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+            <path d="M8.5 8.5v.01"></path>
+            <path d="M7.5 15.5v.01"></path>
+            <path d="M16 16v.01"></path>
+            <path d="M12 12v.01"></path>
+            <path d="M11 17v.01"></path>
+          </svg>
+        </span>
+        <div class="cookie-title-text">
+          <span class="cookie-badge">KVKK &amp; GİZLİLİK</span>
+          <h3 class="cookie-title">Çerez ve Gizlilik Tercihleriniz</h3>
+        </div>
+      </div>
+      <button type="button" class="cookie-close-btn" onclick="closeCookieModal()" aria-label="Kapat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cookie-card-body">
+      <p class="cookie-description">
+        Adem Hafriyat olarak web sitemizde güvenli bir deneyim sunmak, site performansını ölçümlemek ve hizmetlerimizi geliştirmek amacıyla mevzuata uygun birinci taraf çerezler kullanmaktayız. Dilediğiniz zaman tercihlerinizi değiştirebilirsiniz. Detaylı bilgi için <a href="/gizlilik-politikasi" target="_blank" rel="noopener">Gizlilik ve Çerez Politikamızı</a> inceleyebilirsiniz.
+      </p>
+
+      <!-- Gelişmiş Tercih Paneli (Akordeon) -->
+      <div id="cookieDetailsPanel" class="cookie-details-panel" style="display: none;">
+        <div class="cookie-option-row">
+          <div class="cookie-option-info">
+            <div class="cookie-option-title">
+              <strong>Zorunlu Çerezler</strong>
+              <span class="cookie-status-badge mandatory">Her Zaman Aktif</span>
+            </div>
+            <p class="cookie-option-desc">Sitenin güvenli çalışması, form iletimi ve oturum sürekliliği için teknik olarak elzemdir; devre dışı bırakılamaz.</p>
+          </div>
+          <div class="cookie-switch">
+            <input type="checkbox" id="cookieNecessary" checked disabled aria-label="Zorunlu Çerezler">
+            <span class="switch-slider disabled"></span>
+          </div>
+        </div>
+
+        <div class="cookie-option-row">
+          <div class="cookie-option-info">
+            <div class="cookie-option-title">
+              <strong>Performans ve Analitik Çerezleri</strong>
+              <span class="cookie-status-badge optional">İsteğe Bağlı</span>
+            </div>
+            <p class="cookie-option-desc">Sayfa yüklenme hızlarını, hata raporlarını ve anonim ziyaretçi istatistiklerini ölçerek platform kalitesini artırır.</p>
+          </div>
+          <div class="cookie-switch">
+            <input type="checkbox" id="cookieAnalytics" checked aria-label="Performans ve Analitik Çerezleri">
+            <span class="switch-slider"></span>
+          </div>
+        </div>
+
+        <div class="cookie-option-row">
+          <div class="cookie-option-info">
+            <div class="cookie-option-title">
+              <strong>İşlevsel ve Tercih Çerezleri</strong>
+              <span class="cookie-status-badge optional">İsteğe Bağlı</span>
+            </div>
+            <p class="cookie-option-desc">Seçtiğiniz Yalova ilçesi, teklif formu hafızası ve kullanıcı tercihlerinin hatırlanmasını sağlar.</p>
+          </div>
+          <div class="cookie-switch">
+            <input type="checkbox" id="cookieFunctional" checked aria-label="İşlevsel Çerezler">
+            <span class="switch-slider"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aksiyon Butonları -->
+    <div class="cookie-card-actions">
+      <div class="cookie-action-left">
+        <button type="button" class="cookie-btn cookie-btn-customize" id="btnToggleCookieDetails" onclick="toggleCookieDetails()">
+          <span id="cookieDetailsBtnText">Tercihleri Özelleştir</span>
+          <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+      </div>
+      <div class="cookie-action-right">
+        <button type="button" class="cookie-btn cookie-btn-reject" onclick="rejectAllCookies()">
+          Yalnızca Gerekli / Reddet
+        </button>
+        <button type="button" class="cookie-btn cookie-btn-save" id="btnSaveCookieSettings" onclick="saveCustomCookies()" style="display: none;">
+          Seçimleri Kaydet
+        </button>
+        <button type="button" class="cookie-btn cookie-btn-accept" onclick="acceptAllCookies()">
+          Tümünü Kabul Et
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

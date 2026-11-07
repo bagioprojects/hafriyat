@@ -6,12 +6,12 @@
 module.exports = {
   companyName: 'Adem Hafriyat',
   tradeName: 'Yalova Kepçe ve Forklift Kiralama Hizmetleri',
-  siteUrl: 'https://yalovakepcehafriyat.com.tr',
-  phone: '0532 720 20 10',
-  phoneRaw: '+905327202010',
-  whatsapp: '905327202010',
+  siteUrl: process.env.SITE_URL || 'https://yalovakepcehafriyat.com.tr',
+  phone: process.env.COMPANY_PHONE || '0532 720 20 10',
+  phoneRaw: process.env.COMPANY_PHONE_RAW || '+905327202010',
+  whatsapp: process.env.COMPANY_WHATSAPP || '905327202010',
   whatsappMessage: 'Merhaba Adem Hafriyat, Yalova kepçe / forklift kiralama hizmetiniz hakkında bilgi ve fiyat teklifi almak istiyorum.',
-  email: 'info@yalovakepcehafriyat.com.tr',
+  email: process.env.COMPANY_EMAIL || 'info@yalovakepcehafriyat.com.tr',
   address: {
     streetAddress: 'Taşköprü Sanayi Caddesi No: 18 / Çiftlikköy',
     addressLocality: 'Çiftlikköy',

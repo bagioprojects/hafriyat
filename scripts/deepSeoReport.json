@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T06:45:01.271Z",
+  "generatedAt": "2026-11-07T18:12:16.322Z",
   "overallScore": 100,
   "categoryScores": {
     "technical": 100,
@@ -10,7 +10,7 @@
   },
   "metrics": {
     "totalPages": 245,
-    "avgTtfbMs": 4,
+    "avgTtfbMs": 1,
     "avgWordCount": 1556,
     "avgPayloadKb": 80.3,
     "totalWordsSiteWide": 381175,
@@ -34,7 +34,7 @@
       "url": "/",
       "status": 200,
       "sizeKb": 121.3,
-      "ttfbMs": 2,
+      "ttfbMs": 3,
       "issues": [],
       "warnings": [],
       "title": "Yalova Kepçe Kiralama &amp; Forklift Kiralama | Adem Hafriyat 7/24",
@@ -66,7 +66,7 @@
       "url": "/hizmetlerimiz",
       "status": 200,
       "sizeKb": 78.4,
-      "ttfbMs": 4,
+      "ttfbMs": 3,
       "issues": [],
       "warnings": [],
       "title": "Hizmetlerimiz | Yalova Kepçe ve Forklift Kiralama | Adem Hafriyat",
@@ -298,7 +298,7 @@
       "url": "/hizmetlerimiz/kepce-kiralama",
       "status": 200,
       "sizeKb": 77.5,
-      "ttfbMs": 3,
+      "ttfbMs": 2,
       "issues": [],
       "warnings": [],
       "title": "Yalova Kepçe Kiralama | Çiftlikköy &amp; Taşköprü Adem Hafriyat 7/24",
@@ -326,7 +326,7 @@
       "url": "/hizmetlerimiz/forklift-kiralama",
       "status": 200,
       "sizeKb": 77.2,
-      "ttfbMs": 6,
+      "ttfbMs": 2,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (82 karakter)"
@@ -356,7 +356,7 @@
       "url": "/hizmetlerimiz/operatorlu-forklift-kiralama",
       "status": 200,
       "sizeKb": 73.6,
-      "ttfbMs": 4,
+      "ttfbMs": 3,
       "issues": [],
       "warnings": [],
       "title": "Yalova Operatörlü Forklift Kiralama | Adem Hafriyat 7/24",
@@ -384,7 +384,7 @@
       "url": "/hizmetlerimiz/operatorsuz-forklift-kiralama",
       "status": 200,
       "sizeKb": 73.7,
-      "ttfbMs": 5,
+      "ttfbMs": 2,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (78 karakter)"
@@ -414,7 +414,7 @@
       "url": "/hizmetlerimiz/kanal-kazma",
       "status": 200,
       "sizeKb": 73.6,
-      "ttfbMs": 4,
+      "ttfbMs": 2,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (83 karakter)"
@@ -444,7 +444,7 @@
       "url": "/hizmetlerimiz/su-kuyusu-kazma",
       "status": 200,
       "sizeKb": 73.4,
-      "ttfbMs": 2,
+      "ttfbMs": 1,
       "issues": [],
       "warnings": [],
       "title": "Yalova Su Kuyusu Kazma &amp; Keson Kuyu Açma | Adem Hafriyat",

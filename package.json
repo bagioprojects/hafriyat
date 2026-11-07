@@ -1,15 +1,30 @@
 {
-  "name": "yalovakepceharfiyat.com.tr",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "yalovakepcehafriyat.com.tr",
+  "version": "1.3.4",
+  "description": "Adem Hafriyat — Yalova Kepçe & Forklift Kiralama Hizmetleri Web Platformu",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "test": "node test.js"
+    "test": "node test.js",
+    "test:cookie": "node scripts/testCookieConsent.js",
+    "test:audit": "node scripts/comprehensiveDeficiencyAudit.js",
+    "test:seo": "node scripts/deepSeoAuditSuite.js",
+    "deploy": "sh deploy.sh"
   },
-  "keywords": [],
-  "author": "",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "yalova kepçe kiralama",
+    "yalova forklift kiralama",
+    "yalova hafriyat",
+    "çiftlikköy kepçe",
+    "taşköprü forklift",
+    "jcb 3cx kiralama"
+  ],
+  "author": "Adem Hafriyat (0532 720 20 10)",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {

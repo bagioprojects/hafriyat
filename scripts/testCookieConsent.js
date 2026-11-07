@@ -141,3 +141,4 @@ testCookieConsent().catch(err => {
   console.error('❌ TEST BAŞARISIZ:', err);
   process.exit(1);
 });
+

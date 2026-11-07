@@ -98,7 +98,8 @@ app.use((req, res) => {
   const seo = generateSeoData({
     title: '404 Sayfa Bulunamadı',
     description: 'Aradığınız sayfa bulunamadı. Adem Hafriyat Yalova kepçe ve forklift kiralama hizmetlerimize ana sayfadan ulaşabilirsiniz.',
-    canonicalPath: req.path
+    canonicalPath: req.path,
+    robots: 'noindex, nofollow'
   });
   res.render('pages/404', {
     siteConfig,
@@ -115,7 +116,8 @@ app.use((err, req, res, next) => {
   const seo = generateSeoData({
     title: '500 Sunucu Hatası | Adem Hafriyat',
     description: 'Geçici bir sunucu hatası oluştu. 7/24 acil kepçe ve forklift talepleriniz için lütfen bizi doğrudan arayın: 0532 720 20 10.',
-    canonicalPath: req.path
+    canonicalPath: req.path,
+    robots: 'noindex, nofollow'
   });
   res.render('pages/500', {
     siteConfig,

@@ -96,11 +96,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 4. Custom Select Dropdown Dışına Tıklama Kontrolü
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.custom-select-wrapper')) {
-      closeAllCustomSelects();
-    }
+  // 5. PWA Service Worker Kaydı (Modern Tarayıcılar ve Çevrimdışı Hız)
+  if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost')) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    });
+  }
+
+  // 6. Telefon Numarası Alanı Akıllı Otomatik Formatlama (05XX XXX XX XX)
+  const phoneInputs = document.querySelectorAll('input[type="tel"]');
+  phoneInputs.forEach(input => {
+    input.addEventListener('input', (e) => {
+      let v = e.target.value.replace(/\D/g, '');
+      if (v.startsWith('90')) v = v.substring(2);
+      if (!v.startsWith('0') && v.length > 0) v = '0' + v;
+      if (v.length > 11) v = v.substring(0, 11);
+
+      let formatted = v;
+      if (v.length > 4) formatted = v.substring(0, 4) + ' ' + v.substring(4);
+      if (v.length > 7) formatted = formatted.substring(0, 8) + ' ' + formatted.substring(8);
+      if (v.length > 9) formatted = formatted.substring(0, 11) + ' ' + formatted.substring(11);
+      e.target.value = formatted;
+    });
   });
 });
 
@@ -201,6 +218,13 @@ function handleQuoteSubmit(event) {
   if (!service) {
     alert('Lütfen ihtiyacınız olan kepçe veya forklift hizmetini seçiniz.');
     toggleCustomSelect('serviceSelectWrapper');
+    return;
+  }
+
+  if (!phone || phone.replace(/\D/g, '').length < 10) {
+    alert('Lütfen size ulaşabileceğimiz geçerli bir telefon numarası giriniz (Örn: 0532 XXX XX XX).');
+    const phoneInput = document.getElementById('quotePhone');
+    if (phoneInput) phoneInput.focus();
     return;
   }
 

@@ -11,3 +11,4 @@ Sunucu: Express MVC, Node.js
 SEO & GEO: Schema.org JSON-LD, Geo TR-77, LLMs.txt
 Son Güncelleme: 2026/11/07
 Dil: Türkçe (tr-TR)
+

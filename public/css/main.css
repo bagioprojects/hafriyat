@@ -3348,3 +3348,53 @@ img {
   aspect-ratio: 16 / 10;
   object-fit: cover;
 }
+
+/* ==========================================================================
+   Baskı ve Yazıcı Optimizasyonu (Print Stylesheet)
+   ========================================================================== */
+@media print {
+  .site-header,
+  .mobile-bottom-bar,
+  .mobile-drawer,
+  .mobile-drawer-backdrop,
+  .quick-quote-card,
+  .cta-banner,
+  .floating-contact,
+  .site-footer {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    font-size: 12pt;
+  }
+
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  a {
+    color: #000000 !important;
+    text-decoration: underline !important;
+  }
+
+  h1, h2, h3, h4 {
+    color: #000000 !important;
+    page-break-after: avoid;
+  }
+
+  .prose-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .prose-table th,
+  .prose-table td {
+    border: 1px solid #333333 !important;
+    color: #000000 !important;
+  }
+}

@@ -379,6 +379,7 @@ const server = app.listen(PORT, async () => {
     const assetCheckRoutes = [
       '/favicon.ico',
       '/manifest.json',
+      '/sw.js',
       '/humans.txt',
       '/.well-known/security.txt',
       '/images/favicon.svg',

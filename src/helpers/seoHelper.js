@@ -13,6 +13,7 @@ function generateSeoData({
   canonicalPath = '',
   ogType = 'website',
   ogImage = '/images/hero-kepce.jpg',
+  robots,
   breadcrumbs = []
 }) {
   let finalTitle;
@@ -38,7 +39,7 @@ function generateSeoData({
     canonicalUrl,
     ogType,
     ogImage: ogImage.startsWith('http') ? ogImage : `${siteConfig.siteUrl}${ogImage}`,
-    robots: defaultSeo.robots,
+    robots: robots || defaultSeo.robots,
     language: defaultSeo.language,
     themeColor: defaultSeo.themeColor,
     breadcrumbs: [

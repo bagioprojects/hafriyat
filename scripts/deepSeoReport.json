@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T01:30:38.637Z",
+  "generatedAt": "2026-11-07T01:35:02.212Z",
   "overallScore": 100,
   "categoryScores": {
     "technical": 100,
@@ -10,7 +10,7 @@
   },
   "metrics": {
     "totalPages": 243,
-    "avgTtfbMs": 6,
+    "avgTtfbMs": 2,
     "avgWordCount": 1441,
     "avgPayloadKb": 74.6,
     "totalWordsSiteWide": 350169,
@@ -34,7 +34,7 @@
       "url": "/",
       "status": 200,
       "sizeKb": 115.3,
-      "ttfbMs": 54,
+      "ttfbMs": 10,
       "issues": [],
       "warnings": [
         "Description önerilen 170 karakter sınırını aşıyor (183 karakter)"
@@ -68,7 +68,7 @@
       "url": "/hizmetlerimiz",
       "status": 200,
       "sizeKb": 72.8,
-      "ttfbMs": 10,
+      "ttfbMs": 7,
       "issues": [],
       "warnings": [
         "Description önerilen 170 karakter sınırını aşıyor (217 karakter)"
@@ -96,7 +96,7 @@
       "url": "/makinelerimiz",
       "status": 200,
       "sizeKb": 56.6,
-      "ttfbMs": 8,
+      "ttfbMs": 5,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (75 karakter)"
@@ -124,7 +124,7 @@
       "url": "/makaleler",
       "status": 200,
       "sizeKb": 96.5,
-      "ttfbMs": 15,
+      "ttfbMs": 6,
       "issues": [],
       "warnings": [],
       "title": "Hafriyat, Kepçe ve Forklift Rehberi | Makaleler | Adem Hafriyat",
@@ -150,7 +150,7 @@
       "url": "/site-haritasi",
       "status": 200,
       "sizeKb": 121.2,
-      "ttfbMs": 10,
+      "ttfbMs": 4,
       "issues": [],
       "warnings": [],
       "title": "Site Haritası &amp; İçerik Dizini | Adem Hafriyat",
@@ -176,7 +176,7 @@
       "url": "/hakkimizda",
       "status": 200,
       "sizeKb": 75.2,
-      "ttfbMs": 6,
+      "ttfbMs": 3,
       "issues": [],
       "warnings": [],
       "title": "Hakkımızda | Adem Hafriyat Yalova",
@@ -207,7 +207,7 @@
       "url": "/iletisim",
       "status": 200,
       "sizeKb": 74.6,
-      "ttfbMs": 8,
+      "ttfbMs": 3,
       "issues": [],
       "warnings": [],
       "title": "İletişim &amp; Ücretsiz Keşif | Adem Hafriyat",
@@ -238,7 +238,7 @@
       "url": "/hizmetlerimiz/kepce-kiralama",
       "status": 200,
       "sizeKb": 71.7,
-      "ttfbMs": 7,
+      "ttfbMs": 4,
       "issues": [],
       "warnings": [],
       "title": "Yalova Kepçe Kiralama | Çiftlikköy &amp; Taşköprü Adem Hafriyat 7/24",
@@ -266,7 +266,7 @@
       "url": "/hizmetlerimiz/forklift-kiralama",
       "status": 200,
       "sizeKb": 71.4,
-      "ttfbMs": 6,
+      "ttfbMs": 4,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (82 karakter)"
@@ -296,7 +296,7 @@
       "url": "/hizmetlerimiz/operatorlu-forklift-kiralama",
       "status": 200,
       "sizeKb": 67.9,
-      "ttfbMs": 5,
+      "ttfbMs": 2,
       "issues": [],
       "warnings": [],
       "title": "Yalova Operatörlü Forklift Kiralama | Adem Hafriyat 7/24",
@@ -324,7 +324,7 @@
       "url": "/hizmetlerimiz/operatorsuz-forklift-kiralama",
       "status": 200,
       "sizeKb": 67.9,
-      "ttfbMs": 5,
+      "ttfbMs": 3,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (78 karakter)"
@@ -354,7 +354,7 @@
       "url": "/hizmetlerimiz/kanal-kazma",
       "status": 200,
       "sizeKb": 67.9,
-      "ttfbMs": 6,
+      "ttfbMs": 3,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (83 karakter)"
@@ -384,7 +384,7 @@
       "url": "/hizmetlerimiz/su-kuyusu-kazma",
       "status": 200,
       "sizeKb": 67.7,
-      "ttfbMs": 4,
+      "ttfbMs": 5,
       "issues": [],
       "warnings": [],
       "title": "Yalova Su Kuyusu Kazma &amp; Keson Kuyu Açma | Adem Hafriyat",
@@ -442,7 +442,7 @@
       "url": "/hizmetlerimiz/tamir-altyapi-onarim",
       "status": 200,
       "sizeKb": 67.4,
-      "ttfbMs": 7,
+      "ttfbMs": 4,
       "issues": [],
       "warnings": [],
       "title": "Yalova Altyapı Arıza &amp; Tamir Kazısı | Acil Kepçe Adem Hafriyat",

@@ -10,3 +10,4 @@ const idx = rendered.indexOf('<table');
 if (idx !== -1) {
   console.log('Snippet:\n', rendered.substring(idx - 40, idx + 250));
 }
+

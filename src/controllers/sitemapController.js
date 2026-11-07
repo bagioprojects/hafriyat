@@ -275,7 +275,7 @@ exports.llmsFullTxt = (req, res) => {
 - Garaj: Taşköprü Sanayi Caddesi No: 18 / Çiftlikköy / Yalova
 - Filo: JCB 3CX Eco 4x4 Kazıcı Yükleyici (Teleskopik bom, 4'ü 1 arada açılır dozer bıçağı, hidrolik kırıcı ataşmanı), Caterpillar 303.5 Paletli Sıfır Kuyruk Mini Ekskavatör (Kauçuk palet, 30 cm dar kova, kök sökme riperi), 3.5 Ton & 5 Ton Dizel ve Elektrikli Sanayi Forkliftleri.
 
-## 2. Yalova ve İlçeleri Teknik Hafriyat, Kepçe ve Forklift Dokümantasyonu (32 Makale & FAQ)
+## 2. Yalova ve İlçeleri Teknik Hafriyat, Kepçe ve Forklift Dokümantasyonu (${blogPosts.length} Makale & FAQ)
 `;
 
   blogPosts.forEach(p => {
@@ -372,9 +372,13 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# XML Site Haritası İndeksi & LLM Bilgi Haritası
+# XML Site Haritası İndeksi (Google, Bing, Yandex Standartları)
 Sitemap: ${siteConfig.siteUrl}/sitemap.xml
-Sitemap: ${siteConfig.siteUrl}/llms.txt
+
+# LLM ve Yapay Zeka Ajanları Doğrudan Bilgi Dosyaları:
+# LLM Standart Harita: ${siteConfig.siteUrl}/llms.txt
+# Genişletilmiş LLM Külliyatı: ${siteConfig.siteUrl}/llms-full.txt
+# AI Semantic Graph: ${siteConfig.siteUrl}/ai.json
 
 Host: yalovakepcehafriyat.com.tr
 `;

@@ -43,3 +43,4 @@ module.exports = `;
 const content = fileHeader + JSON.stringify(allArticles, null, 2) + ';\n';
 fs.writeFileSync(path.join(__dirname, '../data/blog.js'), content, 'utf8');
 console.log(`Successfully merged and saved ${allArticles.length} articles into data/blog.js!`);
+

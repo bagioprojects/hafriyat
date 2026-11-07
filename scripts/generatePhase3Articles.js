@@ -301,7 +301,7 @@ Konut ve villa inşaatlarında en yoğun lojistik krizlerinden biri malzeme sevk
       },
       {
         question: 'Taşköprü ve Çiftlikköy de nakliye ücreti alınıyor mu?',
-        answer: 'Taşköprü ve Çiftlikköy garajımıza komşu olduğu için kısa mesafeli işlerde sembolik veya sıfır nakliye avantajı sağlıyoruz.'
+        answer: 'Taşköprü ve Çiftlikköy garajımıza komşu olduğu için intikal süresi oldukça kısadır; makine türü ve tam konuma göre en uygun, şeffaf nakliye ve yakıt maliyeti iş başında net olarak belirlenir.'
       },
       {
         question: 'Uzun dönem kiralamalarda indirim oranı nedir?',

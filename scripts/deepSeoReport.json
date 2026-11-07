@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T06:16:57.164Z",
+  "generatedAt": "2026-11-07T06:25:37.898Z",
   "overallScore": 100,
   "categoryScores": {
     "technical": 100,
@@ -10,10 +10,10 @@
   },
   "metrics": {
     "totalPages": 245,
-    "avgTtfbMs": 8,
-    "avgWordCount": 1445,
-    "avgPayloadKb": 74.6,
-    "totalWordsSiteWide": 353921,
+    "avgTtfbMs": 9,
+    "avgWordCount": 1448,
+    "avgPayloadKb": 74.7,
+    "totalWordsSiteWide": 354806,
     "duplicateTitles": 0,
     "orphanPagesCount": 0
   },
@@ -33,8 +33,8 @@
     {
       "url": "/",
       "status": 200,
-      "sizeKb": 115.5,
-      "ttfbMs": 72,
+      "sizeKb": 115.7,
+      "ttfbMs": 151,
       "issues": [],
       "warnings": [
         "Description önerilen 170 karakter sınırını aşıyor (183 karakter)"
@@ -49,7 +49,7 @@
       "h2Count": 7,
       "h3Count": 37,
       "h1Text": "Yalova Kepçe Kiralama & Operatörlü Forklift Hizmetleri",
-      "wordCount": 2788,
+      "wordCount": 2804,
       "schemaTypes": [
         [
           "HomeAndConstructionBusiness",
@@ -68,7 +68,7 @@
       "url": "/hizmetlerimiz",
       "status": 200,
       "sizeKb": 73,
-      "ttfbMs": 27,
+      "ttfbMs": 25,
       "issues": [],
       "warnings": [
         "Description önerilen 170 karakter sınırını aşıyor (217 karakter)"
@@ -96,7 +96,7 @@
       "url": "/makinelerimiz",
       "status": 200,
       "sizeKb": 56.8,
-      "ttfbMs": 12,
+      "ttfbMs": 15,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (75 karakter)"
@@ -124,7 +124,7 @@
       "url": "/makaleler",
       "status": 200,
       "sizeKb": 96.7,
-      "ttfbMs": 18,
+      "ttfbMs": 37,
       "issues": [],
       "warnings": [],
       "title": "Hafriyat, Kepçe ve Forklift Rehberi | Makaleler | Adem Hafriyat",
@@ -150,7 +150,7 @@
       "url": "/site-haritasi",
       "status": 200,
       "sizeKb": 121.8,
-      "ttfbMs": 12,
+      "ttfbMs": 14,
       "issues": [],
       "warnings": [],
       "title": "Site Haritası &amp; İçerik Dizini | Adem Hafriyat",
@@ -176,7 +176,7 @@
       "url": "/hakkimizda",
       "status": 200,
       "sizeKb": 75.4,
-      "ttfbMs": 8,
+      "ttfbMs": 12,
       "issues": [],
       "warnings": [],
       "title": "Hakkımızda | Adem Hafriyat Yalova",
@@ -206,21 +206,23 @@
     {
       "url": "/iletisim",
       "status": 200,
-      "sizeKb": 74.8,
-      "ttfbMs": 6,
+      "sizeKb": 74.9,
+      "ttfbMs": 13,
       "issues": [],
-      "warnings": [],
-      "title": "İletişim &amp; Ücretsiz Keşif | Adem Hafriyat",
-      "titleLength": 45,
-      "description": "Adem Hafriyat iletişim bilgileri: Telefon 0532 720 20 10, 7/24 WhatsApp hattı, Çiftlikköy Taşköprü garajı. Yalova genelinde ücretsiz keşif talep edin.",
-      "descLength": 150,
+      "warnings": [
+        "Description önerilen 170 karakter sınırını aşıyor (171 karakter)"
+      ],
+      "title": "İletişim &amp; Hızlı Fiyat Teklifi | Adem Hafriyat",
+      "titleLength": 50,
+      "description": "Adem Hafriyat iletişim bilgileri: Telefon 0532 720 20 10, 7/24 WhatsApp hattı, Çiftlikköy Taşköprü garajı. Yalova genelinde hızlı keşif ve şeffaf fiyat teklifi talep edin.",
+      "descLength": 171,
       "canonical": "https://yalovakepcehafriyat.com.tr/iletisim",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "h1Count": 1,
       "h2Count": 2,
       "h3Count": 12,
       "h1Text": "İletişim Hızlı Fiyat Hattı",
-      "wordCount": 1235,
+      "wordCount": 1236,
       "schemaTypes": [
         [
           "HomeAndConstructionBusiness",
@@ -238,7 +240,7 @@
       "url": "/kvkk",
       "status": 200,
       "sizeKb": 56.1,
-      "ttfbMs": 38,
+      "ttfbMs": 143,
       "issues": [],
       "warnings": [],
       "title": "Kişisel Verilerin Korunması (KVKK) | Adem Hafriyat",
@@ -269,7 +271,7 @@
       "url": "/gizlilik-politikasi",
       "status": 200,
       "sizeKb": 55.2,
-      "ttfbMs": 18,
+      "ttfbMs": 7,
       "issues": [],
       "warnings": [],
       "title": "Gizlilik ve Çerez Politikası | Adem Hafriyat",
@@ -300,7 +302,7 @@
       "url": "/hizmetlerimiz/kepce-kiralama",
       "status": 200,
       "sizeKb": 71.9,
-      "ttfbMs": 9,
+      "ttfbMs": 21,
       "issues": [],
       "warnings": [],
       "title": "Yalova Kepçe Kiralama | Çiftlikköy &amp; Taşköprü Adem Hafriyat 7/24",
@@ -328,7 +330,7 @@
       "url": "/hizmetlerimiz/forklift-kiralama",
       "status": 200,
       "sizeKb": 71.6,
-      "ttfbMs": 9,
+      "ttfbMs": 21,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (82 karakter)"
@@ -358,7 +360,7 @@
       "url": "/hizmetlerimiz/operatorlu-forklift-kiralama",
       "status": 200,
       "sizeKb": 68,
-      "ttfbMs": 5,
+      "ttfbMs": 8,
       "issues": [],
       "warnings": [],
       "title": "Yalova Operatörlü Forklift Kiralama | Adem Hafriyat 7/24",
@@ -386,7 +388,7 @@
       "url": "/hizmetlerimiz/operatorsuz-forklift-kiralama",
       "status": 200,
       "sizeKb": 68.1,
-      "ttfbMs": 7,
+      "ttfbMs": 6,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (78 karakter)"
@@ -401,7 +403,7 @@
       "h2Count": 2,
       "h3Count": 10,
       "h1Text": "Yalova Operatörsüz Forklift Kiralama | Aylık Proje Bazlı",
-      "wordCount": 1227,
+      "wordCount": 1229,
       "schemaTypes": [
         "Service",
         "BreadcrumbList",
@@ -416,7 +418,7 @@
       "url": "/hizmetlerimiz/kanal-kazma",
       "status": 200,
       "sizeKb": 68,
-      "ttfbMs": 5,
+      "ttfbMs": 8,
       "issues": [],
       "warnings": [
         "Title önerilen 70 karakter sınırını aşıyor (83 karakter)"
@@ -446,7 +448,7 @@
       "url": "/hizmetlerimiz/su-kuyusu-kazma",
       "status": 200,
       "sizeKb": 67.8,
-      "ttfbMs": 7,
+      "ttfbMs": 8,
       "issues": [],
       "warnings": [],
       "title": "Yalova Su Kuyusu Kazma &amp; Keson Kuyu Açma | Adem Hafriyat",

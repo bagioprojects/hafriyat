@@ -106,7 +106,7 @@ Köy içi kanalizasyon hattının ulaşmadığı yeni yapılaşmalarda sızdırm
 
 ## Çukurköy Zemininde Neden Adem Hafriyat?
 - **Batmaz Çözümler:** Çukurköy'ün sulak arazilerinde tekerlekli makinelerin batmasını engelleyen geniş taban basma ayakları ve deneyimli operatör refleksi.
-- **Garajdan Çukurköy'e 15 Dakika:** Taşköprü garajımız Çukurköy yol ayrımına çok yakın olduğu için mazot nakliye bedeli yansıtmadan ekonomik saatlik çalışma sunuyoruz.
+- **Garajdan Çukurköy'e 15 Dakika:** Taşköprü garajımız Çukurköy yol ayrımına çok yakın olduğu için hızlı intikal sağlıyor, mesafeye ve iş kapsamına göre en makul ve şeffaf yakıt/nakliye planlamasıyla ekonomik çalışma sunuyoruz.
     `
   },
   {

@@ -1,6 +1,6 @@
 /**
  * Blog / Makaleler Veri Modeli - Adem Hafriyat
- * %100 İnsan Editör Kalitesinde, Kapsamlı, Gerçek Şantiye Deneyimli SEO & GEO Makaleleri (30 Makale)
+ * %100 İnsan Editör Kalitesinde, Kapsamlı, Gerçek Şantiye Deneyimli SEO & GEO Makaleleri (32 Makale)
  * Her Makale İçin Özel Teknik ve Coğrafi (GEO) SSS / FAQ Bileşenleri ve Schema.org Verisi
  */
 
@@ -1200,5 +1200,85 @@ module.exports = [
       }
     ],
     "content": "\n## 2026 Yılında İş Makinesi Kiralarken Doğru Bütçe Nasıl Yapılır?\n\nİster bir villa temeli kazdıracak bir müteahhit olun, ister tarlasını düzeltecek bir çiftçi ya da tır boşaltacak bir fabrika müdürü... Bir işe başlamadan önce ilk sorulan soru: **\"Bu iş bana kaça mal olur?\"**\n\nHafriyat ve iş makinesi sektöründe sabit bir fiyat listesi yerine işin niteliğine göre şekillenen dinamik fiyatlama uygulanır. Fiyatı doğrudan etkileyen unsurları bilmek, iş sahiplerinin gereksiz binlerce lira fazla ödemesini engeller.\n\n---\n\n## 1. Kiralama Fiyatını Belirleyen Temel Kriterler\n\n### 1. Kiralama Modeli (Saatlik, Günlük, Götürü)\n- **Saatlik Kiralama:** 2-4 saat sürecek küçük kanal, çit çukuru veya tek tır boşaltma işleri için en uygun modeldir.\n- **Günlük Kiralama (8 Saatlik Vardiya):** Villa temeli, havuz kazısı veya tarla tesviyesi gibi tam gün süren operasyonlarda saatlik fiyata kıyasla %20-30 avantaj sağlar.\n- **Götürü / Anahtar Teslim Proje:** Kazı, hafriyatın kamyona yüklenmesi, döküm sahası harcı ve mıcır dolgunun tek paket fiyat üzerinden sözleşmeye bağlanmasıdır.\n\n### 2. Ataşman İhtiyacı (Kırıcı, Dar Kova, Riper)\nKaya kırma veya kalın beton sökme işlerinde hidrolik kırıcı ataşmanı kullanılır. Kırıcının yüksek hidrolik güç harcaması ve aşınma payı sebebiyle standart kovalı kazıya göre farklı birim fiyat uygulanır.\n\n### 3. Zemin Türü ve Coğrafi Konum\nÇiftlikköy merkezdeki bir zemin ile Güneyköy'ün dağlık kayalık arazisindeki çalışma temposu aynı değildir. Sert kayalıkta iş makinesinin ilerleme hızı düşerken yakıt sarfiyatı artar.\n\n---\n\n## 2. Adem Hafriyat Şeffaf Fiyat Politikası\n\nSektörde en çok şikayet edilen konu; işe başlarken düşük fiyat verip işin ortasında \"mazot bitti, kırıcı parası ekstradır, nakliye ücreti verin\" gibi ek masraflar çıkarılmasıdır.\n\nAdem Hafriyat olarak:\n- **Net Fiyat Garantisi:** Sözleşmede veya telefonda ne konuşulduysa o geçerlidir.\n- **Gizli Masraf Yok:** Operatör, mazot ve makine amortismanı teklife dahildir.\n- **Ücretsiz Yerinde Keşif:** İşinize gelip bakıyor, en uygun makineyi ve en net süreyi belirliyoruz.\n\n2026 yılı güncel şantiye fiyatlarımız için bizi hemen arayın: **0532 720 20 10**.\n    "
+  },
+  {
+    "id": "ciftlikkoy-zemin-yapisi-ve-kazi-rehberi",
+    "slug": "ciftlikkoy-zemin-yapisi-ve-kazi-rehberi",
+    "title": "Çiftlikköy Zemin Yapısı ve Kazı Rehberi: Alüvyon Tabakası, Taban Suyu ve Temel Güvenliği",
+    "metaTitle": "Çiftlikköy Zemin Yapısı & Temel Kazı Rehberi | Adem Hafriyat",
+    "metaDesc": "Çiftlikköy zemin özellikleri, sahil alüvyon tabakası, yüksek taban suyu drenajı ve bina temel kazısı güvenlik standartları. 14 yıllık saha analizi.",
+    "excerpt": "Çiftlikköy'ün sahil ve üst mahallelerindeki farklı zemin formasyonlarında temel kazısı yaparken dikkat edilmesi gereken jeoteknik riskler ve drenaj çözümleri.",
+    "category": "Zemin & Hafriyat",
+    "author": "Adem Hafriyat Zemin Uzmanı",
+    "date": "2026-05-01",
+    "readTime": "8 dk okuma",
+    "image": "/images/blog-ciftlikkoy-temel.jpg",
+    "districtSlug": "ciftlikkoy",
+    "tags": [
+      "Çiftlikköy Zemin",
+      "Temel Kazısı",
+      "Taban Suyu Drenajı",
+      "Alüvyon Zemin",
+      "Yalova Kepçe"
+    ],
+    "faqs": [
+      {
+        "question": "Çiftlikköy sahil kesiminde zemin kazarken taban suyu kaç metrede çıkar?",
+        "answer": "Çiftlikköy Sahil Mahallesi ve Siteler bölgesinde deniz seviyesine yakın kotlarda taban suyu 1.20 - 1.80 metre gibi çok sığ derinliklerde çıkabilmektedir. Bu alanlarda dalgıç pompalı kör kuyu açarak suyun tahliye edilmesi şarttır."
+      },
+      {
+        "question": "Çiftlikköy Sultaniye ve Mehmet Akif Ersoy mahallelerinde zemin yapısı nasıldır?",
+        "answer": "Sahilin aksine üst kesimler sert killi ve eğimli arazilere sahiptir. Bu bölgelerde taban suyundan ziyade yüzey yağmur sularının yamaç erozyonuna neden olmaması için kademeli istinat kazıları yapılmalıdır."
+      },
+      {
+        "question": "Alüvyon zeminlerde temel kazılırken göçük riski nasıl engellenir?",
+        "answer": "Gevşek kumlu-milli alüvyon tabakalarda dik ayna kazı yapılmaz; zemin açısına uygun en az 1:1 veya 1:1.5 kademeli şev açılarak çalışan ustaların can emniyeti sağlanır."
+      },
+      {
+        "question": "Çiftlikköy'de temel kazısı öncesi yerinde zemin keşfi yapıyor musunuz?",
+        "answer": "Evet, Adem Hafriyat olarak Çiftlikköy genelinde ada/parsel bazında şantiyenize gelerek %100 ücretsiz zemin keşfi ve kazı planlaması yapıyoruz."
+      }
+    ],
+    "content": "\n## Çiftlikköy'ün Jeolojik Formasyonu ve Hafriyat Mühendisliği\n\nYalova'nın doğusunda yer alan **Çiftlikköy**, Marmara kıyısından Samanlı Dağları eteklerine uzanan zengin ancak zemin mekaniği açısından son derece heterojen bir arazi yapısına sahiptir. İlçede bir temel kazısına veya altyapı projesine başlarken zemin tipini doğru analiz etmemek; temelin su basmasına, kalıpların göçmesine ve devasa maliyet artışlarına sebep olur.\n\nAdem Hafriyat olarak 14 yılı aşkın süredir Çiftlikköy'ün her sokağında yürüttüğümüz kazı tecrübeleriyle bu rehberi hazırladık.\n\n---\n\n## 1. Çiftlikköy Zemin Bölgeleri ve Karakteristiği\n\n### A. Sahil Şeridi ve Siteler Bölgesi (Kumlu-Milli Alüvyon)\nMarmara Denizi kıyısındaki düzlük alanda yer altı su seviyesi oldukça yüksektir. Zemin taşıma gücü düşüktür ve genellikle radye jeneral temel tercih edilir. Kazı esnasında:\n- Dik kazı yapılamaz, kademeli şev açılmalıdır.\n- Temel tabanına ulaşılır ulaşılmaz grobeton dökülmeli, zemin gevşemeye bırakılmamalıdır.\n- Sürekli çalışan otomatik seviye kontrollü dalgıç pompalarla taban suyu tahliye edilmelidir.\n\n### B. Sultaniye, Mehmet Akif Ersoy ve Çiftlik Mahallesi (Sert Killi Zemin)\nSahilden 1-2 km içeri girildiğinde zemin kırmızı-kahverengi sert kil tabakasına dönüşür. Bu zeminler kuru havalarda son derece serttir ancak yağmur aldığında şişme ve kayma potansiyeline sahiptir.\n- Kazı sırasında suyun temel çukurunda göllenmesi engellenmeli, yüzey savak kanalları açılmalıdır.\n- Temel perdesi arkasına doğrudan kil doldurulmamalı; 2 No kırmataş mıcırla drenaj perdesi yapılmalıdır.\n\n### C. Üst Köyler (Gacık, Kabaklı, Laledere, Denizçalı)\nYüksek rakımlı köy arazilerinde eğimli yamaçlar ve yüzeye yakın taşlık-kayalık katmanlar yer alır. Burada bekoloderimizin hidrolik kırıcı ataşmanı ve teraslama bıçağı devreye girer.\n\n---\n\n## 2. Temel Kazısında Başarılı Olmanın 4 Altın Kuralı\n\n1. **Nebati Toprağın Ayrılması:** Üstteki 30 cm'lik organik toprak peyzaj için kenara ayrılmalı, temel altına gömülmemelidir.\n2. **Taban Sıkıştırması ve Mıcır Yastıklama:** Temel tabanına en az 15 cm 0-38 mekanik stabilize veya kırmataş serilerek kompaktörle sıkıştırılmalıdır.\n3. **Fransız Drenaj Kuşağı:** Temel pabucu boyunca delikli PVC drenaj borusu döşenerek geotekstil keçe ile bohçalanmalıdır.\n4. **Hafriyat Kamyonu Koordinasyonu:** Şehir içi trafiğini aksatmadan çıkan toprağın belediye ruhsatlı sahasına kesintisiz taşınması.\n\nÇiftlikköy'deki inşaat ve temel kazısı projeleriniz için 7/24 bizi arayabilir, yerinde ücretsiz keşif talep edebilirsiniz.\n    "
+  },
+  {
+    "id": "taskopru-sanayi-forklift-kiralama-kriterleri",
+    "slug": "taskopru-sanayi-forklift-kiralama-kriterleri",
+    "title": "Taşköprü Sanayi Forklift Kiralama Kriterleri: Tonaj Seçimi, Tripleks Mast ve İSG Standartları",
+    "metaTitle": "Taşköprü Sanayi Forklift Kiralama Kriterleri | Adem Hafriyat",
+    "metaDesc": "Taşköprü OSB ve sanayi fabrikalarında forklift kiralama kriterleri: Tonaj hesabı, tripleks serbest kaldırma asansörü, dolgu lastik ve İSG operatör güvencesi.",
+    "excerpt": "Fabrikalarda ve lojistik antrepolarda tır indirme, rampa operasyonları ve dar koridor istiflemesinde doğru forklift seçiminin püf noktaları.",
+    "category": "Forklift Kiralama",
+    "author": "Adem Hafriyat Lojistik Birimi",
+    "date": "2026-05-03",
+    "readTime": "7 dk okuma",
+    "image": "/images/blog-forklift-rehberi.jpg",
+    "districtSlug": "taskopru",
+    "tags": [
+      "Taşköprü Sanayi",
+      "Forklift Kriterleri",
+      "Tır Boşaltma",
+      "Tripleks Asansör",
+      "İSG Güvenliği"
+    ],
+    "faqs": [
+      {
+        "question": "Taşköprü fabrikalarında en çok hangi tonajda forklift kiralanmaktadır?",
+        "answer": "Standart euro paletli hammadde ve koli indirmelerinde 3 tonluk triplex dizel forkliftler en çok tercih edilirken; çelik rulo, kalıp ve ağır makineler için 5 tonluk çift ön tekerlekli forkliftler kiralanmaktadır."
+      },
+      {
+        "question": "Kapalı kasa tır içine girmek için forkliftin hangi özellikte olması gerekir?",
+        "answer": "Forkliftin kesinlikle \"Tripleks Serbest Kaldırma (Free-Lift)\" asansörüne sahip olması gerekir. Bu özellik sayesinde direk yükselmeden çatallar 1.5 metre yukarı kalkabilir ve tır tavanına çarpmadan en dipteki paletler alınabilir."
+      },
+      {
+        "question": "Sanayi sahalarında dolgu lastik mi havalı lastik mi tercih edilmelidir?",
+        "answer": "Fabrika ve tersane zeminlerinde metal talaşları, vidalar ve çiviler bulunduğu için lastik patlamasını ve iş durmasını sıfırlayan patlamaz \"Süper Elastik Dolgu Lastik\" tercih edilmelidir."
+      },
+      {
+        "question": "Taşköprü Sanayi Bölgesi'ne acil forklift talebinde varış süreniz nedir?",
+        "answer": "Taşköprü Sanayi Caddesi üzerindeki hazır filomuz sayesinde fabrikalara 10-15 dakika içinde operatörlü forklift ulaştırıyoruz."
+      }
+    ],
+    "content": "\n## Taşköprü Sanayi Havzasında Verimli Forklift Operasyonları\n\nYalova'nın üretim lokomotifi olan **Taşköprü Sanayi Bölgesi ve Yalkim OSB**, kimya, tekstil, plastik, kompozit ve metal işleme fabrikalarıyla 7/24 yaşayan bir sanayi merkezidir. Bir sanayi tesisinde malzeme akışının durması doğrudan üretim kaybı anlamına gelir.\n\nAncak her forklift her iş için uygun değildir. Doğru tonajda, doğru mast tipinde ve doğru ataşmana sahip olmayan bir forklift kiralamak hem yükün devrilmesine hem de tır içi manevralarda kaza yaşanmasına neden olabilir.\n\n---\n\n## 1. Forklift Seçerken Dikkat Edilecek 5 Temel Kriter\n\n### 1. Kaldırma Kapasitesi ve Ağırlık Merkezi (Load Center)\nBir forkliftin 3 ton kapasiteli olması, her şartta 3 ton kaldırabileceği anlamına gelmez. Standart kapasite 500 mm ağırlık merkezinde geçerlidir. Eğer taşınacak palet 1.5 metre uzunluğundaysa ağırlık merkezi ileri kayar ve kaldırma kapasitesi düşer. Operatörlerimiz yükün ebadına göre doğru tonajı sahada belirler.\n\n### 2. Triplex Asansör ve Serbest Kaldırma (Free-Lift)\nStandart dubleks direkli makineler çatalları kaldırırken aynı zamanda dış direkleri de tavana doğru iter. Bu durum tır kasası veya alçak tavanlı asma katlarda direğin tavana vurmasına sebep olur. Adem Hafriyat forkliftlerimiz **Tripleks Serbest Kaldırmalıdır**; tır tavanına temas etmeden tır içindeki üst üste istifli paletleri tereyağından kıl çeker gibi indirir.\n\n### 3. Entegre Side-Shifter (Hidrolik Çatal Kaydırma)\nOperatörün forklifti santim santim ileri geri manevra yapmasına gerek bırakmayan side-shifter sistemi, çatalları hidrolik olarak 20 cm sağa ve sola kaydırır. Bu özellik tır kasasında yan yana duran paletlerin hasarsız çekilmesini sağlar ve tır indirme süresini yarı yarıya kısaltır.\n\n### 4. Egzoz ve Zemin Kriteri (Dizel vs Akülü)\n- **Açık Saha & Şantiye:** Yüksek torklu ve eğimli rampalara tırmanabilen 3 - 5 Ton Dizel Forklift.\n- **Gıda, İlaç & Kapalı Depolar:** Sıfır egzoz salınımlı, sessiz ve epoksi zemini çizmeyen beyaz iz bırakmayan tekerlekli Akülü Forklift.\n\n---\n\n## 2. İSG ve Yasal Yükümlülükler\n\nİş güvenliği denetimlerinde yetkisiz personelin forklift kullanması ağır cezalar doğurur. Adem Hafriyat operatörleri:\n- G Sınıfı İş Makinesi Sürücü Belgesi\n- Operatörlük Yetki Sertifikası\n- Periyodik Sağlık & İSG Raporları\n- Çelik burunlu ayakkabı, reflektörlü yelek ve baret donanımlarına eksiksiz sahiptir.\n\nTaşköprü'deki fabrikanız için saatlik, günlük veya dönemsel forklift ihtiyaçlarınızda hemen teklif alın.\n    "
   }
 ];

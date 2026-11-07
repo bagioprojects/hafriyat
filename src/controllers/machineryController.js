@@ -37,7 +37,7 @@ exports.list = (req, res) => {
 
 exports.detail = (req, res, next) => {
   const { slug } = req.params;
-  const machine = machinery.find(m => m.slug === slug);
+  const machine = machinery.find(m => m.slug === slug || (m.aliases && m.aliases.includes(slug)));
 
   if (!machine) {
     return next();

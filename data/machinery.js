@@ -36,6 +36,7 @@ module.exports = [
   {
     id: 'mini-ekskavator-35-ton',
     slug: 'mini-ekskavator-35-ton',
+    aliases: ['cat-303-mini-ekskavator'],
     category: 'kepce',
     name: 'Cat 303.5E Mini Ekskavatör',
     title: 'Yalova Dar Alan Kiralık Mini Kepçe',
@@ -64,6 +65,7 @@ module.exports = [
   {
     id: 'paletli-ekskavator-22-ton',
     slug: 'paletli-ekskavator-22-ton',
+    aliases: ['22-ton-paletli-ekskavator'],
     category: 'kepce',
     name: '22 Ton Paletli Ağır Hizmet Ekskavatör',
     title: 'Yalova Büyük Tonajlı Temel Kazma Ekskavatörü',
@@ -91,6 +93,7 @@ module.exports = [
   {
     id: 'forklift-3-ton-dizel',
     slug: 'forklift-3-ton-dizel',
+    aliases: ['3-ton-dizel-forklift'],
     category: 'forklift',
     name: '3 Ton Dizel Triplex Forklift',
     title: 'Yalova 3 Tonluk Kiralık Forklift (Taşköprü & Sanayi)',
@@ -119,6 +122,7 @@ module.exports = [
   {
     id: 'forklift-5-ton-agir-sanayi',
     slug: 'forklift-5-ton-agir-sanayi',
+    aliases: ['5-ton-agir-sanayi-forklift'],
     category: 'forklift',
     name: '5 Ton Ağır Sanayi Tipi Dizel Forklift',
     title: 'Yalova & Altınova 5 Tonluk Ağır Hizmet Kiralık Forklift',

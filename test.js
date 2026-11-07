@@ -276,14 +276,14 @@ const server = app.listen(PORT, async () => {
       failed = true;
     }
 
-    console.log('\n--- 6. 30 ADET %100 SEO & GEO UYUMLU MAKALE VE ÖZEL FAQ COMPONENT KONTROLLERİ ---');
+    console.log('\n--- 6. 32 ADET %100 SEO & GEO UYUMLU MAKALE VE ÖZEL FAQ COMPONENT KONTROLLERİ ---');
     const blogPosts = require('./data/blog');
     console.log(`[BİLGİ]: Toplam ${blogPosts.length} makale taranıyor...`);
-    if (blogPosts.length !== 30) {
-      console.error(`❌ [HATA]: Beklenen 30 makale, ancak ${blogPosts.length} bulundu!`);
+    if (blogPosts.length !== 32) {
+      console.error(`❌ [HATA]: Beklenen 32 makale, ancak ${blogPosts.length} bulundu!`);
       failed = true;
     } else {
-      console.log('✅ [BAŞARILI]: Toplam 30 adet makale kütüphanesi eksiksiz mevcut.');
+      console.log('✅ [BAŞARILI]: Toplam 32 adet makale kütüphanesi eksiksiz mevcut.');
     }
 
     let allFaqsOk = true;
@@ -303,17 +303,72 @@ const server = app.listen(PORT, async () => {
       }
     }
     if (allFaqsOk) {
-      console.log('✅ [BAŞARILI]: Tüm 30 makalede özel FAQ accordion componenti ve Schema.org FAQPage JSON-LD %100 doğrulandı.');
+      console.log('✅ [BAŞARILI]: Tüm 32 makalede özel FAQ accordion componenti ve Schema.org FAQPage JSON-LD %100 doğrulandı.');
     }
 
     // Sitemap blog kontrolü
     const sitemapBlogRes = await fetchPath('/sitemap-blog.xml');
     const blogUrlMatches = (sitemapBlogRes.body.match(/<loc>/g) || []).length;
-    if (blogUrlMatches === 30) {
-      console.log('✅ [BAŞARILI]: /sitemap-blog.xml içinde 30 makalenin tamamı dinamik olarak listeleniyor.');
+    if (blogUrlMatches === 32) {
+      console.log('✅ [BAŞARILI]: /sitemap-blog.xml içinde 32 makalenin tamamı dinamik olarak listeleniyor.');
     } else {
-      console.error(`❌ [HATA]: /sitemap-blog.xml içinde ${blogUrlMatches} URL bulundu (Beklenen: 30)!`);
+      console.error(`❌ [HATA]: /sitemap-blog.xml içinde ${blogUrlMatches} URL bulundu (Beklenen: 32)!`);
       failed = true;
+    }
+
+    console.log('\n--- 7. FOOTER VE TÜM SİTE LİNKLERİ 0 KIRIK LİNK DOĞRULAMASI ---');
+    const footerLinks = [
+      '/hizmetlerimiz/kepce-kiralama',
+      '/hizmetlerimiz/kanal-kazma',
+      '/hizmetlerimiz/su-kuyusu-kazma',
+      '/hizmetlerimiz/yagmur-kanalizasyon-giderleri',
+      '/hizmetlerimiz/tamir-altyapi-onarim',
+      '/hizmetlerimiz/arazi-duzleme-tesviye',
+      '/hizmetlerimiz/temel-kazma',
+      '/hizmetlerimiz/dolgu-micir-yayma',
+      '/hizmetlerimiz/elektrik-kanal-kazma',
+      '/hizmetlerimiz/bina-cevre-duzenleme',
+      '/hizmetlerimiz/hafriyat-peyzaj-isleri',
+      '/hizmetlerimiz/forklift-kiralama',
+      '/bolgeler/taskopru/mahalle/taskopru-sanayi',
+      '/bolgeler/altinova/mahalle/altinova-tersaneler',
+      '/hizmetlerimiz/operatorlu-forklift-kiralama',
+      '/hizmetlerimiz/operatorsuz-forklift-kiralama',
+      '/makinelerimiz/forklift-3-ton-dizel',
+      '/makinelerimiz/forklift-5-ton-agir-sanayi',
+      '/makinelerimiz/forklift-25-ton-akulu',
+      '/bolgeler/ciftlikkoy',
+      '/bolgeler/taskopru',
+      '/bolgeler/yalova-merkez',
+      '/bolgeler/altinova',
+      '/bolgeler/cinarcik',
+      '/bolgeler/termal',
+      '/bolgeler/armutlu',
+      '/makinelerimiz/jcb-3cx-bekoloder',
+      '/makinelerimiz/mini-ekskavator-35-ton',
+      '/makinelerimiz/paletli-ekskavator-22-ton',
+      '/makaleler/yalova-kepce-kiralama-rehberi',
+      '/makaleler/ciftlikkoy-zemin-yapisi-ve-kazi-rehberi',
+      '/makaleler/taskopru-sanayi-forklift-kiralama-kriterleri',
+      '/site-haritasi',
+      '/sitemap.xml',
+      '/llms.txt',
+      '/makaleler',
+      '/hakkimizda',
+      '/iletisim'
+    ];
+
+    let brokenCount = 0;
+    for (const url of footerLinks) {
+      const res = await fetchPath(url);
+      if (res.statusCode !== 200) {
+        console.error(`❌ [HATA]: Footer linki kırık: ${url} (HTTP ${res.statusCode})`);
+        brokenCount++;
+        failed = true;
+      }
+    }
+    if (brokenCount === 0) {
+      console.log(`✅ [BAŞARILI]: Footer'daki ${footerLinks.length} adet linkin tamamı HTTP 200 OK! Sıfır (0) kırık link.`);
     }
 
     if (failed) {

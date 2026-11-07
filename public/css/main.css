@@ -413,9 +413,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brand-logo-img {
-  height: 52px;
+  height: 56px;
   width: auto;
-  max-width: 290px;
+  max-width: 300px;
   object-fit: contain;
   display: block;
 }
@@ -2376,11 +2376,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .header-main {
-    padding: clamp(0.45rem, 1.5vw, 0.65rem) 0;
+    padding: clamp(0.5rem, 1.4vw, 0.75rem) 0;
   }
 
   .navbar-flex {
-    gap: clamp(6px, 1.8vw, 12px);
+    gap: clamp(8px, 2vw, 14px);
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -2391,15 +2391,15 @@ h1, h2, h3, h4, h5, h6 {
   .brand-logo {
     margin-right: 0;
     min-width: 0;
-    flex: 0 1 auto;
-    max-width: calc(100% - 92px);
+    flex: 1 1 auto;
+    max-width: calc(100% - 94px);
     display: flex;
     align-items: center;
   }
 
-  /* Mobil Logo: Otomatik Akışkan Ölçeklenme (Fluid Auto-Resize) - Kesintisiz & Asla Kesilmez */
+  /* Mobil Logo: Görkemli, Soldan Sağa Tam Orantılı ve Kusursuz Ölçeklenme */
   .brand-logo-img {
-    height: clamp(32px, 8.5vw, 42px);
+    height: clamp(44px, 12.5vw, 54px);
     max-width: 100%;
     width: auto;
     display: block;
@@ -2704,7 +2704,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 360px) {
   .brand-logo-img {
-    height: clamp(28px, 8vw, 34px);
+    height: clamp(38px, 11vw, 44px);
     max-width: 100%;
   }
 

@@ -1141,3 +1141,4 @@ module.exports = ${JSON.stringify(fullLibrary, null, 2)};
 
 fs.writeFileSync(path.join(__dirname, '..', 'data', 'blog.js'), outputCode, 'utf8');
 console.log('Successfully written data/blog.js with all 30 articles and faqs!');
+

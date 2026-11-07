@@ -277,7 +277,7 @@ Adem Hafriyat, kuyu kazısını yaptıktan sonra ağır betonarme kuyu büzlerin
     title: 'Yağmur ve Kanalizasyon Giderleri Kazma',
     shortTitle: 'Yağmur & Kanalizasyon',
     h1: 'Yalova Yağmur Suyu ve Kanalizasyon Hattı Kazma Hizmetleri',
-    metaTitle: 'Yalova Yağmur & Kanalizasyon Kazma | Çiftlikköy Rögar ve Boru Hattı',
+    metaTitle: 'Yalova Yağmur & Kanalizasyon Kazma | Çiftlikköy Rögar Hattı',
     metaDesc: 'Yalova genelinde yağmur suyu tahliye kanalı, kanalizasyon boru hattı ve foseptik kazısı. Koruge boru ve rögar bacası döşeme altyapısı.',
     excerpt: 'Binalar, siteler ve sanayi tesisleri için belediye ana hattına bağlantı, koruge boru kazısı ve parsel bacası montaj çukuru açma.',
     icon: 'cloud-rain',

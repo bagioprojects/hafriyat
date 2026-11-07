@@ -37,7 +37,7 @@ exports.index = (req, res) => {
 
   const seo = generateSeoData({
     title: 'Yalova Kepçe Kiralama & Forklift Kiralama | Adem Hafriyat 7/24',
-    description: 'Yalova kepçe kiralama, Çiftlikköy, Taşköprü ve tüm ilçelerde kanal kazma, temel hafriyatı, arazi düzleme, su kuyusu ve operatörlü forklift kiralama. En uygun fiyat & 15 dk servis!',
+    description: 'Yalova kepçe kiralama, Çiftlikköy ve Taşköprüde kanal kazma, temel hafriyatı, su kuyusu ve forklift kiralama. Şeffaf fiyat & 15 dakikada hızlı intikal!',
     keywords: [
       'yalova kepçe kiralama',
       'yalova kepçe',

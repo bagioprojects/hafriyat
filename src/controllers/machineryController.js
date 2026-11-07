@@ -45,9 +45,14 @@ exports.detail = (req, res, next) => {
 
   const otherMachines = machinery.filter(m => m.id !== machine.id);
 
+  const machineTitle = machine.shortName || machine.name.split(' (')[0];
+  const shortBestFor = machine.bestFor && machine.bestFor.length > 0 
+    ? machine.bestFor[0].replace(/\([^)]*\)/g, '').trim() 
+    : 'şantiye ve sanayi işleri';
+
   const seo = generateSeoData({
     title: machine.title,
-    description: `${machine.name} saatlik, günlük ve aylık kiralama. ${machine.bestFor.slice(0, 2).join(' ve ')} için Yalova genelinde 15 dk teslimat.`,
+    description: `${machineTitle} kiralama: ${shortBestFor}. Yalova genelinde saatlik, günlük kiralama ve 15 dk teslimat.`,
     keywords: [
       `${machine.name.toLowerCase()} kiralama`,
       `yalova ${machine.type.toLowerCase()} kiralama`,

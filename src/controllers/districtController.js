@@ -87,13 +87,13 @@ exports.districtService = (req, res, next) => {
   const cleanServiceTitle = (service.shortTitle || service.title).replace(/^Yalova\s+/i, '');
   const crossTitle = `${district.name} ${cleanServiceTitle}`;
   
-  let customSuffix = `${district.name} ${district.responseMinutes} Dk Hızlı İntikal`;
+  let customSuffix = `${district.responseMinutes} Dk Hızlı İntikal`;
   if (service.id === 'operatorlu-forklift-kiralama') {
-    customSuffix = `${district.name} Sanayi & Şantiye — G Ehliyetli Sürücü (${district.responseMinutes} Dk)`;
+    customSuffix = `Sanayi & Şantiye (${district.responseMinutes} Dk)`;
   } else if (service.id === 'operatorsuz-forklift-kiralama') {
-    customSuffix = `${district.name} Şantiye & Depo Sürücüsüz Filo`;
+    customSuffix = `Sürücüsüz Filo & Depo`;
   } else if (service.id === 'su-kuyusu-kazma') {
-    customSuffix = `${district.name} Keson Kuyu & Taban Filtre Mıcırı`;
+    customSuffix = `Keson Kuyu & Filtre Mıcırı`;
   }
 
   const metaTitle = `${district.name} ${cleanServiceTitle} — ${customSuffix} | Adem Hafriyat`;
@@ -169,9 +169,14 @@ exports.neighborhoodDetail = (req, res, next) => {
   }
 
   const isVillage = locality.type === 'koy' || (district.villages && district.villages.some(v => v.slug === neighborhoodSlug));
-  const pageTitle = `${district.name} ${locality.name} Kepçe Kiralama & Hafriyat Hizmetleri`;
-  const metaTitle = `${district.name} ${locality.name} Kiralık Kepçe & Forklift | Adem Hafriyat`;
-  const metaDesc = `${district.name} ${locality.name} mevkiinde profesyonel kepçe kiralama, kanal kazma, temel hafriyatı, su kuyusu ve arazi tesviye. ${district.responseMinutes} dakikada kapınızda!`;
+  const cleanLocalityName = locality.name
+    .replace(new RegExp(`^${district.name}\\s*`, 'i'), '')
+    .replace(/\s*\([^)]*\)/g, '')
+    .trim();
+  const localityDisplayName = cleanLocalityName ? `${district.name} ${cleanLocalityName}` : locality.name;
+  const pageTitle = `${localityDisplayName} Kepçe Kiralama & Hafriyat Hizmetleri`;
+  const metaTitle = `${localityDisplayName} Kiralık Kepçe & Forklift | Adem Hafriyat`;
+  const metaDesc = `${localityDisplayName} mevkiinde profesyonel kepçe kiralama, kanal kazma, temel hafriyatı, su kuyusu ve arazi tesviye. ${district.responseMinutes} dakikada kapınızda!`;
 
   const localityFaqs = [
     {

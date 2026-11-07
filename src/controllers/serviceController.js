@@ -13,7 +13,7 @@ const { getServiceSchema, getBreadcrumbSchema, getFaqSchema } = require('../help
 exports.list = (req, res) => {
   const seo = generateSeoData({
     title: 'Hizmetlerimiz | Yalova Kepçe ve Forklift Kiralama',
-    description: 'Adem Hafriyat profesyonel hizmetleri: Kanal kazma, su kuyusu açma, yağmur suyu kanalizasyon, altyapı tamiratı, arazi tesviye, dolgu mıcır yayma, elektrik kanalı, bina çevre düzenleme, temel kazma ve forklift kiralama.',
+    description: 'Yalova hafriyat hizmetleri: Kanal kazma, temel hafriyatı, su kuyusu, arazi tesviyesi, mıcır dolgu ve forklift kiralama. 15 dakikada adrese intikal.',
     keywords: [
       'yalova hafriyat hizmetleri',
       'yalova kanal kazma',

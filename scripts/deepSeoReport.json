@@ -1,0 +1,470 @@
+{
+  "generatedAt": "2026-11-07T00:44:33.190Z",
+  "overallScore": 100,
+  "categoryScores": {
+    "technical": 100,
+    "onPage": 100,
+    "structuredData": 100,
+    "geoLocal": 100,
+    "mobileUx": 100
+  },
+  "metrics": {
+    "totalPages": 215,
+    "avgTtfbMs": 6,
+    "avgWordCount": 1456,
+    "avgPayloadKb": 74.9,
+    "totalWordsSiteWide": 313106,
+    "duplicateTitles": 0,
+    "orphanPagesCount": 0
+  },
+  "findingsSummary": {
+    "criticalCount": 0,
+    "warningsCount": 0,
+    "noticesCount": 0
+  },
+  "findings": {
+    "critical": [],
+    "warnings": [],
+    "notices": [],
+    "highlights": []
+  },
+  "orphanPages": [],
+  "samplePages": [
+    {
+      "url": "/",
+      "status": 200,
+      "sizeKb": 115,
+      "ttfbMs": 37,
+      "issues": [],
+      "warnings": [
+        "Description önerilen 170 karakter sınırını aşıyor (183 karakter)"
+      ],
+      "title": "Yalova Kepçe Kiralama &amp; Forklift Kiralama | Adem Hafriyat 7/24",
+      "titleLength": 66,
+      "description": "Yalova kepçe kiralama, Çiftlikköy, Taşköprü ve tüm ilçelerde kanal kazma, temel hafriyatı, arazi düzleme, su kuyusu ve operatörlü forklift kiralama. En uygun fiyat &amp; 15 dk servis!",
+      "descLength": 183,
+      "canonical": "https://yalovakepcehafriyat.com.tr",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 7,
+      "h3Count": 37,
+      "h1Text": "Yalova Kepçe Kiralama & Operatörlü Forklift Hizmetleri",
+      "wordCount": 2773,
+      "schemaTypes": [
+        [
+          "HomeAndConstructionBusiness",
+          "LocalBusiness",
+          "GeneralContractor"
+        ],
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/hizmetlerimiz",
+      "status": 200,
+      "sizeKb": 72.8,
+      "ttfbMs": 13,
+      "issues": [],
+      "warnings": [
+        "Description önerilen 170 karakter sınırını aşıyor (217 karakter)"
+      ],
+      "title": "Hizmetlerimiz | Yalova Kepçe ve Forklift Kiralama | Adem Hafriyat",
+      "titleLength": 65,
+      "description": "Adem Hafriyat profesyonel hizmetleri: Kanal kazma, su kuyusu açma, yağmur suyu kanalizasyon, altyapı tamiratı, arazi tesviye, dolgu mıcır yayma, elektrik kanalı, bina çevre düzenleme, temel kazma ve forklift kiralama.",
+      "descLength": 217,
+      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 3,
+      "h3Count": 27,
+      "h1Text": "Yalova Kepçe, Forklift ve Hafriyat Hizmetlerimiz",
+      "wordCount": 1820,
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/makinelerimiz",
+      "status": 200,
+      "sizeKb": 56.6,
+      "ttfbMs": 9,
+      "issues": [],
+      "warnings": [
+        "Title önerilen 70 karakter sınırını aşıyor (75 karakter)"
+      ],
+      "title": "Makine Parkurumuz | Yalova Kiralık Kepçe ve Forklift Filosu | Adem Hafriyat",
+      "titleLength": 75,
+      "description": "Adem Hafriyat makine filosu: JCB 3CX Bekoloder, Cat Mini Ekskavatör, 22 Ton Paletli Ekskavatör, 3-5 Ton Dizel ve Akülü Forkliftler. 7/24 hizmetinizde.",
+      "descLength": 150,
+      "canonical": "https://yalovakepcehafriyat.com.tr/makinelerimiz",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 3,
+      "h3Count": 17,
+      "h1Text": "Adem Hafriyat Makine Parkuru",
+      "wordCount": 1333,
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/makaleler",
+      "status": 200,
+      "sizeKb": 73.5,
+      "ttfbMs": 24,
+      "issues": [],
+      "warnings": [],
+      "title": "Hafriyat, Kepçe ve Forklift Rehberi | Makaleler | Adem Hafriyat",
+      "titleLength": 63,
+      "description": "Yalova hafriyat, kanal kazma, temel açma, drenaj ve forklift kiralama hakkında gerçek şantiye tecrübesine dayalı uzman makaleler ve sektörel rehberler.",
+      "descLength": 151,
+      "canonical": "https://yalovakepcehafriyat.com.tr/makaleler",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 3,
+      "h3Count": 43,
+      "h1Text": "Hafriyat, Kepçe ve Forklift Bilgi Merkezi",
+      "wordCount": 2303,
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/site-haritasi",
+      "status": 200,
+      "sizeKb": 98.6,
+      "ttfbMs": 9,
+      "issues": [],
+      "warnings": [],
+      "title": "Site Haritası &amp; İçerik Dizini | Adem Hafriyat",
+      "titleLength": 49,
+      "description": "Adem Hafriyat resmi web sitesi hiyerarşik site haritası. Tüm hizmetlerimiz, Yalova mahalle ve köyleri, kiralık iş makinelerimiz ve uzman hafriyat makalelerimiz.",
+      "descLength": 160,
+      "canonical": "https://yalovakepcehafriyat.com.tr/site-haritasi",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 1,
+      "h3Count": 9,
+      "h1Text": "Site Haritası İçerik Dizini",
+      "wordCount": 2032,
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/hakkimizda",
+      "status": 200,
+      "sizeKb": 74.9,
+      "ttfbMs": 11,
+      "issues": [],
+      "warnings": [],
+      "title": "Hakkımızda | Adem Hafriyat Yalova",
+      "titleLength": 33,
+      "description": "Adem Hafriyat: 2012 yılından bu yana Yalova, Çiftlikköy ve Taşköprü bölgesinde güvenilir kepçe kiralama, forklift kiralama ve altyapı hafriyat çözümleri.",
+      "descLength": 153,
+      "canonical": "https://yalovakepcehafriyat.com.tr/hakkimizda",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 3,
+      "h3Count": 15,
+      "h1Text": "Hakkımızda — Adem Hafriyat",
+      "wordCount": 1414,
+      "schemaTypes": [
+        [
+          "HomeAndConstructionBusiness",
+          "LocalBusiness",
+          "GeneralContractor"
+        ],
+        "BreadcrumbList"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/iletisim",
+      "status": 200,
+      "sizeKb": 74.3,
+      "ttfbMs": 6,
+      "issues": [],
+      "warnings": [],
+      "title": "İletişim &amp; Ücretsiz Keşif | Adem Hafriyat",
+      "titleLength": 45,
+      "description": "Adem Hafriyat iletişim bilgileri: Telefon 0532 720 20 10, 7/24 WhatsApp hattı, Çiftlikköy Taşköprü garajı. Yalova genelinde ücretsiz keşif talep edin.",
+      "descLength": 150,
+      "canonical": "https://yalovakepcehafriyat.com.tr/iletisim",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 2,
+      "h3Count": 12,
+      "h1Text": "İletişim Ücretsiz Keşif Hattı",
+      "wordCount": 1227,
+      "schemaTypes": [
+        [
+          "HomeAndConstructionBusiness",
+          "LocalBusiness",
+          "GeneralContractor"
+        ],
+        "BreadcrumbList"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/hizmetlerimiz/kepce-kiralama",
+      "status": 200,
+      "sizeKb": 71.3,
+      "ttfbMs": 7,
+      "issues": [],
+      "warnings": [],
+      "title": "Yalova Kepçe Kiralama | Çiftlikköy &amp; Taşköprü Adem Hafriyat 7/24",
+      "titleLength": 68,
+      "description": "Yalova genelinde saatlik, günlük ve haftalık kiralık kepçe (JCB Bekoloder &amp; Mini Ekskavatör). Tecrübeli operatör, acil servis ve uygun fiyat garantisi. Hemen arayın!",
+      "descLength": 169,
+      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz/kepce-kiralama",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 2,
+      "h3Count": 11,
+      "h1Text": "Yalova Kepçe Kiralama Operatörlü İş Makinesi Hizmetleri",
+      "wordCount": 1447,
+      "schemaTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/hizmetlerimiz/forklift-kiralama",
+      "status": 200,
+      "sizeKb": 70.9,
+      "ttfbMs": 6,
+      "issues": [],
+      "warnings": [
+        "Title önerilen 70 karakter sınırını aşıyor (82 karakter)"
+      ],
+      "title": "Yalova Forklift Kiralama | Taşköprü &amp; Altınova Operatörlü 7/24 | Adem Hafriyat",
+      "titleLength": 82,
+      "description": "Yalova, Taşköprü OSB ve Altınova tersaneler bölgesinde 3-5 tonluk dizel ve akülü kiralık forklift. Saatlik tır indirme, fabrika içi taşıma ve aylık kiralama.",
+      "descLength": 157,
+      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz/forklift-kiralama",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 2,
+      "h3Count": 11,
+      "h1Text": "Yalova Forklift Kiralama Sanayi Yükleme-Boşaltma Hizmetleri",
+      "wordCount": 1400,
+      "schemaTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/hizmetlerimiz/operatorlu-forklift-kiralama",
+      "status": 200,
+      "sizeKb": 67.6,
+      "ttfbMs": 7,
+      "issues": [],
+      "warnings": [],
+      "title": "Yalova Operatörlü Forklift Kiralama | Adem Hafriyat 7/24",
+      "titleLength": 56,
+      "description": "Yalova, Taşköprü ve Altınova bölgesinde G sınıfı ehliyetli uzman operatör eşliğinde saatlik ve günlük kiralık forklift. Tır boşaltma ve ağır yük taşıma.",
+      "descLength": 152,
+      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz/operatorlu-forklift-kiralama",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 2,
+      "h3Count": 10,
+      "h1Text": "Yalova Operatörlü Forklift Kiralama | Uzman Belgeli Kadro",
+      "wordCount": 1228,
+      "schemaTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/hizmetlerimiz/operatorsuz-forklift-kiralama",
+      "status": 200,
+      "sizeKb": 67.6,
+      "ttfbMs": 7,
+      "issues": [],
+      "warnings": [
+        "Title önerilen 70 karakter sınırını aşıyor (78 karakter)"
+      ],
+      "title": "Yalova Operatörsüz Forklift Kiralama | Fabrika &amp; Depo İçin | Adem Hafriyat",
+      "titleLength": 78,
+      "description": "Yalova, Taşköprü ve Altınova fabrikalarına özel haftalık ve aylık operatörsüz forklift kiralama. Periyodik bakımı yapılmış, tam kaskolu iş makineleri.",
+      "descLength": 150,
+      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz/operatorsuz-forklift-kiralama",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 2,
+      "h3Count": 10,
+      "h1Text": "Yalova Operatörsüz Forklift Kiralama | Aylık Proje Bazlı",
+      "wordCount": 1222,
+      "schemaTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/hizmetlerimiz/kanal-kazma",
+      "status": 200,
+      "sizeKb": 67.6,
+      "ttfbMs": 7,
+      "issues": [],
+      "warnings": [
+        "Title önerilen 70 karakter sınırını aşıyor (83 karakter)"
+      ],
+      "title": "Yalova Kanal Kazma | Çiftlikköy, Taşköprü &amp; Merkez Kepçe Kazısı | Adem Hafriyat",
+      "titleLength": 83,
+      "description": "Yalova genelinde su, doğalgaz, drenaj, sulama ve kablo hatları için lazerli terazi ile hassas kanal kazma işleri. Dar kovalı kepçe ve mini ekskavatör!",
+      "descLength": 150,
+      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz/kanal-kazma",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 2,
+      "h3Count": 10,
+      "h1Text": "Yalova Kanal Kazma Altyapı Hendek Kazı Hizmetleri",
+      "wordCount": 1269,
+      "schemaTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/hizmetlerimiz/su-kuyusu-kazma",
+      "status": 200,
+      "sizeKb": 67.4,
+      "ttfbMs": 6,
+      "issues": [],
+      "warnings": [],
+      "title": "Yalova Su Kuyusu Kazma &amp; Keson Kuyu Açma | Adem Hafriyat",
+      "titleLength": 60,
+      "description": "Yalova köylerinde, Çiftlikköy ve Çınarcık bahçelerinde su kuyusu kazma, keson kuyu betonu yerleştirme, su toplama çukuru ve drenaj havuzu açma.",
+      "descLength": 143,
+      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz/su-kuyusu-kazma",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 2,
+      "h3Count": 10,
+      "h1Text": "Yalova Su Kuyusu Açma, Kazma Keson Kuyu Islahı",
+      "wordCount": 1254,
+      "schemaTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/hizmetlerimiz/yagmur-kanalizasyon-giderleri",
+      "status": 200,
+      "sizeKb": 67.9,
+      "ttfbMs": 8,
+      "issues": [],
+      "warnings": [
+        "Title önerilen 70 karakter sınırını aşıyor (87 karakter)"
+      ],
+      "title": "Yalova Yağmur &amp; Kanalizasyon Kazma | Çiftlikköy Rögar ve Boru Hattı | Adem Hafriyat",
+      "titleLength": 87,
+      "description": "Yalova genelinde yağmur suyu tahliye kanalı, kanalizasyon boru hattı ve foseptik kazısı. Koruge boru ve rögar bacası döşeme altyapısı.",
+      "descLength": 134,
+      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz/yagmur-kanalizasyon-giderleri",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 2,
+      "h3Count": 10,
+      "h1Text": "Yalova Yağmur Suyu ve Kanalizasyon Hattı Kazma Hizmetleri",
+      "wordCount": 1258,
+      "schemaTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    },
+    {
+      "url": "/hizmetlerimiz/tamir-altyapi-onarim",
+      "status": 200,
+      "sizeKb": 67.2,
+      "ttfbMs": 7,
+      "issues": [],
+      "warnings": [],
+      "title": "Yalova Altyapı Arıza &amp; Tamir Kazısı | Acil Kepçe Adem Hafriyat",
+      "titleLength": 66,
+      "description": "Yalova genelinde patlayan temiz su boruları, çöken kanalizasyon hatları ve acil hafriyat onarımlarında 7/24 hızlı müdahale. Anında sahada!",
+      "descLength": 138,
+      "canonical": "https://yalovakepcehafriyat.com.tr/hizmetlerimiz/tamir-altyapi-onarim",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "h1Count": 1,
+      "h2Count": 2,
+      "h3Count": 10,
+      "h1Text": "Yalova Altyapı Tamir, Patlak Su Borusu Arıza Kazı Hizmetleri",
+      "wordCount": 1249,
+      "schemaTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "hasGeo": true,
+      "hasOgMeta": true,
+      "totalImages": 3,
+      "imagesWithoutAlt": 0
+    }
+  ]
+}

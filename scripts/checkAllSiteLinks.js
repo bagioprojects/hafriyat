@@ -70,3 +70,4 @@ async function testUrl(url) {
   console.log('=========================================');
   fs.writeFileSync('scripts/brokenLinksReport.json', JSON.stringify(broken, null, 2), 'utf8');
 })();
+

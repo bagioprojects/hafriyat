@@ -700,19 +700,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1px;
 }
 
+/* ==========================================================================
+   Full Screen Mobile App Menu (Tam Ekran, İkonsuz & Ultra-Profesyonel)
+   ========================================================================== */
+
 /* Mobile Drawer Backdrop */
 .mobile-drawer-backdrop {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(4px);
-  z-index: 2990;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9998;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
 .mobile-drawer-backdrop.active {
@@ -720,102 +724,383 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
 }
 
-/* Mobile Drawer */
+/* Mobile Fullscreen Modal Container (%100 Tam Ekran) */
 .mobile-drawer {
   position: fixed;
   top: 0;
-  right: -340px;
-  width: 320px;
-  max-width: 86vw;
-  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
   background-color: #ffffff;
-  z-index: 3000;
-  box-shadow: -6px 0 25px rgba(0, 0, 0, 0.35);
-  padding: 1.25rem 1.5rem;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
-  transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-8px) scale(0.99);
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.25s ease;
 }
 
 .mobile-drawer.open {
-  right: 0;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
 }
 
+/* 1. Header (Sabit & Şık) */
 .mobile-drawer-header {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 0.85rem;
-  border-bottom: 2px solid var(--color-border-light);
-  margin-bottom: 1rem;
+  padding: 12px 18px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(24, 28, 31, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  z-index: 10;
+}
+
+.drawer-logo-img {
+  height: clamp(38px, 10vw, 44px);
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .close-drawer {
-  background: #f1f5f9;
-  border: 1px solid #cbd5e1;
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
-  font-size: 1.5rem;
-  line-height: 1;
-  color: var(--color-dark);
+  background: #181c1f;
+  color: #ffc714;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.15s ease;
+  transition: all 0.15s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.close-drawer:hover {
-  background-color: #e2e8f0;
+.close-drawer:hover,
+.close-drawer:active {
+  background: #ffc714;
+  color: #181c1f;
+  transform: scale(0.94);
 }
 
-.mobile-drawer-body {
-  flex: 1;
+.close-icon {
+  width: 20px;
+  height: 20px;
 }
 
-.mobile-nav-group-title {
-  font-size: 0.72rem;
+/* 2. Acil Çağrı Şeridi (Notice Bar) */
+.drawer-notice-bar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: linear-gradient(90deg, #181c1f 0%, #293133 100%);
+  padding: 8px 18px;
+  border-bottom: 2px solid #ffc000;
+  font-family: 'Barlow', sans-serif;
+  box-sizing: border-box;
+}
+
+.drawer-notice-left {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.notice-pulse-dot {
+  width: 7px;
+  height: 7px;
+  min-width: 7px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  animation: noticePulse 1.8s infinite;
+}
+
+@keyframes noticePulse {
+  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+  70% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.notice-title {
+  font-size: 0.68rem;
   font-weight: 800;
-  color: var(--color-text-muted);
   letter-spacing: 0.06em;
-  padding: 1rem 0 0.35rem;
-  border-bottom: 1px solid var(--color-border-light);
-  margin-bottom: 0.25rem;
-  list-style: none;
+  color: #f1f5f9;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.mobile-nav-list li {
-  border-bottom: 1px solid #f1f5f9;
-  list-style: none;
-}
-
-.mobile-nav-link {
-  display: block;
-  padding: 0.65rem 0.25rem;
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--color-dark);
+.notice-phone-link {
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: #ffc714;
   text-decoration: none;
-  transition: color 0.15s ease;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 
-.mobile-nav-link:hover,
-.mobile-nav-link.active {
-  color: var(--color-primary-dark);
+/* 3. Menü Gövdesi (Kaydırılabilir & Temiz Tipografi) */
+.mobile-drawer-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px 18px 24px;
+  background-color: #f8fafc;
+  box-sizing: border-box;
 }
 
-.mobile-nav-link.highlight {
-  color: var(--color-primary-dark);
-  font-size: 1.05rem;
+.drawer-section {
+  margin-bottom: 20px;
 }
 
+/* Ana Sayfa Butonu (Özel Vurgulu Kart) */
+.drawer-primary-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #181c1f;
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #181c1f;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.drawer-primary-link.active,
+.drawer-primary-link:hover,
+.drawer-primary-link:active {
+  background: #fffbeb;
+  border-color: #fde68a;
+  border-left-color: #ffad00;
+  color: #92400e;
+}
+
+/* Kategori Başlığı: Üstün Kurumsal Tipografi, Sıfır Emoji */
+.drawer-cat-label {
+  display: block;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #475569;
+  margin-bottom: 8px;
+  padding-left: 2px;
+}
+
+/* Link Grupları (Temiz Beyaz Kart İçinde, Sıfır İkon/Emoji) */
+.drawer-links-group {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.drawer-nav-link {
+  display: block;
+  padding: 12px 16px;
+  font-family: 'Barlow', 'Inter', -apple-system, sans-serif;
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-decoration: none;
+  border-bottom: 1px solid #f1f5f9;
+  line-height: 1.35;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+}
+
+.drawer-nav-link:last-child {
+  border-bottom: none;
+}
+
+.drawer-nav-link:hover,
+.drawer-nav-link:active {
+  background-color: #f8fafc;
+  color: #d97706;
+  padding-left: 20px;
+}
+
+.drawer-nav-link.highlight {
+  color: #0f172a;
+  background-color: #fffdf5;
+  font-size: 1.02rem;
+}
+
+.drawer-nav-link.highlight:hover,
+.drawer-nav-link.highlight:active {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.drawer-nav-link.active {
+  background-color: #fffbeb;
+  color: #b45309;
+  border-left: 3px solid #ffad00;
+}
+
+.drawer-nav-link.all-services-link {
+  color: #b45309;
+  font-weight: 800;
+  background-color: #fffbeb;
+  text-align: center;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+}
+
+/* Bölgeler Izgarası (Grid Formatında Temiz Kartlar) */
+.drawer-districts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.drawer-grid-item {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.drawer-grid-item:hover,
+.drawer-grid-item:active {
+  border-color: #fde68a;
+  background: #fffdf5;
+  transform: translateY(-1px);
+}
+
+.grid-item-title {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.grid-item-sub {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 4. Sabit Alt Aksiyon Butonları (Footer) */
 .mobile-drawer-footer {
-  margin-top: auto;
-  padding-top: 1.5rem;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-top: 1px solid rgba(24, 28, 31, 0.08);
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.drawer-actions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.drawer-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.15s ease;
+}
+
+.drawer-action-btn:active {
+  transform: scale(0.96);
+}
+
+.drawer-action-call {
+  background: linear-gradient(135deg, #ffc714 0%, #ffad00 100%);
+  color: #181c1f !important;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 3px 10px rgba(255, 173, 0, 0.3);
+}
+
+.drawer-action-wa {
+  background: linear-gradient(135deg, #25d366 0%, #1da851 100%);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3);
+}
+
+.action-svg-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.action-btn-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.15;
+  min-width: 0;
+}
+
+.action-micro-label {
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.action-main-title {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.86rem;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ==========================================================================

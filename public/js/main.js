@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileDrawer) mobileDrawer.classList.add('open');
     if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
     if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'true');
   }
 
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileDrawer) mobileDrawer.classList.remove('open');
     if (mobileDrawerBackdrop) mobileDrawerBackdrop.classList.remove('active');
     document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
     if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
   }
 

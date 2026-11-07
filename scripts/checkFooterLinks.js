@@ -33,3 +33,4 @@ async function testUrl(url) {
   console.log('✅ OK (200):', ok.length);
   console.log('❌ BROKEN:', broken.length);
 })();
+

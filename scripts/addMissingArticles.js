@@ -183,3 +183,4 @@ module.exports = ${JSON.stringify(blogPosts, null, 2)};
 
 fs.writeFileSync(path.join(__dirname, '..', 'data', 'blog.js'), outputCode, 'utf8');
 console.log('Successfully updated data/blog.js with 32 articles!');
+

@@ -1,0 +1,203 @@
+{
+  "status": "success",
+  "modules": {
+    "sitemap": {
+      "sub_sitemaps_count": 6,
+      "total_urls_discovered": 243
+    },
+    "geo_local": {
+      "garage_coords": [
+        40.6865,
+        29.3789
+      ],
+      "distances_km": {
+        "Merkez Garaj (Taşköprü Sanayi)": 0.0,
+        "Çiftlikköy Merkez": 5.43,
+        "Taşköprü Beldesi": 0.2,
+        "Yalova Merkez": 9.31,
+        "Altınova Tersaneler": 11.06,
+        "Çınarcık Sahil": 22.42,
+        "Termal Kaplıcalar": 18.71,
+        "Armutlu": 49.45
+      },
+      "uule_samples": {
+        "Merkez Garaj (Taşköprü Sanayi)": "w+CAIQICIuTWVya2V6IEdhcmFqIChUYcWfa8O2cHLDvCBTYW5heWkpLCBZYWxvdmEsIFR1cmtleQ",
+        "Çiftlikköy Merkez": "w+CAIQICIhw4dpZnRsaWtrw7Z5IE1lcmtleiwgWWFsb3ZhLCBUdXJrZXk",
+        "Taşköprü Beldesi": "w+CAIQICIgVGHFn2vDtnByw7wgQmVsZGVzaSwgWWFsb3ZhLCBUdXJrZXk",
+        "Yalova Merkez": "w+CAIQICIdWWFsb3ZhIE1lcmtleiwgWWFsb3ZhLCBUdXJrZXk",
+        "Altınova Tersaneler": "w+CAIQICIjQWx0xLFub3ZhIFRlcnNhbmVsZXIsIFlhbG92YSwgVHVya2V5",
+        "Çınarcık Sahil": "w+CAIQICIew4fEsW5hcmPEsWsgU2FoaWwsIFlhbG92YSwgVHVya2V5",
+        "Termal Kaplıcalar": "w+CAIQICIhVGVybWFsIEthcGzEsWNhbGFyLCBZYWxvdmEsIFR1cmtleQ",
+        "Armutlu": "w+CAIQICIXQXJtdXRsdSwgWWFsb3ZhLCBUdXJrZXk"
+      },
+      "coverage_polygon_valid": true
+    },
+    "network_graph": {
+      "total_nodes": 247,
+      "total_edges": 15835,
+      "orphan_count": 0,
+      "top_pagerank": [
+        {
+          "path": "/",
+          "score": 0.01331,
+          "in_degree": 243
+        },
+        {
+          "path": "/hizmetlerimiz",
+          "score": 0.01331,
+          "in_degree": 243
+        },
+        {
+          "path": "/hizmetlerimiz/kepce-kiralama",
+          "score": 0.01331,
+          "in_degree": 243
+        },
+        {
+          "path": "/hizmetlerimiz/kanal-kazma",
+          "score": 0.01331,
+          "in_degree": 243
+        },
+        {
+          "path": "/hizmetlerimiz/su-kuyusu-kazma",
+          "score": 0.01331,
+          "in_degree": 243
+        },
+        {
+          "path": "/hizmetlerimiz/yagmur-kanalizasyon-giderleri",
+          "score": 0.01331,
+          "in_degree": 243
+        },
+        {
+          "path": "/hizmetlerimiz/tamir-altyapi-onarim",
+          "score": 0.01331,
+          "in_degree": 243
+        }
+      ]
+    },
+    "geo_rag_search": {
+      "yalova kepçe": {
+        "best_match_page": "/makaleler/yalova-operatorlu-kepce-kiralama-avantajlari-ve-is-guvenligi",
+        "cosine_similarity": 0.2671,
+        "rag_confidence": "Yüksek"
+      },
+      "yalova kiralık kepçe": {
+        "best_match_page": "/makaleler/termal-ve-koylerinde-kiralik-kepce-doga-ve-turizm-projeleri",
+        "cosine_similarity": 0.25,
+        "rag_confidence": "Yüksek"
+      },
+      "yalova operatörlü kepçe": {
+        "best_match_page": "/makaleler/yalova-operatorlu-kepce-kiralama-avantajlari-ve-is-guvenligi",
+        "cosine_similarity": 0.3358,
+        "rag_confidence": "Yüksek"
+      },
+      "taşköprü forklift kiralama": {
+        "best_match_page": "/bolgeler/taskopru/forklift-kiralama",
+        "cosine_similarity": 0.2157,
+        "rag_confidence": "Orta"
+      },
+      "çiftlikköy temel kazısı": {
+        "best_match_page": "/bolgeler/ciftlikkoy/temel-kazma",
+        "cosine_similarity": 0.1717,
+        "rag_confidence": "Orta"
+      },
+      "altınova tersane ağır tonaj forklift": {
+        "best_match_page": "/makaleler/altinova-tersane-ve-liman-agir-tonajli-forklift-cozumleri",
+        "cosine_similarity": 0.3748,
+        "rag_confidence": "Yüksek"
+      },
+      "çınarcık eğimli arazi kepçe kazısı": {
+        "best_match_page": "/makaleler/cinarcik-operatorlu-kepce-kiralama-ve-yazlik-temel-kazisi",
+        "cosine_similarity": 0.1958,
+        "rag_confidence": "Orta"
+      },
+      "termal doğa koruyucu hassas kazı": {
+        "best_match_page": "/makaleler/termal-ve-koylerinde-kiralik-kepce-doga-ve-turizm-projeleri",
+        "cosine_similarity": 0.2191,
+        "rag_confidence": "Orta"
+      },
+      "keson su kuyusu açma beton büz": {
+        "best_match_page": "/makaleler/yalova-keson-su-kuyusu-kazimi-ve-beton-buz-yerlesimi",
+        "cosine_similarity": 0.2212,
+        "rag_confidence": "Orta"
+      },
+      "bina temel kazısı iksa şev açısı": {
+        "best_match_page": "/makaleler/yalova-bina-ve-villa-temel-kazisi-kazi-guvenligi-ve-iksay",
+        "cosine_similarity": 0.2194,
+        "rag_confidence": "Orta"
+      },
+      "tarla tesviyesi lazer nivo eğim": {
+        "best_match_page": "/makaleler/yalova-tarla-tesviyesi-lazer-nivo-ve-kubaj-hesaplama-rehberi",
+        "cosine_similarity": 0.1697,
+        "rag_confidence": "Orta"
+      }
+    },
+    "cannibalization": {
+      "critical_overlaps_count": 9,
+      "details": [
+        {
+          "page1": "/bolgeler/yalova-merkez/kanal-kazma",
+          "page2": "/bolgeler/yalova-merkez/temel-kazma",
+          "title1": "Yalova Merkez Kanal Kazma — Yalova Merkez 20 Dk Hızlı İntikal | Adem Hafriyat",
+          "title2": "Yalova Merkez Temel Kazma — Yalova Merkez 20 Dk Hızlı İntikal | Adem Hafriyat",
+          "similarity": 92.20779220779221
+        },
+        {
+          "page1": "/bolgeler/ciftlikkoy/mahalle/sahil-mahallesi",
+          "page2": "/bolgeler/ciftlikkoy/mahalle/siteler-mahallesi",
+          "title1": "Çiftlikköy Sahil Mahallesi Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "title2": "Çiftlikköy Siteler Mahallesi Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "similarity": 95.58823529411765
+        },
+        {
+          "page1": "/bolgeler/ciftlikkoy/mahalle/sahil-mahallesi",
+          "page2": "/bolgeler/ciftlikkoy/mahalle/sultaniye-mahallesi",
+          "title1": "Çiftlikköy Sahil Mahallesi Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "title2": "Çiftlikköy Sultaniye Mahallesi Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "similarity": 94.20289855072464
+        },
+        {
+          "page1": "/bolgeler/ciftlikkoy/mahalle/siteler-mahallesi",
+          "page2": "/bolgeler/ciftlikkoy/mahalle/sultaniye-mahallesi",
+          "title1": "Çiftlikköy Siteler Mahallesi Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "title2": "Çiftlikköy Sultaniye Mahallesi Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "similarity": 92.85714285714286
+        },
+        {
+          "page1": "/bolgeler/yalova-merkez/mahalle/suleymanbey-mahallesi",
+          "page2": "/bolgeler/yalova-merkez/mahalle/seyrantepe-mahallesi",
+          "title1": "Yalova Merkez Süleymanbey Mahallesi Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "title2": "Yalova Merkez Seyrantepe Mahallesi Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "similarity": 94.03973509933775
+        },
+        {
+          "page1": "/bolgeler/yalova-merkez/mahalle/samanli-koyu",
+          "page2": "/bolgeler/yalova-merkez/mahalle/safran-koyu",
+          "title1": "Yalova Merkez Samanlı Köyü Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "title2": "Yalova Merkez Safran Köyü Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "similarity": 96.2406015037594
+        },
+        {
+          "page1": "/bolgeler/yalova-merkez/mahalle/samanli-koyu",
+          "page2": "/bolgeler/yalova-merkez/mahalle/sogucak-koyu",
+          "title1": "Yalova Merkez Samanlı Köyü Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "title2": "Yalova Merkez Soğucak Köyü Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "similarity": 92.53731343283582
+        },
+        {
+          "page1": "/bolgeler/yalova-merkez/mahalle/safran-koyu",
+          "page2": "/bolgeler/yalova-merkez/mahalle/sogucak-koyu",
+          "title1": "Yalova Merkez Safran Köyü Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "title2": "Yalova Merkez Soğucak Köyü Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "similarity": 93.23308270676691
+        },
+        {
+          "page1": "/bolgeler/altinova/mahalle/tavsanli-beldesi",
+          "page2": "/bolgeler/altinova/mahalle/subasi-beldesi",
+          "title1": "Altınova Tavşanlı Beldesi Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "title2": "Altınova Subaşı Beldesi Kiralık Kepçe & Forklift | Adem Hafriyat",
+          "similarity": 93.84615384615384
+        }
+      ]
+    }
+  }
+}

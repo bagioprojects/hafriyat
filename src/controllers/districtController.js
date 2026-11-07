@@ -84,9 +84,20 @@ exports.districtService = (req, res, next) => {
     return next();
   }
 
-  const crossTitle = `${district.name} ${service.shortTitle || service.title}`;
-  const metaTitle = `${district.name} ${service.title} | Adem Hafriyat 7/24`;
-  const metaDesc = `${district.name} genelinde ve tüm mahallelerinde profesyonel ${service.title.toLowerCase()}. Operatörlü uygun fiyatlı kiralık iş makineleri. ${district.responseMinutes} dk içinde adreste!`;
+  const cleanServiceTitle = (service.shortTitle || service.title).replace(/^Yalova\s+/i, '');
+  const crossTitle = `${district.name} ${cleanServiceTitle}`;
+  
+  let customSuffix = `${district.name} ${district.responseMinutes} Dk Hızlı İntikal`;
+  if (service.id === 'operatorlu-forklift-kiralama') {
+    customSuffix = `${district.name} Sanayi & Şantiye — G Ehliyetli Sürücü (${district.responseMinutes} Dk)`;
+  } else if (service.id === 'operatorsuz-forklift-kiralama') {
+    customSuffix = `${district.name} Şantiye & Depo Sürücüsüz Filo`;
+  } else if (service.id === 'su-kuyusu-kazma') {
+    customSuffix = `${district.name} Keson Kuyu & Taban Filtre Mıcırı`;
+  }
+
+  const metaTitle = `${district.name} ${cleanServiceTitle} — ${customSuffix} | Adem Hafriyat`;
+  const metaDesc = `${district.name} genelinde ve tüm mahallelerinde profesyonel ${cleanServiceTitle.toLowerCase()}. Operatörlü uygun fiyatlı kiralık iş makineleri. ${district.responseMinutes} dakikada adreste!`;
 
   const otherServices = services.filter(s => s.id !== service.id).slice(0, 4);
   const otherDistricts = districts.filter(d => d.id !== district.id);

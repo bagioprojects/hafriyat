@@ -204,7 +204,7 @@ module.exports = [
     "id": 6,
     "slug": "yalova-su-kuyusu-acma-keson-kuyu",
     "title": "Tarımsal Arazilerde ve Köylerde Su Kuyusu Açma ve Keson Kuyu Kazı Yöntemleri",
-    "metaTitle": "Yalova Su Kuyusu Açma & Keson Kuyu Kazısı | Adem Hafriyat",
+    "metaTitle": "Keson Su Kuyusu Nasıl Açılır? Kuyu Kazımı & Büz Rehberi | Adem Hafriyat",
     "metaDesc": "Yalova köylerinde sulama suyu için keson kuyu kazma, beton kuyu halkası indirme, taban filtre mıcırı ve güvenlik önlemleri rehberi.",
     "excerpt": "Samanlı, Kadıköy, Kabaklı ve Çukurköy gibi tarım merkezlerinde bahçe sulaması için kepçe ile güvenli ve verimli keson su kuyusu açımı.",
     "category": "Kuyu & Drenaj",
